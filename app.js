@@ -62,7 +62,9 @@
           <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
         </radialGradient>
       </defs>
-      <ellipse cx="${p.shape === "sliced" ? 130 : cx}" cy="${G + 5}" rx="${w * 0.6 + (p.shape === "sliced" ? 16 : 0)}" ry="7" fill="#5A2E0E" opacity=".16"/>
+      <g stroke="#B4621F" stroke-opacity=".13" stroke-width="1" stroke-dasharray="3 5">${[30, 70, 110].map((y) => `<line x1="8" x2="252" y1="${y}" y2="${y}"/>`).join("")}</g>
+      <g stroke="#B4621F" stroke-opacity=".28" stroke-width="1.2">${Array.from({ length: 13 }, (_, i) => `<line x1="${10 + i * 20}" x2="${10 + i * 20}" y1="${G + 12}" y2="${G + (i % 2 ? 15 : 18)}"/>`).join("")}</g>
+      <ellipse cx="${p.shape === "sliced" ? 130 : cx}" cy="${G + 5}" rx="${Math.min(118, w * 0.56 + (p.shape === "sliced" ? 16 : 0))}" ry="7" fill="#5A2E0E" opacity=".16"/>
       <path d="${body}" fill="url(#${id})"/>
       <path d="${body}" fill="url(#${id}s)"/>
       ${extra}
