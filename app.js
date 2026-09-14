@@ -1,210 +1,248 @@
 (() => {
   const WHATSAPP = "2347078581881";
 
-  // Bread sizes are drawn on one shared scale (w/h in SVG units).
-  const PRODUCTS = [
-    { id: "small-round", name: "Small Round", price: 250, tag: "Quick bite", shape: "round", w: 78, h: 50,
-      desc: "A soft little loaf for school bags, quick breakfasts and one hungry person." },
-    { id: "round", name: "Round", price: 300, tag: "Everyday", shape: "round", w: 106, h: 66,
-      desc: "Our classic round loaf. Soft crumb and a golden top, lovely with tea." },
-    { id: "block", name: "Block", price: 450, tag: "Toast & akara", shape: "tin", w: 118, h: 80,
-      desc: "A compact tin loaf that slices clean for sandwiches, toast and akara." },
-    { id: "long", name: "Long", price: 650, tag: "Share size", shape: "tin", w: 196, h: 82,
-      desc: "A long loaf with generous portions for households and small gatherings." },
-    { id: "slice", name: "Sliced", price: 850, tag: "Pre-sliced", shape: "sliced", w: 170, h: 90,
-      desc: "Evenly pre-sliced and ready for sandwiches, toast and lunch boxes." },
-    { id: "jumbo", name: "Jumbo", price: 1700, tag: "Biggest loaf", shape: "tin", w: 236, h: 118,
-      desc: "Our biggest bread, made for big families, caterers and parties." },
+  // All loaves share one scale (SVG units) so cards compare honestly.
+  const BREAD = [
+    { id: "small-round", name: "Small Round", price: 250, badge: "Quick bite", shape: "round", w: 92, h: 60,
+      desc: "A soft little loaf, perfect for school bags and a quick breakfast." },
+    { id: "round", name: "Round", price: 300, badge: "Everyday", shape: "round", w: 124, h: 76,
+      desc: "Our classic round loaf with a golden top. Lovely with tea." },
+    { id: "block", name: "Block", price: 450, badge: "Popular", shape: "block", w: 132, h: 94,
+      desc: "A compact tin loaf that slices clean for toast and sandwiches." },
+    { id: "long", name: "Long", price: 650, badge: "Family", shape: "long", w: 228, h: 88,
+      desc: "A generous long loaf made for sharing at home." },
+    { id: "slice", name: "Slice", price: 850, badge: "Pre-sliced", shape: "slice", w: 196, h: 98,
+      desc: "Evenly pre-sliced and ready for sandwiches and lunch boxes." },
+    { id: "jumbo", name: "Jumbo", price: 1700, badge: "Best value", shape: "block", w: 268, h: 128,
+      desc: "Our biggest loaf, for big families, caterers and parties." },
   ];
-  const WATER = { id: "water", name: "Bag of sachet water", price: 300 };
-  const CATALOG = Object.fromEntries([...PRODUCTS, WATER].map((p) => [p.id, p]));
-
+  const WATER = { id: "water", name: "Bag of Sachet Water", price: 300, badge: "NAFDAC approved",
+    desc: "Multi-stage purified, hygienically sealed sachets. Cool, clean and refreshing." };
+  const CATALOG = Object.fromEntries([...BREAD, WATER].map((p) => [p.id, p]));
   const naira = (n) => "₦" + n.toLocaleString("en-NG");
 
-  // ---------- Bread illustrations ----------
+  // ---------- Loaf illustration ----------
   function loafSVG(p) {
-    const G = 150, cx = p.shape === "sliced" ? 118 : 130;
-    const { w, h } = p;
+    const G = 176, cx = p.shape === "slice" ? 132 : 160;
+    const { w, h, id } = p;
     const l = cx - w / 2, r = cx + w / 2, top = G - h;
-    const id = "g" + p.id;
-    let body = "", extra = "";
+    let body, extra = "";
 
     if (p.shape === "round") {
-      body = `M${l} ${G} C${l - 3} ${top + h * 0.2} ${l + w * 0.16} ${top} ${cx} ${top} C${r - w * 0.16} ${top} ${r + 3} ${top + h * 0.2} ${r} ${G} Z`;
-      extra = [0.34, 0.5, 0.66].map((t) => {
-        const x = l + w * t;
-        return `<path d="M${x - w * 0.07} ${top + h * 0.42} Q${x} ${top + h * 0.18} ${x + w * 0.07} ${top + h * 0.34}" stroke="#7A3A10" stroke-opacity=".35" stroke-width="2.4" fill="none" stroke-linecap="round"/>`;
+      body = `M${l + 2} ${G} C${l - 6} ${top + h * 0.35} ${l + w * 0.12} ${top} ${cx} ${top} C${r - w * 0.12} ${top} ${r + 6} ${top + h * 0.35} ${r - 2} ${G} Z`;
+      // scored cross-hatch & flour
+      extra = [-0.22, 0, 0.22].map((t) => {
+        const x = cx + w * t;
+        return `<path d="M${x - w * 0.09} ${top + h * 0.5} Q${x} ${top + h * 0.12} ${x + w * 0.09} ${top + h * 0.34}" stroke="#F7D9A6" stroke-width="${w * 0.03}" fill="none" stroke-linecap="round" opacity=".9"/>`;
+      }).join("") + Array.from({ length: 16 }, (_, i) => {
+        const a = (i * 137.5) % 360, rr = (i % 5) / 5;
+        return `<circle cx="${cx + Math.cos(a) * w * 0.28 * rr}" cy="${top + h * 0.22 + Math.sin(a) * h * 0.12 * rr}" r="${0.9 + (i % 3) * 0.4}" fill="#fff" opacity=".55"/>`;
       }).join("");
     } else {
-      const sh = top + h * 0.42;
-      body = `M${l + 4} ${G} L${l} ${sh} C${l - 4} ${top + h * 0.06} ${l + w * 0.1} ${top} ${cx} ${top} C${r - w * 0.1} ${top} ${r + 4} ${top + h * 0.06} ${r} ${sh} L${r - 4} ${G} Z`;
-      extra = `<path d="M${l + 1} ${sh} Q${cx} ${sh + 7} ${r - 1} ${sh}" stroke="#FFE2B0" stroke-opacity=".55" stroke-width="3" fill="none"/>`;
-      if (p.shape === "sliced") {
-        const n = 8;
-        for (let i = 1; i < n; i++) {
-          const x = l + (w / n) * i;
-          extra += `<path d="M${x} ${top + 6} L${x} ${G - 2}" stroke="#6E3310" stroke-opacity=".32" stroke-width="2"/>`;
+      const sh = top + h * 0.46;
+      body = `M${l + 5} ${G} L${l + 1} ${sh} C${l - 5} ${top + h * 0.04} ${l + w * 0.1} ${top} ${cx} ${top} C${r - w * 0.1} ${top} ${r + 5} ${top + h * 0.04} ${r - 1} ${sh} L${r - 5} ${G} Z`;
+      extra = `<path d="M${l + 2} ${sh} Q${cx} ${sh + 8} ${r - 2} ${sh}" stroke="#FFE4B8" stroke-opacity=".7" stroke-width="3.5" fill="none"/>`;
+      if (p.shape === "long") {
+        extra += [-0.3, -0.1, 0.1, 0.3].map((t) => {
+          const x = cx + w * t;
+          return `<path d="M${x - 16} ${top + h * 0.3} Q${x} ${top + 2} ${x + 18} ${top + h * 0.16}" stroke="#F7D9A6" stroke-width="5" fill="none" stroke-linecap="round"/>`;
+        }).join("");
+      }
+      if (p.shape === "slice") {
+        for (let i = 1; i < 9; i++) {
+          const x = l + (w / 9) * i;
+          extra += `<path d="M${x} ${top + 5} L${x - 1} ${G - 2}" stroke="#5B2A0B" stroke-opacity=".35" stroke-width="2"/>`;
         }
-        const sx = r + 8, sw = 22, stop = top + 10;
-        extra += `<g transform="rotate(10 ${sx + sw / 2} ${G})">
-          <path d="M${sx} ${G} L${sx} ${stop + 18} C${sx} ${stop} ${sx + sw} ${stop} ${sx + sw} ${stop + 18} L${sx + sw} ${G} Z" fill="#F6E1B6" stroke="#B4621F" stroke-width="4"/>
-          <circle cx="${sx + 8}" cy="${stop + 40}" r="1.6" fill="#D9B98A"/><circle cx="${sx + 14}" cy="${stop + 58}" r="1.4" fill="#D9B98A"/><circle cx="${sx + 9}" cy="${stop + 72}" r="1.2" fill="#D9B98A"/>
-        </g>`;
+        // two fanned slices showing crumb
+        const sx = r + 6;
+        const slice = (dx, rot) => `<g transform="rotate(${rot} ${sx + dx + 18} ${G})">
+            <path d="M${sx + dx} ${G} L${sx + dx} ${top + 34} C${sx + dx - 4} ${top + 6} ${sx + dx + 40} ${top + 6} ${sx + dx + 36} ${top + 34} L${sx + dx + 36} ${G} Z" fill="#F3DDB0" stroke="#B8651E" stroke-width="5"/>
+            ${[[10, 58], [22, 80], [14, 104], [26, 124], [12, 142]].map(([ox, oy]) => `<ellipse cx="${sx + dx + ox}" cy="${top + oy * (h / 140) + 10}" rx="2.4" ry="1.6" fill="#DDBF8C"/>`).join("")}
+          </g>`;
+        extra += slice(4, 8) + slice(20, 18);
       }
     }
 
-    return `<svg viewBox="0 0 260 168" role="img" aria-label="${p.name} loaf illustration, drawn to scale">
+    return `<svg class="loaf-svg" viewBox="0 0 320 200" role="img" aria-label="${p.name} loaf, shown to scale">
       <defs>
-        <linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#EDB262"/><stop offset=".55" stop-color="#C9772E"/><stop offset="1" stop-color="#94501C"/>
+        <linearGradient id="c-${id}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F0B566"/><stop offset=".5" stop-color="#C8732A"/><stop offset="1" stop-color="#8A4516"/>
         </linearGradient>
-        <radialGradient id="${id}s" cx=".35" cy=".25" r=".5">
-          <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        <radialGradient id="s-${id}" cx=".38" cy=".18" r=".55">
+          <stop offset="0" stop-color="#FFF3D6" stop-opacity=".85"/><stop offset="1" stop-color="#FFF3D6" stop-opacity="0"/>
         </radialGradient>
+        <filter id="t-${id}" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" seed="${id.length}" result="n"/>
+          <feDiffuseLighting in="n" lighting-color="#fff" surfaceScale="1.4" result="lit"><feDistantLight azimuth="225" elevation="58"/></feDiffuseLighting>
+          <feComposite in="lit" in2="SourceAlpha" operator="in" result="tex"/>
+          <feBlend in="SourceGraphic" in2="tex" mode="multiply"/>
+        </filter>
       </defs>
-      <g stroke="#B4621F" stroke-opacity=".13" stroke-width="1" stroke-dasharray="3 5">${[30, 70, 110].map((y) => `<line x1="8" x2="252" y1="${y}" y2="${y}"/>`).join("")}</g>
-      <g stroke="#B4621F" stroke-opacity=".28" stroke-width="1.2">${Array.from({ length: 13 }, (_, i) => `<line x1="${10 + i * 20}" x2="${10 + i * 20}" y1="${G + 12}" y2="${G + (i % 2 ? 15 : 18)}"/>`).join("")}</g>
-      <ellipse cx="${p.shape === "sliced" ? 130 : cx}" cy="${G + 5}" rx="${Math.min(118, w * 0.56 + (p.shape === "sliced" ? 16 : 0))}" ry="7" fill="#5A2E0E" opacity=".16"/>
-      <path d="${body}" fill="url(#${id})"/>
-      <path d="${body}" fill="url(#${id}s)"/>
+      <ellipse cx="${cx + (p.shape === "slice" ? 14 : 0)}" cy="${G + 4}" rx="${Math.min(150, w * 0.56 + (p.shape === "slice" ? 26 : 0))}" ry="8" fill="#2A1204" opacity=".35"/>
+      <g filter="url(#t-${id})"><path d="${body}" fill="url(#c-${id})"/></g>
+      <path d="${body}" fill="url(#s-${id})"/>
       ${extra}
     </svg>`;
   }
 
-  // ---------- Cart state ----------
-  const KEY = "ajalisco-order-v1";
+  const meter = (idx) => `<div class="meter" aria-label="Size ${idx + 1} of 6">
+      ${BREAD.map((_, i) => `<i class="${i <= idx ? "on" : ""}" style="height:${8 + i * 2.8}px"></i>`).join("")}
+      <span>Size ${idx + 1}/6</span>
+    </div>`;
+
+  // ---------- Cart ----------
+  const KEY = "ajalisco-cart-v2";
   let cart = {};
   try { cart = JSON.parse(localStorage.getItem(KEY)) || {}; } catch { cart = {}; }
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cart)); } catch {} };
 
-  const setQty = (id, q) => {
-    q = Math.max(0, Math.min(999, q | 0));
-    if (q) cart[id] = q; else delete cart[id];
-    save();
-    render();
+  const control = (id) => {
+    const q = cart[id] || 0, n = CATALOG[id].name;
+    if (!q) return `<button class="add" type="button" data-add="${id}" aria-label="Add ${n} to cart">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/></svg>
+        Add to Cart</button>`;
+    return `<div class="qty" role="group" aria-label="${n} quantity">
+        <button type="button" data-dec="${id}" aria-label="Remove one ${n}">−</button>
+        <output aria-live="polite">${q} in cart</output>
+        <button type="button" data-inc="${id}" aria-label="Add one ${n}">+</button>
+      </div>`;
   };
 
-  function stepperHTML(id) {
-    const q = cart[id] || 0;
-    const name = CATALOG[id].name;
-    if (!q) return `<button class="add-btn" type="button" data-add="${id}" aria-label="Add ${name}">
-      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>Add</button>`;
-    return `<div class="stepper" role="group" aria-label="${name} quantity">
-      <button type="button" data-dec="${id}" aria-label="Remove one ${name}">−</button>
-      <output aria-live="polite">${q}</output>
-      <button type="button" data-inc="${id}" aria-label="Add one ${name}">+</button>
-    </div>`;
-  }
-
-  // ---------- Render ----------
+  // ---------- Product cards ----------
   const grid = document.querySelector("[data-products]");
-  grid.innerHTML = PRODUCTS.map((p, i) => `
-    <article class="loaf reveal" style="--i:${i}" data-product-card="${p.id}">
-      <div class="loaf__stage">
-        <span class="loaf__tag">${p.tag}</span>
+  const breadCard = (p, i) => `
+    <article class="card reveal" style="--i:${i}" data-cat="bread" data-card="${p.id}">
+      <div class="card__media card__media--bread">
+        <span class="card__badge">${p.badge}</span>
         ${loafSVG(p)}
       </div>
-      <div class="loaf__body">
-        <div class="loaf__row">
-          <h3>${p.name}</h3>
-          <p class="loaf__price">${naira(p.price)}</p>
-        </div>
-        <p class="loaf__desc">${p.desc}</p>
-        <div class="stepper-slot" data-stepper="${p.id}"></div>
+      <div class="card__body">
+        <p class="card__cat">Jalix Bread</p>
+        <div class="card__row"><h3>${p.name}</h3><p class="card__price">${naira(p.price)}</p></div>
+        <p class="card__desc">${p.desc}</p>
+        ${meter(i)}
+        <div class="card__ctrl" data-ctrl="${p.id}"></div>
       </div>
-    </article>`).join("");
+    </article>`;
+  const waterCard = `
+    <article class="card card--water reveal" style="--i:6" data-cat="water" data-card="water">
+      <div class="card__media card__media--water">
+        <span class="card__badge card__badge--blue">${WATER.badge}</span>
+        <div class="card__sachet"><img src="assets/sachet.webp" alt="Ajalisco table water sachet" loading="lazy"></div>
+      </div>
+      <div class="card__body">
+        <p class="card__cat card__cat--blue">Ajalisco Water</p>
+        <div class="card__row"><h3>${WATER.name}</h3><p class="card__price card__price--blue">${naira(WATER.price)}</p></div>
+        <p class="card__desc">${WATER.desc}</p>
+        <div class="card__ctrl" data-ctrl="water"></div>
+      </div>
+    </article>`;
+  grid.innerHTML = BREAD.map(breadCard).join("") + waterCard;
 
-  document.querySelectorAll('[data-price="water"]').forEach((el) => (el.innerHTML = `${naira(WATER.price)}<small>/bag</small>`));
+  // Filter tabs
+  const tabs = document.querySelectorAll("[data-filter]");
+  const applyFilter = (f) => {
+    tabs.forEach((t) => t.setAttribute("aria-selected", String(t.dataset.filter === f)));
+    grid.querySelectorAll("[data-cat]").forEach((c) => (c.hidden = f !== "all" && c.dataset.cat !== f));
+    grid.dataset.filter = f;
+  };
+  tabs.forEach((t) => t.addEventListener("click", () => applyFilter(t.dataset.filter)));
+  document.querySelectorAll("[data-jump]").forEach((a) => a.addEventListener("click", () => applyFilter(a.dataset.jump)));
 
+  // ---------- Render ----------
   const sheet = document.querySelector("[data-sheet]");
-  const sheetItems = document.querySelector("[data-sheet-items]");
-  const orderbar = document.querySelector("[data-orderbar]");
+  const items = document.querySelector("[data-sheet-items]");
+  const bar = document.querySelector("[data-orderbar]");
 
   function render() {
-    document.querySelectorAll("[data-stepper]").forEach((slot) => (slot.innerHTML = stepperHTML(slot.dataset.stepper)));
-    document.querySelectorAll("[data-product-card]").forEach((c) => c.classList.toggle("is-in", !!cart[c.dataset.productCard]));
-
+    document.querySelectorAll("[data-ctrl]").forEach((el) => (el.innerHTML = control(el.dataset.ctrl)));
+    document.querySelectorAll("[data-card]").forEach((c) => c.classList.toggle("is-in", !!cart[c.dataset.card]));
     const ids = Object.keys(cart).filter((id) => CATALOG[id]);
     const count = ids.reduce((s, id) => s + cart[id], 0);
     const total = ids.reduce((s, id) => s + cart[id] * CATALOG[id].price, 0);
-
     document.querySelectorAll("[data-count]").forEach((el) => (el.textContent = count));
     document.querySelectorAll("[data-total]").forEach((el) => (el.textContent = naira(total)));
     document.querySelectorAll("[data-items-label]").forEach((el) => (el.textContent = count === 1 ? "item" : "items"));
-    orderbar.hidden = count === 0;
-    document.body.classList.toggle("has-order", count > 0);
+    bar.hidden = !count;
+    document.body.classList.toggle("has-cart", count > 0);
 
-    sheetItems.innerHTML = ids.map((id) => `
+    items.innerHTML = ids.map((id) => `
       <li>
-        <span class="sheet__name">${CATALOG[id].name}<small>${naira(CATALOG[id].price)} each</small></span>
-        <span class="stepper-slot">${stepperHTML(id)}</span>
-        <b>${naira(cart[id] * CATALOG[id].price)}</b>
+        <span class="sheet__thumb ${id === "water" ? "is-water" : ""}" aria-hidden="true">${id === "water" ? "💧" : "🍞"}</span>
+        <span class="sheet__name">${CATALOG[id].name}<small>${naira(CATALOG[id].price)} each · <b>${naira(cart[id] * CATALOG[id].price)}</b></small></span>
+        ${control(id)}
       </li>`).join("");
-    document.querySelector("[data-sheet-empty]").hidden = count > 0;
-    document.querySelector("[data-fields]").hidden = count === 0;
-    document.querySelector("[data-send]").hidden = count === 0;
+    const empty = count === 0;
+    document.querySelector("[data-sheet-empty]").hidden = !empty;
+    ["[data-sheet-total]", "[data-fields]", "[data-send]", ".sheet__fine"].forEach((s) => (document.querySelector(s).hidden = empty));
   }
 
-  document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-add],[data-inc],[data-dec],[data-open-order]");
-    if (!t) return;
-    if (t.dataset.add) setQty(t.dataset.add, 1), bump();
-    else if (t.dataset.inc) setQty(t.dataset.inc, (cart[t.dataset.inc] || 0) + 1), bump();
-    else if (t.dataset.dec) setQty(t.dataset.dec, (cart[t.dataset.dec] || 0) - 1);
-    else if ("openOrder" in t.dataset) sheet.showModal();
-    // Re-rendering replaces the pressed button; keep keyboard focus in place.
-    const sel = t.dataset.inc || t.dataset.add ? `[data-inc="${t.dataset.inc || t.dataset.add}"]` : t.dataset.dec ? `[data-dec="${t.dataset.dec}"],[data-add="${t.dataset.dec}"]` : null;
-    if (sel) {
-      const scope = t.closest("[data-sheet]") || document.querySelector(`[data-stepper="${t.dataset.inc || t.dataset.add || t.dataset.dec}"]`)?.parentElement || document;
-      (scope.querySelector(sel) || document.querySelector(sel))?.focus({ preventScroll: true });
-    }
+  const setQty = (id, q) => {
+    q = Math.max(0, Math.min(999, q | 0));
+    if (q) cart[id] = q; else delete cart[id];
+    save(); render();
+  };
+
+  const pulse = () => document.querySelectorAll(".cart-btn__count, .orderbar").forEach((el) => {
+    el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop");
   });
 
-  function bump() {
-    document.querySelectorAll(".badge, .orderbar").forEach((el) => {
-      el.classList.remove("bump"); void el.offsetWidth; el.classList.add("bump");
-    });
-  }
-
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest("[data-add],[data-inc],[data-dec],[data-open-order],[data-close]");
+    if (!t) return;
+    const inSheet = !!t.closest("[data-sheet]");
+    let focusSel = null;
+    if (t.dataset.add) { setQty(t.dataset.add, 1); pulse(); focusSel = `[data-inc="${t.dataset.add}"]`; }
+    else if (t.dataset.inc) { setQty(t.dataset.inc, (cart[t.dataset.inc] || 0) + 1); pulse(); focusSel = `[data-inc="${t.dataset.inc}"]`; }
+    else if (t.dataset.dec) { const id = t.dataset.dec; setQty(id, (cart[id] || 0) - 1); focusSel = `[data-dec="${id}"],[data-add="${id}"]`; }
+    else if ("openOrder" in t.dataset) sheet.showModal();
+    else if ("close" in t.dataset) sheet.close();
+    if (focusSel) {
+      const scope = inSheet ? sheet : grid.parentElement;
+      scope.querySelector(focusSel)?.focus({ preventScroll: true });
+    }
+  });
   sheet.addEventListener("click", (e) => { if (e.target === sheet) sheet.close(); });
 
   document.querySelector("[data-order-form]").addEventListener("submit", (e) => {
-    const submitter = e.submitter;
-    if (!submitter || submitter.value !== "send") return;
+    if (e.submitter?.value !== "send") return;
     e.preventDefault();
     const f = new FormData(e.target);
     const ids = Object.keys(cart).filter((id) => CATALOG[id]);
     const total = ids.reduce((s, id) => s + cart[id] * CATALOG[id].price, 0);
-    const lines = [
-      "Hello Ajalisco 👋 I'd like to place an order:",
-      "",
-      ...ids.map((id) => `• ${cart[id]} × ${CATALOG[id].name} — ${naira(cart[id] * CATALOG[id].price)}`),
-      "",
-      `Total: ${naira(total)}`,
-      "",
-      `Name: ${f.get("name")}`,
-      `Phone: ${f.get("phone")}`,
-      f.get("address") ? `Delivery: ${f.get("address")}` : "Delivery: (to confirm)",
-    ];
-    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener");
+    const msg = [
+      "Hello Ajalisco 👋 I'd like to place an order:", "",
+      ...ids.map((id) => `• ${cart[id]} × ${CATALOG[id].name}${id === "water" ? "" : " bread"} — ${naira(cart[id] * CATALOG[id].price)}`),
+      "", `Total: ${naira(total)}`, "",
+      `Name: ${f.get("name")}`, `Phone: ${f.get("phone")}`,
+      `Delivery: ${f.get("address") || "(to confirm)"}`,
+    ].join("\n");
+    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
   });
 
-  // ---------- Reveal on scroll ----------
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const revealEls = document.querySelectorAll(".reveal");
-  if (reduce || !("IntersectionObserver" in window)) {
-    revealEls.forEach((el) => el.classList.add("in"));
-  } else {
-    const io = new IntersectionObserver((entries) => entries.forEach((en) => {
-      if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
-    }), { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-    revealEls.forEach((el) => io.observe(el));
-  }
-
-  // Header shadow once scrolled
-  const nav = document.querySelector(".nav");
-  const onScroll = () => nav.classList.toggle("is-scrolled", scrollY > 8);
+  // ---------- Nav ----------
+  const nav = document.querySelector("[data-nav]");
+  const menuBtn = document.querySelector("[data-menu-btn]");
+  const setMenu = (open) => { nav.classList.toggle("is-open", open); menuBtn.setAttribute("aria-expanded", String(open)); };
+  menuBtn.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
+  document.querySelectorAll("[data-menu] a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+  const onScroll = () => nav.classList.toggle("is-stuck", scrollY > 40);
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  // Duplicate testimonials for a seamless marquee
+  const track = document.querySelector("[data-track]");
+  track.innerHTML += track.innerHTML.replace(/<figure class="t-card">/g, '<figure class="t-card" aria-hidden="true">');
+
+  // ---------- Reveal ----------
+  const els = document.querySelectorAll(".reveal");
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+    els.forEach((el) => el.classList.add("in"));
+  } else {
+    const io = new IntersectionObserver((ents) => ents.forEach((en) => {
+      if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+    }), { rootMargin: "0px 0px -6% 0px", threshold: 0.06 });
+    els.forEach((el) => io.observe(el));
+  }
 
   document.querySelector("[data-year]").textContent = new Date().getFullYear();
   render();
