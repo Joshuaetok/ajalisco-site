@@ -202,20 +202,6 @@
         </div>
       </section>
 
-      <!-- Brand marketing: flavours (from the old Services page) -->
-      <section class="section flavours-sec">
-        <div class="wrap">
-          <div class="head-center">
-            <p class="kicker kicker--center rv">Jalix Bread</p>
-            <h2 class="title rv">Discover Your New Favorite</h2>
-          </div>
-          <div class="fl rv" id="fl">
-            <div class="fl__stage" id="flStage"></div>
-            <div class="fl__nav" id="flNav" role="tablist" aria-label="Choose a flavour"></div>
-          </div>
-        </div>
-      </section>
-
       <!-- Brand marketing: who we serve -->
       <section class="section section--gray serve">
         <div class="wrap">
@@ -334,8 +320,26 @@
               </select>
             </form>
           </div>
-          <div data-grid="shop"></div>
+          <div data-grid="shop" id="shopProducts"></div>
           <noscript><p class="center">Small Round ₦250 · Round ₦300 · Block ₦450 · Long ₦650 · Slice ₦850 · Jumbo ₦1,700 · Bag of table water ₦300.</p></noscript>
+        </div>
+      </section>
+
+      <!-- Flavour shelf (from the old Services page) -->
+      <section class="section shelf-sec">
+        <div class="wrap">
+          <div class="head-center">
+            <p class="kicker kicker--center rv">Jalix Bread</p>
+            <h2 class="title rv">Discover Your New Favorite</h2>
+            <p class="lede rv" style="text-align:center">Same soft Jalix crumb — four packs, one favourite.</p>
+          </div>
+          <div class="shelf rv" id="fl">
+            <div class="shelf__info" id="flInfo"></div>
+            <div class="shelf__case">
+              <div class="shelf__row" id="flRow"></div>
+              <div class="shelf__ledge"></div>
+            </div>
+          </div>
         </div>
       </section>
     </section>

@@ -255,14 +255,21 @@
 
   /* ------------------------- Flavour showcase -------------------- */
   let flIdx = 0, flTimer;
-  function renderFlavours(auto) {
-    const stage = $("#flStage"), nav = $("#flNav"); if (!stage) return;
+  function renderFlavours() {
+    const info = $("#flInfo"), row = $("#flRow"); if (!row) return;
     const f = FLAVOURS[flIdx];
-    stage.style.setProperty("--accent", f.accent);
-    stage.innerHTML = `
-      <div class="fl__copy"><span class="fl__count">0${flIdx + 1}<small>/0${FLAVOURS.length}</small></span><h3>${f.name}</h3><p>${f.line}</p><a class="btn btn--green btn--lg" href="#/shop" data-filter-link="bread">Shop Bread</a></div>
-      <div class="fl__photo"><img src="${f.img}" alt="Jalix ${f.name}"></div>`;
-    nav.innerHTML = FLAVOURS.map((x, i) => `<button role="tab" type="button" aria-selected="${i === flIdx}" data-fl="${i}" style="--accent:${x.accent}"><img src="${x.pack}" alt=""><span>${x.name}</span></button>`).join("");
+    info.innerHTML = `
+      <span class="shelf__count" style="color:${f.accent}">0${flIdx + 1}<small>/0${FLAVOURS.length}</small></span>
+      <h3>${f.name}</h3>
+      <p>${f.line}</p>
+      <a class="btn btn--green btn--lg" href="#/shop" data-filter-link="bread" data-scroll="shopProducts">Shop Bread</a>`;
+    row.innerHTML = FLAVOURS.map((x, i) => `
+      <button class="shelf__pack${i === flIdx ? " is-active" : ""}" type="button" role="tab" aria-selected="${i === flIdx}" data-fl="${i}" style="--accent:${x.accent}">
+        <span class="shelf__glow" aria-hidden="true"></span>
+        <img src="${x.pack}" alt="Jalix ${x.name}">
+        <span class="shelf__shadow" aria-hidden="true"></span>
+        <span class="shelf__label">${x.name}</span>
+      </button>`).join("");
     clearInterval(flTimer);
     if (!reduce) flTimer = setInterval(() => { flIdx = (flIdx + 1) % FLAVOURS.length; renderFlavours(); }, 6000);
   }
