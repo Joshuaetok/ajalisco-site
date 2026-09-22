@@ -34,14 +34,13 @@
       <a class="brand" href="#/" aria-label="Ajalisco — home"><img src="assets/logo.webp" alt="Ajalisco" width="66" height="50"></a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#/shop" data-route="shop">Shop</a>
-        <a href="#/services" data-route="services">Services</a>
         <a href="#/partnership" data-route="partnership">Partnership</a>
         <a href="#/about" data-route="about">About</a>
         <a href="#/contact" data-route="contact">Contact Us</a>
         <a class="nav__mobile-cta" href="#/shop">Order Now</a>
       </nav>
       <div class="nav__actions">
-        <button class="cart-btn" type="button" data-open-cart aria-label="Open cart">
+        <button class="cart-btn" type="button" data-open-cart aria-label="View your shopping cart">
           <span class="cart-btn__total" data-total>₦0.00</span>
           <span class="cart-btn__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2M10 21h.01M17 21h.01"/></svg>
@@ -58,6 +57,8 @@
 
     <!-- ================= HOME ================= -->
     <section class="page" id="page-home" data-title="Ajalisco Production Industries Limited — Pure Quality, Delivered Fresh">
+
+      <!-- Hero -->
       <div class="hero">
         <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <div class="wrap hero__grid">
@@ -67,9 +68,7 @@
             <h1 class="hero__title rv">Experience the taste of <span class="swoosh">excellence<svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 17C70 6 160 3 296 12" fill="none" stroke="#6FC324" stroke-width="7" stroke-linecap="round"/></svg></span></h1>
             <p class="hero__lede rv">Discover Ajalisco's premium water and wholesome Jalix bread — all crafted with the highest standards of quality and freshness.</p>
             <div class="btn-row rv">
-              <a class="btn btn--green btn--lg" href="#/shop">
-                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/></svg>
-                Shop Now</a>
+              <a class="btn btn--green btn--lg" href="#/shop"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/></svg> Shop Now</a>
               <a class="btn btn--ghost-light btn--lg" href="#/contact">Contact Us</a>
             </div>
             <dl class="hero__facts rv">
@@ -87,15 +86,153 @@
             <div class="chip chip--c"><small>Sachet Water</small><b>₦300<em>/bag</em></b></div>
           </div>
         </div>
-        <svg class="hero__wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50c240 50 480 50 720 20S1200 0 1440 30v60H0Z" fill="#DFEBFC"/></svg>
+        <svg class="hero__wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50c240 50 480 50 720 20S1200 0 1440 30v60H0Z" fill="#fff"/></svg>
       </div>
 
-      <div class="ticker" aria-hidden="true">
-        <div class="ticker__track">
-          <span>Pure Quality, Delivered Fresh</span><i>✦</i><span>NAFDAC Registered</span><i>✦</i><span>Jalix Bread in six sizes</span><i>✦</i><span>Premium Sachet Water</span><i>✦</i><span>Proudly Made in Nigeria</span><i>✦</i>
+      <!-- Crossing ticker tapes -->
+      <div class="tapes" aria-hidden="true">
+        <div class="tape tape--green"><div class="tape__track">
+          <span>Jalix Bread</span><i></i><span>Premium Sachet Water</span><i></i><span>NAFDAC Registered</span><i></i><span>Pure Quality, Delivered Fresh</span><i></i>
+          <span>Jalix Bread</span><i></i><span>Premium Sachet Water</span><i></i><span>NAFDAC Registered</span><i></i><span>Pure Quality, Delivered Fresh</span><i></i>
+        </div></div>
+        <div class="tape tape--navy"><div class="tape__track tape__track--rev">
+          <span>Baked fresh daily</span><i></i><span>Six loaf sizes from ₦250</span><i></i><span>Bag of water ₦300</span><i></i><span>Proudly made in Nigeria</span><i></i>
+          <span>Baked fresh daily</span><i></i><span>Six loaf sizes from ₦250</span><i></i><span>Bag of water ₦300</span><i></i><span>Proudly made in Nigeria</span><i></i>
+        </div></div>
+      </div>
+
+      <!-- Advert banner: Bread -->
+      <section class="section section--ads">
+        <div class="wrap">
+          <article class="ad ad--bread rv">
+            <div class="ad__copy">
+              <p class="ad__kicker">Jalix Bread</p>
+              <h2 class="ad__title">Fresh from the oven,<br><em>from just ₦250</em></h2>
+              <p class="ad__text">One soft, golden Jalix loaf in six sizes — from the Small Round for a quick bite to the Jumbo that feeds the whole house.</p>
+              <ul class="price-chips">
+                <li><b>Small Round</b>₦250</li><li><b>Round</b>₦300</li><li><b>Block</b>₦450</li><li><b>Long</b>₦650</li><li><b>Slice</b>₦850</li><li><b>Jumbo</b>₦1,700</li>
+              </ul>
+              <div class="btn-row"><a class="btn btn--green btn--lg" href="#/shop" data-filter-link="bread">Shop Bread</a><a class="btn btn--ghost-light btn--lg" href="#size-picker" data-scroll="size-picker">Pick your size</a></div>
+            </div>
+            <div class="ad__art" aria-hidden="true">
+              <span class="ad__ghost">JALIX</span>
+              <img src="assets/loaves.webp" alt="" width="401" height="277" loading="lazy">
+              <span class="burst"><small>From</small><b>₦250</b></span>
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
 
+      <!-- Size picker -->
+      <section class="section section--gray picker-sec" id="size-picker">
+        <div class="wrap">
+          <div class="head-center">
+            <p class="kicker kicker--center rv">Find your loaf</p>
+            <h2 class="title rv">Which Jalix size fits your table?</h2>
+          </div>
+          <div class="picker rv woocommerce" id="picker">
+            <div class="picker__sizes" role="tablist" aria-label="Loaf size" id="pickerSizes"></div>
+            <div class="picker__stage" id="pickerStage"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advert banners: Water + Distributor -->
+      <section class="section section--ads section--ads2">
+        <div class="wrap ads2">
+          <article class="ad ad--water rv">
+            <div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="ad__copy">
+              <p class="ad__kicker ad__kicker--blue">Premium Water</p>
+              <h2 class="ad__title ad__title--dark">Pure. Sealed.<br><em>Refreshing.</em></h2>
+              <p class="ad__text ad__text--dark">A bag of Ajalisco table water — multi-stage purified and NAFDAC registered.</p>
+              <p class="ad__price">₦300 <small>per bag</small></p>
+              <a class="btn btn--blue btn--lg" href="#/shop" data-filter-link="water">Shop Water</a>
+            </div>
+            <div class="ad__art ad__art--water" aria-hidden="true"><div class="orb"><img src="assets/sachet.webp" alt="" loading="lazy"></div></div>
+          </article>
+          <article class="ad ad--partner rv" style="--i:1">
+            <div class="ad__copy">
+              <p class="ad__kicker ad__kicker--light">Distributors &amp; retailers</p>
+              <h2 class="ad__title">Stock Ajalisco.<br><em>Grow with us.</em></h2>
+              <p class="ad__text">Supermarkets, shop vendors and logistics partners — there's room to thrive with us.</p>
+              <a class="btn btn--white btn--lg" href="#/partnership">Become a Distributor</a>
+            </div>
+            <div class="ad__art ad__art--photo" aria-hidden="true"><img src="assets/partner.webp" alt="" loading="lazy"></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Product grid (WooCommerce-style loop) -->
+      <section class="section" id="home-products">
+        <div class="wrap">
+          <div class="head-center">
+            <p class="kicker kicker--center rv">Our Products</p>
+            <h2 class="title rv">Explore Our Premium Selection</h2>
+            <div class="tabs rv" role="tablist" aria-label="Filter products" data-tabs="home">
+              <button role="tab" aria-selected="true" data-filter="all">All</button>
+              <button role="tab" aria-selected="false" data-filter="bread">Bread</button>
+              <button role="tab" aria-selected="false" data-filter="water">Premium Water</button>
+            </div>
+          </div>
+          <div class="woocommerce" data-grid="home"></div>
+          <div class="center rv"><a class="btn btn--blue btn--lg" href="#/shop">View the full shop</a></div>
+        </div>
+      </section>
+
+      <!-- Brand marketing: water purification (from the old Services page) -->
+      <section class="section section--navy purify">
+        <div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="wrap purify__grid">
+          <div class="purify__media rv">
+            <img src="assets/stacks.webp" alt="Stacked bags of Ajalisco sachet water" loading="lazy">
+            <span class="nafdac-tag"><img src="assets/nafdac.png" alt="" width="34" height="34"> NAFDAC Registered</span>
+          </div>
+          <div class="purify__copy">
+            <p class="kicker kicker--dark rv">Premium Water</p>
+            <h2 class="title title--light rv">Purified in stages.<br>Sealed for safety.</h2>
+            <p class="lede lede--light rv">Our water undergoes multi-stage filtration, UV treatment and ozone disinfection to guarantee purity — packaged in hygienic sachets for your convenience and safety.</p>
+            <ol class="stages">
+              <li class="rv"><span class="stages__n">01</span><div><b>Reverse Osmosis Filtration</b><small>Removes impurities from the source water.</small></div></li>
+              <li class="rv" style="--i:1"><span class="stages__n">02</span><div><b>UV &amp; Ozone Treatment</b><small>Disinfects the water without harsh additives.</small></div></li>
+              <li class="rv" style="--i:2"><span class="stages__n">03</span><div><b>Hygienic Cold-room Storage</b><small>Kept clean and cool until it reaches you.</small></div></li>
+            </ol>
+            <a class="btn btn--green btn--lg rv" href="#/shop" data-filter-link="water">Shop Water</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand marketing: flavours (from the old Services page) -->
+      <section class="section flavours-sec">
+        <div class="wrap">
+          <div class="head-center">
+            <p class="kicker kicker--center rv">Jalix Bread</p>
+            <h2 class="title rv">Discover Your New Favorite</h2>
+          </div>
+          <div class="fl rv" id="fl">
+            <div class="fl__stage" id="flStage"></div>
+            <div class="fl__nav" id="flNav" role="tablist" aria-label="Choose a flavour"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand marketing: who we serve -->
+      <section class="section section--gray serve">
+        <div class="wrap">
+          <div class="head-center">
+            <p class="kicker kicker--center rv">Made for every moment</p>
+            <h2 class="title rv">From breakfast tables to big events</h2>
+          </div>
+          <div class="serve__grid">
+            <a class="tile tile--a rv" href="#/shop"><span class="tile__icon"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5V21h-6v-6H9v6H3Z"/></svg></span><h3>Homes &amp; families</h3><p>Fresh bread for breakfast and cool, clean water for everyone at home.</p><span class="more">Shop now <b aria-hidden="true">→</b></span></a>
+            <a class="tile tile--b rv" style="--i:1" href="#/contact"><span class="tile__icon"><svg viewBox="0 0 24 24"><path d="M6 3h12l1 6H5Zm-1 8h14v2H5Zm1 4h12v6H6Z"/></svg></span><h3>Caterers &amp; events</h3><p>Sachet water that looks professional and bread that sells out.</p><span class="more">Talk to us <b aria-hidden="true">→</b></span></a>
+            <a class="tile tile--c rv" style="--i:2" href="#/contact"><span class="tile__icon"><svg viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8Zm-6 9.2 6 3 6-3V16c0 1.7-2.7 3-6 3s-6-1.3-6-3Z"/></svg></span><h3>Schools &amp; canteens</h3><p>Reliable daily supply for breakfast plans and school events.</p><span class="more">Talk to us <b aria-hidden="true">→</b></span></a>
+            <a class="tile tile--d rv" style="--i:3" href="#/partnership"><span class="tile__icon"><svg viewBox="0 0 24 24"><path d="M4 9h16l-1.5-5h-13Zm1 2v9h6v-5h2v5h6v-9Z"/></svg></span><h3>Shops &amp; supermarkets</h3><p>Branded, well-packaged products your customers already ask for.</p><span class="more">Become a distributor <b aria-hidden="true">→</b></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey + values -->
       <section class="section journey">
         <div class="wrap journey__grid">
           <div class="journey__copy">
@@ -118,23 +255,7 @@
         </div>
       </section>
 
-      <section class="section section--gray" id="home-products">
-        <div class="wrap">
-          <div class="head-center">
-            <p class="kicker kicker--center rv">Our Products</p>
-            <h2 class="title rv">Explore Our Premium Selection</h2>
-            <div class="tabs rv" role="tablist" aria-label="Filter products" data-tabs="home">
-              <button role="tab" aria-selected="true" data-filter="all">All</button>
-              <button role="tab" aria-selected="false" data-filter="bread">Bread</button>
-              <button role="tab" aria-selected="false" data-filter="water">Premium Water</button>
-            </div>
-          </div>
-          <div class="grid" data-grid="home"></div>
-          <div class="center rv"><a class="btn btn--blue btn--lg" href="#/shop">View the full shop</a></div>
-        </div>
-      </section>
-
-      <section class="section">
+      <section class="section section--tight">
         <div class="wrap">
           <div class="head-center">
             <p class="kicker kicker--center rv">Why Choose Us</p>
@@ -149,6 +270,7 @@
         </div>
       </section>
 
+      <!-- Testimonials -->
       <section class="section section--gray">
         <div class="head-center wrap">
           <p class="kicker kicker--center rv">Testimonials</p>
@@ -164,6 +286,7 @@
         </div>
       </section>
 
+      <!-- Blog -->
       <section class="section">
         <div class="wrap">
           <div class="head-center">
@@ -190,83 +313,43 @@
       <section class="wrap cta-wrap" data-cta='{"primary":["Become a Distributor","#/partnership"],"secondary":["Shop Now","#/shop"]}'></section>
     </section>
 
-    <!-- ================= SHOP ================= -->
+    <!-- ================= SHOP (WooCommerce-style) ================= -->
     <section class="page" id="page-shop" data-title="Shop — Ajalisco Production Industries Limited">
       <div class="banner"><div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="wrap"><h1>Shop</h1><p>Discover our premium products and exclusive offers</p></div></div>
       <section class="section section--tight">
-        <div class="wrap">
+        <div class="wrap woocommerce">
+          <nav class="woocommerce-breadcrumb" aria-label="Breadcrumb"><a href="#/">Home</a> <span>/</span> Shop</nav>
           <div class="shopbar">
-            <p class="shopbar__count" id="shopCount">Showing all 7 results</p>
-            <div class="tabs tabs--sm" role="tablist" aria-label="Filter products" data-tabs="shop">
+            <p class="woocommerce-result-count" id="shopCount">Showing all 7 results</p>
+            <div class="tabs tabs--sm" role="tablist" aria-label="Product categories" data-tabs="shop">
               <button role="tab" aria-selected="true" data-filter="all">All</button>
               <button role="tab" aria-selected="false" data-filter="bread">Bread</button>
               <button role="tab" aria-selected="false" data-filter="water">Premium Water</button>
             </div>
-            <label class="select"><span class="sr">Sort products</span>
-              <select id="shopSort">
-                <option value="default">Default sorting</option>
-                <option value="low">Sort by price: low to high</option>
-                <option value="high">Sort by price: high to low</option>
+            <form class="woocommerce-ordering" onsubmit="return false">
+              <select class="orderby" id="shopSort" aria-label="Shop order">
+                <option value="menu_order">Default sorting</option>
+                <option value="price">Sort by price: low to high</option>
+                <option value="price-desc">Sort by price: high to low</option>
               </select>
-            </label>
+            </form>
           </div>
-          <div class="grid grid--shop" data-grid="shop"></div>
-          <noscript><p class="center">Small Round ₦250 · Round ₦300 · Block ₦450 · Long ₦650 · Slice ₦850 · Jumbo ₦1,700 · Bag of table water ₦300. Order on WhatsApp: +234 707 858 1881</p></noscript>
+          <div data-grid="shop"></div>
+          <noscript><p class="center">Small Round ₦250 · Round ₦300 · Block ₦450 · Long ₦650 · Slice ₦850 · Jumbo ₦1,700 · Bag of table water ₦300.</p></noscript>
         </div>
       </section>
     </section>
 
-    <!-- ================= SERVICES ================= -->
-    <section class="page" id="page-services" data-title="Services — Ajalisco Production Industries Limited">
-      <div class="banner"><div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="wrap"><h1>Services</h1><p>What we make, and how we make it</p></div></div>
+    <!-- ================= SINGLE PRODUCT ================= -->
+    <section class="page" id="page-product" data-title="Product — Ajalisco Production Industries Limited">
+      <div class="banner banner--sm"><div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="wrap"><h1 id="pTitleBanner">Product</h1></div></div>
+      <section class="section section--tight"><div class="wrap woocommerce" id="productView"></div></section>
+    </section>
 
-      <section class="section section--tight">
-        <div class="wrap">
-          <div class="head-center">
-            <p class="kicker kicker--center rv">What We Produce</p>
-            <h2 class="title rv">Explore our diverse range of quality products.</h2>
-          </div>
-          <div class="cards2">
-            <a class="mini rv" href="#/shop" data-filter-link="water"><span class="mini__icon mini__icon--blue"><svg viewBox="0 0 24 24"><path d="M12 2.7S5 10.2 5 14.6A7 7 0 0 0 19 14.6C19 10.2 12 2.7 12 2.7Z"/></svg></span><h3>Premium Water</h3><p>NAFDAC certified pure drinking water, available for homes and businesses.</p></a>
-            <a class="mini rv" style="--i:1" href="#/shop" data-filter-link="bread"><span class="mini__icon"><svg viewBox="0 0 24 24"><path d="M12 3c-4.5 0-8 2.6-8 6 0 1.4.8 2.4 2 3v6.5c0 .8.7 1.5 1.5 1.5h9c.8 0 1.5-.7 1.5-1.5V12c1.2-.6 2-1.6 2-3 0-3.4-3.5-6-8-6Z"/></svg></span><h3>Jalix Bread</h3><p>A wide variety of bread flavors, from classic white to whole wheat and more.</p></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--gray split-sec">
-        <div class="wrap split">
-          <div class="split__copy">
-            <p class="kicker rv">Premium Water</p>
-            <h2 class="title title--md rv">Premium Sachet Water</h2>
-            <p class="lede rv">Our water undergoes multi-stage filtration, UV treatment, and ozone disinfection to guarantee purity. Packaged in hygienic sachets for your convenience and safety.</p>
-            <ul class="ticks ticks--1 rv">
-              <li>Reverse Osmosis Filtration</li>
-              <li>UV &amp; Ozone Treatment</li>
-              <li>Hygienic Cold-room Storage</li>
-            </ul>
-            <a class="btn btn--green btn--lg rv" href="#/shop" data-filter-link="water">Shop Water</a>
-          </div>
-          <div class="split__media rv"><img src="assets/stacks.webp" alt="Stacked bags of Ajalisco sachet water" loading="lazy"></div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrap">
-          <div class="head-center">
-            <p class="kicker kicker--center rv">Jalix Bread</p>
-            <h2 class="title rv">Discover Your New Favorite</h2>
-          </div>
-          <div class="flavours">
-            <figure class="flavour rv"><img src="assets/flavour-sandwich.webp" alt="Jalix Sandwich Bread" loading="lazy"><figcaption>Sandwich Bread</figcaption></figure>
-            <figure class="flavour rv" style="--i:1"><img src="assets/flavour-chocolate.webp" alt="Jalix Chocolate Bread" loading="lazy"><figcaption>Chocolate Bread</figcaption></figure>
-            <figure class="flavour rv" style="--i:2"><img src="assets/flavour-creamy.webp" alt="Jalix Creamy Bliss bread" loading="lazy"><figcaption>Creamy Bliss</figcaption></figure>
-            <figure class="flavour rv" style="--i:3"><img src="assets/flavour-cocoluxe.webp" alt="Jalix Cocoluxe Bread" loading="lazy"><figcaption>Cocoluxe Bread</figcaption></figure>
-          </div>
-          <div class="center rv"><a class="btn btn--green btn--lg" href="#/shop" data-filter-link="bread">Shop Bread</a></div>
-        </div>
-      </section>
-
-      <section class="wrap cta-wrap" data-cta='{"primary":["Become a Distributor","#/partnership"],"secondary":["Request a Custom Order →","#/contact"]}'></section>
+    <!-- ================= CART ================= -->
+    <section class="page" id="page-cart" data-title="Cart — Ajalisco Production Industries Limited">
+      <div class="banner banner--sm"><div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="wrap"><h1>Cart</h1></div></div>
+      <section class="section section--tight"><div class="wrap woocommerce" id="cartView"></div></section>
     </section>
 
     <!-- ================= PARTNERSHIP ================= -->
@@ -415,7 +498,7 @@
       <div>
         <h3>Quick Links</h3>
         <ul class="footer__links">
-          <li><a href="#/about">About</a></li><li><a href="#/shop">Shop</a></li><li><a href="#/services">Services</a></li><li><a href="#/partnership">Partnership</a></li><li><a href="#/contact">Contact</a></li>
+          <li><a href="#/about">About</a></li><li><a href="#/shop">Shop</a></li><li><a href="#/partnership">Partnership</a></li><li><a href="#/contact">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -441,40 +524,10 @@
     </div>
   </footer>
 
-  <!-- Floating cart bar -->
-  <div class="orderbar" data-orderbar hidden>
-    <span class="orderbar__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/></svg></span>
-    <p><b><span data-count>0</span> <span data-items-label>items</span></b><small data-total>₦0.00</small></p>
-    <button class="btn btn--green" type="button" data-open-cart>View Cart</button>
-  </div>
-
-  <!-- Product modal -->
-  <dialog class="modal" id="productModal" aria-labelledby="pmTitle">
-    <button class="modal__close" type="button" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
-    <div class="modal__inner" id="pmBody"></div>
-  </dialog>
-
-  <!-- Cart sheet -->
-  <dialog class="sheet" data-sheet aria-labelledby="sheetTitle">
-    <form method="dialog" class="sheet__inner" data-order-form>
-      <div class="sheet__head">
-        <h2 id="sheetTitle" tabindex="-1" autofocus>Your Cart</h2>
-        <button class="icon-btn" value="close" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
-      </div>
-      <ul class="sheet__items" data-sheet-items></ul>
-      <div class="sheet__empty" data-sheet-empty><p>Your cart is empty.</p><a class="btn btn--blue" href="#/shop" data-close>Browse the shop</a></div>
-      <div class="sheet__total" data-sheet-total><span>Total</span><b data-total>₦0.00</b></div>
-      <fieldset class="sheet__fields" data-fields>
-        <div class="field"><input id="oName" name="name" type="text" placeholder=" " autocomplete="name" required><label for="oName">Full name</label></div>
-        <div class="field"><input id="oPhone" name="phone" type="tel" placeholder=" " autocomplete="tel" required><label for="oPhone">Phone number</label></div>
-        <div class="field full"><input id="oAddr" name="address" type="text" placeholder=" " autocomplete="street-address"><label for="oAddr">Delivery address (or pickup)</label></div>
-      </fieldset>
-      <button class="btn btn--whatsapp btn--lg btn--block" type="submit" value="send" data-send>
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.5-.3Z"/></svg>
-        Send Order on WhatsApp
-      </button>
-      <p class="sheet__fine">We’ll confirm availability, delivery and payment with you on WhatsApp.</p>
-    </form>
+  <!-- Mini cart (WooCommerce mini-cart pattern) -->
+  <dialog class="minicart woocommerce" id="miniCart" aria-labelledby="mcTitle">
+    <div class="minicart__head"><h2 id="mcTitle" tabindex="-1">Shopping cart</h2><button class="icon-btn" type="button" data-close aria-label="Close cart"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button></div>
+    <div class="minicart__body" id="mcBody"></div>
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
