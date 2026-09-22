@@ -28,12 +28,6 @@
   ];
   const BY_ID = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
   const BREADS = PRODUCTS.filter((p) => p.cat === "bread");
-  const FLAVOURS = [
-    { name: "Sandwich Bread", img: "assets/flavour-sandwich.webp", pack: PACK.sandwich, accent: "#D9822B", line: "Soft, even slices made for sandwiches, toast and lunch boxes." },
-    { name: "Chocolate Bread", img: "assets/flavour-chocolate.webp", pack: PACK.chocolate, accent: "#7A4322", line: "Freshly baked with a delightful chocolate flavour — soft, fluffy and loved by kids and adults." },
-    { name: "Creamy Bliss", img: "assets/flavour-creamy.webp", pack: PACK.creamy, accent: "#E0A526", line: "Smooth, creamy and comforting — a loaf that makes every breakfast better." },
-    { name: "Cocoluxe Bread", img: "assets/flavour-cocoluxe.webp", pack: PACK.cocoluxe, accent: "#C5282F", line: "A soft, velvety loaf with a rich cocoa touch — everyday luxury." },
-  ];
 
   const fmt = (n) => "₦" + n.toLocaleString("en-NG", { minimumFractionDigits: 2 });
   const priceHTML = (n) => `<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₦</span>${n.toLocaleString("en-NG", { minimumFractionDigits: 2 })}</bdi></span></span>`;
@@ -253,30 +247,6 @@
   }
   document.addEventListener("click", (e) => { const b = e.target.closest("[data-pick]"); if (b) { pickIdx = +b.dataset.pick; renderPicker(); } });
 
-  /* ------------------------- Flavour showcase -------------------- */
-  let flIdx = 0, flTimer;
-  function renderFlavours() {
-    const info = $("#flInfo"), row = $("#flRow"); if (!row) return;
-    const f = FLAVOURS[flIdx];
-    info.innerHTML = `
-      <span class="shelf__count" style="color:${f.accent}">0${flIdx + 1}<small>/0${FLAVOURS.length}</small></span>
-      <h3>${f.name}</h3>
-      <p>${f.line}</p>
-      <a class="btn btn--green btn--lg" href="#/shop" data-filter-link="bread" data-scroll="shopProducts">Shop Bread</a>`;
-    row.innerHTML = FLAVOURS.map((x, i) => `
-      <button class="shelf__pack${i === flIdx ? " is-active" : ""}" type="button" role="tab" aria-selected="${i === flIdx}" data-fl="${i}" style="--accent:${x.accent}">
-        <span class="shelf__glow" aria-hidden="true"></span>
-        <img src="${x.pack}" alt="Jalix ${x.name}">
-        <span class="shelf__shadow" aria-hidden="true"></span>
-        <span class="shelf__label">${x.name}</span>
-      </button>`).join("");
-    clearInterval(flTimer);
-    if (!reduce) flTimer = setInterval(() => { flIdx = (flIdx + 1) % FLAVOURS.length; renderFlavours(); }, 6000);
-  }
-  document.addEventListener("click", (e) => { const b = e.target.closest("[data-fl]"); if (b) { flIdx = +b.dataset.fl; renderFlavours(); } });
-  $("#fl")?.addEventListener("mouseenter", () => clearInterval(flTimer));
-  $("#fl")?.addEventListener("mouseleave", () => renderFlavours());
-
   /* ------------------------------ Toast -------------------------- */
   let toastT;
   function toast(msg, type = "ok") {
@@ -359,7 +329,7 @@
   track.insertAdjacentHTML("beforeend", track.innerHTML.replace(/<figure class="review">/g, '<figure class="review" aria-hidden="true">'));
 
   /* ------------------------------ Init --------------------------- */
-  renderGrid("home"); renderGrid("shop"); renderPicker(); renderFlavours(); refreshCart(); route();
+  renderGrid("home"); renderGrid("shop"); renderPicker(); refreshCart(); route();
 
   const loader = $("#loader"), barEl = $("#loaderBar"), num = $("#loaderNum");
   let p = 0;
