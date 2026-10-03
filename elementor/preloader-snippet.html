@@ -1,0 +1,47 @@
+<!--
+  Ajalisco preloader — NOT part of any page template.
+  Elementor has no preloader element, so this can't live in a page/header/footer
+  JSON file; it has to run on every page load, which is a site-wide concern.
+
+  HOW TO INSTALL:
+  Elementor Pro → Site Settings → Custom Code → Add New
+    - Code: paste everything below
+    - Location: Body End (or Body Start)
+    - Display Conditions: Entire Site
+  (No separate plugin needed if you have Elementor Pro. If you don't, use any
+  "Insert Headers and Footers" / code-snippets plugin instead, inserted in <body>.)
+-->
+<div id="ajx-loader" aria-hidden="true" style="position:fixed;inset:0;z-index:99999;display:grid;place-items:center;background:#fff;transition:opacity .6s ease,visibility .6s">
+  <div style="display:grid;justify-items:center;gap:18px">
+    <img src="https://joshuaetok.github.io/ajalisco-site/assets/logo.webp" alt="" style="width:120px;height:auto;animation:ajxPulse 1.4s ease-in-out infinite">
+    <div style="width:220px;height:5px;border-radius:9px;background:#DFEBFC;overflow:hidden">
+      <i id="ajx-loader-bar" style="display:block;height:100%;width:0;border-radius:9px;background:linear-gradient(90deg,#0256DB,#28A745);transition:width .1s linear"></i>
+    </div>
+    <p style="font:600 13px Outfit,sans-serif;letter-spacing:.2em;color:#0256DB;margin:0"><span id="ajx-loader-num">0</span>%</p>
+  </div>
+</div>
+<style>
+  @keyframes ajxPulse { 50% { transform: scale(1.07); } }
+  @media (prefers-reduced-motion: reduce) { #ajx-loader { display: none !important; } }
+</style>
+<script>
+(function () {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var loader = document.getElementById("ajx-loader"),
+      bar = document.getElementById("ajx-loader-bar"),
+      num = document.getElementById("ajx-loader-num"),
+      p = 0;
+  function finish() {
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
+    setTimeout(function () { loader.remove(); }, 700);
+  }
+  var t = setInterval(function () {
+    p = Math.min(100, p + 9 + Math.random() * 12);
+    num.textContent = Math.floor(p);
+    bar.style.width = p + "%";
+    if (p >= 100) { clearInterval(t); setTimeout(finish, 250); }
+  }, 70);
+  setTimeout(function () { if (document.body.contains(loader)) finish(); }, 4000);
+})();
+</script>

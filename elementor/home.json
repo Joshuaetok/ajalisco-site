@@ -1,0 +1,3927 @@
+{
+ "content": [
+  {
+   "id": "8c64c62",
+   "elType": "section",
+   "settings": {
+    "background_background": "gradient",
+    "background_color": "#0A64F0",
+    "background_color_b": "#0243A8",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 160,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "60",
+     "right": "20",
+     "bottom": "100",
+     "left": "20",
+     "isLinked": false
+    },
+    "gap": "wide",
+    "position": "relative",
+    "shape_divider_bottom": "waves",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 60,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "a7cd148",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "88874d8",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n    <style>\n    .herobub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .herobub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:herobubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes herobubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"herobub\"><i style=\"left:5%;--s:39px;--d:23s;--dl:-4s\"></i><i style=\"left:23%;--s:37px;--d:18s;--dl:-14s\"></i><i style=\"left:10%;--s:41px;--d:21s;--dl:-9s\"></i><i style=\"left:88%;--s:23px;--d:18s;--dl:-11s\"></i><i style=\"left:80%;--s:16px;--d:18s;--dl:-1s\"></i><i style=\"left:23%;--s:21px;--d:12s;--dl:-17s\"></i><i style=\"left:2%;--s:37px;--d:23s;--dl:-10s\"></i><i style=\"left:77%;--s:46px;--d:11s;--dl:-5s\"></i><i style=\"left:53%;--s:10px;--d:14s;--dl:-13s\"></i><i style=\"left:46%;--s:43px;--d:20s;--dl:-14s\"></i></div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "34d62fb",
+     "elType": "column",
+     "settings": {
+      "_column_size": 52,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "63dd464",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n<div style=\"display:flex;flex-direction:column;gap:14px;align-items:flex-start\">\n  <span style=\"display:inline-flex;align-items:center;gap:10px;padding:6px 18px 6px 8px;border-radius:999px;\n    background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);\n    font:600 13.5px Outfit,sans-serif;color:#fff\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/logo-sm.png\" alt=\"\" style=\"width:30px;height:23px;border-radius:50%;background:#fff;object-fit:contain;padding:2px\">\n    Ajalisco Production Industries Limited</span>\n  <span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;\n    background:rgba(111,195,36,.2);color:#DDFFC4;box-shadow:inset 0 0 0 1px rgba(111,195,36,.55);\n    font:600 14px Outfit,sans-serif\">\n    <span style=\"width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block\"></span>\n    Pure Quality, Delivered Fresh</span>\n</div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7cf48a9",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "c9ca608",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "\n<h1 style=\"margin:0;font:700 clamp(40px,5.6vw,66px)/1.08 Outfit,sans-serif;letter-spacing:-.02em;color:#fff\">\nExperience the taste of <span style=\"color:#fff;position:relative;white-space:nowrap\">excellence\n<svg viewBox=\"0 0 300 24\" style=\"position:absolute;left:0;bottom:-10px;width:100%;height:16px\" preserveAspectRatio=\"none\">\n<path d=\"M4 17C70 6 160 3 296 12\" fill=\"none\" stroke=\"#6FC324\" stroke-width=\"7\" stroke-linecap=\"round\"/></svg></span></h1>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ae4c969",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "01dd606",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Discover Ajalisco's premium water and wholesome Jalix bread — all crafted with the highest standards of quality and freshness.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#DCE8FF"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b0f0cfa",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7f1cc8d",
+       "elType": "section",
+       "settings": {
+        "gap": "narrow"
+       },
+       "elements": [
+        {
+         "id": "1c05bad",
+         "elType": "column",
+         "settings": {
+          "_column_size": 38,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "c3c5af5",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Shop Now",
+            "link": {
+             "url": "/shop/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#28A745",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "lg",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "e94e565",
+         "elType": "column",
+         "settings": {
+          "_column_size": 38,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "6ed29e9",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Contact Us",
+            "link": {
+             "url": "/contact/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "rgba(255,255,255,.12)",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "lg",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "59272aa",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "65e8946",
+       "elType": "section",
+       "settings": {
+        "gap": "narrow",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "rgba(255,255,255,.2)",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "0817acc",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "7e2dbc0",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<div style=\"font:700 28px Outfit,sans-serif;color:#fff;line-height:1\">6</div><div style=\"font:500 14px Nunito,sans-serif;color:#B9CDF7;margin-top:4px\">Bread sizes from ₦250</div>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "9ddf57e",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "7b49ca4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<div style=\"font:700 28px Outfit,sans-serif;color:#fff;line-height:1\">₦300</div><div style=\"font:500 14px Nunito,sans-serif;color:#B9CDF7;margin-top:4px\">Per bag of sachet water</div>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "7608bbd",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "d355a7f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<div style=\"font:700 28px Outfit,sans-serif;color:#fff;line-height:1\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:30px;height:30px;border-radius:50%;background:#fff;vertical-align:middle\"></div><div style=\"font:500 14px Nunito,sans-serif;color:#B9CDF7;margin-top:4px\">NAFDAC Registered</div>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "7b44ee9",
+     "elType": "column",
+     "settings": {
+      "_column_size": 48,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "2a26ba3",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n<div style=\"position:relative;max-width:580px;margin:0 auto;aspect-ratio:1/.95\">\n  <div style=\"position:absolute;inset:4% 6% 14% 6%;border-radius:50%;border:1.5px dashed rgba(255,255,255,.3)\"></div>\n  <div style=\"position:absolute;inset:16% 18% 24% 18%;border-radius:50%;border:1.5px solid rgba(255,255,255,.16)\"></div>\n  <div style=\"position:absolute;inset:12% 10% 20%;border-radius:50%;\n       background:radial-gradient(circle,rgba(255,255,255,.5),rgba(160,200,255,.2) 45%,transparent 70%)\"></div>\n  <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/lineup.webp\" alt=\"Jalix bread and Ajalisco water\"\n       style=\"position:absolute;left:50%;top:50%;width:92%;transform:translate(-50%,-52%);\n       filter:drop-shadow(0 30px 24px rgba(0,20,80,.45))\">\n  <div style=\"position:absolute;left:-2%;top:12%;padding:10px 18px;border-radius:16px;background:rgba(255,255,255,.95);\n       box-shadow:0 20px 34px -18px rgba(0,20,80,.7);line-height:1.15\">\n    <small style=\"font:600 12px Nunito,sans-serif;color:#7A7A7A\">Jalix Bread from</small><br>\n    <b style=\"font:700 24px Outfit,sans-serif;color:#0256DB\">₦250</b></div>\n  <div style=\"position:absolute;right:0;top:4%;display:flex;align-items:center;gap:9px;padding:10px 16px;\n       border-radius:16px;background:#28A745;color:#fff;font:600 14px Outfit,sans-serif\">\n    <span style=\"width:9px;height:9px;border-radius:50%;background:#fff\"></span> Baked fresh daily</div>\n  <div style=\"position:absolute;right:2%;bottom:8%;padding:10px 18px;border-radius:16px;background:rgba(255,255,255,.95);\n       box-shadow:0 20px 34px -18px rgba(0,20,80,.7);line-height:1.15\">\n    <small style=\"font:600 12px Nunito,sans-serif;color:#7A7A7A\">Sachet Water</small><br>\n    <b style=\"font:700 24px Outfit,sans-serif;color:#0256DB\">₦300<em style=\"font:600 13px Nunito,sans-serif;\n      color:#7A7A7A;font-style:normal\"> /bag</em></b></div>\n</div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "76dd53d",
+   "elType": "section",
+   "settings": {
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "e865dcc",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "a3025e2",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n<style>\n@keyframes tapemarq { to { transform: translateX(-50%); } }\n.tape-wrap { position:relative; height:140px; margin-top:-56px; z-index:5; }\n.tape { position:absolute; left:-6%; width:112%; padding:15px 0; overflow:hidden;\n  box-shadow:0 16px 30px -18px rgba(1,30,90,.55); }\n.tape-a { top:16px; background:#28A745; transform:rotate(-2deg); }\n.tape-b { top:48px; background:#1C244B; transform:rotate(1.6deg); }\n.tape-track { display:flex; align-items:center; gap:30px; width:max-content; animation:tapemarq 46s linear infinite; }\n.tape-track span { font:700 20px Outfit,sans-serif; letter-spacing:.05em; text-transform:uppercase; color:#fff; white-space:nowrap; }\n.tape-a span:nth-of-type(even) { color:#1C244B; }\n.tape-b span:nth-of-type(even) { color:#6FC324; }\n.tape i { width:12px;height:12px;background:#fff;border-radius:3px;transform:rotate(45deg);display:inline-block }\n.tape-b i { background:#28A745; }\n</style>\n<div class=\"tape-wrap\">\n  <div class=\"tape tape-a\"><div class=\"tape-track\">\n    <span>Jalix Bread</span><i></i><span>Premium Sachet Water</span><i></i><span>NAFDAC Registered</span><i></i><span>Pure Quality, Delivered Fresh</span><i></i>\n    <span>Jalix Bread</span><i></i><span>Premium Sachet Water</span><i></i><span>NAFDAC Registered</span><i></i><span>Pure Quality, Delivered Fresh</span><i></i>\n  </div></div>\n  <div class=\"tape tape-b\"><div class=\"tape-track\" style=\"animation-direction:reverse;animation-duration:54s\">\n    <span>Baked fresh daily</span><i></i><span>Six loaf sizes from ₦250</span><i></i><span>Bag of water ₦300</span><i></i><span>Proudly made in Nigeria</span><i></i>\n    <span>Baked fresh daily</span><i></i><span>Six loaf sizes from ₦250</span><i></i><span>Bag of water ₦300</span><i></i><span>Proudly made in Nigeria</span><i></i>\n  </div></div>\n</div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "fc2d45b",
+   "elType": "section",
+   "settings": {
+    "background_background": "gradient",
+    "background_color": "#012F7E",
+    "background_color_b": "#1C74FF",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 120,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "36",
+     "bottom": "48",
+     "left": "36",
+     "isLinked": false
+    },
+    "gap": "wide",
+    "border_radius": {
+     "unit": "px",
+     "top": "30",
+     "right": "30",
+     "bottom": "30",
+     "left": "30",
+     "isLinked": false
+    },
+    "margin": {
+     "unit": "px",
+     "top": "50",
+     "right": "20",
+     "bottom": "10",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "2263d90",
+     "elType": "column",
+     "settings": {
+      "_column_size": 55,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "fc7aabc",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Jalix Bread</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "01ad046",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "10c5831",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 clamp(30px,4vw,48px)/1.08 Outfit,sans-serif;color:#fff;letter-spacing:-.02em\">Fresh from the oven,<br><span style=\"color:#6FC324\">from just ₦250</span></h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "378b538",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5bae57c",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "One soft, golden Jalix loaf in six sizes — from the Small Round for a quick bite to the Jumbo that feeds the whole house.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#DCE8FF"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2a7bb0c",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "27eacca",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "\n    <div style=\"display:flex;flex-wrap:wrap;gap:8px\">\n    <div style=\"padding:7px 14px;border-radius:12px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);font:700 17px Outfit,sans-serif;color:#fff;line-height:1.2\"><div style=\"font:600 11.5px Nunito,sans-serif;color:#BBD0F7;letter-spacing:.06em;text-transform:uppercase\">Small Round</div>₦250</div><div style=\"padding:7px 14px;border-radius:12px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);font:700 17px Outfit,sans-serif;color:#fff;line-height:1.2\"><div style=\"font:600 11.5px Nunito,sans-serif;color:#BBD0F7;letter-spacing:.06em;text-transform:uppercase\">Round</div>₦300</div><div style=\"padding:7px 14px;border-radius:12px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);font:700 17px Outfit,sans-serif;color:#fff;line-height:1.2\"><div style=\"font:600 11.5px Nunito,sans-serif;color:#BBD0F7;letter-spacing:.06em;text-transform:uppercase\">Block</div>₦450</div><div style=\"padding:7px 14px;border-radius:12px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);font:700 17px Outfit,sans-serif;color:#fff;line-height:1.2\"><div style=\"font:600 11.5px Nunito,sans-serif;color:#BBD0F7;letter-spacing:.06em;text-transform:uppercase\">Long</div>₦650</div><div style=\"padding:7px 14px;border-radius:12px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);font:700 17px Outfit,sans-serif;color:#fff;line-height:1.2\"><div style=\"font:600 11.5px Nunito,sans-serif;color:#BBD0F7;letter-spacing:.06em;text-transform:uppercase\">Slice</div>₦850</div><div style=\"padding:7px 14px;border-radius:12px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);font:700 17px Outfit,sans-serif;color:#fff;line-height:1.2\"><div style=\"font:600 11.5px Nunito,sans-serif;color:#BBD0F7;letter-spacing:.06em;text-transform:uppercase\">Jumbo</div>₦1,700</div>\n    </div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "24e92c3",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6b9b28e",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Shop Bread",
+        "link": {
+         "url": "/product-category/jalix-bread/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#28A745",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": false
+        },
+        "size": "lg",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15.5,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "fd12518",
+     "elType": "column",
+     "settings": {
+      "_column_size": 45,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "a1b49bc",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n<div style=\"position:relative;display:grid;place-items:center;min-height:300px\">\n  <span style=\"position:absolute;font:800 clamp(90px,14vw,200px)/1 Outfit,sans-serif;letter-spacing:-.04em;\n    color:rgba(255,255,255,.07);white-space:nowrap\">JALIX</span>\n  <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/loaves.webp\" alt=\"Jalix bread sizes\" style=\"position:relative;z-index:1;width:min(100%,420px);\n    filter:drop-shadow(0 34px 26px rgba(0,20,80,.55))\">\n  <div style=\"position:absolute;z-index:2;right:4%;top:0;width:110px;aspect-ratio:1;display:grid;place-content:center;\n    text-align:center;background:#28A745;color:#fff;line-height:1;border-radius:50%;\n    box-shadow:0 20px 30px -14px rgba(0,0,0,.4)\">\n    <small style=\"font:600 11px Nunito,sans-serif;text-transform:uppercase;letter-spacing:.1em\">From</small>\n    <b style=\"font:800 25px Outfit,sans-serif\">₦250</b></div>\n</div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "9c4d531",
+   "elType": "section",
+   "settings": {
+    "background_background": "classic",
+    "background_color": "#F5F5F5",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "df623e6",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "b298bc8",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Find your loaf</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d524870",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "4355fa8",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 36px Outfit,sans-serif;letter-spacing:-.02em;color:#0256DB;text-align:center\">Which Jalix size fits your table?</h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6678779",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9c8de4f",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[products category=\"jalix-bread\" limit=\"6\" columns=\"6\" orderby=\"menu_order\" order=\"ASC\"]"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "ede865c",
+   "elType": "section",
+   "settings": {
+    "background_background": "gradient",
+    "background_color": "#FFFFFF",
+    "background_color_b": "#AAD0F0",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 140,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "36",
+     "bottom": "48",
+     "left": "36",
+     "isLinked": false
+    },
+    "gap": "wide",
+    "border_radius": {
+     "unit": "px",
+     "top": "30",
+     "right": "30",
+     "bottom": "30",
+     "left": "30",
+     "isLinked": false
+    },
+    "margin": {
+     "unit": "px",
+     "top": "10",
+     "right": "20",
+     "bottom": "10",
+     "left": "20",
+     "isLinked": false
+    },
+    "position": "relative"
+   },
+   "elements": [
+    {
+     "id": "e77c1c7",
+     "elType": "column",
+     "settings": {
+      "_column_size": 55,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "000d808",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n    <style>\n    .waterbub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .waterbub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(2,86,219,.95) 0 7%, rgba(2,86,219,.2) 22%, rgba(2,86,219,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(2,86,219,.4); animation:waterbubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes waterbubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"waterbub\"><i style=\"left:93%;--s:18px;--d:21s;--dl:-7s\"></i><i style=\"left:56%;--s:29px;--d:18s;--dl:-11s\"></i><i style=\"left:94%;--s:35px;--d:14s;--dl:-4s\"></i><i style=\"left:76%;--s:19px;--d:17s;--dl:-1s\"></i><i style=\"left:42%;--s:43px;--d:18s;--dl:-3s\"></i><i style=\"left:6%;--s:18px;--d:12s;--dl:-13s\"></i></div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a0952db",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#fff;color:#0256DB;font:600 14px Outfit,sans-serif\">Premium Water</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f775a85",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0c7a9d4",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 clamp(30px,4vw,48px)/1.08 Outfit,sans-serif;color:#16204A;letter-spacing:-.02em\">Pure. Sealed.<br><span style=\"color:#0256DB\">Refreshing.</span></h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3cafc31",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "69b200a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "A bag of Ajalisco table water — multi-stage purified and NAFDAC registered, so every sachet tastes clean.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16.5,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#54595F"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "4b746e1",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a751b16",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<div style=\"font:700 40px Outfit,sans-serif;color:#16204A\">₦300 <small style=\"font:600 16px Nunito,sans-serif;color:#7A7A7A\">per bag</small></div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "40a4c01",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a8eeac3",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Multi-stage filtered",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "NAFDAC registered",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "Sealed fresh",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "view": "inline",
+        "icon_color": "#28A745",
+        "text_color": "#012F7E",
+        "space_between": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "text_typography_typography": "custom",
+        "text_typography_font_family": "Outfit",
+        "text_typography_font_size": {
+         "unit": "px",
+         "size": 13.5,
+         "sizes": []
+        },
+        "text_typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b0d4aaa",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3f45733",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Shop Water",
+        "link": {
+         "url": "/product-category/premium-water/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#0256DB",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": false
+        },
+        "size": "lg",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15.5,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1d98f35",
+     "elType": "column",
+     "settings": {
+      "_column_size": 42,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "2fedb48",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n<div style=\"position:relative;display:flex;justify-content:center\">\n  <div style=\"position:relative;width:min(100%,320px);aspect-ratio:1;border-radius:50%;overflow:hidden;\n    background:radial-gradient(circle at 50% 35%,#fff,#B7D0FA);\n    box-shadow:0 30px 50px -24px rgba(2,60,160,.6),0 0 0 10px rgba(255,255,255,.55)\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/sachet.webp\" alt=\"Ajalisco sachet water\" style=\"width:100%;height:100%;object-fit:cover;\n      mix-blend-mode:multiply;filter:brightness(1.5) contrast(1.06) saturate(1.2);transform:scale(1.15)\">\n  </div>\n  <span style=\"position:absolute;left:4%;top:2%;display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;\n    border-radius:999px;background:#fff;font:600 13.5px Outfit,sans-serif;color:#16204A;\n    box-shadow:0 14px 24px -12px rgba(0,0,0,.3)\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:26px;height:26px;border-radius:50%\"> NAFDAC</span>\n  <span style=\"position:absolute;right:2%;bottom:8%;display:inline-flex;align-items:center;gap:9px;padding:9px 16px;\n    border-radius:999px;background:#28A745;color:#fff;font:600 13.5px Outfit,sans-serif\">\n    <span style=\"width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block\"></span> Sealed fresh</span>\n</div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "ce6bb95",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "eac7543",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "e337a90",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Our Products</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f8f38dc",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "180a973",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 36px Outfit,sans-serif;letter-spacing:-.02em;color:#0256DB;text-align:center\">Explore Our Premium Selection</h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ddbe58c",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f9b3d4b",
+       "elType": "section",
+       "settings": {
+        "content_position": "middle",
+        "gap": "narrow"
+       },
+       "elements": [
+        {
+         "id": "2d556a0",
+         "elType": "column",
+         "settings": {
+          "_column_size": 16,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "523f408",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "All",
+            "link": {
+             "url": "/shop/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#28A745",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "lg",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "551ad50",
+         "elType": "column",
+         "settings": {
+          "_column_size": 16,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "65de246",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Bread",
+            "link": {
+             "url": "/product-category/jalix-bread/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#56A428",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "lg",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "e758aad",
+         "elType": "column",
+         "settings": {
+          "_column_size": 22,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "ceda082",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Premium Water",
+            "link": {
+             "url": "/product-category/premium-water/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#56A428",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "lg",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "26d0c8d",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "da3cb09",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[products limit=\"4\" columns=\"4\" orderby=\"menu_order\" order=\"ASC\"]"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "e3aa573",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "fa1ba81",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "View the full shop",
+        "link": {
+         "url": "/shop/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#0256DB",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": false
+        },
+        "size": "lg",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15.5,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2ce52a1",
+   "elType": "section",
+   "settings": {
+    "background_background": "gradient",
+    "background_color": "#1C244B",
+    "background_color_b": "#10193C",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 160,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    },
+    "gap": "wide",
+    "position": "relative"
+   },
+   "elements": [
+    {
+     "id": "ca6c3b7",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "d12b4cc",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n    <style>\n    .purifybub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .purifybub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:purifybubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes purifybubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"purifybub\"><i style=\"left:54%;--s:17px;--d:21s;--dl:-10s\"></i><i style=\"left:54%;--s:17px;--d:18s;--dl:-11s\"></i><i style=\"left:20%;--s:25px;--d:24s;--dl:-18s\"></i><i style=\"left:43%;--s:44px;--d:24s;--dl:-6s\"></i><i style=\"left:21%;--s:44px;--d:19s;--dl:-10s\"></i><i style=\"left:68%;--s:16px;--d:15s;--dl:-17s\"></i></div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "4dc678a",
+     "elType": "column",
+     "settings": {
+      "_column_size": 45,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "369445b",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "https://joshuaetok.github.io/ajalisco-site/assets/stacks.webp",
+         "id": 0,
+         "alt": "Stacked bags of Ajalisco sachet water",
+         "source": "library"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6626bf3",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "129f36b",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:999px;background:rgba(255,255,255,.95);color:#1C244B;font:600 14.5px Outfit,sans-serif\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:34px;height:34px;border-radius:50%\"> NAFDAC Registered</span>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "dee71a6",
+     "elType": "column",
+     "settings": {
+      "_column_size": 55,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "d0b51e1",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:rgba(255,255,255,.12);color:#FFFFFF;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Premium Water</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2c54110",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2a39597",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 clamp(30px,4vw,44px)/1.1 Outfit,sans-serif;color:#fff\">Purified in stages.<br>Sealed for safety.</h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9bb7f85",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "8866a04",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Our water undergoes multi-stage filtration, UV treatment and ozone disinfection to guarantee purity — packaged in hygienic sachets for your convenience and safety.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16.5,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#C3D2F5"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "fb2ac0d",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "24ab035",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "\n    <div style=\"display:flex;align-items:center;gap:18px;padding:16px 20px;border-radius:16px;\n      background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);margin-bottom:12px\">\n      <span style=\"flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:14px;\n        background:#28A745;color:#fff;font:700 18px Outfit,sans-serif\">01</span>\n      <div><b style=\"display:block;font:600 18px Outfit,sans-serif;color:#fff\">Reverse Osmosis Filtration</b>\n      <small style=\"font:400 14.5px Nunito,sans-serif;color:#B4C5EE\">Removes impurities from the source water.</small></div>\n    </div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f4b5d7b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "\n    <div style=\"display:flex;align-items:center;gap:18px;padding:16px 20px;border-radius:16px;\n      background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);margin-bottom:12px\">\n      <span style=\"flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:14px;\n        background:#28A745;color:#fff;font:700 18px Outfit,sans-serif\">02</span>\n      <div><b style=\"display:block;font:600 18px Outfit,sans-serif;color:#fff\">UV &amp; Ozone Treatment</b>\n      <small style=\"font:400 14.5px Nunito,sans-serif;color:#B4C5EE\">Disinfects the water without harsh additives.</small></div>\n    </div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3042ac6",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "\n    <div style=\"display:flex;align-items:center;gap:18px;padding:16px 20px;border-radius:16px;\n      background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);margin-bottom:12px\">\n      <span style=\"flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:14px;\n        background:#28A745;color:#fff;font:700 18px Outfit,sans-serif\">03</span>\n      <div><b style=\"display:block;font:600 18px Outfit,sans-serif;color:#fff\">Hygienic Cold-room Storage</b>\n      <small style=\"font:400 14.5px Nunito,sans-serif;color:#B4C5EE\">Kept clean and cool until it reaches you.</small></div>\n    </div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "13fe054",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "61d6cb6",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Shop Water",
+        "link": {
+         "url": "/product-category/premium-water/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#28A745",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": false
+        },
+        "size": "lg",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15.5,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1d17ce6",
+   "elType": "section",
+   "settings": {
+    "background_background": "classic",
+    "background_color": "#F5F5F5",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "3ea9275",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "fc21448",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Made for every moment</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b7c78c9",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "46cb7a7",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 36px Outfit,sans-serif;letter-spacing:-.02em;color:#0256DB;text-align:center\">From breakfast tables to big events</h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "df99782",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1b6ac0f",
+       "elType": "section",
+       "settings": {
+        "gap": "wide"
+       },
+       "elements": [
+        {
+         "id": "4a14c5a",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#0256DB",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "26",
+           "bottom": "26",
+           "left": "26",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "b8a8143",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "title_text": "Homes & families",
+            "description_text": "Fresh bread for breakfast and cool, clean water for everyone at home.<br><br><span style=\"color:#fff;font-weight:700\">Shop now →</span>",
+            "position": "top",
+            "icon_color": "#FFFFFF",
+            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,.9)",
+            "link": {
+             "url": "/shop/"
+            },
+            "shape": "rounded",
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            },
+            "icon": "fas fa-home",
+            "selected_icon": {
+             "value": "fas fa-home",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "5603a40",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#28A745",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "26",
+           "bottom": "26",
+           "left": "26",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "d246c1f",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "title_text": "Caterers & events",
+            "description_text": "Sachet water that looks professional and bread that sells out.<br><br><span style=\"color:#fff;font-weight:700\">Talk to us →</span>",
+            "position": "top",
+            "icon_color": "#FFFFFF",
+            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,.9)",
+            "link": {
+             "url": "/contact/"
+            },
+            "shape": "rounded",
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            },
+            "icon": "fas fa-utensils",
+            "selected_icon": {
+             "value": "fas fa-utensils",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "97ca7c5",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#1C244B",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "26",
+           "bottom": "26",
+           "left": "26",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "24dcda3",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "title_text": "Schools & canteens",
+            "description_text": "Reliable daily supply for breakfast plans and school events.<br><br><span style=\"color:#fff;font-weight:700\">Talk to us →</span>",
+            "position": "top",
+            "icon_color": "#FFFFFF",
+            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,.9)",
+            "link": {
+             "url": "/contact/"
+            },
+            "shape": "rounded",
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            },
+            "icon": "fas fa-graduation-cap",
+            "selected_icon": {
+             "value": "fas fa-graduation-cap",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "b98683e",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#F7B650",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "26",
+           "bottom": "26",
+           "left": "26",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "e393315",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "title_text": "Shops & supermarkets",
+            "description_text": "Branded, well-packaged products your customers already ask for.<br><br><span style=\"color:#fff;font-weight:700\">Become a distributor →</span>",
+            "position": "top",
+            "icon_color": "#FFFFFF",
+            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,.9)",
+            "link": {
+             "url": "/partnership/"
+            },
+            "shape": "rounded",
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            },
+            "icon": "fas fa-store",
+            "selected_icon": {
+             "value": "fas fa-store",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "78b8e42",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "gap": "wide",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "6739c6f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "6df8bc9",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Our Humble Beginnings</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1282da0",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6d1727e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Our Journey in the Production Industry",
+        "header_size": "h2",
+        "title_color": "#0256DB",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 32,
+         "sizes": []
+        },
+        "typography_font_weight": "700"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9587b4b",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a02444e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Founded on a commitment to quality and community, Ajalisco Production Industries Limited brings together the purest natural resources and state-of-the-art technology to deliver exceptional products.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16.5,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#54595F"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "66f9bf1",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "92a95af",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Excellence in every product",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "Quality food & drinks",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "Freshness and safety",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "Secured shopping",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "icon_color": "#28A745",
+        "text_color": "#16204A",
+        "space_between": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "text_typography_typography": "custom",
+        "text_typography_font_family": "Nunito",
+        "text_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "text_typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "c3368ae",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6a084d2",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "More About Us",
+        "link": {
+         "url": "/about/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#28A745",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": false
+        },
+        "size": "lg",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15.5,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "2014361",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": null,
+      "content_position": "center",
+      "text_align": "center"
+     },
+     "elements": [
+      {
+       "id": "9975fcb",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "https://joshuaetok.github.io/ajalisco-site/assets/kitchen.webp",
+         "id": 0,
+         "alt": "Ajalisco bottled water and sachet on a kitchen counter",
+         "source": "library"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ae25edf",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "efae045",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "https://joshuaetok.github.io/ajalisco-site/assets/stacks.webp",
+         "id": 0,
+         "alt": "Stacked bags of Ajalisco sachet water",
+         "source": "library"
+        },
+        "image_size": "full",
+        "align": "center",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "87293f4",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "35f7da3",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<div style=\"text-align:center;padding:10px 24px;border-radius:999px;background:#FFFFFF;box-shadow:0 6px 18px -8px rgba(28,36,75,.3);display:inline-block\"><b style=\"font:700 22px Outfit,sans-serif;color:#16204A\">22+ yrs</b> <span style=\"font:600 12px Outfit,sans-serif;color:#7A7A7A;text-transform:uppercase;letter-spacing:.06em\">Leadership experience</span></div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a455d75",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "7eca377",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "df6ceab",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Why Choose Us</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "cb43840",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a7a0b62",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 36px Outfit,sans-serif;letter-spacing:-.02em;color:#0256DB;text-align:center\">Our Commitment to Excellence</h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "e00d8e3",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ba9c706",
+       "elType": "section",
+       "settings": {
+        "gap": "wide"
+       },
+       "elements": [
+        {
+         "id": "b5f7993",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "3f0cbd8",
+           "elType": "section",
+           "settings": {
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "padding": {
+             "unit": "px",
+             "top": "30",
+             "right": "20",
+             "bottom": "30",
+             "left": "20",
+             "isLinked": false
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "18",
+             "right": "18",
+             "bottom": "18",
+             "left": "18",
+             "isLinked": false
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "4",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#0256DB",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 10,
+             "blur": 26,
+             "spread": -14,
+             "color": "rgba(28,36,75,.1)"
+            }
+           },
+           "elements": [
+            {
+             "id": "8a70548",
+             "elType": "column",
+             "settings": {
+              "_column_size": 100,
+              "_inline_size": null,
+              "content_position": "center",
+              "text_align": "center"
+             },
+             "elements": [
+              {
+               "id": "c46213c",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "title_text": "Certified Quality",
+                "description_text": "NAFDAC Approved. Our products meet the highest quality standards.",
+                "position": "top",
+                "icon_color": "#28A745",
+                "icon_background_background": "classic",
+                "icon_bg_background": "classic",
+                "icon_primary_color": "#28A745",
+                "icon_secondary_color": "#DFEBFC",
+                "title_color": "#0256DB",
+                "description_color": "#7A7A7A",
+                "icon_space": {
+                 "unit": "px",
+                 "size": 18,
+                 "sizes": []
+                },
+                "icon_size": {
+                 "unit": "px",
+                 "size": 28,
+                 "sizes": []
+                },
+                "shape": "circle",
+                "icon": "fas fa-award",
+                "selected_icon": {
+                 "value": "fas fa-award",
+                 "library": "fa-solid"
+                },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_size": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "description_typography_font_weight": "400",
+                "text_align": "center"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "a6a7475",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "e89e379",
+           "elType": "section",
+           "settings": {
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "padding": {
+             "unit": "px",
+             "top": "30",
+             "right": "20",
+             "bottom": "30",
+             "left": "20",
+             "isLinked": false
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "18",
+             "right": "18",
+             "bottom": "18",
+             "left": "18",
+             "isLinked": false
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "4",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#0256DB",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 10,
+             "blur": 26,
+             "spread": -14,
+             "color": "rgba(28,36,75,.1)"
+            }
+           },
+           "elements": [
+            {
+             "id": "9ad6238",
+             "elType": "column",
+             "settings": {
+              "_column_size": 100,
+              "_inline_size": null,
+              "content_position": "center",
+              "text_align": "center"
+             },
+             "elements": [
+              {
+               "id": "2cd7669",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "title_text": "Eco-Friendly",
+                "description_text": "Sustainable sources and packaging. We care about our environment.",
+                "position": "top",
+                "icon_color": "#28A745",
+                "icon_background_background": "classic",
+                "icon_bg_background": "classic",
+                "icon_primary_color": "#28A745",
+                "icon_secondary_color": "#DFEBFC",
+                "title_color": "#0256DB",
+                "description_color": "#7A7A7A",
+                "icon_space": {
+                 "unit": "px",
+                 "size": 18,
+                 "sizes": []
+                },
+                "icon_size": {
+                 "unit": "px",
+                 "size": 28,
+                 "sizes": []
+                },
+                "shape": "circle",
+                "icon": "fas fa-leaf",
+                "selected_icon": {
+                 "value": "fas fa-leaf",
+                 "library": "fa-solid"
+                },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_size": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "description_typography_font_weight": "400",
+                "text_align": "center"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "09a4de8",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "d7fb038",
+           "elType": "section",
+           "settings": {
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "padding": {
+             "unit": "px",
+             "top": "30",
+             "right": "20",
+             "bottom": "30",
+             "left": "20",
+             "isLinked": false
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "18",
+             "right": "18",
+             "bottom": "18",
+             "left": "18",
+             "isLinked": false
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "4",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#0256DB",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 10,
+             "blur": 26,
+             "spread": -14,
+             "color": "rgba(28,36,75,.1)"
+            }
+           },
+           "elements": [
+            {
+             "id": "69f345b",
+             "elType": "column",
+             "settings": {
+              "_column_size": 100,
+              "_inline_size": null,
+              "content_position": "center",
+              "text_align": "center"
+             },
+             "elements": [
+              {
+               "id": "1096e47",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "title_text": "Development",
+                "description_text": "Supporting Nigerian jobs & families. We grow with our community.",
+                "position": "top",
+                "icon_color": "#28A745",
+                "icon_background_background": "classic",
+                "icon_bg_background": "classic",
+                "icon_primary_color": "#28A745",
+                "icon_secondary_color": "#DFEBFC",
+                "title_color": "#0256DB",
+                "description_color": "#7A7A7A",
+                "icon_space": {
+                 "unit": "px",
+                 "size": 18,
+                 "sizes": []
+                },
+                "icon_size": {
+                 "unit": "px",
+                 "size": 28,
+                 "sizes": []
+                },
+                "shape": "circle",
+                "icon": "fas fa-users",
+                "selected_icon": {
+                 "value": "fas fa-users",
+                 "library": "fa-solid"
+                },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_size": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "description_typography_font_weight": "400",
+                "text_align": "center"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "b791c02",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "c2a94e1",
+           "elType": "section",
+           "settings": {
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "padding": {
+             "unit": "px",
+             "top": "30",
+             "right": "20",
+             "bottom": "30",
+             "left": "20",
+             "isLinked": false
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "18",
+             "right": "18",
+             "bottom": "18",
+             "left": "18",
+             "isLinked": false
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "4",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#0256DB",
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 10,
+             "blur": 26,
+             "spread": -14,
+             "color": "rgba(28,36,75,.1)"
+            }
+           },
+           "elements": [
+            {
+             "id": "ecbe873",
+             "elType": "column",
+             "settings": {
+              "_column_size": 100,
+              "_inline_size": null,
+              "content_position": "center",
+              "text_align": "center"
+             },
+             "elements": [
+              {
+               "id": "5c21db1",
+               "elType": "widget",
+               "widgetType": "icon-box",
+               "settings": {
+                "title_text": "Reliable Delivery",
+                "description_text": "Fast, dependable distribution network. We deliver on our promises.",
+                "position": "top",
+                "icon_color": "#28A745",
+                "icon_background_background": "classic",
+                "icon_bg_background": "classic",
+                "icon_primary_color": "#28A745",
+                "icon_secondary_color": "#DFEBFC",
+                "title_color": "#0256DB",
+                "description_color": "#7A7A7A",
+                "icon_space": {
+                 "unit": "px",
+                 "size": 18,
+                 "sizes": []
+                },
+                "icon_size": {
+                 "unit": "px",
+                 "size": 28,
+                 "sizes": []
+                },
+                "shape": "circle",
+                "icon": "fas fa-truck",
+                "selected_icon": {
+                 "value": "fas fa-truck",
+                 "library": "fa-solid"
+                },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_size": {
+                 "unit": "px",
+                 "size": 20,
+                 "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "description_typography_font_weight": "400",
+                "text_align": "center"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8b280c9",
+   "elType": "section",
+   "settings": {
+    "background_background": "classic",
+    "background_color": "#F5F5F5",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "b31b741",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "49df330",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Testimonials</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "759005f",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "dce2970",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 36px Outfit,sans-serif;letter-spacing:-.02em;color:#0256DB;text-align:center\">What Our Customers Say</h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "669a04a",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7084f07",
+       "elType": "widget",
+       "widgetType": "testimonial-carousel",
+       "settings": {
+        "slides_to_show": "3",
+        "slides_to_show_tablet": "2",
+        "slides_to_show_mobile": "1",
+        "navigation": "dots",
+        "autoplay": "yes",
+        "testimonials": [
+         {
+          "testimonial_content": "The sandwich Jalix bread is always fresh, soft, and delicious. My customers keep asking for it every morning — it sells out so fast.",
+          "testimonial_name": "Nnenna U.",
+          "testimonial_job": "Caterer"
+         },
+         {
+          "testimonial_content": "Ajalisco Premium Water stays cool and fresh all day. Even under the sun at site, the sachets don’t burst and the taste stays clean.",
+          "testimonial_name": "Ikechukwu O.",
+          "testimonial_job": "Civil Engineer"
+         },
+         {
+          "testimonial_content": "For every event, we use Ajalisco sachet water. It’s affordable, clean, and nicely branded. My clients love how professional it looks.",
+          "testimonial_name": "Emeka Obot",
+          "testimonial_job": "Event Planner"
+         },
+         {
+          "testimonial_content": "Our students and staff enjoy all Jalix bread flavors. Fruit and milk especially go fast. It’s part of our school’s daily breakfast plan.",
+          "testimonial_name": "Adebayo A.",
+          "testimonial_job": "School Administrator"
+         }
+        ],
+        "name_color": "#0256DB",
+        "job_color": "#7A7A7A",
+        "content_color": "#54595F",
+        "content_typography_typography": "custom",
+        "content_typography_font_family": "Nunito",
+        "content_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "content_typography_font_weight": "400",
+        "content_typography_line_height": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "eb714df",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "7fb58a7",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "f5e61e1",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Blog</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5bd4974",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "14dc945",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<h2 style=\"margin:0;font:700 36px Outfit,sans-serif;letter-spacing:-.02em;color:#0256DB;text-align:center\">Latest News & Insights</h2>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f9ec318",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7bef936",
+       "elType": "section",
+       "settings": {
+        "gap": "wide"
+       },
+       "elements": [
+        {
+         "id": "f387386",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "644c1c2",
+           "elType": "section",
+           "settings": {
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "24",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": false
+            },
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 14,
+             "blur": 34,
+             "spread": -18,
+             "color": "rgba(28,36,75,.14)"
+            }
+           },
+           "elements": [
+            {
+             "id": "7fb309e",
+             "elType": "column",
+             "settings": {
+              "_column_size": 100,
+              "_inline_size": null,
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "22",
+               "bottom": "0",
+               "left": "22",
+               "isLinked": false
+              }
+             },
+             "elements": [
+              {
+               "id": "66d15fb",
+               "elType": "widget",
+               "widgetType": "image",
+               "settings": {
+                "image": {
+                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-hydration.webp",
+                 "id": 0,
+                 "alt": "Hydration Myths Busted: Expert Advice on Staying Hydrated in Nigeria",
+                 "source": "library"
+                },
+                "image_size": "full",
+                "link_to": "custom",
+                "link": {
+                 "url": "https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/",
+                 "is_external": "",
+                 "nofollow": ""
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "c76f157",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "1aeb643",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<a href=\"https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Hydration Myths Busted: Expert Advice on Staying Hydrated in Nigeria</h3></a>"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "02e1cfe",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 8,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "10b8288",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "In Nigeria’s tropical climate, staying hydrated isn’t just a health suggestion — it’s a daily survival strategy. With scorching heat…",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                 "unit": "em",
+                 "size": 1.7,
+                 "sizes": []
+                },
+                "text_color": "#7A7A7A"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "768a4c1",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "b10d532",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<a href=\"https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "83e822b",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "eb0360b",
+           "elType": "section",
+           "settings": {
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "24",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": false
+            },
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 14,
+             "blur": 34,
+             "spread": -18,
+             "color": "rgba(28,36,75,.14)"
+            }
+           },
+           "elements": [
+            {
+             "id": "de2926d",
+             "elType": "column",
+             "settings": {
+              "_column_size": 100,
+              "_inline_size": null,
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "22",
+               "bottom": "0",
+               "left": "22",
+               "isLinked": false
+              }
+             },
+             "elements": [
+              {
+               "id": "9909ce6",
+               "elType": "widget",
+               "widgetType": "image",
+               "settings": {
+                "image": {
+                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-quality.webp",
+                 "id": 0,
+                 "alt": "Quality Matters: Our Multi-Stage Testing Protocol for Sachet and Bottled Water",
+                 "source": "library"
+                },
+                "image_size": "full",
+                "link_to": "custom",
+                "link": {
+                 "url": "https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/",
+                 "is_external": "",
+                 "nofollow": ""
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "437a35b",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "d91500d",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<a href=\"https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Quality Matters: Our Multi-Stage Testing Protocol for Sachet and Bottled Water</h3></a>"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "7a2531b",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 8,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "7cf8469",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "In Nigeria’s fast-growing bottled and sachet water industry, not all water is created equal. While clear packaging may give the illusion of purity…",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                 "unit": "em",
+                 "size": 1.7,
+                 "sizes": []
+                },
+                "text_color": "#7A7A7A"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "4fbc4a8",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "6b6a197",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<a href=\"https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "7027a4d",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "b905b39",
+           "elType": "section",
+           "settings": {
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "24",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "20",
+             "right": "20",
+             "bottom": "20",
+             "left": "20",
+             "isLinked": false
+            },
+            "box_shadow_box_shadow": {
+             "horizontal": 0,
+             "vertical": 14,
+             "blur": 34,
+             "spread": -18,
+             "color": "rgba(28,36,75,.14)"
+            }
+           },
+           "elements": [
+            {
+             "id": "b9c30e3",
+             "elType": "column",
+             "settings": {
+              "_column_size": 100,
+              "_inline_size": null,
+              "padding": {
+               "unit": "px",
+               "top": "0",
+               "right": "22",
+               "bottom": "0",
+               "left": "22",
+               "isLinked": false
+              }
+             },
+             "elements": [
+              {
+               "id": "59de729",
+               "elType": "widget",
+               "widgetType": "image",
+               "settings": {
+                "image": {
+                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-factory.webp",
+                 "id": 0,
+                 "alt": "Inside Our Factory: How Ajalisco Ensures 100% Pure Sachet Water",
+                 "source": "library"
+                },
+                "image_size": "full",
+                "link_to": "custom",
+                "link": {
+                 "url": "https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/",
+                 "is_external": "",
+                 "nofollow": ""
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "c5961c1",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "fbd3ef2",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<a href=\"https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Inside Our Factory: How Ajalisco Ensures 100% Pure Sachet Water</h3></a>"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "2d0da38",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 8,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "7561581",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "At Ajalisco Production Industries, purity is not just a promise — it’s a process. In an industry where health and safety are closely tied…",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                },
+                "typography_font_weight": "400",
+                "typography_line_height": {
+                 "unit": "em",
+                 "size": 1.7,
+                 "sizes": []
+                },
+                "text_color": "#7A7A7A"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "c94baf3",
+               "elType": "widget",
+               "widgetType": "spacer",
+               "settings": {
+                "space": {
+                 "unit": "px",
+                 "size": 10,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "ce0da65",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<a href=\"https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "4229a36",
+   "elType": "section",
+   "settings": {
+    "padding": {
+     "unit": "px",
+     "top": "10",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "8e0f11f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "cac3d30",
+       "elType": "section",
+       "settings": {
+        "background_background": "gradient",
+        "background_color": "#0A64F0",
+        "background_color_b": "#0256DB",
+        "background_gradient_angle": {
+         "unit": "deg",
+         "size": 160,
+         "sizes": []
+        },
+        "background_gradient_type": "linear",
+        "padding": {
+         "unit": "px",
+         "top": "56",
+         "right": "30",
+         "bottom": "56",
+         "left": "30",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": false
+        },
+        "position": "relative"
+       },
+       "elements": [
+        {
+         "id": "4324138",
+         "elType": "column",
+         "settings": {
+          "_column_size": 100,
+          "_inline_size": null,
+          "content_position": "center"
+         },
+         "elements": [
+          {
+           "id": "c6f3724",
+           "elType": "widget",
+           "widgetType": "html",
+           "settings": {
+            "html": "\n    <style>\n    .ctabub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .ctabub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:ctabubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes ctabubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"ctabub\"><i style=\"left:63%;--s:38px;--d:12s;--dl:-5s\"></i><i style=\"left:15%;--s:12px;--d:10s;--dl:-4s\"></i><i style=\"left:67%;--s:35px;--d:15s;--dl:-4s\"></i><i style=\"left:47%;--s:17px;--d:23s;--dl:-10s\"></i><i style=\"left:69%;--s:32px;--d:17s;--dl:-1s\"></i><i style=\"left:28%;--s:27px;--d:15s;--dl:-14s\"></i></div>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3674e63",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
+            "header_size": "h2",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 36,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d093355",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Let’s bring clean water and fresh bread to more homes in Nigeria.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#DCE8FF",
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "f584742",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "dd3bf59",
+           "elType": "section",
+           "settings": {
+            "content_position": "middle",
+            "gap": "narrow"
+           },
+           "elements": [
+            {
+             "id": "bd930b7",
+             "elType": "column",
+             "settings": {
+              "_column_size": 50,
+              "_inline_size": null
+             },
+             "elements": [
+              {
+               "id": "fc048a5",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Become a Distributor",
+                "link": {
+                 "url": "/partnership/",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "background_color": "#28A745",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "10",
+                 "right": "10",
+                 "bottom": "10",
+                 "left": "10",
+                 "isLinked": false
+                },
+                "size": "lg",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15.5,
+                 "sizes": []
+                },
+                "typography_font_weight": "600",
+                "align": "center"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "dc2dfc9",
+             "elType": "column",
+             "settings": {
+              "_column_size": 50,
+              "_inline_size": null
+             },
+             "elements": [
+              {
+               "id": "76ac400",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Shop Now",
+                "link": {
+                 "url": "/shop/",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "background_color": "rgba(255,255,255,.15)",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "10",
+                 "right": "10",
+                 "bottom": "10",
+                 "left": "10",
+                 "isLinked": false
+                },
+                "size": "lg",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15.5,
+                 "sizes": []
+                },
+                "typography_font_weight": "600",
+                "align": "center"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": true
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": [],
+ "version": "0.4",
+ "title": "Home",
+ "type": "page"
+}

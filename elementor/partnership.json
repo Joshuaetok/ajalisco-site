@@ -1,0 +1,780 @@
+{
+ "content": [
+  {
+   "id": "9df4696",
+   "elType": "section",
+   "settings": {
+    "background_background": "gradient",
+    "background_color": "#0A64F0",
+    "background_color_b": "#0243A8",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 160,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    },
+    "min_height": {
+     "unit": "px",
+     "size": 260,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "15c0c8e",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "6e4d58e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "PARTNERSHIP HUB",
+        "header_size": "h1",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "72e3102",
+       "elType": "widget",
+       "widgetType": "divider",
+       "settings": {
+        "align": "center",
+        "width": {
+         "unit": "px",
+         "size": 64,
+         "sizes": []
+        },
+        "color": "#6FC324",
+        "weight": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "gap": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "75dff6c",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Grow with Ajalisco",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#D6E4FF",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "31ca376",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "gap": "wide",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "78dcb74",
+     "elType": "column",
+     "settings": {
+      "_column_size": 48,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "6217927",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Why Partner with Us?</span>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3c8eb5b",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b682575",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "At Ajalisco Production Industries, we believe in mutual growth. Our partners are the heartbeat of our distribution system—bringing Jalix Bread and Ajalisco Water to communities near and far. Whether you’re a supermarket owner, a small shop vendor, or a logistics company, there’s room to thrive with us.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16.5,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#54595F"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ec87a17",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3087743",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Reliable Supply Chain",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "Attractive Margins",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "Marketing Support",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "Bulk Order Access",
+          "icon": "fas fa-check-circle",
+          "selected_icon": {
+           "value": "fas fa-check-circle",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "icon_color": "#28A745",
+        "text_color": "#16204A",
+        "space_between": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "text_typography_typography": "custom",
+        "text_typography_font_family": "Nunito",
+        "text_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "text_typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1ac826a",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "32c3bb8",
+       "elType": "section",
+       "settings": {
+        "background_background": "classic",
+        "background_color": "#DFEBFC",
+        "padding": {
+         "unit": "px",
+         "top": "22",
+         "right": "24",
+         "bottom": "22",
+         "left": "24",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "14",
+         "right": "14",
+         "bottom": "14",
+         "left": "14",
+         "isLinked": false
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "5",
+         "isLinked": false
+        },
+        "border_color": "#0256DB"
+       },
+       "elements": [
+        {
+         "id": "5da846a",
+         "elType": "column",
+         "settings": {
+          "_column_size": 100,
+          "_inline_size": null
+         },
+         "elements": [
+          {
+           "id": "2d10267",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Reach Out Lets Discuss",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "06d7e80",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Get all the details on pricing, logistics, and benefits.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#54595F"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6fce484",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1e3c29b",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Send us your details",
+          "icon": "fas fa-circle",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "We discuss pricing & logistics",
+          "icon": "fas fa-circle",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "text": "You start supplying your community",
+          "icon": "fas fa-circle",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "icon_color": "#28A745",
+        "text_color": "#16204A",
+        "space_between": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "text_typography_typography": "custom",
+        "text_typography_font_family": "Nunito",
+        "text_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "text_typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "3dbdde1",
+     "elType": "column",
+     "settings": {
+      "_column_size": 52,
+      "_inline_size": null,
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {
+       "unit": "px",
+       "top": "36",
+       "right": "30",
+       "bottom": "36",
+       "left": "30",
+       "isLinked": false
+      },
+      "border_radius": {
+       "unit": "px",
+       "top": "22",
+       "right": "22",
+       "bottom": "22",
+       "left": "22",
+       "isLinked": false
+      },
+      "box_shadow_box_shadow": {
+       "horizontal": 0,
+       "vertical": 20,
+       "blur": 50,
+       "spread": -20,
+       "color": "rgba(2,50,140,.35)"
+      }
+     },
+     "elements": [
+      {
+       "id": "e3772a0",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Tell us about you and your business",
+        "header_size": "h2",
+        "title_color": "#0256DB",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "700"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7702172",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "We’ll get back to you within 2 business days.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15.5,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#7A7A7A"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1a278f6",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d669cbe",
+       "elType": "widget",
+       "widgetType": "form",
+       "settings": {
+        "form_name": "Partnership",
+        "form_fields": [
+         {
+          "_id": "f21345d",
+          "field_type": "text",
+          "field_label": "Full Name",
+          "required": "true",
+          "width": "100"
+         },
+         {
+          "_id": "2cce803",
+          "field_type": "email",
+          "field_label": "Email",
+          "required": "true",
+          "width": "100"
+         },
+         {
+          "_id": "8a39d5e",
+          "field_type": "tel",
+          "field_label": "Phone Number",
+          "required": "true",
+          "width": "100"
+         },
+         {
+          "_id": "0853964",
+          "field_type": "text",
+          "field_label": "Business Name",
+          "required": "false",
+          "width": "100"
+         },
+         {
+          "_id": "b50af03",
+          "field_type": "text",
+          "field_label": "Location (Town/State)",
+          "required": "true",
+          "width": "100"
+         },
+         {
+          "_id": "b971722",
+          "field_type": "textarea",
+          "field_label": "Message",
+          "required": "false",
+          "width": "100",
+          "rows": 3
+         },
+         {
+          "_id": "f244f58",
+          "field_type": "acceptance",
+          "field_label": "I agree to receive updates from Ajalisco.",
+          "required": "false",
+          "width": "100"
+         }
+        ],
+        "button_text": "Send Partnership Request",
+        "button_size": "lg",
+        "button_width": "100",
+        "button_background_color": "#28A745",
+        "button_text_color": "#FFFFFF",
+        "submit_actions": [
+         "email"
+        ],
+        "email_to": "support@ajaliscogroup.com",
+        "email_subject": "New partnership request"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "4f7fd63",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Your request opens an email to us so we can reply quickly. Prefer WhatsApp? <a href=\"https://wa.me/2347078581881\" style=\"color:#0256DB;font-weight:700\">Chat with us →</a>",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13.5,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#7A7A7A",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "684b27b",
+   "elType": "section",
+   "settings": {
+    "background_background": "gradient",
+    "background_color": "#0A64F0",
+    "background_color_b": "#0256DB",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 160,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "30",
+     "bottom": "56",
+     "left": "30",
+     "isLinked": false
+    },
+    "border_radius": {
+     "unit": "px",
+     "top": "26",
+     "right": "26",
+     "bottom": "26",
+     "left": "26",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "ea20e32",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "11a11f5",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
+        "header_size": "h2",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "125227c",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Let’s bring clean water and fresh bread to more homes in Nigeria.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#DCE8FF",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3712da8",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6a78c49",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Explore Our Products",
+        "link": {
+         "url": "/shop/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#28A745",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": false
+        },
+        "size": "lg",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15.5,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": [],
+ "version": "0.4",
+ "title": "Partnership Hub",
+ "type": "page"
+}

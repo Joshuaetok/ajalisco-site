@@ -1,0 +1,210 @@
+{
+ "content": [
+  {
+   "id": "6fce484",
+   "elType": "section",
+   "settings": {
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "14",
+     "right": "20",
+     "bottom": "14",
+     "left": "20",
+     "isLinked": false
+    },
+    "sticky": "top",
+    "sticky_effects_offset": 0,
+    "box_shadow_box_shadow": {
+     "horizontal": 0,
+     "vertical": 2,
+     "blur": 14,
+     "spread": 0,
+     "color": "rgba(28,36,75,.08)"
+    }
+   },
+   "elements": [
+    {
+     "id": "2d10267",
+     "elType": "column",
+     "settings": {
+      "_column_size": 20,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "3087743",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "https://joshuaetok.github.io/ajalisco-site/assets/logo.webp",
+         "id": 0,
+         "alt": "Ajalisco",
+         "source": "library"
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "width": {
+         "unit": "%",
+         "size": 70,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "32c3bb8",
+     "elType": "column",
+     "settings": {
+      "_column_size": 55,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "06d7e80",
+       "elType": "widget",
+       "widgetType": "nav-menu",
+       "settings": {
+        "menu": "",
+        "layout": "horizontal",
+        "pointer": "underline",
+        "align_items": "center",
+        "menu_typography_typography": "custom",
+        "menu_typography_font_family": "Outfit",
+        "menu_typography_font_weight": "500",
+        "menu_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "color_menu_item": "#16204A",
+        "color_menu_item_hover": "#0256DB",
+        "pointer_color": "#28A745"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1ac826a",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "ec87a17",
+       "elType": "section",
+       "settings": {
+        "gap": "narrow",
+        "_title": "Header actions (inner)"
+       },
+       "elements": [
+        {
+         "id": "3c8eb5b",
+         "elType": "column",
+         "settings": {
+          "_column_size": 40,
+          "_inline_size": null,
+          "content_position": "center"
+         },
+         "elements": [
+          {
+           "id": "1e3c29b",
+           "elType": "widget",
+           "widgetType": "woocommerce-menu-cart",
+           "settings": {
+            "icon_type": "icon",
+            "icon_skin": "classic",
+            "cart_icon": {
+             "value": "fas fa-shopping-cart",
+             "library": "fa-solid"
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "b682575",
+         "elType": "column",
+         "settings": {
+          "_column_size": 60,
+          "_inline_size": null,
+          "content_position": "center"
+         },
+         "elements": [
+          {
+           "id": "6217927",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Order Now",
+            "link": {
+             "url": "/shop/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#28A745",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "md",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": [],
+ "version": "0.4",
+ "title": "Ajalisco – Site Header",
+ "type": "header"
+}
