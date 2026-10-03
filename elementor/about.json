@@ -141,7 +141,10 @@
      "elType": "column",
      "settings": {
       "_column_size": 50,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
@@ -242,7 +245,10 @@
        "bottom": "22",
        "left": "22",
        "isLinked": false
-      }
+      },
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
@@ -256,7 +262,8 @@
          "alt": "Ajalisco bottled water and sachet water",
          "source": "library"
         },
-        "image_size": "full"
+        "image_size": "full",
+        "hover_animation": "grow"
        },
        "elements": [],
        "isInner": false
@@ -320,7 +327,10 @@
        "blur": 34,
        "spread": -16,
        "color": "rgba(28,36,75,.12)"
-      }
+      },
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
@@ -369,7 +379,8 @@
          "size": 15,
          "sizes": []
         },
-        "description_typography_font_weight": "400"
+        "description_typography_font_weight": "400",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -407,7 +418,10 @@
        "blur": 34,
        "spread": -16,
        "color": "rgba(28,36,75,.12)"
-      }
+      },
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
@@ -456,7 +470,8 @@
          "size": 15,
          "sizes": []
         },
-        "description_typography_font_weight": "400"
+        "description_typography_font_weight": "400",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -559,7 +574,6 @@
        "id": "11a11f5",
        "elType": "section",
        "settings": {
-        "gap": "wide",
         "padding": {
          "unit": "px",
          "top": "0",
@@ -567,7 +581,8 @@
          "bottom": "20",
          "left": "0",
          "isLinked": false
-        }
+        },
+        "gap": "wide"
        },
        "elements": [
         {
@@ -575,7 +590,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
@@ -699,7 +717,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100
          },
          "elements": [
           {
@@ -823,7 +844,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 200
          },
          "elements": [
           {
@@ -957,7 +981,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
@@ -1081,7 +1108,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100
          },
          "elements": [
           {
@@ -1205,7 +1235,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 200
          },
          "elements": [
           {
@@ -1435,7 +1468,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
@@ -1496,7 +1532,8 @@
                  "alt": "Engr. E. S. Ajala",
                  "source": "library"
                 },
-                "image_size": "full"
+                "image_size": "full",
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
@@ -1583,7 +1620,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100
          },
          "elements": [
           {
@@ -1644,7 +1684,8 @@
                  "alt": "Emily Jennifer",
                  "source": "library"
                 },
-                "image_size": "full"
+                "image_size": "full",
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
@@ -1731,7 +1772,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 200
          },
          "elements": [
           {
@@ -1792,7 +1836,8 @@
                  "alt": "Joshua Etok",
                  "source": "library"
                 },
-                "image_size": "full"
+                "image_size": "full",
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
@@ -1975,8 +2020,8 @@
        "id": "8027081",
        "elType": "section",
        "settings": {
-        "gap": "wide",
-        "content_position": "center"
+        "content_position": "center",
+        "gap": "wide"
        },
        "elements": [
         {
@@ -1984,7 +2029,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 36,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
@@ -2039,7 +2087,8 @@
                  "source": "library"
                 },
                 "image_size": "full",
-                "align": "center"
+                "align": "center",
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
@@ -2118,7 +2167,10 @@
          "elType": "column",
          "settings": {
           "_column_size": 36,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100
          },
          "elements": [
           {
@@ -2178,7 +2230,8 @@
                  "unit": "%",
                  "size": 36,
                  "sizes": []
-                }
+                },
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
@@ -2391,7 +2444,8 @@
          "sizes": []
         },
         "typography_font_weight": "600",
-        "align": "center"
+        "align": "center",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false

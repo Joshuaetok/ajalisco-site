@@ -141,7 +141,10 @@
      "elType": "column",
      "settings": {
       "_column_size": 48,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
@@ -467,7 +470,10 @@
        "blur": 50,
        "spread": -20,
        "color": "rgba(2,50,140,.35)"
-      }
+      },
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
@@ -668,7 +674,10 @@
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "zoomIn",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
@@ -761,7 +770,8 @@
          "sizes": []
         },
         "typography_font_weight": "600",
-        "align": "center"
+        "align": "center",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false

@@ -140,7 +140,10 @@
      "elType": "column",
      "settings": {
       "_column_size": 100,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
@@ -213,7 +216,8 @@
              "sizes": []
             },
             "typography_font_weight": "600",
-            "align": "center"
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
@@ -259,7 +263,8 @@
              "sizes": []
             },
             "typography_font_weight": "600",
-            "align": "center"
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
@@ -305,7 +310,8 @@
              "sizes": []
             },
             "typography_font_weight": "600",
-            "align": "center"
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false

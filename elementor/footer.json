@@ -28,7 +28,10 @@
      "elType": "column",
      "settings": {
       "_column_size": 35,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
@@ -112,7 +115,10 @@
      "elType": "column",
      "settings": {
       "_column_size": 20,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 100
      },
      "elements": [
       {
@@ -213,7 +219,10 @@
      "elType": "column",
      "settings": {
       "_column_size": 25,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 200
      },
      "elements": [
       {
@@ -286,7 +295,10 @@
        "bottom": "16",
        "left": "16",
        "isLinked": false
-      }
+      },
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 300
      },
      "elements": [
       {
@@ -333,7 +345,8 @@
          "email"
         ],
         "email_to": "support@ajaliscogroup.com",
-        "email_subject": "New newsletter subscriber"
+        "email_subject": "New newsletter subscriber",
+        "button_hover_animation": "grow"
        },
        "elements": [],
        "isInner": false

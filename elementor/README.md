@@ -30,6 +30,30 @@ Brand colours and fonts (Outfit/Nunito, `#0256DB` blue, `#28A745` green,
 site's Global Kit, so the import looks right regardless of your site's
 current settings.
 
+## Animations
+The original site's scroll-reveal and hover-lift motion is included, built
+natively rather than copied in as custom code:
+- **Scroll-entrance** (the fade-up-as-you-scroll effect) uses Elementor's own
+  Advanced → Motion Effects → Entrance Animation on each section/column —
+  visible and changeable from the panel (Off / a different effect / a
+  different duration), not buried in code. Card grids (values, team,
+  testimonials' siblings, blog posts, "who it's for" tiles, certifications)
+  stagger in one after another (100ms apart) the same way the live site does.
+- **Hover lift** on every button, content image and icon box uses Elementor's
+  native per-widget Hover Animation control (`float` on buttons/icon boxes,
+  `grow` on images) — again editable from the Style tab, not code.
+- **Decorative motion** that has no Elementor control for it — the hero's
+  floating price chips, the pulsing "fresh" dot, the bread banner's slowly
+  turning price badge, the water sachet's gentle bob, the two crossing
+  ticker tapes, the rising bubbles — is plain CSS `@keyframes` inside the
+  relevant HTML widget, the same technique the live site uses, so it's
+  identical motion, just not Elementor-panel-editable (you'd open that
+  widget's code box to change it).
+- The testimonials section uses Elementor Pro's native Testimonial Carousel
+  (autoplay on) rather than the live site's sideways-scrolling marquee —
+  a genuine carousel, not a literal copy of the marquee, but the closest
+  native equivalent and still a continuously-moving, professional effect.
+
 ## Import order
 1. **WooCommerce → Products → Import** → upload `products-import.csv`.
    Creates the 7 products with real prices, descriptions and images already

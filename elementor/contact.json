@@ -159,7 +159,10 @@
        "bottom": "22",
        "left": "22",
        "isLinked": false
-      }
+      },
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
@@ -494,7 +497,8 @@
          "sizes": []
         },
         "typography_font_weight": "600",
-        "align": "stretch"
+        "align": "stretch",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -532,7 +536,10 @@
        "blur": 50,
        "spread": -20,
        "color": "rgba(2,50,140,.35)"
-      }
+      },
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {

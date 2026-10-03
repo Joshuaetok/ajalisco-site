@@ -1,7 +1,7 @@
 {
  "content": [
   {
-   "id": "8c64c62",
+   "id": "42faba6",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -39,7 +39,7 @@
    },
    "elements": [
     {
-     "id": "a7cd148",
+     "id": "b30f4cc",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -47,11 +47,11 @@
      },
      "elements": [
       {
-       "id": "88874d8",
+       "id": "eb708f9",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n    <style>\n    .herobub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .herobub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:herobubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes herobubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"herobub\"><i style=\"left:5%;--s:39px;--d:23s;--dl:-4s\"></i><i style=\"left:23%;--s:37px;--d:18s;--dl:-14s\"></i><i style=\"left:10%;--s:41px;--d:21s;--dl:-9s\"></i><i style=\"left:88%;--s:23px;--d:18s;--dl:-11s\"></i><i style=\"left:80%;--s:16px;--d:18s;--dl:-1s\"></i><i style=\"left:23%;--s:21px;--d:12s;--dl:-17s\"></i><i style=\"left:2%;--s:37px;--d:23s;--dl:-10s\"></i><i style=\"left:77%;--s:46px;--d:11s;--dl:-5s\"></i><i style=\"left:53%;--s:10px;--d:14s;--dl:-13s\"></i><i style=\"left:46%;--s:43px;--d:20s;--dl:-14s\"></i></div>"
+        "html": "\n    <style>\n    .herobub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .herobub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:herobubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes herobubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"herobub\"><i style=\"left:18%;--s:20px;--d:23s;--dl:-2s\"></i><i style=\"left:82%;--s:24px;--d:12s;--dl:-15s\"></i><i style=\"left:16%;--s:21px;--d:18s;--dl:-6s\"></i><i style=\"left:76%;--s:39px;--d:19s;--dl:-10s\"></i><i style=\"left:58%;--s:28px;--d:12s;--dl:-15s\"></i><i style=\"left:24%;--s:23px;--d:15s;--dl:-7s\"></i><i style=\"left:64%;--s:36px;--d:17s;--dl:-16s\"></i><i style=\"left:85%;--s:13px;--d:23s;--dl:0s\"></i><i style=\"left:29%;--s:17px;--d:10s;--dl:-1s\"></i><i style=\"left:83%;--s:43px;--d:21s;--dl:0s\"></i></div>"
        },
        "elements": [],
        "isInner": false
@@ -60,15 +60,18 @@
      "isInner": false
     },
     {
-     "id": "34d62fb",
+     "id": "291d67a",
      "elType": "column",
      "settings": {
       "_column_size": 52,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "63dd464",
+       "id": "613ee2c",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -78,7 +81,7 @@
        "isInner": false
       },
       {
-       "id": "7cf48a9",
+       "id": "4e0c2c0",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -92,7 +95,7 @@
        "isInner": false
       },
       {
-       "id": "c9ca608",
+       "id": "5e3cae9",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -102,7 +105,7 @@
        "isInner": false
       },
       {
-       "id": "ae4c969",
+       "id": "a542b3e",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -116,7 +119,7 @@
        "isInner": false
       },
       {
-       "id": "01dd606",
+       "id": "7e8ecd8",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -140,7 +143,7 @@
        "isInner": false
       },
       {
-       "id": "b0f0cfa",
+       "id": "5842352",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -154,14 +157,14 @@
        "isInner": false
       },
       {
-       "id": "7f1cc8d",
+       "id": "a0c48fd",
        "elType": "section",
        "settings": {
         "gap": "narrow"
        },
        "elements": [
         {
-         "id": "1c05bad",
+         "id": "b0ebff4",
          "elType": "column",
          "settings": {
           "_column_size": 38,
@@ -169,7 +172,7 @@
          },
          "elements": [
           {
-           "id": "c3c5af5",
+           "id": "aa8d1f2",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -197,7 +200,8 @@
              "size": 15.5,
              "sizes": []
             },
-            "typography_font_weight": "600"
+            "typography_font_weight": "600",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
@@ -206,7 +210,7 @@
          "isInner": false
         },
         {
-         "id": "e94e565",
+         "id": "d27d542",
          "elType": "column",
          "settings": {
           "_column_size": 38,
@@ -214,7 +218,7 @@
          },
          "elements": [
           {
-           "id": "6ed29e9",
+           "id": "b3f36c3",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -242,7 +246,8 @@
              "size": 15.5,
              "sizes": []
             },
-            "typography_font_weight": "600"
+            "typography_font_weight": "600",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
@@ -254,7 +259,7 @@
        "isInner": true
       },
       {
-       "id": "59272aa",
+       "id": "d4f4aaf",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -268,7 +273,7 @@
        "isInner": false
       },
       {
-       "id": "65e8946",
+       "id": "70a5b5b",
        "elType": "section",
        "settings": {
         "gap": "narrow",
@@ -293,7 +298,7 @@
        },
        "elements": [
         {
-         "id": "0817acc",
+         "id": "3f768a2",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
@@ -301,7 +306,7 @@
          },
          "elements": [
           {
-           "id": "7e2dbc0",
+           "id": "c5f6d28",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -314,7 +319,7 @@
          "isInner": false
         },
         {
-         "id": "9ddf57e",
+         "id": "c9f842d",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
@@ -322,7 +327,7 @@
          },
          "elements": [
           {
-           "id": "7b49ca4",
+           "id": "c20c619",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -335,7 +340,7 @@
          "isInner": false
         },
         {
-         "id": "7608bbd",
+         "id": "f73a1e0",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
@@ -343,7 +348,7 @@
          },
          "elements": [
           {
-           "id": "d355a7f",
+           "id": "a35c9df",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -362,19 +367,22 @@
      "isInner": false
     },
     {
-     "id": "7b44ee9",
+     "id": "669babe",
      "elType": "column",
      "settings": {
       "_column_size": 48,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
-       "id": "2a26ba3",
+       "id": "6042206",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n<div style=\"position:relative;max-width:580px;margin:0 auto;aspect-ratio:1/.95\">\n  <div style=\"position:absolute;inset:4% 6% 14% 6%;border-radius:50%;border:1.5px dashed rgba(255,255,255,.3)\"></div>\n  <div style=\"position:absolute;inset:16% 18% 24% 18%;border-radius:50%;border:1.5px solid rgba(255,255,255,.16)\"></div>\n  <div style=\"position:absolute;inset:12% 10% 20%;border-radius:50%;\n       background:radial-gradient(circle,rgba(255,255,255,.5),rgba(160,200,255,.2) 45%,transparent 70%)\"></div>\n  <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/lineup.webp\" alt=\"Jalix bread and Ajalisco water\"\n       style=\"position:absolute;left:50%;top:50%;width:92%;transform:translate(-50%,-52%);\n       filter:drop-shadow(0 30px 24px rgba(0,20,80,.45))\">\n  <div style=\"position:absolute;left:-2%;top:12%;padding:10px 18px;border-radius:16px;background:rgba(255,255,255,.95);\n       box-shadow:0 20px 34px -18px rgba(0,20,80,.7);line-height:1.15\">\n    <small style=\"font:600 12px Nunito,sans-serif;color:#7A7A7A\">Jalix Bread from</small><br>\n    <b style=\"font:700 24px Outfit,sans-serif;color:#0256DB\">₦250</b></div>\n  <div style=\"position:absolute;right:0;top:4%;display:flex;align-items:center;gap:9px;padding:10px 16px;\n       border-radius:16px;background:#28A745;color:#fff;font:600 14px Outfit,sans-serif\">\n    <span style=\"width:9px;height:9px;border-radius:50%;background:#fff\"></span> Baked fresh daily</div>\n  <div style=\"position:absolute;right:2%;bottom:8%;padding:10px 18px;border-radius:16px;background:rgba(255,255,255,.95);\n       box-shadow:0 20px 34px -18px rgba(0,20,80,.7);line-height:1.15\">\n    <small style=\"font:600 12px Nunito,sans-serif;color:#7A7A7A\">Sachet Water</small><br>\n    <b style=\"font:700 24px Outfit,sans-serif;color:#0256DB\">₦300<em style=\"font:600 13px Nunito,sans-serif;\n      color:#7A7A7A;font-style:normal\"> /bag</em></b></div>\n</div>"
+        "html": "\n<div style=\"position:relative;max-width:580px;margin:0 auto;aspect-ratio:1/.95\">\n  <div style=\"position:absolute;inset:4% 6% 14% 6%;border-radius:50%;border:1.5px dashed rgba(255,255,255,.3)\"></div>\n  <div style=\"position:absolute;inset:16% 18% 24% 18%;border-radius:50%;border:1.5px solid rgba(255,255,255,.16)\"></div>\n  <div style=\"position:absolute;inset:12% 10% 20%;border-radius:50%;\n       background:radial-gradient(circle,rgba(255,255,255,.5),rgba(160,200,255,.2) 45%,transparent 70%)\"></div>\n  <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/lineup.webp\" alt=\"Jalix bread and Ajalisco water\"\n       style=\"position:absolute;left:50%;top:50%;width:92%;transform:translate(-50%,-52%);\n       filter:drop-shadow(0 30px 24px rgba(0,20,80,.45))\">\n  <div id=\"ajxchipA\" style=\"position:absolute;left:-2%;top:12%;padding:10px 18px;border-radius:16px;background:rgba(255,255,255,.95);\n       box-shadow:0 20px 34px -18px rgba(0,20,80,.7);line-height:1.15;animation:ajxchipAf 7s ease-in-out infinite\">\n    <small style=\"font:600 12px Nunito,sans-serif;color:#7A7A7A\">Jalix Bread from</small><br>\n    <b style=\"font:700 24px Outfit,sans-serif;color:#0256DB\">₦250</b></div>\n  <div style=\"position:absolute;right:0;top:4%;display:flex;align-items:center;gap:9px;padding:10px 16px;\n       border-radius:16px;background:#28A745;color:#fff;font:600 14px Outfit,sans-serif\">\n    <span class=\"ajxlivedot\" style=\"width:9px;height:9px;border-radius:50%;background:#fff;display:inline-block\"></span> Baked fresh daily</div>\n  <style>.ajxlivedot{animation:ajxlivedotpulse 2s infinite}@keyframes ajxlivedotpulse{70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}}</style>\n  <div id=\"ajxchipC\" style=\"position:absolute;right:2%;bottom:8%;padding:10px 18px;border-radius:16px;background:rgba(255,255,255,.95);\n       box-shadow:0 20px 34px -18px rgba(0,20,80,.7);line-height:1.15;animation:ajxchipCf 9s ease-in-out infinite;animation-delay:-3s\">\n    <small style=\"font:600 12px Nunito,sans-serif;color:#7A7A7A\">Sachet Water</small><br>\n    <b style=\"font:700 24px Outfit,sans-serif;color:#0256DB\">₦300<em style=\"font:600 13px Nunito,sans-serif;\n      color:#7A7A7A;font-style:normal\"> /bag</em></b></div>\n<style>@keyframes ajxchipAf{50%{transform:translateY(-10px)}}@keyframes ajxchipCf{50%{transform:translateY(-10px)}}</style>\n</div>"
        },
        "elements": [],
        "isInner": false
@@ -386,7 +394,7 @@
    "isInner": false
   },
   {
-   "id": "76dd53d",
+   "id": "e05df68",
    "elType": "section",
    "settings": {
     "padding": {
@@ -400,7 +408,7 @@
    },
    "elements": [
     {
-     "id": "e865dcc",
+     "id": "40513c7",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -408,7 +416,7 @@
      },
      "elements": [
       {
-       "id": "a3025e2",
+       "id": "360cf69",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -424,7 +432,7 @@
    "isInner": false
   },
   {
-   "id": "fc2d45b",
+   "id": "277df10",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -470,15 +478,18 @@
    },
    "elements": [
     {
-     "id": "2263d90",
+     "id": "625705d",
      "elType": "column",
      "settings": {
       "_column_size": 55,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "fc7aabc",
+       "id": "53e57ec",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -488,7 +499,7 @@
        "isInner": false
       },
       {
-       "id": "01ad046",
+       "id": "3a7c589",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -502,7 +513,7 @@
        "isInner": false
       },
       {
-       "id": "10c5831",
+       "id": "4e8bbf1",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -512,7 +523,7 @@
        "isInner": false
       },
       {
-       "id": "378b538",
+       "id": "2fa3693",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -526,7 +537,7 @@
        "isInner": false
       },
       {
-       "id": "5bae57c",
+       "id": "c937e40",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -550,7 +561,7 @@
        "isInner": false
       },
       {
-       "id": "2a7bb0c",
+       "id": "3d6ea1e",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -564,7 +575,7 @@
        "isInner": false
       },
       {
-       "id": "27eacca",
+       "id": "bcf93c0",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -574,7 +585,7 @@
        "isInner": false
       },
       {
-       "id": "24e92c3",
+       "id": "ecb6e1f",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -588,7 +599,7 @@
        "isInner": false
       },
       {
-       "id": "6b9b28e",
+       "id": "6149b50",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -616,7 +627,8 @@
          "size": 15.5,
          "sizes": []
         },
-        "typography_font_weight": "600"
+        "typography_font_weight": "600",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -625,19 +637,22 @@
      "isInner": false
     },
     {
-     "id": "fd12518",
+     "id": "a251e67",
      "elType": "column",
      "settings": {
       "_column_size": 45,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
-       "id": "a1b49bc",
+       "id": "b143be4",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n<div style=\"position:relative;display:grid;place-items:center;min-height:300px\">\n  <span style=\"position:absolute;font:800 clamp(90px,14vw,200px)/1 Outfit,sans-serif;letter-spacing:-.04em;\n    color:rgba(255,255,255,.07);white-space:nowrap\">JALIX</span>\n  <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/loaves.webp\" alt=\"Jalix bread sizes\" style=\"position:relative;z-index:1;width:min(100%,420px);\n    filter:drop-shadow(0 34px 26px rgba(0,20,80,.55))\">\n  <div style=\"position:absolute;z-index:2;right:4%;top:0;width:110px;aspect-ratio:1;display:grid;place-content:center;\n    text-align:center;background:#28A745;color:#fff;line-height:1;border-radius:50%;\n    box-shadow:0 20px 30px -14px rgba(0,0,0,.4)\">\n    <small style=\"font:600 11px Nunito,sans-serif;text-transform:uppercase;letter-spacing:.1em\">From</small>\n    <b style=\"font:800 25px Outfit,sans-serif\">₦250</b></div>\n</div>"
+        "html": "\n<div style=\"position:relative;display:grid;place-items:center;min-height:300px\">\n  <span style=\"position:absolute;font:800 clamp(90px,14vw,200px)/1 Outfit,sans-serif;letter-spacing:-.04em;\n    color:rgba(255,255,255,.07);white-space:nowrap\">JALIX</span>\n  <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/loaves.webp\" alt=\"Jalix bread sizes\" style=\"position:relative;z-index:1;width:min(100%,420px);\n    filter:drop-shadow(0 34px 26px rgba(0,20,80,.55))\">\n  <div style=\"position:absolute;z-index:2;right:4%;top:0;width:110px;aspect-ratio:1;display:grid;place-content:center;\n    text-align:center;background:#28A745;color:#fff;line-height:1;border-radius:50%;\n    box-shadow:0 20px 30px -14px rgba(0,0,0,.4);animation:ajxburst 14s ease-in-out infinite alternate\">\n    <small style=\"font:600 11px Nunito,sans-serif;text-transform:uppercase;letter-spacing:.1em\">From</small>\n    <b style=\"font:800 25px Outfit,sans-serif\">₦250</b></div>\n<style>@keyframes ajxburst{to{transform:rotate(10deg) scale(1.06)}}</style>\n</div>"
        },
        "elements": [],
        "isInner": false
@@ -649,7 +664,7 @@
    "isInner": false
   },
   {
-   "id": "9c4d531",
+   "id": "ad7d0ad",
    "elType": "section",
    "settings": {
     "background_background": "classic",
@@ -671,16 +686,19 @@
    },
    "elements": [
     {
-     "id": "df623e6",
+     "id": "befcf02",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "b298bc8",
+       "id": "28dfc9e",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -690,7 +708,7 @@
        "isInner": false
       },
       {
-       "id": "d524870",
+       "id": "0917fcc",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -704,7 +722,7 @@
        "isInner": false
       },
       {
-       "id": "4355fa8",
+       "id": "2e86b0f",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -714,7 +732,7 @@
        "isInner": false
       },
       {
-       "id": "6678779",
+       "id": "2b8ab5a",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -728,7 +746,7 @@
        "isInner": false
       },
       {
-       "id": "9c8de4f",
+       "id": "3a44a2f",
        "elType": "widget",
        "widgetType": "shortcode",
        "settings": {
@@ -744,7 +762,7 @@
    "isInner": false
   },
   {
-   "id": "ede865c",
+   "id": "1904bc2",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -791,25 +809,28 @@
    },
    "elements": [
     {
-     "id": "e77c1c7",
+     "id": "11c99b3",
      "elType": "column",
      "settings": {
       "_column_size": 55,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "000d808",
+       "id": "a898435",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n    <style>\n    .waterbub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .waterbub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(2,86,219,.95) 0 7%, rgba(2,86,219,.2) 22%, rgba(2,86,219,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(2,86,219,.4); animation:waterbubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes waterbubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"waterbub\"><i style=\"left:93%;--s:18px;--d:21s;--dl:-7s\"></i><i style=\"left:56%;--s:29px;--d:18s;--dl:-11s\"></i><i style=\"left:94%;--s:35px;--d:14s;--dl:-4s\"></i><i style=\"left:76%;--s:19px;--d:17s;--dl:-1s\"></i><i style=\"left:42%;--s:43px;--d:18s;--dl:-3s\"></i><i style=\"left:6%;--s:18px;--d:12s;--dl:-13s\"></i></div>"
+        "html": "\n    <style>\n    .waterbub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .waterbub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(2,86,219,.95) 0 7%, rgba(2,86,219,.2) 22%, rgba(2,86,219,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(2,86,219,.4); animation:waterbubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes waterbubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"waterbub\"><i style=\"left:42%;--s:33px;--d:15s;--dl:-3s\"></i><i style=\"left:60%;--s:14px;--d:13s;--dl:0s\"></i><i style=\"left:11%;--s:28px;--d:23s;--dl:-2s\"></i><i style=\"left:57%;--s:40px;--d:12s;--dl:-18s\"></i><i style=\"left:46%;--s:44px;--d:20s;--dl:-5s\"></i><i style=\"left:31%;--s:33px;--d:13s;--dl:-18s\"></i></div>"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "a0952db",
+       "id": "cd96a05",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -819,7 +840,7 @@
        "isInner": false
       },
       {
-       "id": "f775a85",
+       "id": "740027b",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -833,7 +854,7 @@
        "isInner": false
       },
       {
-       "id": "0c7a9d4",
+       "id": "1babb99",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -843,7 +864,7 @@
        "isInner": false
       },
       {
-       "id": "3cafc31",
+       "id": "0bc2de1",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -857,7 +878,7 @@
        "isInner": false
       },
       {
-       "id": "69b200a",
+       "id": "ba148b2",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -881,7 +902,7 @@
        "isInner": false
       },
       {
-       "id": "4b746e1",
+       "id": "0f7b661",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -895,7 +916,7 @@
        "isInner": false
       },
       {
-       "id": "a751b16",
+       "id": "ba8d170",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -905,7 +926,7 @@
        "isInner": false
       },
       {
-       "id": "40a4c01",
+       "id": "77ae28c",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -919,7 +940,7 @@
        "isInner": false
       },
       {
-       "id": "a8eeac3",
+       "id": "d0604ff",
        "elType": "widget",
        "widgetType": "icon-list",
        "settings": {
@@ -970,7 +991,7 @@
        "isInner": false
       },
       {
-       "id": "b0d4aaa",
+       "id": "f62f14f",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -984,7 +1005,7 @@
        "isInner": false
       },
       {
-       "id": "3f45733",
+       "id": "3da9a5f",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -1012,7 +1033,8 @@
          "size": 15.5,
          "sizes": []
         },
-        "typography_font_weight": "600"
+        "typography_font_weight": "600",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -1021,19 +1043,22 @@
      "isInner": false
     },
     {
-     "id": "1d98f35",
+     "id": "ac05154",
      "elType": "column",
      "settings": {
       "_column_size": 42,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
-       "id": "2fedb48",
+       "id": "770821d",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n<div style=\"position:relative;display:flex;justify-content:center\">\n  <div style=\"position:relative;width:min(100%,320px);aspect-ratio:1;border-radius:50%;overflow:hidden;\n    background:radial-gradient(circle at 50% 35%,#fff,#B7D0FA);\n    box-shadow:0 30px 50px -24px rgba(2,60,160,.6),0 0 0 10px rgba(255,255,255,.55)\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/sachet.webp\" alt=\"Ajalisco sachet water\" style=\"width:100%;height:100%;object-fit:cover;\n      mix-blend-mode:multiply;filter:brightness(1.5) contrast(1.06) saturate(1.2);transform:scale(1.15)\">\n  </div>\n  <span style=\"position:absolute;left:4%;top:2%;display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;\n    border-radius:999px;background:#fff;font:600 13.5px Outfit,sans-serif;color:#16204A;\n    box-shadow:0 14px 24px -12px rgba(0,0,0,.3)\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:26px;height:26px;border-radius:50%\"> NAFDAC</span>\n  <span style=\"position:absolute;right:2%;bottom:8%;display:inline-flex;align-items:center;gap:9px;padding:9px 16px;\n    border-radius:999px;background:#28A745;color:#fff;font:600 13.5px Outfit,sans-serif\">\n    <span style=\"width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block\"></span> Sealed fresh</span>\n</div>"
+        "html": "\n<div style=\"position:relative;display:flex;justify-content:center\">\n  <div style=\"position:relative;width:min(100%,320px);aspect-ratio:1;border-radius:50%;overflow:hidden;\n    background:radial-gradient(circle at 50% 35%,#fff,#B7D0FA);\n    box-shadow:0 30px 50px -24px rgba(2,60,160,.6),0 0 0 10px rgba(255,255,255,.55);\n    animation:ajxorbfloat 8s ease-in-out infinite\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/sachet.webp\" alt=\"Ajalisco sachet water\" style=\"width:100%;height:100%;object-fit:cover;\n      mix-blend-mode:multiply;filter:brightness(1.5) contrast(1.06) saturate(1.2);transform:scale(1.15)\">\n  </div>\n  <span style=\"position:absolute;left:4%;top:2%;display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;\n    border-radius:999px;background:#fff;font:600 13.5px Outfit,sans-serif;color:#16204A;\n    box-shadow:0 14px 24px -12px rgba(0,0,0,.3)\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:26px;height:26px;border-radius:50%\"> NAFDAC</span>\n  <span style=\"position:absolute;right:2%;bottom:8%;display:inline-flex;align-items:center;gap:9px;padding:9px 16px;\n    border-radius:999px;background:#28A745;color:#fff;font:600 13.5px Outfit,sans-serif\">\n    <span class=\"ajxlivedot\" style=\"width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block\"></span> Sealed fresh</span>\n<style>@keyframes ajxorbfloat{50%{transform:translateY(-12px)}}</style>\n<style>.ajxlivedot{animation:ajxlivedotpulse 2s infinite}@keyframes ajxlivedotpulse{70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}}</style>\n</div>"
        },
        "elements": [],
        "isInner": false
@@ -1045,7 +1070,7 @@
    "isInner": false
   },
   {
-   "id": "ce6bb95",
+   "id": "d65deb2",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -1065,16 +1090,19 @@
    },
    "elements": [
     {
-     "id": "eac7543",
+     "id": "1c9db16",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "e337a90",
+       "id": "efedd65",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1084,7 +1112,7 @@
        "isInner": false
       },
       {
-       "id": "f8f38dc",
+       "id": "d8e72bd",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1098,7 +1126,7 @@
        "isInner": false
       },
       {
-       "id": "180a973",
+       "id": "77c58f1",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1108,7 +1136,7 @@
        "isInner": false
       },
       {
-       "id": "ddbe58c",
+       "id": "1ec32f6",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1122,7 +1150,7 @@
        "isInner": false
       },
       {
-       "id": "f9b3d4b",
+       "id": "84fd68d",
        "elType": "section",
        "settings": {
         "content_position": "middle",
@@ -1130,7 +1158,7 @@
        },
        "elements": [
         {
-         "id": "2d556a0",
+         "id": "27d7790",
          "elType": "column",
          "settings": {
           "_column_size": 16,
@@ -1138,7 +1166,7 @@
          },
          "elements": [
           {
-           "id": "523f408",
+           "id": "cf2e454",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1167,7 +1195,8 @@
              "sizes": []
             },
             "typography_font_weight": "600",
-            "align": "center"
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
@@ -1176,7 +1205,7 @@
          "isInner": false
         },
         {
-         "id": "551ad50",
+         "id": "77ba6d5",
          "elType": "column",
          "settings": {
           "_column_size": 16,
@@ -1184,7 +1213,7 @@
          },
          "elements": [
           {
-           "id": "65de246",
+           "id": "10248d9",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1213,7 +1242,8 @@
              "sizes": []
             },
             "typography_font_weight": "600",
-            "align": "center"
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
@@ -1222,7 +1252,7 @@
          "isInner": false
         },
         {
-         "id": "e758aad",
+         "id": "0746696",
          "elType": "column",
          "settings": {
           "_column_size": 22,
@@ -1230,7 +1260,7 @@
          },
          "elements": [
           {
-           "id": "ceda082",
+           "id": "13b3d03",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1259,7 +1289,8 @@
              "sizes": []
             },
             "typography_font_weight": "600",
-            "align": "center"
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
@@ -1271,7 +1302,7 @@
        "isInner": true
       },
       {
-       "id": "26d0c8d",
+       "id": "2e59041",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1285,7 +1316,7 @@
        "isInner": false
       },
       {
-       "id": "da3cb09",
+       "id": "c445523",
        "elType": "widget",
        "widgetType": "shortcode",
        "settings": {
@@ -1295,7 +1326,7 @@
        "isInner": false
       },
       {
-       "id": "e3aa573",
+       "id": "4811f04",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1309,7 +1340,7 @@
        "isInner": false
       },
       {
-       "id": "fa1ba81",
+       "id": "c7f2d1b",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -1338,7 +1369,8 @@
          "sizes": []
         },
         "typography_font_weight": "600",
-        "align": "center"
+        "align": "center",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -1350,7 +1382,7 @@
    "isInner": false
   },
   {
-   "id": "2ce52a1",
+   "id": "fae5b03",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -1381,7 +1413,7 @@
    },
    "elements": [
     {
-     "id": "ca6c3b7",
+     "id": "3d1cf82",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -1389,11 +1421,11 @@
      },
      "elements": [
       {
-       "id": "d12b4cc",
+       "id": "d32f44b",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n    <style>\n    .purifybub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .purifybub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:purifybubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes purifybubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"purifybub\"><i style=\"left:54%;--s:17px;--d:21s;--dl:-10s\"></i><i style=\"left:54%;--s:17px;--d:18s;--dl:-11s\"></i><i style=\"left:20%;--s:25px;--d:24s;--dl:-18s\"></i><i style=\"left:43%;--s:44px;--d:24s;--dl:-6s\"></i><i style=\"left:21%;--s:44px;--d:19s;--dl:-10s\"></i><i style=\"left:68%;--s:16px;--d:15s;--dl:-17s\"></i></div>"
+        "html": "\n    <style>\n    .purifybub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .purifybub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:purifybubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes purifybubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"purifybub\"><i style=\"left:52%;--s:10px;--d:17s;--dl:-10s\"></i><i style=\"left:32%;--s:34px;--d:23s;--dl:-15s\"></i><i style=\"left:77%;--s:38px;--d:14s;--dl:-1s\"></i><i style=\"left:43%;--s:9px;--d:11s;--dl:-7s\"></i><i style=\"left:64%;--s:39px;--d:21s;--dl:-18s\"></i><i style=\"left:68%;--s:11px;--d:17s;--dl:-18s\"></i></div>"
        },
        "elements": [],
        "isInner": false
@@ -1402,16 +1434,19 @@
      "isInner": false
     },
     {
-     "id": "4dc678a",
+     "id": "04c57dc",
      "elType": "column",
      "settings": {
       "_column_size": 45,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "369445b",
+       "id": "d52bc28",
        "elType": "widget",
        "widgetType": "image",
        "settings": {
@@ -1421,13 +1456,14 @@
          "alt": "Stacked bags of Ajalisco sachet water",
          "source": "library"
         },
-        "image_size": "full"
+        "image_size": "full",
+        "hover_animation": "grow"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "6626bf3",
+       "id": "080d124",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1441,7 +1477,7 @@
        "isInner": false
       },
       {
-       "id": "129f36b",
+       "id": "9a90ced",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1454,15 +1490,18 @@
      "isInner": false
     },
     {
-     "id": "dee71a6",
+     "id": "5498ea5",
      "elType": "column",
      "settings": {
       "_column_size": 55,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
-       "id": "d0b51e1",
+       "id": "9b19269",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1472,7 +1511,7 @@
        "isInner": false
       },
       {
-       "id": "2c54110",
+       "id": "f72134f",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1486,7 +1525,7 @@
        "isInner": false
       },
       {
-       "id": "2a39597",
+       "id": "59d91af",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1496,7 +1535,7 @@
        "isInner": false
       },
       {
-       "id": "9bb7f85",
+       "id": "942f388",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1510,7 +1549,7 @@
        "isInner": false
       },
       {
-       "id": "8866a04",
+       "id": "833aad5",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1534,7 +1573,7 @@
        "isInner": false
       },
       {
-       "id": "fb2ac0d",
+       "id": "526b74c",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1548,7 +1587,7 @@
        "isInner": false
       },
       {
-       "id": "24ab035",
+       "id": "ca95fea",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1558,7 +1597,7 @@
        "isInner": false
       },
       {
-       "id": "f4b5d7b",
+       "id": "1d0381b",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1568,7 +1607,7 @@
        "isInner": false
       },
       {
-       "id": "3042ac6",
+       "id": "1a9cd43",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1578,7 +1617,7 @@
        "isInner": false
       },
       {
-       "id": "13fe054",
+       "id": "d93b25d",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1592,7 +1631,7 @@
        "isInner": false
       },
       {
-       "id": "61d6cb6",
+       "id": "4a15190",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -1620,7 +1659,8 @@
          "size": 15.5,
          "sizes": []
         },
-        "typography_font_weight": "600"
+        "typography_font_weight": "600",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -1632,7 +1672,7 @@
    "isInner": false
   },
   {
-   "id": "1d17ce6",
+   "id": "70672b0",
    "elType": "section",
    "settings": {
     "background_background": "classic",
@@ -1654,16 +1694,19 @@
    },
    "elements": [
     {
-     "id": "3ea9275",
+     "id": "f2ca6ea",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "fc21448",
+       "id": "e439405",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1673,7 +1716,7 @@
        "isInner": false
       },
       {
-       "id": "b7c78c9",
+       "id": "3cb31f5",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1687,7 +1730,7 @@
        "isInner": false
       },
       {
-       "id": "46cb7a7",
+       "id": "fc0cf1f",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1697,7 +1740,7 @@
        "isInner": false
       },
       {
-       "id": "df99782",
+       "id": "4e5d7ac",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1711,14 +1754,14 @@
        "isInner": false
       },
       {
-       "id": "1b6ac0f",
+       "id": "33d69f0",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "4a14c5a",
+         "id": "5e42bdc",
          "elType": "column",
          "settings": {
           "_column_size": 25,
@@ -1740,11 +1783,14 @@
            "bottom": "22",
            "left": "22",
            "isLinked": false
-          }
+          },
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
-           "id": "b8a8143",
+           "id": "7338ba7",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1793,7 +1839,7 @@
          "isInner": false
         },
         {
-         "id": "5603a40",
+         "id": "f03565e",
          "elType": "column",
          "settings": {
           "_column_size": 25,
@@ -1815,11 +1861,14 @@
            "bottom": "22",
            "left": "22",
            "isLinked": false
-          }
+          },
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100
          },
          "elements": [
           {
-           "id": "d246c1f",
+           "id": "f38b322",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1868,7 +1917,7 @@
          "isInner": false
         },
         {
-         "id": "97ca7c5",
+         "id": "559112e",
          "elType": "column",
          "settings": {
           "_column_size": 25,
@@ -1890,11 +1939,14 @@
            "bottom": "22",
            "left": "22",
            "isLinked": false
-          }
+          },
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 200
          },
          "elements": [
           {
-           "id": "24dcda3",
+           "id": "70d6f20",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -1943,7 +1995,7 @@
          "isInner": false
         },
         {
-         "id": "b98683e",
+         "id": "913f0d6",
          "elType": "column",
          "settings": {
           "_column_size": 25,
@@ -1965,11 +2017,14 @@
            "bottom": "22",
            "left": "22",
            "isLinked": false
-          }
+          },
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 300
          },
          "elements": [
           {
-           "id": "e393315",
+           "id": "4a12e54",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
@@ -2027,7 +2082,7 @@
    "isInner": false
   },
   {
-   "id": "78b8e42",
+   "id": "c0752f3",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -2048,15 +2103,18 @@
    },
    "elements": [
     {
-     "id": "6739c6f",
+     "id": "6d11847",
      "elType": "column",
      "settings": {
       "_column_size": 50,
-      "_inline_size": null
+      "_inline_size": null,
+      "animation": "fadeInLeft",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "6df8bc9",
+       "id": "625ab29",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -2066,7 +2124,7 @@
        "isInner": false
       },
       {
-       "id": "1282da0",
+       "id": "06324ea",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2080,7 +2138,7 @@
        "isInner": false
       },
       {
-       "id": "6d1727e",
+       "id": "5a1f21d",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -2100,7 +2158,7 @@
        "isInner": false
       },
       {
-       "id": "9587b4b",
+       "id": "00e4d80",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2114,7 +2172,7 @@
        "isInner": false
       },
       {
-       "id": "a02444e",
+       "id": "2d74ada",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2138,7 +2196,7 @@
        "isInner": false
       },
       {
-       "id": "66f9bf1",
+       "id": "de89400",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2152,7 +2210,7 @@
        "isInner": false
       },
       {
-       "id": "92a95af",
+       "id": "e1f7a0d",
        "elType": "widget",
        "widgetType": "icon-list",
        "settings": {
@@ -2210,7 +2268,7 @@
        "isInner": false
       },
       {
-       "id": "c3368ae",
+       "id": "54d79c4",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2224,7 +2282,7 @@
        "isInner": false
       },
       {
-       "id": "6a084d2",
+       "id": "e15534b",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -2252,7 +2310,8 @@
          "size": 15.5,
          "sizes": []
         },
-        "typography_font_weight": "600"
+        "typography_font_weight": "600",
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -2261,17 +2320,20 @@
      "isInner": false
     },
     {
-     "id": "2014361",
+     "id": "19d8bc9",
      "elType": "column",
      "settings": {
       "_column_size": 50,
       "_inline_size": null,
       "content_position": "center",
-      "text_align": "center"
+      "text_align": "center",
+      "animation": "fadeInRight",
+      "animation_duration": "fast",
+      "_animation_delay": 150
      },
      "elements": [
       {
-       "id": "9975fcb",
+       "id": "c9e4e5c",
        "elType": "widget",
        "widgetType": "image",
        "settings": {
@@ -2281,13 +2343,14 @@
          "alt": "Ajalisco bottled water and sachet on a kitchen counter",
          "source": "library"
         },
-        "image_size": "full"
+        "image_size": "full",
+        "hover_animation": "grow"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "ae25edf",
+       "id": "48a1647",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2301,7 +2364,7 @@
        "isInner": false
       },
       {
-       "id": "efae045",
+       "id": "40ac1e1",
        "elType": "widget",
        "widgetType": "image",
        "settings": {
@@ -2317,13 +2380,14 @@
          "unit": "%",
          "size": 55,
          "sizes": []
-        }
+        },
+        "hover_animation": "grow"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "87293f4",
+       "id": "920cb71",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2337,7 +2401,7 @@
        "isInner": false
       },
       {
-       "id": "35f7da3",
+       "id": "1676493",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2353,7 +2417,7 @@
    "isInner": false
   },
   {
-   "id": "a455d75",
+   "id": "44f657d",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -2373,16 +2437,19 @@
    },
    "elements": [
     {
-     "id": "7eca377",
+     "id": "0093a60",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "df6ceab",
+       "id": "1b81a74",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -2392,7 +2459,7 @@
        "isInner": false
       },
       {
-       "id": "cb43840",
+       "id": "6127d66",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2406,7 +2473,7 @@
        "isInner": false
       },
       {
-       "id": "a7a0b62",
+       "id": "44d1efc",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2416,7 +2483,7 @@
        "isInner": false
       },
       {
-       "id": "e00d8e3",
+       "id": "a886b07",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2430,22 +2497,25 @@
        "isInner": false
       },
       {
-       "id": "ba9c706",
+       "id": "e697afb",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "b5f7993",
+         "id": "b4b7c33",
          "elType": "column",
          "settings": {
           "_column_size": 25,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
-           "id": "3f0cbd8",
+           "id": "d7e8316",
            "elType": "section",
            "settings": {
             "background_background": "classic",
@@ -2486,7 +2556,7 @@
            },
            "elements": [
             {
-             "id": "8a70548",
+             "id": "4d74775",
              "elType": "column",
              "settings": {
               "_column_size": 100,
@@ -2496,7 +2566,7 @@
              },
              "elements": [
               {
-               "id": "c46213c",
+               "id": "2700b5d",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -2542,6 +2612,7 @@
                  "sizes": []
                 },
                 "description_typography_font_weight": "400",
+                "hover_animation": "float",
                 "text_align": "center"
                },
                "elements": [],
@@ -2557,15 +2628,18 @@
          "isInner": false
         },
         {
-         "id": "a6a7475",
+         "id": "15a90fd",
          "elType": "column",
          "settings": {
           "_column_size": 25,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100
          },
          "elements": [
           {
-           "id": "e89e379",
+           "id": "c583bed",
            "elType": "section",
            "settings": {
             "background_background": "classic",
@@ -2606,7 +2680,7 @@
            },
            "elements": [
             {
-             "id": "9ad6238",
+             "id": "416391b",
              "elType": "column",
              "settings": {
               "_column_size": 100,
@@ -2616,7 +2690,7 @@
              },
              "elements": [
               {
-               "id": "2cd7669",
+               "id": "957b7ec",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -2662,6 +2736,7 @@
                  "sizes": []
                 },
                 "description_typography_font_weight": "400",
+                "hover_animation": "float",
                 "text_align": "center"
                },
                "elements": [],
@@ -2677,15 +2752,18 @@
          "isInner": false
         },
         {
-         "id": "09a4de8",
+         "id": "2533f7d",
          "elType": "column",
          "settings": {
           "_column_size": 25,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 200
          },
          "elements": [
           {
-           "id": "d7fb038",
+           "id": "4d1e4e7",
            "elType": "section",
            "settings": {
             "background_background": "classic",
@@ -2726,7 +2804,7 @@
            },
            "elements": [
             {
-             "id": "69f345b",
+             "id": "cd31ff7",
              "elType": "column",
              "settings": {
               "_column_size": 100,
@@ -2736,7 +2814,7 @@
              },
              "elements": [
               {
-               "id": "1096e47",
+               "id": "ff9bbb2",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -2782,6 +2860,7 @@
                  "sizes": []
                 },
                 "description_typography_font_weight": "400",
+                "hover_animation": "float",
                 "text_align": "center"
                },
                "elements": [],
@@ -2797,15 +2876,18 @@
          "isInner": false
         },
         {
-         "id": "b791c02",
+         "id": "9d0e842",
          "elType": "column",
          "settings": {
           "_column_size": 25,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 300
          },
          "elements": [
           {
-           "id": "c2a94e1",
+           "id": "1238c06",
            "elType": "section",
            "settings": {
             "background_background": "classic",
@@ -2846,7 +2928,7 @@
            },
            "elements": [
             {
-             "id": "ecbe873",
+             "id": "6408567",
              "elType": "column",
              "settings": {
               "_column_size": 100,
@@ -2856,7 +2938,7 @@
              },
              "elements": [
               {
-               "id": "5c21db1",
+               "id": "d89d725",
                "elType": "widget",
                "widgetType": "icon-box",
                "settings": {
@@ -2902,6 +2984,7 @@
                  "sizes": []
                 },
                 "description_typography_font_weight": "400",
+                "hover_animation": "float",
                 "text_align": "center"
                },
                "elements": [],
@@ -2926,7 +3009,7 @@
    "isInner": false
   },
   {
-   "id": "8b280c9",
+   "id": "1869a08",
    "elType": "section",
    "settings": {
     "background_background": "classic",
@@ -2948,16 +3031,19 @@
    },
    "elements": [
     {
-     "id": "b31b741",
+     "id": "c9ac17f",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "49df330",
+       "id": "0b3098f",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -2967,7 +3053,7 @@
        "isInner": false
       },
       {
-       "id": "759005f",
+       "id": "efdcd3e",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2981,7 +3067,7 @@
        "isInner": false
       },
       {
-       "id": "dce2970",
+       "id": "0667410",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2991,7 +3077,7 @@
        "isInner": false
       },
       {
-       "id": "669a04a",
+       "id": "cb45a0f",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -3005,7 +3091,7 @@
        "isInner": false
       },
       {
-       "id": "7084f07",
+       "id": "2d46546",
        "elType": "widget",
        "widgetType": "testimonial-carousel",
        "settings": {
@@ -3063,7 +3149,7 @@
    "isInner": false
   },
   {
-   "id": "eb714df",
+   "id": "0cb2abf",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -3083,16 +3169,19 @@
    },
    "elements": [
     {
-     "id": "7fb58a7",
+     "id": "8032018",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "fadeInUp",
+      "animation_duration": "fast",
+      "_animation_delay": 0
      },
      "elements": [
       {
-       "id": "f5e61e1",
+       "id": "a99ff68",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -3102,7 +3191,7 @@
        "isInner": false
       },
       {
-       "id": "5bd4974",
+       "id": "0614145",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -3116,7 +3205,7 @@
        "isInner": false
       },
       {
-       "id": "14dc945",
+       "id": "b5daad9",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -3126,7 +3215,7 @@
        "isInner": false
       },
       {
-       "id": "f9ec318",
+       "id": "36a49ec",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -3140,22 +3229,25 @@
        "isInner": false
       },
       {
-       "id": "7bef936",
+       "id": "0d4124e",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "f387386",
+         "id": "84bba00",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
-           "id": "644c1c2",
+           "id": "949369d",
            "elType": "section",
            "settings": {
             "background_background": "classic",
@@ -3186,7 +3278,7 @@
            },
            "elements": [
             {
-             "id": "7fb309e",
+             "id": "e0202c2",
              "elType": "column",
              "settings": {
               "_column_size": 100,
@@ -3202,7 +3294,7 @@
              },
              "elements": [
               {
-               "id": "66d15fb",
+               "id": "1f3c36e",
                "elType": "widget",
                "widgetType": "image",
                "settings": {
@@ -3218,13 +3310,14 @@
                  "url": "https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/",
                  "is_external": "",
                  "nofollow": ""
-                }
+                },
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
               },
               {
-               "id": "c76f157",
+               "id": "84ea780",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3238,7 +3331,7 @@
                "isInner": false
               },
               {
-               "id": "1aeb643",
+               "id": "8991d0f",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3248,7 +3341,7 @@
                "isInner": false
               },
               {
-               "id": "02e1cfe",
+               "id": "f3e34b1",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3262,7 +3355,7 @@
                "isInner": false
               },
               {
-               "id": "10b8288",
+               "id": "c718a8a",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3286,7 +3379,7 @@
                "isInner": false
               },
               {
-               "id": "768a4c1",
+               "id": "73dab29",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3300,7 +3393,7 @@
                "isInner": false
               },
               {
-               "id": "b10d532",
+               "id": "8a73d65",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3319,15 +3412,18 @@
          "isInner": false
         },
         {
-         "id": "83e822b",
+         "id": "d156d68",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100
          },
          "elements": [
           {
-           "id": "eb0360b",
+           "id": "9d5305b",
            "elType": "section",
            "settings": {
             "background_background": "classic",
@@ -3358,7 +3454,7 @@
            },
            "elements": [
             {
-             "id": "de2926d",
+             "id": "b362c62",
              "elType": "column",
              "settings": {
               "_column_size": 100,
@@ -3374,7 +3470,7 @@
              },
              "elements": [
               {
-               "id": "9909ce6",
+               "id": "41f533d",
                "elType": "widget",
                "widgetType": "image",
                "settings": {
@@ -3390,13 +3486,14 @@
                  "url": "https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/",
                  "is_external": "",
                  "nofollow": ""
-                }
+                },
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
               },
               {
-               "id": "437a35b",
+               "id": "7555783",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3410,7 +3507,7 @@
                "isInner": false
               },
               {
-               "id": "d91500d",
+               "id": "5045327",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3420,7 +3517,7 @@
                "isInner": false
               },
               {
-               "id": "7a2531b",
+               "id": "12a3c06",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3434,7 +3531,7 @@
                "isInner": false
               },
               {
-               "id": "7cf8469",
+               "id": "bf175b2",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3458,7 +3555,7 @@
                "isInner": false
               },
               {
-               "id": "4fbc4a8",
+               "id": "2bd6254",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3472,7 +3569,7 @@
                "isInner": false
               },
               {
-               "id": "6b6a197",
+               "id": "060c4f7",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3491,15 +3588,18 @@
          "isInner": false
         },
         {
-         "id": "7027a4d",
+         "id": "2bb9c0b",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
-          "_inline_size": null
+          "_inline_size": null,
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 200
          },
          "elements": [
           {
-           "id": "b905b39",
+           "id": "717d05b",
            "elType": "section",
            "settings": {
             "background_background": "classic",
@@ -3530,7 +3630,7 @@
            },
            "elements": [
             {
-             "id": "b9c30e3",
+             "id": "5e68ec2",
              "elType": "column",
              "settings": {
               "_column_size": 100,
@@ -3546,7 +3646,7 @@
              },
              "elements": [
               {
-               "id": "59de729",
+               "id": "d8e1e6b",
                "elType": "widget",
                "widgetType": "image",
                "settings": {
@@ -3562,13 +3662,14 @@
                  "url": "https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/",
                  "is_external": "",
                  "nofollow": ""
-                }
+                },
+                "hover_animation": "grow"
                },
                "elements": [],
                "isInner": false
               },
               {
-               "id": "c5961c1",
+               "id": "ed458cd",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3582,7 +3683,7 @@
                "isInner": false
               },
               {
-               "id": "fbd3ef2",
+               "id": "a9464b0",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3592,7 +3693,7 @@
                "isInner": false
               },
               {
-               "id": "2d0da38",
+               "id": "a8aa73a",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3606,7 +3707,7 @@
                "isInner": false
               },
               {
-               "id": "7561581",
+               "id": "f1c3aa0",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3630,7 +3731,7 @@
                "isInner": false
               },
               {
-               "id": "c94baf3",
+               "id": "2a48786",
                "elType": "widget",
                "widgetType": "spacer",
                "settings": {
@@ -3644,7 +3745,7 @@
                "isInner": false
               },
               {
-               "id": "ce0da65",
+               "id": "e29608f",
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
@@ -3672,7 +3773,7 @@
    "isInner": false
   },
   {
-   "id": "4229a36",
+   "id": "372ef47",
    "elType": "section",
    "settings": {
     "padding": {
@@ -3686,7 +3787,7 @@
    },
    "elements": [
     {
-     "id": "8e0f11f",
+     "id": "cdd1376",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -3694,7 +3795,7 @@
      },
      "elements": [
       {
-       "id": "cac3d30",
+       "id": "02e0860",
        "elType": "section",
        "settings": {
         "background_background": "gradient",
@@ -3726,26 +3827,29 @@
        },
        "elements": [
         {
-         "id": "4324138",
+         "id": "cd420bc",
          "elType": "column",
          "settings": {
           "_column_size": 100,
           "_inline_size": null,
-          "content_position": "center"
+          "content_position": "center",
+          "animation": "zoomIn",
+          "animation_duration": "fast",
+          "_animation_delay": 0
          },
          "elements": [
           {
-           "id": "c6f3724",
+           "id": "58ca231",
            "elType": "widget",
            "widgetType": "html",
            "settings": {
-            "html": "\n    <style>\n    .ctabub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .ctabub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:ctabubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes ctabubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"ctabub\"><i style=\"left:63%;--s:38px;--d:12s;--dl:-5s\"></i><i style=\"left:15%;--s:12px;--d:10s;--dl:-4s\"></i><i style=\"left:67%;--s:35px;--d:15s;--dl:-4s\"></i><i style=\"left:47%;--s:17px;--d:23s;--dl:-10s\"></i><i style=\"left:69%;--s:32px;--d:17s;--dl:-1s\"></i><i style=\"left:28%;--s:27px;--d:15s;--dl:-14s\"></i></div>"
+            "html": "\n    <style>\n    .ctabub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .ctabub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:ctabubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes ctabubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"ctabub\"><i style=\"left:60%;--s:30px;--d:24s;--dl:-14s\"></i><i style=\"left:72%;--s:41px;--d:21s;--dl:-10s\"></i><i style=\"left:25%;--s:38px;--d:24s;--dl:-11s\"></i><i style=\"left:5%;--s:21px;--d:20s;--dl:-9s\"></i><i style=\"left:11%;--s:46px;--d:24s;--dl:-11s\"></i><i style=\"left:71%;--s:9px;--d:15s;--dl:-4s\"></i></div>"
            },
            "elements": [],
            "isInner": false
           },
           {
-           "id": "3674e63",
+           "id": "305336e",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -3766,7 +3870,7 @@
            "isInner": false
           },
           {
-           "id": "d093355",
+           "id": "0bf4661",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -3791,7 +3895,7 @@
            "isInner": false
           },
           {
-           "id": "f584742",
+           "id": "a7db1ce",
            "elType": "widget",
            "widgetType": "spacer",
            "settings": {
@@ -3805,7 +3909,7 @@
            "isInner": false
           },
           {
-           "id": "dd3bf59",
+           "id": "46b67d4",
            "elType": "section",
            "settings": {
             "content_position": "middle",
@@ -3813,7 +3917,7 @@
            },
            "elements": [
             {
-             "id": "bd930b7",
+             "id": "862deeb",
              "elType": "column",
              "settings": {
               "_column_size": 50,
@@ -3821,7 +3925,7 @@
              },
              "elements": [
               {
-               "id": "fc048a5",
+               "id": "e974586",
                "elType": "widget",
                "widgetType": "button",
                "settings": {
@@ -3850,7 +3954,8 @@
                  "sizes": []
                 },
                 "typography_font_weight": "600",
-                "align": "center"
+                "align": "center",
+                "hover_animation": "float"
                },
                "elements": [],
                "isInner": false
@@ -3859,7 +3964,7 @@
              "isInner": false
             },
             {
-             "id": "dc2dfc9",
+             "id": "695dda2",
              "elType": "column",
              "settings": {
               "_column_size": 50,
@@ -3867,7 +3972,7 @@
              },
              "elements": [
               {
-               "id": "76ac400",
+               "id": "fafb56e",
                "elType": "widget",
                "widgetType": "button",
                "settings": {
@@ -3896,7 +4001,8 @@
                  "sizes": []
                 },
                 "typography_font_weight": "600",
-                "align": "center"
+                "align": "center",
+                "hover_animation": "float"
                },
                "elements": [],
                "isInner": false

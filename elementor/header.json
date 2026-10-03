@@ -61,7 +61,8 @@
          "unit": "%",
          "size": 70,
          "sizes": []
-        }
+        },
+        "hover_animation": "float"
        },
        "elements": [],
        "isInner": false
@@ -185,7 +186,8 @@
              "size": 15.5,
              "sizes": []
             },
-            "typography_font_weight": "600"
+            "typography_font_weight": "600",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
