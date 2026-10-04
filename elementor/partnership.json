@@ -1,7 +1,7 @@
 {
  "content": [
   {
-   "id": "9df4696",
+   "id": "72e3102",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -29,7 +29,7 @@
    },
    "elements": [
     {
-     "id": "15c0c8e",
+     "id": "6e4d58e",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -38,7 +38,7 @@
      },
      "elements": [
       {
-       "id": "6e4d58e",
+       "id": "4f7fd63",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -59,7 +59,7 @@
        "isInner": false
       },
       {
-       "id": "72e3102",
+       "id": "3dbdde1",
        "elType": "widget",
        "widgetType": "divider",
        "settings": {
@@ -85,7 +85,7 @@
        "isInner": false
       },
       {
-       "id": "75dff6c",
+       "id": "31ca376",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -116,7 +116,7 @@
    "isInner": false
   },
   {
-   "id": "31ca376",
+   "id": "1a278f6",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -137,18 +137,19 @@
    },
    "elements": [
     {
-     "id": "78dcb74",
+     "id": "ec87a17",
      "elType": "column",
      "settings": {
       "_column_size": 48,
       "_inline_size": null,
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "6217927",
+       "id": "5da846a",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -158,7 +159,7 @@
        "isInner": false
       },
       {
-       "id": "3c8eb5b",
+       "id": "32c3bb8",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -172,7 +173,7 @@
        "isInner": false
       },
       {
-       "id": "b682575",
+       "id": "1e3c29b",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -196,7 +197,7 @@
        "isInner": false
       },
       {
-       "id": "ec87a17",
+       "id": "6217927",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -268,7 +269,7 @@
        "isInner": false
       },
       {
-       "id": "1ac826a",
+       "id": "3c8eb5b",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -282,99 +283,17 @@
        "isInner": false
       },
       {
-       "id": "32c3bb8",
-       "elType": "section",
+       "id": "2d10267",
+       "elType": "widget",
+       "widgetType": "html",
        "settings": {
-        "background_background": "classic",
-        "background_color": "#DFEBFC",
-        "padding": {
-         "unit": "px",
-         "top": "22",
-         "right": "24",
-         "bottom": "22",
-         "left": "24",
-         "isLinked": false
-        },
-        "border_radius": {
-         "unit": "px",
-         "top": "14",
-         "right": "14",
-         "bottom": "14",
-         "left": "14",
-         "isLinked": false
-        },
-        "border_border": "solid",
-        "border_width": {
-         "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "0",
-         "left": "5",
-         "isLinked": false
-        },
-        "border_color": "#0256DB"
+        "html": "<div style=\"padding:22px 24px;border-radius:14px;background:#DFEBFC;border-left:5px solid #0256DB\"><h3 style=\"margin:0 0 6px;font:600 22px Outfit,sans-serif;color:#0256DB\">Reach Out Lets Discuss</h3><p style=\"margin:0;font:400 15.5px Nunito,sans-serif;color:#54595F\">Get all the details on pricing, logistics, and benefits.</p></div>"
        },
-       "elements": [
-        {
-         "id": "5da846a",
-         "elType": "column",
-         "settings": {
-          "_column_size": 100,
-          "_inline_size": null
-         },
-         "elements": [
-          {
-           "id": "2d10267",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Reach Out Lets Discuss",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 22,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "06d7e80",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Get all the details on pricing, logistics, and benefits.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 15.5,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#54595F"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        }
-       ],
+       "elements": [],
        "isInner": false
       },
       {
-       "id": "6fce484",
+       "id": "b682575",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -388,7 +307,7 @@
        "isInner": false
       },
       {
-       "id": "1e3c29b",
+       "id": "06d7e80",
        "elType": "widget",
        "widgetType": "icon-list",
        "settings": {
@@ -441,7 +360,7 @@
      "isInner": false
     },
     {
-     "id": "3dbdde1",
+     "id": "7702172",
      "elType": "column",
      "settings": {
       "_column_size": 52,
@@ -473,11 +392,12 @@
       },
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
-       "id": "e3772a0",
+       "id": "b971722",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -497,7 +417,7 @@
        "isInner": false
       },
       {
-       "id": "7702172",
+       "id": "f244f58",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -521,7 +441,7 @@
        "isInner": false
       },
       {
-       "id": "1a278f6",
+       "id": "d669cbe",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -535,60 +455,64 @@
        "isInner": false
       },
       {
-       "id": "d669cbe",
+       "id": "b50af03",
        "elType": "widget",
        "widgetType": "form",
        "settings": {
         "form_name": "Partnership",
         "form_fields": [
          {
-          "_id": "f21345d",
+          "_id": "1ac826a",
+          "custom_id": "full_name",
           "field_type": "text",
           "field_label": "Full Name",
-          "required": "true",
+          "width": "100",
+          "required": "true"
+         },
+         {
+          "_id": "6fce484",
+          "custom_id": "email",
+          "field_type": "email",
+          "field_label": "Email",
+          "width": "100",
+          "required": "true"
+         },
+         {
+          "_id": "78dcb74",
+          "custom_id": "phone_number",
+          "field_type": "tel",
+          "field_label": "Phone Number",
+          "width": "100",
+          "required": "true"
+         },
+         {
+          "_id": "f21345d",
+          "custom_id": "business_name",
+          "field_type": "text",
+          "field_label": "Business Name",
           "width": "100"
          },
          {
           "_id": "2cce803",
-          "field_type": "email",
-          "field_label": "Email",
-          "required": "true",
-          "width": "100"
+          "custom_id": "location_town_state",
+          "field_type": "text",
+          "field_label": "Location (Town/State)",
+          "width": "100",
+          "required": "true"
          },
          {
           "_id": "8a39d5e",
-          "field_type": "tel",
-          "field_label": "Phone Number",
-          "required": "true",
-          "width": "100"
-         },
-         {
-          "_id": "0853964",
-          "field_type": "text",
-          "field_label": "Business Name",
-          "required": "false",
-          "width": "100"
-         },
-         {
-          "_id": "b50af03",
-          "field_type": "text",
-          "field_label": "Location (Town/State)",
-          "required": "true",
-          "width": "100"
-         },
-         {
-          "_id": "b971722",
+          "custom_id": "message",
           "field_type": "textarea",
           "field_label": "Message",
-          "required": "false",
           "width": "100",
           "rows": 3
          },
          {
-          "_id": "f244f58",
+          "_id": "0853964",
+          "custom_id": "i_agree_to_receive_updates_from_ajalisco",
           "field_type": "acceptance",
           "field_label": "I agree to receive updates from Ajalisco.",
-          "required": "false",
           "width": "100"
          }
         ],
@@ -607,11 +531,11 @@
        "isInner": false
       },
       {
-       "id": "4f7fd63",
+       "id": "e3772a0",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Your request opens an email to us so we can reply quickly. Prefer WhatsApp? <a href=\"https://wa.me/2347078581881\" style=\"color:#0256DB;font-weight:700\">Chat with us →</a>",
+        "editor": "We’ll get back to you by email. Prefer WhatsApp? <a href=\"https://wa.me/2347078581881\" style=\"color:#0256DB;font-weight:700\">Chat with us →</a>",
         "typography_typography": "custom",
         "typography_font_family": "Nunito",
         "typography_font_size": {
@@ -638,7 +562,7 @@
    "isInner": false
   },
   {
-   "id": "684b27b",
+   "id": "3712da8",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -650,6 +574,12 @@
      "sizes": []
     },
     "background_gradient_type": "linear",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
     "padding": {
      "unit": "px",
      "top": "56",
@@ -665,11 +595,19 @@
      "bottom": "26",
      "left": "26",
      "isLinked": false
+    },
+    "margin": {
+     "unit": "px",
+     "top": "10",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
     }
    },
    "elements": [
     {
-     "id": "ea20e32",
+     "id": "125227c",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -677,11 +615,12 @@
       "content_position": "center",
       "animation": "zoomIn",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "11a11f5",
+       "id": "75dff6c",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -702,7 +641,7 @@
        "isInner": false
       },
       {
-       "id": "125227c",
+       "id": "15c0c8e",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -727,7 +666,7 @@
        "isInner": false
       },
       {
-       "id": "3712da8",
+       "id": "9df4696",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -741,7 +680,7 @@
        "isInner": false
       },
       {
-       "id": "6a78c49",
+       "id": "11a11f5",
        "elType": "widget",
        "widgetType": "button",
        "settings": {

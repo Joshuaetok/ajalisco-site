@@ -1,7 +1,7 @@
 {
  "content": [
   {
-   "id": "da8099f",
+   "id": "9ffea51",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -29,7 +29,7 @@
    },
    "elements": [
     {
-     "id": "e4c6428",
+     "id": "1194f30",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -38,7 +38,7 @@
      },
      "elements": [
       {
-       "id": "f307590",
+       "id": "736a356",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -59,7 +59,7 @@
        "isInner": false
       },
       {
-       "id": "d273e34",
+       "id": "6f89369",
        "elType": "widget",
        "widgetType": "divider",
        "settings": {
@@ -85,7 +85,7 @@
        "isInner": false
       },
       {
-       "id": "f98dff7",
+       "id": "7b59048",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -144,7 +144,8 @@
       "_inline_size": null,
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
@@ -248,7 +249,8 @@
       },
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
@@ -330,7 +332,8 @@
       },
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
@@ -341,11 +344,10 @@
         "title_text": "Mission",
         "description_text": "To produce safe, high-quality consumables—including sachet water and wholesome bread—that nourish and delight families across Nigeria.",
         "position": "top",
-        "icon_color": "#FFFFFF",
-        "icon_background_background": "classic",
-        "icon_bg_background": "classic",
-        "icon_primary_color": "#FFFFFF",
-        "icon_secondary_color": "#56A428",
+        "view": "stacked",
+        "shape": "circle",
+        "primary_color": "#FFFFFF",
+        "secondary_color": "#56A428",
         "title_color": "#0256DB",
         "description_color": "#7A7A7A",
         "icon_space": {
@@ -358,7 +360,6 @@
          "size": 28,
          "sizes": []
         },
-        "shape": "circle",
         "icon": "fas fa-bullseye",
         "selected_icon": {
          "value": "fas fa-bullseye",
@@ -421,7 +422,8 @@
       },
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
@@ -432,11 +434,10 @@
         "title_text": "Vision",
         "description_text": "To be Nigeria’s most trusted producer of high-quality, affordable, and nutritious products—delivering refreshment, health, and happiness to every home. We aspire to expand our reach, uphold the highest standards of hygiene and integrity, and positively impact the communities we serve through innovation and excellence.",
         "position": "top",
-        "icon_color": "#FFFFFF",
-        "icon_background_background": "classic",
-        "icon_bg_background": "classic",
-        "icon_primary_color": "#FFFFFF",
-        "icon_secondary_color": "#56A428",
+        "view": "stacked",
+        "shape": "circle",
+        "primary_color": "#FFFFFF",
+        "secondary_color": "#56A428",
         "title_color": "#0256DB",
         "description_color": "#7A7A7A",
         "icon_space": {
@@ -449,7 +450,6 @@
          "size": 28,
          "sizes": []
         },
-        "shape": "circle",
         "icon": "fas fa-eye",
         "selected_icon": {
          "value": "fas fa-eye",
@@ -483,7 +483,7 @@
    "isInner": false
   },
   {
-   "id": "529a279",
+   "id": "bd4755d",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -503,7 +503,7 @@
    },
    "elements": [
     {
-     "id": "daeee6f",
+     "id": "9b1b673",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -512,7 +512,7 @@
      },
      "elements": [
       {
-       "id": "81d06bd",
+       "id": "6a68f81",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -522,7 +522,7 @@
        "isInner": false
       },
       {
-       "id": "2aa399d",
+       "id": "2d810a4",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -536,7 +536,7 @@
        "isInner": false
       },
       {
-       "id": "ac946dc",
+       "id": "85ed032",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -557,7 +557,7 @@
        "isInner": false
       },
       {
-       "id": "59c0996",
+       "id": "41b4d41",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -571,7 +571,7 @@
        "isInner": false
       },
       {
-       "id": "11a11f5",
+       "id": "31ca376",
        "elType": "section",
        "settings": {
         "padding": {
@@ -586,127 +586,216 @@
        },
        "elements": [
         {
-         "id": "f244f58",
+         "id": "b50af03",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "5",
+           "isLinked": false
+          },
+          "border_color": "#28A745",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 4,
+           "spread": 0,
+           "color": "rgba(28,36,75,.05)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 0
+          "_animation_delay": 0,
+          "animation_delay": 0
          },
          "elements": [
           {
-           "id": "b50af03",
-           "elType": "section",
+           "id": "2cce803",
+           "elType": "widget",
+           "widgetType": "heading",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "title": "Quality & Safety",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
              "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
-             "isLinked": false
+             "size": 20,
+             "sizes": []
             },
-            "border_radius": {
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "8a39d5e",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
              "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
-             "isLinked": false
-            },
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "5",
-             "isLinked": false
-            },
-            "border_color": "#28A745",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 2,
-             "blur": 4,
-             "spread": 0,
-             "color": "rgba(28,36,75,.05)"
+             "size": 6,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "b971722",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "2cce803",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Quality & Safety",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "typography_font_weight": "600"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "8a39d5e",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 6,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "0853964",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "We are committed to producing products that meet the highest standards of safety, hygiene, and quality to ensure our customers receive only the best.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "0853964",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "We are committed to producing products that meet the highest standards of safety, hygiene, and quality to ensure our customers receive only the best.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "e3772a0",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "5",
+           "isLinked": false
+          },
+          "border_color": "#28A745",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 4,
+           "spread": 0,
+           "color": "rgba(28,36,75,.05)"
+          },
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100,
+          "animation_delay": 100
+         },
+         "elements": [
+          {
+           "id": "b971722",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Honesty & Transparency",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "f244f58",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 6,
+             "sizes": []
             }
-           ],
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d669cbe",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Honesty and transparency guide everything we do, from sourcing ingredients to delivering our products to your hands.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
@@ -718,249 +807,103 @@
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "5",
+           "isLinked": false
+          },
+          "border_color": "#28A745",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 4,
+           "spread": 0,
+           "color": "rgba(28,36,75,.05)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 100
+          "_animation_delay": 200,
+          "animation_delay": 200
          },
          "elements": [
+          {
+           "id": "7702172",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Customer Focus",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
           {
            "id": "1a278f6",
-           "elType": "section",
+           "elType": "widget",
+           "widgetType": "spacer",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "space": {
              "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
-             "isLinked": false
-            },
-            "border_radius": {
-             "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
-             "isLinked": false
-            },
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "5",
-             "isLinked": false
-            },
-            "border_color": "#28A745",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 2,
-             "blur": 4,
-             "spread": 0,
-             "color": "rgba(28,36,75,.05)"
+             "size": 6,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "4f7fd63",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "d669cbe",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Honesty & Transparency",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "typography_font_weight": "600"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "e3772a0",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 6,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "7702172",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "Honesty and transparency guide everything we do, from sourcing ingredients to delivering our products to your hands.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "9df4696",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 200
-         },
-         "elements": [
+          },
           {
-           "id": "75dff6c",
-           "elType": "section",
+           "id": "4f7fd63",
+           "elType": "widget",
+           "widgetType": "text-editor",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "editor": "Our customers are at the heart of our business. We strive to exceed expectations and foster trust through consistent excellence.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
              "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
-             "isLinked": false
+             "size": 15,
+             "sizes": []
             },
-            "border_radius": {
-             "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
-             "isLinked": false
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
             },
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "5",
-             "isLinked": false
-            },
-            "border_color": "#28A745",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 2,
-             "blur": 4,
-             "spread": 0,
-             "color": "rgba(28,36,75,.05)"
-            }
+            "text_color": "#7A7A7A"
            },
-           "elements": [
-            {
-             "id": "15c0c8e",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "31ca376",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Customer Focus",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "typography_font_weight": "600"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "6e4d58e",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 6,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "72e3102",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "Our customers are at the heart of our business. We strive to exceed expectations and foster trust through consistent excellence.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
           }
          ],
@@ -970,388 +913,331 @@
        "isInner": true
       },
       {
-       "id": "dbad3c6",
+       "id": "4833489",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
+         "id": "15c0c8e",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "5",
+           "isLinked": false
+          },
+          "border_color": "#28A745",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 4,
+           "spread": 0,
+           "color": "rgba(28,36,75,.05)"
+          },
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 0,
+          "animation_delay": 0
+         },
+         "elements": [
+          {
+           "id": "6e4d58e",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Innovation",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "72e3102",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "75dff6c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "We continuously seek ways to improve our products and processes, embracing new ideas to serve our community better.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "3712da8",
+         "elType": "column",
+         "settings": {
+          "_column_size": 33.33,
+          "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "5",
+           "isLinked": false
+          },
+          "border_color": "#28A745",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 4,
+           "spread": 0,
+           "color": "rgba(28,36,75,.05)"
+          },
+          "animation": "fadeInUp",
+          "animation_duration": "fast",
+          "_animation_delay": 100,
+          "animation_delay": 100
+         },
+         "elements": [
+          {
+           "id": "9df4696",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Sustainability",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "11a11f5",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "125227c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "We are dedicated to environmentally responsible practices that promote the well-being of our planet and future generations.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
          "id": "95e9093",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "24",
+           "bottom": "24",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "5",
+           "isLinked": false
+          },
+          "border_color": "#28A745",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 4,
+           "spread": 0,
+           "color": "rgba(28,36,75,.05)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 0
+          "_animation_delay": 200,
+          "animation_delay": 200
          },
          "elements": [
+          {
+           "id": "6a78c49",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Community Impact",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
           {
            "id": "ea20e32",
-           "elType": "section",
+           "elType": "widget",
+           "widgetType": "spacer",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "space": {
              "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
-             "isLinked": false
-            },
-            "border_radius": {
-             "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
-             "isLinked": false
-            },
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "5",
-             "isLinked": false
-            },
-            "border_color": "#28A745",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 2,
-             "blur": 4,
-             "spread": 0,
-             "color": "rgba(28,36,75,.05)"
+             "size": 6,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "684b27b",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "125227c",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Innovation",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "typography_font_weight": "600"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "3712da8",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 6,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "6a78c49",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "We continuously seek ways to improve our products and processes, embracing new ideas to serve our community better.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "9b1b673",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 100
-         },
-         "elements": [
+          },
           {
-           "id": "85ed032",
-           "elType": "section",
+           "id": "684b27b",
+           "elType": "widget",
+           "widgetType": "text-editor",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "editor": "Our growth is intertwined with the well-being of our community. We aim to contribute positively through our products and practices.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
              "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
-             "isLinked": false
+             "size": 15,
+             "sizes": []
             },
-            "border_radius": {
-             "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
-             "isLinked": false
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
             },
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "5",
-             "isLinked": false
-            },
-            "border_color": "#28A745",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 2,
-             "blur": 4,
-             "spread": 0,
-             "color": "rgba(28,36,75,.05)"
-            }
+            "text_color": "#7A7A7A"
            },
-           "elements": [
-            {
-             "id": "41b4d41",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "4833489",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Sustainability",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "typography_font_weight": "600"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "6a68f81",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 6,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "2d810a4",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "We are dedicated to environmentally responsible practices that promote the well-being of our planet and future generations.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "0385813",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 200
-         },
-         "elements": [
-          {
-           "id": "b97706c",
-           "elType": "section",
-           "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "24",
-             "right": "24",
-             "bottom": "24",
-             "left": "24",
-             "isLinked": false
-            },
-            "border_radius": {
-             "unit": "px",
-             "top": "12",
-             "right": "12",
-             "bottom": "12",
-             "left": "12",
-             "isLinked": false
-            },
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "0",
-             "left": "5",
-             "isLinked": false
-            },
-            "border_color": "#28A745",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 2,
-             "blur": 4,
-             "spread": 0,
-             "color": "rgba(28,36,75,.05)"
-            }
-           },
-           "elements": [
-            {
-             "id": "a828bca",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "bd4755d",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Community Impact",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "typography_font_weight": "600"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "05ad785",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 6,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "3c1f76e",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "Our growth is intertwined with the well-being of our community. We aim to contribute positively through our products and practices.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
           }
          ],
@@ -1367,7 +1253,7 @@
    "isInner": false
   },
   {
-   "id": "736a356",
+   "id": "e40c02d",
    "elType": "section",
    "settings": {
     "background_background": "classic",
@@ -1389,7 +1275,7 @@
    },
    "elements": [
     {
-     "id": "dabe898",
+     "id": "df0cac5",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -1398,7 +1284,7 @@
      },
      "elements": [
       {
-       "id": "5f6b8a8",
+       "id": "447c462",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1408,7 +1294,7 @@
        "isInner": false
       },
       {
-       "id": "80627df",
+       "id": "ddaed16",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1422,7 +1308,7 @@
        "isInner": false
       },
       {
-       "id": "7ffe029",
+       "id": "dc0cf0b",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -1443,7 +1329,7 @@
        "isInner": false
       },
       {
-       "id": "7c79bfb",
+       "id": "9cd7f78",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1457,463 +1343,382 @@
        "isInner": false
       },
       {
-       "id": "7eca0fa",
+       "id": "2978aa2",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "447c462",
+         "id": "dbad3c6",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "24",
+           "bottom": "26",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": false
+          },
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 14,
+           "blur": 34,
+           "spread": -16,
+           "color": "rgba(28,36,75,.14)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 0
+          "_animation_delay": 0,
+          "animation_delay": 0
          },
          "elements": [
           {
-           "id": "878f78e",
-           "elType": "section",
+           "id": "05ad785",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "26",
-             "left": "0",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-ceo.webp",
+             "id": 0,
+             "alt": "Engr. E. S. Ajala",
+             "source": "library"
             },
-            "border_radius": {
+            "image_size": "full",
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3c1f76e",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
              "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
-             "isLinked": false
-            },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 14,
-             "blur": 34,
-             "spread": -16,
-             "color": "rgba(28,36,75,.14)"
+             "size": 16,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "2978aa2",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "padding": {
-               "unit": "px",
-               "top": "0",
-               "right": "24",
-               "bottom": "0",
-               "left": "24",
-               "isLinked": false
-              }
-             },
-             "elements": [
-              {
-               "id": "764017f",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-ceo.webp",
-                 "id": 0,
-                 "alt": "Engr. E. S. Ajala",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "2ed6cfc",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 16,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "7403d75",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Engr. E. S. Ajala",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 21,
-                 "sizes": []
-                },
-                "typography_font_weight": "700"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "e173e4e",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">Chief Executive Officer (CEO)</p>"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "aede5fe",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "A certified Mechanical Engineer with 22 years of experience in manufacturing, process optimization, maintenance, and quality control. Under his visionary leadership, the company has evolved from a small sachet water producer to a trusted Nigerian brand. Committed to innovation, quality, and community development, Engr. Ajala emphasizes integrity, teamwork, and continuous improvement to drive sustainable growth.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 14.5,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.6,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "b97706c",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Engr. E. S. Ajala",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a828bca",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">Chief Executive Officer (CEO)</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "0385813",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "A certified Mechanical Engineer with 22 years of experience in manufacturing, process optimization, maintenance, and quality control. Under his visionary leadership, the company has evolved from a small sachet water producer to a trusted Nigerian brand. Committed to innovation, quality, and community development, Engr. Ajala emphasizes integrity, teamwork, and continuous improvement to drive sustainable growth.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "82f01b7",
+         "id": "529a279",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "24",
+           "bottom": "26",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": false
+          },
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 14,
+           "blur": 34,
+           "spread": -16,
+           "color": "rgba(28,36,75,.14)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 100
+          "_animation_delay": 100,
+          "animation_delay": 100
          },
          "elements": [
           {
-           "id": "4e518ca",
-           "elType": "section",
+           "id": "81d06bd",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "26",
-             "left": "0",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-emily.webp",
+             "id": 0,
+             "alt": "Emily Jennifer",
+             "source": "library"
             },
-            "border_radius": {
+            "image_size": "full",
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "2aa399d",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
              "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
-             "isLinked": false
-            },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 14,
-             "blur": 34,
-             "spread": -16,
-             "color": "rgba(28,36,75,.14)"
+             "size": 16,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "6eaac8d",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "padding": {
-               "unit": "px",
-               "top": "0",
-               "right": "24",
-               "bottom": "0",
-               "left": "24",
-               "isLinked": false
-              }
-             },
-             "elements": [
-              {
-               "id": "ddaed16",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-emily.webp",
-                 "id": 0,
-                 "alt": "Emily Jennifer",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "dc0cf0b",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 16,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "9cd7f78",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Emily Jennifer",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 21,
-                 "sizes": []
-                },
-                "typography_font_weight": "700"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "df0cac5",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">General Manager</p>"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "e40c02d",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "The driving force behind Ajalisco Production Industries Ltd, overseeing production of sachet water and bread. With a strong focus on quality, hygiene, and innovation, she ensures that every product meets the highest standards. Her background in Science Laboratory Technology and Microbiology enables her to uphold strict safety and quality protocols, reaffirming our commitment to delivering trustworthy products to our community.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 14.5,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.6,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "ac946dc",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Emily Jennifer",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "59c0996",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">General Manager</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "daeee6f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "The driving force behind Ajalisco Production Industries Ltd, overseeing production of sachet water and bread. With a strong focus on quality, hygiene, and innovation, she ensures that every product meets the highest standards. Her background in Science Laboratory Technology and Microbiology enables her to uphold strict safety and quality protocols, reaffirming our commitment to delivering trustworthy products to our community.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "d8a728e",
+         "id": "878f78e",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "24",
+           "bottom": "26",
+           "left": "24",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": false
+          },
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 14,
+           "blur": 34,
+           "spread": -16,
+           "color": "rgba(28,36,75,.14)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 200
+          "_animation_delay": 200,
+          "animation_delay": 200
          },
          "elements": [
           {
-           "id": "a0df3db",
-           "elType": "section",
+           "id": "764017f",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "26",
-             "left": "0",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-joshua.webp",
+             "id": 0,
+             "alt": "Joshua Etok",
+             "source": "library"
             },
-            "border_radius": {
+            "image_size": "full",
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "2ed6cfc",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
              "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
-             "isLinked": false
-            },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 14,
-             "blur": 34,
-             "spread": -16,
-             "color": "rgba(28,36,75,.14)"
+             "size": 16,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "e4d58fe",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "padding": {
-               "unit": "px",
-               "top": "0",
-               "right": "24",
-               "bottom": "0",
-               "left": "24",
-               "isLinked": false
-              }
-             },
-             "elements": [
-              {
-               "id": "2107604",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-joshua.webp",
-                 "id": 0,
-                 "alt": "Joshua Etok",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "74f36e8",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 16,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "b535930",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Joshua Etok",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 21,
-                 "sizes": []
-                },
-                "typography_font_weight": "700"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "9cc6273",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">Head of Operations</p>"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "931bdb2",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "A Mechanical and Aerospace Engineering graduate with a B.Eng in Mechanical Engineering. With a hands-on approach and strong foundation in technical systems, he oversees operations, streamlines processes, and ensures product quality. Driven by excellence, innovation, and efficiency, Joshua plays a key role in scaling the company’s production, logistics, and customer satisfaction.",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 14.5,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.6,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "7403d75",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Joshua Etok",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "typography_font_weight": "700"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e173e4e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">Head of Operations</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "aede5fe",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "A Mechanical and Aerospace Engineering graduate with a B.Eng in Mechanical Engineering. With a hands-on approach and strong foundation in technical systems, he oversees operations, streamlines processes, and ensures product quality. Driven by excellence, innovation, and efficiency, Joshua plays a key role in scaling the company’s production, logistics, and customer satisfaction.",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
@@ -1929,7 +1734,7 @@
    "isInner": false
   },
   {
-   "id": "e16849e",
+   "id": "dabe898",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -1949,7 +1754,7 @@
    },
    "elements": [
     {
-     "id": "0ed16bf",
+     "id": "7c79bfb",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -1958,7 +1763,7 @@
      },
      "elements": [
       {
-       "id": "5fe85df",
+       "id": "7eca0fa",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1968,7 +1773,7 @@
        "isInner": false
       },
       {
-       "id": "2fbdaa3",
+       "id": "5f6b8a8",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1982,7 +1787,7 @@
        "isInner": false
       },
       {
-       "id": "5adf9c1",
+       "id": "80627df",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -2003,7 +1808,7 @@
        "isInner": false
       },
       {
-       "id": "e2a8a3c",
+       "id": "7ffe029",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2017,289 +1822,251 @@
        "isInner": false
       },
       {
-       "id": "8027081",
+       "id": "d8a728e",
        "elType": "section",
        "settings": {
-        "content_position": "center",
+        "flex_justify_content": "center",
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "d7cee9d",
+         "id": "74f36e8",
          "elType": "column",
          "settings": {
           "_column_size": 36,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "20",
+           "bottom": "24",
+           "left": "20",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "18",
+           "right": "18",
+           "bottom": "18",
+           "left": "18",
+           "isLinked": false
+          },
+          "content_position": "center",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 10,
+           "blur": 26,
+           "spread": -14,
+           "color": "rgba(28,36,75,.12)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 0
+          "_animation_delay": 0,
+          "animation_delay": 0
          },
          "elements": [
           {
-           "id": "8f32cf2",
-           "elType": "section",
+           "id": "4e518ca",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "24",
-             "right": "20",
-             "bottom": "24",
-             "left": "20",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/cac.webp",
+             "id": 0,
+             "alt": "Corporate Affairs Commission",
+             "source": "library"
             },
-            "border_radius": {
+            "image_size": "full",
+            "align": "center",
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6eaac8d",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
              "unit": "px",
-             "top": "18",
-             "right": "18",
-             "bottom": "18",
-             "left": "18",
-             "isLinked": false
-            },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 10,
-             "blur": 26,
-             "spread": -14,
-             "color": "rgba(28,36,75,.12)"
+             "size": 14,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "1449273",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "content_position": "center"
-             },
-             "elements": [
-              {
-               "id": "6f89369",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/cac.webp",
-                 "id": 0,
-                 "alt": "Corporate Affairs Commission",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "align": "center",
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "7b59048",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 14,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "1194f30",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "Corporate Affairs Commission",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 18,
-                 "sizes": []
-                },
-                "typography_font_weight": "600",
-                "align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "9ffea51",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "Certificate of Incorporation",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 14.5,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A",
-                "align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "82f01b7",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Corporate Affairs Commission",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "2107604",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Certificate of Incorporation",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A",
+            "align": "center"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "8fe21da",
+         "id": "e4d58fe",
          "elType": "column",
          "settings": {
           "_column_size": 36,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "24",
+           "right": "20",
+           "bottom": "24",
+           "left": "20",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "18",
+           "right": "18",
+           "bottom": "18",
+           "left": "18",
+           "isLinked": false
+          },
+          "content_position": "center",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 10,
+           "blur": 26,
+           "spread": -14,
+           "color": "rgba(28,36,75,.12)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 100
+          "_animation_delay": 100,
+          "animation_delay": 100
          },
          "elements": [
           {
-           "id": "7484215",
-           "elType": "section",
+           "id": "b535930",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "24",
-             "right": "20",
-             "bottom": "24",
-             "left": "20",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png",
+             "id": 0,
+             "alt": "NAFDAC Registered",
+             "source": "library"
             },
-            "border_radius": {
-             "unit": "px",
-             "top": "18",
-             "right": "18",
-             "bottom": "18",
-             "left": "18",
-             "isLinked": false
+            "image_size": "full",
+            "align": "center",
+            "width": {
+             "unit": "%",
+             "size": 36,
+             "sizes": []
             },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 10,
-             "blur": 26,
-             "spread": -14,
-             "color": "rgba(28,36,75,.12)"
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9cc6273",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "99e3e9c",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "content_position": "center"
-             },
-             "elements": [
-              {
-               "id": "9136682",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png",
-                 "id": 0,
-                 "alt": "NAFDAC Registered",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "align": "center",
-                "width": {
-                 "unit": "%",
-                 "size": 36,
-                 "sizes": []
-                },
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "575250d",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 14,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "ef91799",
-               "elType": "widget",
-               "widgetType": "heading",
-               "settings": {
-                "title": "NAFDAC Registered",
-                "header_size": "h3",
-                "title_color": "#0256DB",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 18,
-                 "sizes": []
-                },
-                "typography_font_weight": "600",
-                "align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "e2786d3",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "Registration No. U2457R1NG",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 14.5,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A",
-                "align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "931bdb2",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "NAFDAC Registered",
+            "header_size": "h3",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a0df3db",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Registration No. U2457R1NG",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A",
+            "align": "center"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
@@ -2315,7 +2082,7 @@
    "isInner": false
   },
   {
-   "id": "c2acaf1",
+   "id": "ef91799",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -2327,6 +2094,12 @@
      "sizes": []
     },
     "background_gradient_type": "linear",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
     "padding": {
      "unit": "px",
      "top": "56",
@@ -2342,20 +2115,32 @@
      "bottom": "26",
      "left": "26",
      "isLinked": false
+    },
+    "margin": {
+     "unit": "px",
+     "top": "10",
+     "right": "20",
+     "bottom": "70",
+     "left": "20",
+     "isLinked": false
     }
    },
    "elements": [
     {
-     "id": "4d42f8a",
+     "id": "575250d",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
-      "content_position": "center"
+      "content_position": "center",
+      "animation": "zoomIn",
+      "animation_duration": "fast",
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "4efbace",
+       "id": "8f32cf2",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -2376,7 +2161,7 @@
        "isInner": false
       },
       {
-       "id": "a67c7d1",
+       "id": "1449273",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2401,7 +2186,7 @@
        "isInner": false
       },
       {
-       "id": "afcc4f1",
+       "id": "d7cee9d",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2415,7 +2200,7 @@
        "isInner": false
       },
       {
-       "id": "4a3e3e0",
+       "id": "9136682",
        "elType": "widget",
        "widgetType": "button",
        "settings": {

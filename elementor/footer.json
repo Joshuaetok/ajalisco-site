@@ -31,7 +31,8 @@
       "_inline_size": null,
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
@@ -118,7 +119,8 @@
       "_inline_size": null,
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 100
+      "_animation_delay": 100,
+      "animation_delay": 100
      },
      "elements": [
       {
@@ -222,7 +224,8 @@
       "_inline_size": null,
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 200
+      "_animation_delay": 200,
+      "animation_delay": 200
      },
      "elements": [
       {
@@ -298,7 +301,8 @@
       },
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 300
+      "_animation_delay": 300,
+      "animation_delay": 300
      },
      "elements": [
       {
@@ -331,11 +335,12 @@
         "form_fields": [
          {
           "_id": "7702172",
+          "custom_id": "email_address",
           "field_type": "email",
           "field_label": "Email address",
-          "placeholder": "someone@email.com",
+          "width": "100",
           "required": "true",
-          "width": "100"
+          "placeholder": "someone@email.com"
          }
         ],
         "button_text": "Subscribe",
@@ -392,7 +397,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "© <span data-el-year>2026</span> AJALISCO Production Industries Limited. All rights reserved.",
+        "editor": "© 2026 AJALISCO Production Industries Limited. All rights reserved.",
         "typography_typography": "custom",
         "typography_font_family": "Nunito",
         "typography_font_size": {

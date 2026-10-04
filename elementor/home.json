@@ -1,7 +1,7 @@
 {
  "content": [
   {
-   "id": "42faba6",
+   "id": "ff3ad34",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -39,39 +39,29 @@
    },
    "elements": [
     {
-     "id": "b30f4cc",
-     "elType": "column",
-     "settings": {
-      "_column_size": 100,
-      "_inline_size": null
-     },
-     "elements": [
-      {
-       "id": "eb708f9",
-       "elType": "widget",
-       "widgetType": "html",
-       "settings": {
-        "html": "\n    <style>\n    .herobub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .herobub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:herobubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes herobubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"herobub\"><i style=\"left:18%;--s:20px;--d:23s;--dl:-2s\"></i><i style=\"left:82%;--s:24px;--d:12s;--dl:-15s\"></i><i style=\"left:16%;--s:21px;--d:18s;--dl:-6s\"></i><i style=\"left:76%;--s:39px;--d:19s;--dl:-10s\"></i><i style=\"left:58%;--s:28px;--d:12s;--dl:-15s\"></i><i style=\"left:24%;--s:23px;--d:15s;--dl:-7s\"></i><i style=\"left:64%;--s:36px;--d:17s;--dl:-16s\"></i><i style=\"left:85%;--s:13px;--d:23s;--dl:0s\"></i><i style=\"left:29%;--s:17px;--d:10s;--dl:-1s\"></i><i style=\"left:83%;--s:43px;--d:21s;--dl:0s\"></i></div>"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
-     "isInner": false
-    },
-    {
-     "id": "291d67a",
+     "id": "feadf3e",
      "elType": "column",
      "settings": {
       "_column_size": 52,
       "_inline_size": null,
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "613ee2c",
+       "id": "ec447cb",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n    <style>\n    .herobub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .herobub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:herobubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes herobubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120vh);opacity:.2} }\n    </style>\n    <div class=\"herobub\"><i style=\"left:4%;--s:39px;--d:23s;--dl:0s\"></i><i style=\"left:54%;--s:22px;--d:13s;--dl:-15s\"></i><i style=\"left:68%;--s:45px;--d:14s;--dl:-8s\"></i><i style=\"left:95%;--s:37px;--d:14s;--dl:-10s\"></i><i style=\"left:50%;--s:44px;--d:24s;--dl:-14s\"></i><i style=\"left:18%;--s:31px;--d:17s;--dl:-6s\"></i><i style=\"left:93%;--s:44px;--d:18s;--dl:-5s\"></i><i style=\"left:52%;--s:26px;--d:13s;--dl:-7s\"></i><i style=\"left:44%;--s:18px;--d:13s;--dl:-7s\"></i><i style=\"left:12%;--s:44px;--d:22s;--dl:-1s\"></i></div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ecf7fbd",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -81,7 +71,7 @@
        "isInner": false
       },
       {
-       "id": "4e0c2c0",
+       "id": "0729aee",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -95,7 +85,7 @@
        "isInner": false
       },
       {
-       "id": "5e3cae9",
+       "id": "a301d1b",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -105,7 +95,7 @@
        "isInner": false
       },
       {
-       "id": "a542b3e",
+       "id": "56b3c97",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -119,7 +109,7 @@
        "isInner": false
       },
       {
-       "id": "7e8ecd8",
+       "id": "821f11c",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -143,7 +133,7 @@
        "isInner": false
       },
       {
-       "id": "5842352",
+       "id": "e8b29b9",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -157,14 +147,14 @@
        "isInner": false
       },
       {
-       "id": "a0c48fd",
+       "id": "b893ef5",
        "elType": "section",
        "settings": {
         "gap": "narrow"
        },
        "elements": [
         {
-         "id": "b0ebff4",
+         "id": "90878fa",
          "elType": "column",
          "settings": {
           "_column_size": 38,
@@ -172,7 +162,7 @@
          },
          "elements": [
           {
-           "id": "aa8d1f2",
+           "id": "fa39c60",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -210,7 +200,7 @@
          "isInner": false
         },
         {
-         "id": "d27d542",
+         "id": "927e249",
          "elType": "column",
          "settings": {
           "_column_size": 38,
@@ -218,7 +208,7 @@
          },
          "elements": [
           {
-           "id": "b3f36c3",
+           "id": "21c1623",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -259,7 +249,7 @@
        "isInner": true
       },
       {
-       "id": "d4f4aaf",
+       "id": "c6e0e80",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -273,7 +263,7 @@
        "isInner": false
       },
       {
-       "id": "70a5b5b",
+       "id": "d29b253",
        "elType": "section",
        "settings": {
         "gap": "narrow",
@@ -298,7 +288,7 @@
        },
        "elements": [
         {
-         "id": "3f768a2",
+         "id": "aeee028",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
@@ -306,7 +296,7 @@
          },
          "elements": [
           {
-           "id": "c5f6d28",
+           "id": "f58a9d2",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -319,7 +309,7 @@
          "isInner": false
         },
         {
-         "id": "c9f842d",
+         "id": "e9b4681",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
@@ -327,7 +317,7 @@
          },
          "elements": [
           {
-           "id": "c20c619",
+           "id": "b45e2e2",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -340,7 +330,7 @@
          "isInner": false
         },
         {
-         "id": "f73a1e0",
+         "id": "2304d02",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
@@ -348,11 +338,11 @@
          },
          "elements": [
           {
-           "id": "a35c9df",
+           "id": "0540a16",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<div style=\"font:700 28px Outfit,sans-serif;color:#fff;line-height:1\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:30px;height:30px;border-radius:50%;background:#fff;vertical-align:middle\"></div><div style=\"font:500 14px Nunito,sans-serif;color:#B9CDF7;margin-top:4px\">NAFDAC Registered</div>"
+            "editor": "<div style=\"font:700 28px Outfit,sans-serif;color:#fff;line-height:1\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" alt=\"\" style=\"width:30px;height:30px;border-radius:50%;background:#fff;vertical-align:middle\"></div><div style=\"font:500 14px Nunito,sans-serif;color:#B9CDF7;margin-top:4px\">NAFDAC Registered</div>"
            },
            "elements": [],
            "isInner": false
@@ -367,18 +357,19 @@
      "isInner": false
     },
     {
-     "id": "669babe",
+     "id": "3b9b95e",
      "elType": "column",
      "settings": {
       "_column_size": 48,
       "_inline_size": null,
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
-       "id": "6042206",
+       "id": "09251da",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -394,7 +385,7 @@
    "isInner": false
   },
   {
-   "id": "e05df68",
+   "id": "4c7780b",
    "elType": "section",
    "settings": {
     "padding": {
@@ -408,7 +399,7 @@
    },
    "elements": [
     {
-     "id": "40513c7",
+     "id": "bee50c1",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -416,7 +407,7 @@
      },
      "elements": [
       {
-       "id": "360cf69",
+       "id": "da47904",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -432,7 +423,7 @@
    "isInner": false
   },
   {
-   "id": "277df10",
+   "id": "b153089",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -478,18 +469,19 @@
    },
    "elements": [
     {
-     "id": "625705d",
+     "id": "f5696f8",
      "elType": "column",
      "settings": {
       "_column_size": 55,
       "_inline_size": null,
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "53e57ec",
+       "id": "0a10082",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -499,7 +491,7 @@
        "isInner": false
       },
       {
-       "id": "3a7c589",
+       "id": "0e0c944",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -513,7 +505,7 @@
        "isInner": false
       },
       {
-       "id": "4e8bbf1",
+       "id": "afe3847",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -523,7 +515,7 @@
        "isInner": false
       },
       {
-       "id": "2fa3693",
+       "id": "5370299",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -537,7 +529,7 @@
        "isInner": false
       },
       {
-       "id": "c937e40",
+       "id": "bc34f29",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -561,7 +553,7 @@
        "isInner": false
       },
       {
-       "id": "3d6ea1e",
+       "id": "7b49008",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -575,7 +567,7 @@
        "isInner": false
       },
       {
-       "id": "bcf93c0",
+       "id": "bff517b",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -585,7 +577,7 @@
        "isInner": false
       },
       {
-       "id": "ecb6e1f",
+       "id": "82bebbd",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -599,7 +591,7 @@
        "isInner": false
       },
       {
-       "id": "6149b50",
+       "id": "dae887a",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -637,18 +629,19 @@
      "isInner": false
     },
     {
-     "id": "a251e67",
+     "id": "0aa46f1",
      "elType": "column",
      "settings": {
       "_column_size": 45,
       "_inline_size": null,
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
-       "id": "b143be4",
+       "id": "1d73724",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -664,7 +657,7 @@
    "isInner": false
   },
   {
-   "id": "ad7d0ad",
+   "id": "0f9b0bd",
    "elType": "section",
    "settings": {
     "background_background": "classic",
@@ -686,7 +679,7 @@
    },
    "elements": [
     {
-     "id": "befcf02",
+     "id": "aaeef8c",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -694,11 +687,12 @@
       "content_position": "center",
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "28dfc9e",
+       "id": "5150a0b",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -708,7 +702,7 @@
        "isInner": false
       },
       {
-       "id": "0917fcc",
+       "id": "94741da",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -722,7 +716,7 @@
        "isInner": false
       },
       {
-       "id": "2e86b0f",
+       "id": "410828c",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -732,7 +726,7 @@
        "isInner": false
       },
       {
-       "id": "2b8ab5a",
+       "id": "96f3c75",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -746,7 +740,7 @@
        "isInner": false
       },
       {
-       "id": "3a44a2f",
+       "id": "5ed9ca8",
        "elType": "widget",
        "widgetType": "shortcode",
        "settings": {
@@ -762,7 +756,7 @@
    "isInner": false
   },
   {
-   "id": "1904bc2",
+   "id": "31e1074",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -809,28 +803,29 @@
    },
    "elements": [
     {
-     "id": "11c99b3",
+     "id": "742fecd",
      "elType": "column",
      "settings": {
       "_column_size": 55,
       "_inline_size": null,
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "a898435",
+       "id": "223ecb8",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n    <style>\n    .waterbub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .waterbub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(2,86,219,.95) 0 7%, rgba(2,86,219,.2) 22%, rgba(2,86,219,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(2,86,219,.4); animation:waterbubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes waterbubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"waterbub\"><i style=\"left:42%;--s:33px;--d:15s;--dl:-3s\"></i><i style=\"left:60%;--s:14px;--d:13s;--dl:0s\"></i><i style=\"left:11%;--s:28px;--d:23s;--dl:-2s\"></i><i style=\"left:57%;--s:40px;--d:12s;--dl:-18s\"></i><i style=\"left:46%;--s:44px;--d:20s;--dl:-5s\"></i><i style=\"left:31%;--s:33px;--d:13s;--dl:-18s\"></i></div>"
+        "html": "\n    <style>\n    .waterbub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .waterbub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(2,86,219,.95) 0 7%, rgba(2,86,219,.2) 22%, rgba(2,86,219,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(2,86,219,.4); animation:waterbubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes waterbubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120vh);opacity:.2} }\n    </style>\n    <div class=\"waterbub\"><i style=\"left:21%;--s:21px;--d:24s;--dl:-1s\"></i><i style=\"left:44%;--s:12px;--d:14s;--dl:-5s\"></i><i style=\"left:82%;--s:43px;--d:12s;--dl:-7s\"></i><i style=\"left:7%;--s:37px;--d:18s;--dl:-5s\"></i><i style=\"left:14%;--s:38px;--d:20s;--dl:-10s\"></i><i style=\"left:52%;--s:19px;--d:24s;--dl:-7s\"></i></div>"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "cd96a05",
+       "id": "d9fab29",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -840,7 +835,7 @@
        "isInner": false
       },
       {
-       "id": "740027b",
+       "id": "7e442a1",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -854,7 +849,7 @@
        "isInner": false
       },
       {
-       "id": "1babb99",
+       "id": "58f3007",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -864,7 +859,7 @@
        "isInner": false
       },
       {
-       "id": "0bc2de1",
+       "id": "54b9b19",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -878,7 +873,7 @@
        "isInner": false
       },
       {
-       "id": "ba148b2",
+       "id": "f0f789f",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -902,7 +897,7 @@
        "isInner": false
       },
       {
-       "id": "0f7b661",
+       "id": "f0abc29",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -916,7 +911,7 @@
        "isInner": false
       },
       {
-       "id": "ba8d170",
+       "id": "eb1fae5",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -926,7 +921,7 @@
        "isInner": false
       },
       {
-       "id": "77ae28c",
+       "id": "a985ff4",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -940,7 +935,7 @@
        "isInner": false
       },
       {
-       "id": "d0604ff",
+       "id": "7465170",
        "elType": "widget",
        "widgetType": "icon-list",
        "settings": {
@@ -991,7 +986,7 @@
        "isInner": false
       },
       {
-       "id": "f62f14f",
+       "id": "5081a42",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1005,7 +1000,7 @@
        "isInner": false
       },
       {
-       "id": "3da9a5f",
+       "id": "1b518fb",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -1043,22 +1038,23 @@
      "isInner": false
     },
     {
-     "id": "ac05154",
+     "id": "5b90a86",
      "elType": "column",
      "settings": {
       "_column_size": 42,
       "_inline_size": null,
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
-       "id": "770821d",
+       "id": "2bdac76",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "\n<div style=\"position:relative;display:flex;justify-content:center\">\n  <div style=\"position:relative;width:min(100%,320px);aspect-ratio:1;border-radius:50%;overflow:hidden;\n    background:radial-gradient(circle at 50% 35%,#fff,#B7D0FA);\n    box-shadow:0 30px 50px -24px rgba(2,60,160,.6),0 0 0 10px rgba(255,255,255,.55);\n    animation:ajxorbfloat 8s ease-in-out infinite\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/sachet.webp\" alt=\"Ajalisco sachet water\" style=\"width:100%;height:100%;object-fit:cover;\n      mix-blend-mode:multiply;filter:brightness(1.5) contrast(1.06) saturate(1.2);transform:scale(1.15)\">\n  </div>\n  <span style=\"position:absolute;left:4%;top:2%;display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;\n    border-radius:999px;background:#fff;font:600 13.5px Outfit,sans-serif;color:#16204A;\n    box-shadow:0 14px 24px -12px rgba(0,0,0,.3)\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:26px;height:26px;border-radius:50%\"> NAFDAC</span>\n  <span style=\"position:absolute;right:2%;bottom:8%;display:inline-flex;align-items:center;gap:9px;padding:9px 16px;\n    border-radius:999px;background:#28A745;color:#fff;font:600 13.5px Outfit,sans-serif\">\n    <span class=\"ajxlivedot\" style=\"width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block\"></span> Sealed fresh</span>\n<style>@keyframes ajxorbfloat{50%{transform:translateY(-12px)}}</style>\n<style>.ajxlivedot{animation:ajxlivedotpulse 2s infinite}@keyframes ajxlivedotpulse{70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}}</style>\n</div>"
+        "html": "\n<div style=\"position:relative;display:flex;justify-content:center\">\n  <div style=\"position:relative;width:min(100%,320px);aspect-ratio:1;border-radius:50%;overflow:hidden;\n    background:radial-gradient(circle at 50% 35%,#fff,#B7D0FA);\n    box-shadow:0 30px 50px -24px rgba(2,60,160,.6),0 0 0 10px rgba(255,255,255,.55);\n    animation:ajxorbfloat 8s ease-in-out infinite\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/sachet.webp\" alt=\"Ajalisco sachet water\" style=\"width:100%;height:100%;object-fit:cover;\n      mix-blend-mode:multiply;filter:brightness(1.5) contrast(1.06) saturate(1.2);transform:scale(1.15)\">\n  </div>\n  <span style=\"position:absolute;left:4%;top:2%;display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;\n    border-radius:999px;background:#fff;font:600 13.5px Outfit,sans-serif;color:#16204A;\n    box-shadow:0 14px 24px -12px rgba(0,0,0,.3)\">\n    <img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" alt=\"\" style=\"width:26px;height:26px;border-radius:50%\"> NAFDAC</span>\n  <span style=\"position:absolute;right:2%;bottom:8%;display:inline-flex;align-items:center;gap:9px;padding:9px 16px;\n    border-radius:999px;background:#28A745;color:#fff;font:600 13.5px Outfit,sans-serif\">\n    <span class=\"ajxlivedot\" style=\"width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block\"></span> Sealed fresh</span>\n<style>@keyframes ajxorbfloat{50%{transform:translateY(-12px)}}</style>\n<style>.ajxlivedot{animation:ajxlivedotpulse 2s infinite}@keyframes ajxlivedotpulse{70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}}</style>\n</div>"
        },
        "elements": [],
        "isInner": false
@@ -1070,7 +1066,7 @@
    "isInner": false
   },
   {
-   "id": "d65deb2",
+   "id": "4abded1",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -1090,7 +1086,7 @@
    },
    "elements": [
     {
-     "id": "1c9db16",
+     "id": "c10cbc6",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -1098,11 +1094,12 @@
       "content_position": "center",
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "efedd65",
+       "id": "7cde8d6",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1112,7 +1109,7 @@
        "isInner": false
       },
       {
-       "id": "d8e72bd",
+       "id": "574b2bd",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1126,7 +1123,7 @@
        "isInner": false
       },
       {
-       "id": "77c58f1",
+       "id": "66ee35f",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1136,7 +1133,7 @@
        "isInner": false
       },
       {
-       "id": "1ec32f6",
+       "id": "0e2acde",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1150,7 +1147,7 @@
        "isInner": false
       },
       {
-       "id": "84fd68d",
+       "id": "08a1378",
        "elType": "section",
        "settings": {
         "content_position": "middle",
@@ -1158,15 +1155,15 @@
        },
        "elements": [
         {
-         "id": "27d7790",
+         "id": "05bc232",
          "elType": "column",
          "settings": {
-          "_column_size": 16,
+          "_column_size": 33.33,
           "_inline_size": null
          },
          "elements": [
           {
-           "id": "cf2e454",
+           "id": "88b8033",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1205,15 +1202,15 @@
          "isInner": false
         },
         {
-         "id": "77ba6d5",
+         "id": "2561eb4",
          "elType": "column",
          "settings": {
-          "_column_size": 16,
+          "_column_size": 33.33,
           "_inline_size": null
          },
          "elements": [
           {
-           "id": "10248d9",
+           "id": "0050044",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1252,15 +1249,15 @@
          "isInner": false
         },
         {
-         "id": "0746696",
+         "id": "1bfa7ea",
          "elType": "column",
          "settings": {
-          "_column_size": 22,
+          "_column_size": 33.34,
           "_inline_size": null
          },
          "elements": [
           {
-           "id": "13b3d03",
+           "id": "da38d1b",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -1302,7 +1299,7 @@
        "isInner": true
       },
       {
-       "id": "2e59041",
+       "id": "3b9234e",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1316,7 +1313,7 @@
        "isInner": false
       },
       {
-       "id": "c445523",
+       "id": "39e2303",
        "elType": "widget",
        "widgetType": "shortcode",
        "settings": {
@@ -1326,7 +1323,7 @@
        "isInner": false
       },
       {
-       "id": "4811f04",
+       "id": "4c42e25",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1340,7 +1337,7 @@
        "isInner": false
       },
       {
-       "id": "c7f2d1b",
+       "id": "332996a",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -1382,7 +1379,7 @@
    "isInner": false
   },
   {
-   "id": "fae5b03",
+   "id": "54892d6",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -1413,28 +1410,7 @@
    },
    "elements": [
     {
-     "id": "3d1cf82",
-     "elType": "column",
-     "settings": {
-      "_column_size": 100,
-      "_inline_size": null
-     },
-     "elements": [
-      {
-       "id": "d32f44b",
-       "elType": "widget",
-       "widgetType": "html",
-       "settings": {
-        "html": "\n    <style>\n    .purifybub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .purifybub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:purifybubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes purifybubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"purifybub\"><i style=\"left:52%;--s:10px;--d:17s;--dl:-10s\"></i><i style=\"left:32%;--s:34px;--d:23s;--dl:-15s\"></i><i style=\"left:77%;--s:38px;--d:14s;--dl:-1s\"></i><i style=\"left:43%;--s:9px;--d:11s;--dl:-7s\"></i><i style=\"left:64%;--s:39px;--d:21s;--dl:-18s\"></i><i style=\"left:68%;--s:11px;--d:17s;--dl:-18s\"></i></div>"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
-     "isInner": false
-    },
-    {
-     "id": "04c57dc",
+     "id": "ebe5a6f",
      "elType": "column",
      "settings": {
       "_column_size": 45,
@@ -1442,11 +1418,22 @@
       "content_position": "center",
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "d52bc28",
+       "id": "387559c",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "\n    <style>\n    .purifybub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .purifybub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:purifybubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes purifybubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120vh);opacity:.2} }\n    </style>\n    <div class=\"purifybub\"><i style=\"left:72%;--s:17px;--d:23s;--dl:-12s\"></i><i style=\"left:20%;--s:31px;--d:10s;--dl:-17s\"></i><i style=\"left:32%;--s:30px;--d:16s;--dl:-9s\"></i><i style=\"left:44%;--s:12px;--d:14s;--dl:-6s\"></i><i style=\"left:7%;--s:27px;--d:13s;--dl:-7s\"></i><i style=\"left:65%;--s:24px;--d:20s;--dl:-6s\"></i></div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "e7eadda",
        "elType": "widget",
        "widgetType": "image",
        "settings": {
@@ -1463,7 +1450,7 @@
        "isInner": false
       },
       {
-       "id": "080d124",
+       "id": "0142194",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1477,11 +1464,11 @@
        "isInner": false
       },
       {
-       "id": "9a90ced",
+       "id": "0dc88a9",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "<span style=\"display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:999px;background:rgba(255,255,255,.95);color:#1C244B;font:600 14.5px Outfit,sans-serif\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" style=\"width:34px;height:34px;border-radius:50%\"> NAFDAC Registered</span>"
+        "html": "<span style=\"display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:999px;background:rgba(255,255,255,.95);color:#1C244B;font:600 14.5px Outfit,sans-serif\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" alt=\"\" style=\"width:34px;height:34px;border-radius:50%\"> NAFDAC Registered</span>"
        },
        "elements": [],
        "isInner": false
@@ -1490,18 +1477,19 @@
      "isInner": false
     },
     {
-     "id": "5498ea5",
+     "id": "9095392",
      "elType": "column",
      "settings": {
       "_column_size": 55,
       "_inline_size": null,
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
-       "id": "9b19269",
+       "id": "c838e5a",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1511,7 +1499,7 @@
        "isInner": false
       },
       {
-       "id": "f72134f",
+       "id": "8e351e0",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1525,7 +1513,7 @@
        "isInner": false
       },
       {
-       "id": "59d91af",
+       "id": "73dec12",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1535,7 +1523,7 @@
        "isInner": false
       },
       {
-       "id": "942f388",
+       "id": "4d79269",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1549,7 +1537,7 @@
        "isInner": false
       },
       {
-       "id": "833aad5",
+       "id": "36aa244",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1573,7 +1561,7 @@
        "isInner": false
       },
       {
-       "id": "526b74c",
+       "id": "36cd089",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1587,7 +1575,7 @@
        "isInner": false
       },
       {
-       "id": "ca95fea",
+       "id": "d311a66",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1597,7 +1585,7 @@
        "isInner": false
       },
       {
-       "id": "1d0381b",
+       "id": "c3dc55f",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1607,7 +1595,7 @@
        "isInner": false
       },
       {
-       "id": "1a9cd43",
+       "id": "c31b1fb",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1617,7 +1605,7 @@
        "isInner": false
       },
       {
-       "id": "d93b25d",
+       "id": "80e53f0",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1631,7 +1619,7 @@
        "isInner": false
       },
       {
-       "id": "4a15190",
+       "id": "889eb68",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -1672,7 +1660,7 @@
    "isInner": false
   },
   {
-   "id": "70672b0",
+   "id": "cac61f7",
    "elType": "section",
    "settings": {
     "background_background": "classic",
@@ -1694,7 +1682,7 @@
    },
    "elements": [
     {
-     "id": "f2ca6ea",
+     "id": "116db54",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -1702,11 +1690,12 @@
       "content_position": "center",
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "e439405",
+       "id": "d16f456",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -1716,7 +1705,7 @@
        "isInner": false
       },
       {
-       "id": "3cb31f5",
+       "id": "318b9fe",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1730,7 +1719,7 @@
        "isInner": false
       },
       {
-       "id": "fc0cf1f",
+       "id": "34760c4",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -1740,7 +1729,7 @@
        "isInner": false
       },
       {
-       "id": "4e5d7ac",
+       "id": "94ff433",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -1754,14 +1743,14 @@
        "isInner": false
       },
       {
-       "id": "33d69f0",
+       "id": "9d083a4",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "5e42bdc",
+         "id": "66330e9",
          "elType": "column",
          "settings": {
           "_column_size": 25,
@@ -1786,30 +1775,33 @@
           },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 0
+          "_animation_delay": 0,
+          "animation_delay": 0
          },
          "elements": [
           {
-           "id": "7338ba7",
+           "id": "ae7fd15",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
             "title_text": "Homes & families",
             "description_text": "Fresh bread for breakfast and cool, clean water for everyone at home.<br><br><span style=\"color:#fff;font-weight:700\">Shop now →</span>",
             "position": "top",
-            "icon_color": "#FFFFFF",
-            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "view": "stacked",
+            "shape": "rounded",
+            "primary_color": "#FFFFFF",
+            "secondary_color": "rgba(255,255,255,.2)",
             "title_color": "#FFFFFF",
             "description_color": "rgba(255,255,255,.9)",
             "link": {
              "url": "/shop/"
             },
-            "shape": "rounded",
             "icon_size": {
              "unit": "px",
              "size": 24,
              "sizes": []
             },
+            "hover_animation": "float",
             "icon": "fas fa-home",
             "selected_icon": {
              "value": "fas fa-home",
@@ -1839,7 +1831,7 @@
          "isInner": false
         },
         {
-         "id": "f03565e",
+         "id": "5c09f8f",
          "elType": "column",
          "settings": {
           "_column_size": 25,
@@ -1864,30 +1856,33 @@
           },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 100
+          "_animation_delay": 100,
+          "animation_delay": 100
          },
          "elements": [
           {
-           "id": "f38b322",
+           "id": "c90635f",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
             "title_text": "Caterers & events",
             "description_text": "Sachet water that looks professional and bread that sells out.<br><br><span style=\"color:#fff;font-weight:700\">Talk to us →</span>",
             "position": "top",
-            "icon_color": "#FFFFFF",
-            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "view": "stacked",
+            "shape": "rounded",
+            "primary_color": "#FFFFFF",
+            "secondary_color": "rgba(255,255,255,.2)",
             "title_color": "#FFFFFF",
             "description_color": "rgba(255,255,255,.9)",
             "link": {
              "url": "/contact/"
             },
-            "shape": "rounded",
             "icon_size": {
              "unit": "px",
              "size": 24,
              "sizes": []
             },
+            "hover_animation": "float",
             "icon": "fas fa-utensils",
             "selected_icon": {
              "value": "fas fa-utensils",
@@ -1917,7 +1912,7 @@
          "isInner": false
         },
         {
-         "id": "559112e",
+         "id": "cde61be",
          "elType": "column",
          "settings": {
           "_column_size": 25,
@@ -1942,30 +1937,33 @@
           },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 200
+          "_animation_delay": 200,
+          "animation_delay": 200
          },
          "elements": [
           {
-           "id": "70d6f20",
+           "id": "2395458",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
             "title_text": "Schools & canteens",
             "description_text": "Reliable daily supply for breakfast plans and school events.<br><br><span style=\"color:#fff;font-weight:700\">Talk to us →</span>",
             "position": "top",
-            "icon_color": "#FFFFFF",
-            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "view": "stacked",
+            "shape": "rounded",
+            "primary_color": "#FFFFFF",
+            "secondary_color": "rgba(255,255,255,.2)",
             "title_color": "#FFFFFF",
             "description_color": "rgba(255,255,255,.9)",
             "link": {
              "url": "/contact/"
             },
-            "shape": "rounded",
             "icon_size": {
              "unit": "px",
              "size": 24,
              "sizes": []
             },
+            "hover_animation": "float",
             "icon": "fas fa-graduation-cap",
             "selected_icon": {
              "value": "fas fa-graduation-cap",
@@ -1995,13 +1993,20 @@
          "isInner": false
         },
         {
-         "id": "913f0d6",
+         "id": "66fd798",
          "elType": "column",
          "settings": {
           "_column_size": 25,
           "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#F7B650",
+          "background_background": "gradient",
+          "background_color": "#F3A73A",
+          "background_color_b": "#D9861E",
+          "background_gradient_angle": {
+           "unit": "deg",
+           "size": 150,
+           "sizes": []
+          },
+          "background_gradient_type": "linear",
           "padding": {
            "unit": "px",
            "top": "30",
@@ -2020,30 +2025,33 @@
           },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 300
+          "_animation_delay": 300,
+          "animation_delay": 300
          },
          "elements": [
           {
-           "id": "4a12e54",
+           "id": "50d91fc",
            "elType": "widget",
            "widgetType": "icon-box",
            "settings": {
             "title_text": "Shops & supermarkets",
             "description_text": "Branded, well-packaged products your customers already ask for.<br><br><span style=\"color:#fff;font-weight:700\">Become a distributor →</span>",
             "position": "top",
-            "icon_color": "#FFFFFF",
-            "icon_secondary_color": "rgba(255,255,255,.2)",
+            "view": "stacked",
+            "shape": "rounded",
+            "primary_color": "#FFFFFF",
+            "secondary_color": "rgba(255,255,255,.2)",
             "title_color": "#FFFFFF",
             "description_color": "rgba(255,255,255,.9)",
             "link": {
              "url": "/partnership/"
             },
-            "shape": "rounded",
             "icon_size": {
              "unit": "px",
              "size": 24,
              "sizes": []
             },
+            "hover_animation": "float",
             "icon": "fas fa-store",
             "selected_icon": {
              "value": "fas fa-store",
@@ -2082,7 +2090,7 @@
    "isInner": false
   },
   {
-   "id": "c0752f3",
+   "id": "02e7be7",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -2103,18 +2111,19 @@
    },
    "elements": [
     {
-     "id": "6d11847",
+     "id": "69a3e39",
      "elType": "column",
      "settings": {
       "_column_size": 50,
       "_inline_size": null,
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "625ab29",
+       "id": "7cd4453",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -2124,7 +2133,7 @@
        "isInner": false
       },
       {
-       "id": "06324ea",
+       "id": "c699b8e",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2138,7 +2147,7 @@
        "isInner": false
       },
       {
-       "id": "5a1f21d",
+       "id": "c8ccd57",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -2158,7 +2167,7 @@
        "isInner": false
       },
       {
-       "id": "00e4d80",
+       "id": "539532a",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2172,7 +2181,7 @@
        "isInner": false
       },
       {
-       "id": "2d74ada",
+       "id": "c7dd230",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2196,7 +2205,7 @@
        "isInner": false
       },
       {
-       "id": "de89400",
+       "id": "4e23375",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2210,7 +2219,7 @@
        "isInner": false
       },
       {
-       "id": "e1f7a0d",
+       "id": "98e4c1f",
        "elType": "widget",
        "widgetType": "icon-list",
        "settings": {
@@ -2268,7 +2277,7 @@
        "isInner": false
       },
       {
-       "id": "54d79c4",
+       "id": "613b429",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2282,7 +2291,7 @@
        "isInner": false
       },
       {
-       "id": "e15534b",
+       "id": "bafda56",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -2320,7 +2329,7 @@
      "isInner": false
     },
     {
-     "id": "19d8bc9",
+     "id": "0da68d5",
      "elType": "column",
      "settings": {
       "_column_size": 50,
@@ -2329,11 +2338,12 @@
       "text_align": "center",
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
-       "id": "c9e4e5c",
+       "id": "0dd0594",
        "elType": "widget",
        "widgetType": "image",
        "settings": {
@@ -2350,7 +2360,7 @@
        "isInner": false
       },
       {
-       "id": "48a1647",
+       "id": "08c5c8d",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2364,7 +2374,7 @@
        "isInner": false
       },
       {
-       "id": "40ac1e1",
+       "id": "478461b",
        "elType": "widget",
        "widgetType": "image",
        "settings": {
@@ -2387,7 +2397,7 @@
        "isInner": false
       },
       {
-       "id": "920cb71",
+       "id": "0b72b12",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2401,7 +2411,7 @@
        "isInner": false
       },
       {
-       "id": "1676493",
+       "id": "fef6609",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2417,7 +2427,7 @@
    "isInner": false
   },
   {
-   "id": "44f657d",
+   "id": "61ce5f9",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -2437,7 +2447,7 @@
    },
    "elements": [
     {
-     "id": "0093a60",
+     "id": "699b44d",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -2445,11 +2455,12 @@
       "content_position": "center",
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "1b81a74",
+       "id": "a0ec797",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -2459,7 +2470,7 @@
        "isInner": false
       },
       {
-       "id": "6127d66",
+       "id": "3df0d8d",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2473,7 +2484,7 @@
        "isInner": false
       },
       {
-       "id": "44d1efc",
+       "id": "595a4a1",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -2483,7 +2494,7 @@
        "isInner": false
       },
       {
-       "id": "a886b07",
+       "id": "ed70959",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -2497,503 +2508,419 @@
        "isInner": false
       },
       {
-       "id": "e697afb",
+       "id": "ba750ff",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "b4b7c33",
+         "id": "a5127c6",
          "elType": "column",
          "settings": {
           "_column_size": 25,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "20",
+           "bottom": "30",
+           "left": "20",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "18",
+           "right": "18",
+           "bottom": "18",
+           "left": "18",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "4",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#0256DB",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 10,
+           "blur": 26,
+           "spread": -14,
+           "color": "rgba(28,36,75,.1)"
+          },
+          "content_position": "center",
+          "text_align": "center",
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 0
+          "_animation_delay": 0,
+          "animation_delay": 0
          },
          "elements": [
           {
-           "id": "d7e8316",
-           "elType": "section",
+           "id": "21ef133",
+           "elType": "widget",
+           "widgetType": "icon-box",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "title_text": "Certified Quality",
+            "description_text": "NAFDAC Approved. Our products meet the highest quality standards.",
+            "position": "top",
+            "view": "stacked",
+            "shape": "circle",
+            "primary_color": "#28A745",
+            "secondary_color": "#DFEBFC",
+            "title_color": "#0256DB",
+            "description_color": "#7A7A7A",
+            "icon_space": {
              "unit": "px",
-             "top": "30",
-             "right": "20",
-             "bottom": "30",
-             "left": "20",
-             "isLinked": false
+             "size": 18,
+             "sizes": []
             },
-            "border_radius": {
+            "icon_size": {
              "unit": "px",
-             "top": "18",
-             "right": "18",
-             "bottom": "18",
-             "left": "18",
-             "isLinked": false
+             "size": 28,
+             "sizes": []
             },
-            "border_border": "solid",
-            "border_width": {
+            "icon": "fas fa-award",
+            "selected_icon": {
+             "value": "fas fa-award",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
              "unit": "px",
-             "top": "4",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": false
+             "size": 20,
+             "sizes": []
             },
-            "border_color": "#0256DB",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 10,
-             "blur": 26,
-             "spread": -14,
-             "color": "rgba(28,36,75,.1)"
-            }
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400",
+            "hover_animation": "float",
+            "text_align": "center"
            },
-           "elements": [
-            {
-             "id": "4d74775",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "content_position": "center",
-              "text_align": "center"
-             },
-             "elements": [
-              {
-               "id": "2700b5d",
-               "elType": "widget",
-               "widgetType": "icon-box",
-               "settings": {
-                "title_text": "Certified Quality",
-                "description_text": "NAFDAC Approved. Our products meet the highest quality standards.",
-                "position": "top",
-                "icon_color": "#28A745",
-                "icon_background_background": "classic",
-                "icon_bg_background": "classic",
-                "icon_primary_color": "#28A745",
-                "icon_secondary_color": "#DFEBFC",
-                "title_color": "#0256DB",
-                "description_color": "#7A7A7A",
-                "icon_space": {
-                 "unit": "px",
-                 "size": 18,
-                 "sizes": []
-                },
-                "icon_size": {
-                 "unit": "px",
-                 "size": 28,
-                 "sizes": []
-                },
-                "shape": "circle",
-                "icon": "fas fa-award",
-                "selected_icon": {
-                 "value": "fas fa-award",
-                 "library": "fa-solid"
-                },
-                "title_typography_typography": "custom",
-                "title_typography_font_family": "Outfit",
-                "title_typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "title_typography_font_weight": "700",
-                "description_typography_typography": "custom",
-                "description_typography_font_family": "Nunito",
-                "description_typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "description_typography_font_weight": "400",
-                "hover_animation": "float",
-                "text_align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "15a90fd",
+         "id": "faab17b",
          "elType": "column",
          "settings": {
           "_column_size": 25,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "20",
+           "bottom": "30",
+           "left": "20",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "18",
+           "right": "18",
+           "bottom": "18",
+           "left": "18",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "4",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#0256DB",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 10,
+           "blur": 26,
+           "spread": -14,
+           "color": "rgba(28,36,75,.1)"
+          },
+          "content_position": "center",
+          "text_align": "center",
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 100
+          "_animation_delay": 100,
+          "animation_delay": 100
          },
          "elements": [
           {
-           "id": "c583bed",
-           "elType": "section",
+           "id": "9c3fe43",
+           "elType": "widget",
+           "widgetType": "icon-box",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "title_text": "Eco-Friendly",
+            "description_text": "Sustainable sources and packaging. We care about our environment.",
+            "position": "top",
+            "view": "stacked",
+            "shape": "circle",
+            "primary_color": "#28A745",
+            "secondary_color": "#DFEBFC",
+            "title_color": "#0256DB",
+            "description_color": "#7A7A7A",
+            "icon_space": {
              "unit": "px",
-             "top": "30",
-             "right": "20",
-             "bottom": "30",
-             "left": "20",
-             "isLinked": false
+             "size": 18,
+             "sizes": []
             },
-            "border_radius": {
+            "icon_size": {
              "unit": "px",
-             "top": "18",
-             "right": "18",
-             "bottom": "18",
-             "left": "18",
-             "isLinked": false
+             "size": 28,
+             "sizes": []
             },
-            "border_border": "solid",
-            "border_width": {
+            "icon": "fas fa-leaf",
+            "selected_icon": {
+             "value": "fas fa-leaf",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
              "unit": "px",
-             "top": "4",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": false
+             "size": 20,
+             "sizes": []
             },
-            "border_color": "#0256DB",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 10,
-             "blur": 26,
-             "spread": -14,
-             "color": "rgba(28,36,75,.1)"
-            }
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400",
+            "hover_animation": "float",
+            "text_align": "center"
            },
-           "elements": [
-            {
-             "id": "416391b",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "content_position": "center",
-              "text_align": "center"
-             },
-             "elements": [
-              {
-               "id": "957b7ec",
-               "elType": "widget",
-               "widgetType": "icon-box",
-               "settings": {
-                "title_text": "Eco-Friendly",
-                "description_text": "Sustainable sources and packaging. We care about our environment.",
-                "position": "top",
-                "icon_color": "#28A745",
-                "icon_background_background": "classic",
-                "icon_bg_background": "classic",
-                "icon_primary_color": "#28A745",
-                "icon_secondary_color": "#DFEBFC",
-                "title_color": "#0256DB",
-                "description_color": "#7A7A7A",
-                "icon_space": {
-                 "unit": "px",
-                 "size": 18,
-                 "sizes": []
-                },
-                "icon_size": {
-                 "unit": "px",
-                 "size": 28,
-                 "sizes": []
-                },
-                "shape": "circle",
-                "icon": "fas fa-leaf",
-                "selected_icon": {
-                 "value": "fas fa-leaf",
-                 "library": "fa-solid"
-                },
-                "title_typography_typography": "custom",
-                "title_typography_font_family": "Outfit",
-                "title_typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "title_typography_font_weight": "700",
-                "description_typography_typography": "custom",
-                "description_typography_font_family": "Nunito",
-                "description_typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "description_typography_font_weight": "400",
-                "hover_animation": "float",
-                "text_align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "2533f7d",
+         "id": "2353e20",
          "elType": "column",
          "settings": {
           "_column_size": 25,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "20",
+           "bottom": "30",
+           "left": "20",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "18",
+           "right": "18",
+           "bottom": "18",
+           "left": "18",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "4",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#0256DB",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 10,
+           "blur": 26,
+           "spread": -14,
+           "color": "rgba(28,36,75,.1)"
+          },
+          "content_position": "center",
+          "text_align": "center",
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 200
+          "_animation_delay": 200,
+          "animation_delay": 200
          },
          "elements": [
           {
-           "id": "4d1e4e7",
-           "elType": "section",
+           "id": "a2db0de",
+           "elType": "widget",
+           "widgetType": "icon-box",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "title_text": "Development",
+            "description_text": "Supporting Nigerian jobs & families. We grow with our community.",
+            "position": "top",
+            "view": "stacked",
+            "shape": "circle",
+            "primary_color": "#28A745",
+            "secondary_color": "#DFEBFC",
+            "title_color": "#0256DB",
+            "description_color": "#7A7A7A",
+            "icon_space": {
              "unit": "px",
-             "top": "30",
-             "right": "20",
-             "bottom": "30",
-             "left": "20",
-             "isLinked": false
+             "size": 18,
+             "sizes": []
             },
-            "border_radius": {
+            "icon_size": {
              "unit": "px",
-             "top": "18",
-             "right": "18",
-             "bottom": "18",
-             "left": "18",
-             "isLinked": false
+             "size": 28,
+             "sizes": []
             },
-            "border_border": "solid",
-            "border_width": {
+            "icon": "fas fa-users",
+            "selected_icon": {
+             "value": "fas fa-users",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
              "unit": "px",
-             "top": "4",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": false
+             "size": 20,
+             "sizes": []
             },
-            "border_color": "#0256DB",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 10,
-             "blur": 26,
-             "spread": -14,
-             "color": "rgba(28,36,75,.1)"
-            }
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400",
+            "hover_animation": "float",
+            "text_align": "center"
            },
-           "elements": [
-            {
-             "id": "cd31ff7",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "content_position": "center",
-              "text_align": "center"
-             },
-             "elements": [
-              {
-               "id": "ff9bbb2",
-               "elType": "widget",
-               "widgetType": "icon-box",
-               "settings": {
-                "title_text": "Development",
-                "description_text": "Supporting Nigerian jobs & families. We grow with our community.",
-                "position": "top",
-                "icon_color": "#28A745",
-                "icon_background_background": "classic",
-                "icon_bg_background": "classic",
-                "icon_primary_color": "#28A745",
-                "icon_secondary_color": "#DFEBFC",
-                "title_color": "#0256DB",
-                "description_color": "#7A7A7A",
-                "icon_space": {
-                 "unit": "px",
-                 "size": 18,
-                 "sizes": []
-                },
-                "icon_size": {
-                 "unit": "px",
-                 "size": 28,
-                 "sizes": []
-                },
-                "shape": "circle",
-                "icon": "fas fa-users",
-                "selected_icon": {
-                 "value": "fas fa-users",
-                 "library": "fa-solid"
-                },
-                "title_typography_typography": "custom",
-                "title_typography_font_family": "Outfit",
-                "title_typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "title_typography_font_weight": "700",
-                "description_typography_typography": "custom",
-                "description_typography_font_family": "Nunito",
-                "description_typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "description_typography_font_weight": "400",
-                "hover_animation": "float",
-                "text_align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "9d0e842",
+         "id": "d2972cf",
          "elType": "column",
          "settings": {
           "_column_size": 25,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "30",
+           "right": "20",
+           "bottom": "30",
+           "left": "20",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "18",
+           "right": "18",
+           "bottom": "18",
+           "left": "18",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "4",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#0256DB",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 10,
+           "blur": 26,
+           "spread": -14,
+           "color": "rgba(28,36,75,.1)"
+          },
+          "content_position": "center",
+          "text_align": "center",
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 300
+          "_animation_delay": 300,
+          "animation_delay": 300
          },
          "elements": [
           {
-           "id": "1238c06",
-           "elType": "section",
+           "id": "3679443",
+           "elType": "widget",
+           "widgetType": "icon-box",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
+            "title_text": "Reliable Delivery",
+            "description_text": "Fast, dependable distribution network. We deliver on our promises.",
+            "position": "top",
+            "view": "stacked",
+            "shape": "circle",
+            "primary_color": "#28A745",
+            "secondary_color": "#DFEBFC",
+            "title_color": "#0256DB",
+            "description_color": "#7A7A7A",
+            "icon_space": {
              "unit": "px",
-             "top": "30",
-             "right": "20",
-             "bottom": "30",
-             "left": "20",
-             "isLinked": false
+             "size": 18,
+             "sizes": []
             },
-            "border_radius": {
+            "icon_size": {
              "unit": "px",
-             "top": "18",
-             "right": "18",
-             "bottom": "18",
-             "left": "18",
-             "isLinked": false
+             "size": 28,
+             "sizes": []
             },
-            "border_border": "solid",
-            "border_width": {
+            "icon": "fas fa-truck",
+            "selected_icon": {
+             "value": "fas fa-truck",
+             "library": "fa-solid"
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Outfit",
+            "title_typography_font_size": {
              "unit": "px",
-             "top": "4",
-             "right": "0",
-             "bottom": "0",
-             "left": "0",
-             "isLinked": false
+             "size": 20,
+             "sizes": []
             },
-            "border_color": "#0256DB",
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 10,
-             "blur": 26,
-             "spread": -14,
-             "color": "rgba(28,36,75,.1)"
-            }
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Nunito",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "description_typography_font_weight": "400",
+            "hover_animation": "float",
+            "text_align": "center"
            },
-           "elements": [
-            {
-             "id": "6408567",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "content_position": "center",
-              "text_align": "center"
-             },
-             "elements": [
-              {
-               "id": "d89d725",
-               "elType": "widget",
-               "widgetType": "icon-box",
-               "settings": {
-                "title_text": "Reliable Delivery",
-                "description_text": "Fast, dependable distribution network. We deliver on our promises.",
-                "position": "top",
-                "icon_color": "#28A745",
-                "icon_background_background": "classic",
-                "icon_bg_background": "classic",
-                "icon_primary_color": "#28A745",
-                "icon_secondary_color": "#DFEBFC",
-                "title_color": "#0256DB",
-                "description_color": "#7A7A7A",
-                "icon_space": {
-                 "unit": "px",
-                 "size": 18,
-                 "sizes": []
-                },
-                "icon_size": {
-                 "unit": "px",
-                 "size": 28,
-                 "sizes": []
-                },
-                "shape": "circle",
-                "icon": "fas fa-truck",
-                "selected_icon": {
-                 "value": "fas fa-truck",
-                 "library": "fa-solid"
-                },
-                "title_typography_typography": "custom",
-                "title_typography_font_family": "Outfit",
-                "title_typography_font_size": {
-                 "unit": "px",
-                 "size": 20,
-                 "sizes": []
-                },
-                "title_typography_font_weight": "700",
-                "description_typography_typography": "custom",
-                "description_typography_font_family": "Nunito",
-                "description_typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "description_typography_font_weight": "400",
-                "hover_animation": "float",
-                "text_align": "center"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
+           "elements": [],
            "isInner": false
           }
          ],
@@ -3009,7 +2936,7 @@
    "isInner": false
   },
   {
-   "id": "1869a08",
+   "id": "9a7bcdf",
    "elType": "section",
    "settings": {
     "background_background": "classic",
@@ -3031,7 +2958,7 @@
    },
    "elements": [
     {
-     "id": "c9ac17f",
+     "id": "afc87d5",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -3039,11 +2966,12 @@
       "content_position": "center",
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "0b3098f",
+       "id": "3ab43cd",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -3053,7 +2981,7 @@
        "isInner": false
       },
       {
-       "id": "efdcd3e",
+       "id": "df57a2a",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -3067,7 +2995,7 @@
        "isInner": false
       },
       {
-       "id": "0667410",
+       "id": "2496486",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -3077,7 +3005,7 @@
        "isInner": false
       },
       {
-       "id": "cb45a0f",
+       "id": "59d2140",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -3091,7 +3019,7 @@
        "isInner": false
       },
       {
-       "id": "2d46546",
+       "id": "06b0072",
        "elType": "widget",
        "widgetType": "testimonial-carousel",
        "settings": {
@@ -3104,26 +3032,73 @@
          {
           "testimonial_content": "The sandwich Jalix bread is always fresh, soft, and delicious. My customers keep asking for it every morning — it sells out so fast.",
           "testimonial_name": "Nnenna U.",
-          "testimonial_job": "Caterer"
+          "testimonial_job": "Caterer",
+          "content": "The sandwich Jalix bread is always fresh, soft, and delicious. My customers keep asking for it every morning — it sells out so fast.",
+          "name": "Nnenna U.",
+          "title": "Caterer"
          },
          {
           "testimonial_content": "Ajalisco Premium Water stays cool and fresh all day. Even under the sun at site, the sachets don’t burst and the taste stays clean.",
           "testimonial_name": "Ikechukwu O.",
-          "testimonial_job": "Civil Engineer"
+          "testimonial_job": "Civil Engineer",
+          "content": "Ajalisco Premium Water stays cool and fresh all day. Even under the sun at site, the sachets don’t burst and the taste stays clean.",
+          "name": "Ikechukwu O.",
+          "title": "Civil Engineer"
          },
          {
           "testimonial_content": "For every event, we use Ajalisco sachet water. It’s affordable, clean, and nicely branded. My clients love how professional it looks.",
           "testimonial_name": "Emeka Obot",
-          "testimonial_job": "Event Planner"
+          "testimonial_job": "Event Planner",
+          "content": "For every event, we use Ajalisco sachet water. It’s affordable, clean, and nicely branded. My clients love how professional it looks.",
+          "name": "Emeka Obot",
+          "title": "Event Planner"
          },
          {
           "testimonial_content": "Our students and staff enjoy all Jalix bread flavors. Fruit and milk especially go fast. It’s part of our school’s daily breakfast plan.",
           "testimonial_name": "Adebayo A.",
-          "testimonial_job": "School Administrator"
+          "testimonial_job": "School Administrator",
+          "content": "Our students and staff enjoy all Jalix bread flavors. Fruit and milk especially go fast. It’s part of our school’s daily breakfast plan.",
+          "name": "Adebayo A.",
+          "title": "School Administrator"
+         }
+        ],
+        "slides": [
+         {
+          "testimonial_content": "The sandwich Jalix bread is always fresh, soft, and delicious. My customers keep asking for it every morning — it sells out so fast.",
+          "testimonial_name": "Nnenna U.",
+          "testimonial_job": "Caterer",
+          "content": "The sandwich Jalix bread is always fresh, soft, and delicious. My customers keep asking for it every morning — it sells out so fast.",
+          "name": "Nnenna U.",
+          "title": "Caterer"
+         },
+         {
+          "testimonial_content": "Ajalisco Premium Water stays cool and fresh all day. Even under the sun at site, the sachets don’t burst and the taste stays clean.",
+          "testimonial_name": "Ikechukwu O.",
+          "testimonial_job": "Civil Engineer",
+          "content": "Ajalisco Premium Water stays cool and fresh all day. Even under the sun at site, the sachets don’t burst and the taste stays clean.",
+          "name": "Ikechukwu O.",
+          "title": "Civil Engineer"
+         },
+         {
+          "testimonial_content": "For every event, we use Ajalisco sachet water. It’s affordable, clean, and nicely branded. My clients love how professional it looks.",
+          "testimonial_name": "Emeka Obot",
+          "testimonial_job": "Event Planner",
+          "content": "For every event, we use Ajalisco sachet water. It’s affordable, clean, and nicely branded. My clients love how professional it looks.",
+          "name": "Emeka Obot",
+          "title": "Event Planner"
+         },
+         {
+          "testimonial_content": "Our students and staff enjoy all Jalix bread flavors. Fruit and milk especially go fast. It’s part of our school’s daily breakfast plan.",
+          "testimonial_name": "Adebayo A.",
+          "testimonial_job": "School Administrator",
+          "content": "Our students and staff enjoy all Jalix bread flavors. Fruit and milk especially go fast. It’s part of our school’s daily breakfast plan.",
+          "name": "Adebayo A.",
+          "title": "School Administrator"
          }
         ],
         "name_color": "#0256DB",
         "job_color": "#7A7A7A",
+        "title_color": "#7A7A7A",
         "content_color": "#54595F",
         "content_typography_typography": "custom",
         "content_typography_font_family": "Nunito",
@@ -3149,7 +3124,7 @@
    "isInner": false
   },
   {
-   "id": "0cb2abf",
+   "id": "f1ce0c5",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -3169,7 +3144,7 @@
    },
    "elements": [
     {
-     "id": "8032018",
+     "id": "0798ea3",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -3177,11 +3152,12 @@
       "content_position": "center",
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "a99ff68",
+       "id": "3489d91",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
@@ -3191,7 +3167,7 @@
        "isInner": false
       },
       {
-       "id": "0614145",
+       "id": "b3a44af",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -3205,7 +3181,7 @@
        "isInner": false
       },
       {
-       "id": "b5daad9",
+       "id": "2935cfd",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -3215,7 +3191,7 @@
        "isInner": false
       },
       {
-       "id": "36a49ec",
+       "id": "8d01ad6",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -3229,535 +3205,454 @@
        "isInner": false
       },
       {
-       "id": "0d4124e",
+       "id": "6de26bc",
        "elType": "section",
        "settings": {
         "gap": "wide"
        },
        "elements": [
         {
-         "id": "84bba00",
+         "id": "5d1f232",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "22",
+           "bottom": "24",
+           "left": "22",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": false
+          },
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 14,
+           "blur": 34,
+           "spread": -18,
+           "color": "rgba(28,36,75,.14)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 0
+          "_animation_delay": 0,
+          "animation_delay": 0
          },
          "elements": [
           {
-           "id": "949369d",
-           "elType": "section",
+           "id": "777f610",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "24",
-             "left": "0",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-hydration.webp",
+             "id": 0,
+             "alt": "Hydration Myths Busted: Expert Advice on Staying Hydrated in Nigeria",
+             "source": "library"
             },
-            "border_radius": {
-             "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
-             "isLinked": false
+            "image_size": "full",
+            "link_to": "custom",
+            "link": {
+             "url": "https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/",
+             "is_external": "",
+             "nofollow": ""
             },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 14,
-             "blur": 34,
-             "spread": -18,
-             "color": "rgba(28,36,75,.14)"
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "93257ff",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "e0202c2",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "padding": {
-               "unit": "px",
-               "top": "0",
-               "right": "22",
-               "bottom": "0",
-               "left": "22",
-               "isLinked": false
-              }
-             },
-             "elements": [
-              {
-               "id": "1f3c36e",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-hydration.webp",
-                 "id": 0,
-                 "alt": "Hydration Myths Busted: Expert Advice on Staying Hydrated in Nigeria",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "link_to": "custom",
-                "link": {
-                 "url": "https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/",
-                 "is_external": "",
-                 "nofollow": ""
-                },
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "84ea780",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 16,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "8991d0f",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<a href=\"https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Hydration Myths Busted: Expert Advice on Staying Hydrated in Nigeria</h3></a>"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "f3e34b1",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 8,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "c718a8a",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "In Nigeria’s tropical climate, staying hydrated isn’t just a health suggestion — it’s a daily survival strategy. With scorching heat…",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "73dab29",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 10,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "8a73d65",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<a href=\"https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "0cd3c2e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Hydration Myths Busted: Expert Advice on Staying Hydrated in Nigeria</h3></a>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "b0fa225",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 8,
+             "sizes": []
             }
-           ],
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "05da14e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "In Nigeria’s tropical climate, staying hydrated isn’t just a health suggestion — it’s a daily survival strategy. With scorching heat…",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "23627d8",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "462d48f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"https://ajaliscogroup.com/hydration-myths-busted-expert-advice-on-staying-hydrated-in-nigeria/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "d156d68",
+         "id": "db5dbb3",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "22",
+           "bottom": "24",
+           "left": "22",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": false
+          },
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 14,
+           "blur": 34,
+           "spread": -18,
+           "color": "rgba(28,36,75,.14)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 100
+          "_animation_delay": 100,
+          "animation_delay": 100
          },
          "elements": [
           {
-           "id": "9d5305b",
-           "elType": "section",
+           "id": "e4a5b7a",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "24",
-             "left": "0",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-quality.webp",
+             "id": 0,
+             "alt": "Quality Matters: Our Multi-Stage Testing Protocol for Sachet and Bottled Water",
+             "source": "library"
             },
-            "border_radius": {
-             "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
-             "isLinked": false
+            "image_size": "full",
+            "link_to": "custom",
+            "link": {
+             "url": "https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/",
+             "is_external": "",
+             "nofollow": ""
             },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 14,
-             "blur": 34,
-             "spread": -18,
-             "color": "rgba(28,36,75,.14)"
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "06616f5",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "b362c62",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "padding": {
-               "unit": "px",
-               "top": "0",
-               "right": "22",
-               "bottom": "0",
-               "left": "22",
-               "isLinked": false
-              }
-             },
-             "elements": [
-              {
-               "id": "41f533d",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-quality.webp",
-                 "id": 0,
-                 "alt": "Quality Matters: Our Multi-Stage Testing Protocol for Sachet and Bottled Water",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "link_to": "custom",
-                "link": {
-                 "url": "https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/",
-                 "is_external": "",
-                 "nofollow": ""
-                },
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "7555783",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 16,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "5045327",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<a href=\"https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Quality Matters: Our Multi-Stage Testing Protocol for Sachet and Bottled Water</h3></a>"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "12a3c06",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 8,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "bf175b2",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "In Nigeria’s fast-growing bottled and sachet water industry, not all water is created equal. While clear packaging may give the illusion of purity…",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "2bd6254",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 10,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "060c4f7",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<a href=\"https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "5a27b41",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Quality Matters: Our Multi-Stage Testing Protocol for Sachet and Bottled Water</h3></a>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d766156",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 8,
+             "sizes": []
             }
-           ],
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "fb39cb1",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "In Nigeria’s fast-growing bottled and sachet water industry, not all water is created equal. While clear packaging may give the illusion of purity…",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e7e2abd",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "1b7a1e4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"https://ajaliscogroup.com/quality-matters-our-multi%e2%80%91stage-testing-protocol-for-sachet-and-bottled-water/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "2bb9c0b",
+         "id": "1cb7bc0",
          "elType": "column",
          "settings": {
           "_column_size": 33.33,
           "_inline_size": null,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "22",
+           "bottom": "24",
+           "left": "22",
+           "isLinked": false
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": false
+          },
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 14,
+           "blur": 34,
+           "spread": -18,
+           "color": "rgba(28,36,75,.14)"
+          },
           "animation": "fadeInUp",
           "animation_duration": "fast",
-          "_animation_delay": 200
+          "_animation_delay": 200,
+          "animation_delay": 200
          },
          "elements": [
           {
-           "id": "717d05b",
-           "elType": "section",
+           "id": "30f4d65",
+           "elType": "widget",
+           "widgetType": "image",
            "settings": {
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "padding": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "24",
-             "left": "0",
-             "isLinked": false
+            "image": {
+             "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-factory.webp",
+             "id": 0,
+             "alt": "Inside Our Factory: How Ajalisco Ensures 100% Pure Sachet Water",
+             "source": "library"
             },
-            "border_radius": {
-             "unit": "px",
-             "top": "20",
-             "right": "20",
-             "bottom": "20",
-             "left": "20",
-             "isLinked": false
+            "image_size": "full",
+            "link_to": "custom",
+            "link": {
+             "url": "https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/",
+             "is_external": "",
+             "nofollow": ""
             },
-            "box_shadow_box_shadow": {
-             "horizontal": 0,
-             "vertical": 14,
-             "blur": 34,
-             "spread": -18,
-             "color": "rgba(28,36,75,.14)"
+            "hover_animation": "grow"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "60f689c",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
             }
            },
-           "elements": [
-            {
-             "id": "5e68ec2",
-             "elType": "column",
-             "settings": {
-              "_column_size": 100,
-              "_inline_size": null,
-              "padding": {
-               "unit": "px",
-               "top": "0",
-               "right": "22",
-               "bottom": "0",
-               "left": "22",
-               "isLinked": false
-              }
-             },
-             "elements": [
-              {
-               "id": "d8e1e6b",
-               "elType": "widget",
-               "widgetType": "image",
-               "settings": {
-                "image": {
-                 "url": "https://joshuaetok.github.io/ajalisco-site/assets/blog-factory.webp",
-                 "id": 0,
-                 "alt": "Inside Our Factory: How Ajalisco Ensures 100% Pure Sachet Water",
-                 "source": "library"
-                },
-                "image_size": "full",
-                "link_to": "custom",
-                "link": {
-                 "url": "https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/",
-                 "is_external": "",
-                 "nofollow": ""
-                },
-                "hover_animation": "grow"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "ed458cd",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 16,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "a9464b0",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<a href=\"https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Inside Our Factory: How Ajalisco Ensures 100% Pure Sachet Water</h3></a>"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "a8aa73a",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 8,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "f1c3aa0",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "At Ajalisco Production Industries, purity is not just a promise — it’s a process. In an industry where health and safety are closely tied…",
-                "typography_typography": "custom",
-                "typography_font_family": "Nunito",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15,
-                 "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                 "unit": "em",
-                 "size": 1.7,
-                 "sizes": []
-                },
-                "text_color": "#7A7A7A"
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "2a48786",
-               "elType": "widget",
-               "widgetType": "spacer",
-               "settings": {
-                "space": {
-                 "unit": "px",
-                 "size": 10,
-                 "sizes": []
-                }
-               },
-               "elements": [],
-               "isInner": false
-              },
-              {
-               "id": "e29608f",
-               "elType": "widget",
-               "widgetType": "text-editor",
-               "settings": {
-                "editor": "<a href=\"https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "5f283f0",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/\" target=\"_blank\" style=\"text-decoration:none\"><h3 style=\"margin:0;font:600 19.5px Outfit,sans-serif;color:#0256DB\">Inside Our Factory: How Ajalisco Ensures 100% Pure Sachet Water</h3></a>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "51dd416",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 8,
+             "sizes": []
             }
-           ],
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d6e6a6e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "At Ajalisco Production Industries, purity is not just a promise — it’s a process. In an industry where health and safety are closely tied…",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            },
+            "text_color": "#7A7A7A"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "4f442da",
+           "elType": "widget",
+           "widgetType": "spacer",
+           "settings": {
+            "space": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d6436a9",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"https://ajaliscogroup.com/inside-our-factory-how-ajalisco-ensures-100-pure-sachet-water/\" target=\"_blank\" style=\"font:600 15px Outfit,sans-serif;color:#0256DB;text-decoration:none\">Read More →</a>"
+           },
+           "elements": [],
            "isInner": false
           }
          ],
@@ -3773,10 +3668,42 @@
    "isInner": false
   },
   {
-   "id": "372ef47",
+   "id": "5c4640c",
    "elType": "section",
    "settings": {
+    "background_background": "gradient",
+    "background_color": "#0A64F0",
+    "background_color_b": "#0256DB",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 160,
+     "sizes": []
+    },
+    "background_gradient_type": "linear",
+    "content_width": {
+     "unit": "px",
+     "size": 1220,
+     "sizes": []
+    },
+    "layout": "boxed",
     "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "30",
+     "bottom": "56",
+     "left": "30",
+     "isLinked": false
+    },
+    "border_radius": {
+     "unit": "px",
+     "top": "26",
+     "right": "26",
+     "bottom": "26",
+     "left": "26",
+     "isLinked": false
+    },
+    "position": "relative",
+    "margin": {
      "unit": "px",
      "top": "10",
      "right": "20",
@@ -3787,237 +3714,192 @@
    },
    "elements": [
     {
-     "id": "cdd1376",
+     "id": "0397fef",
      "elType": "column",
      "settings": {
       "_column_size": 100,
-      "_inline_size": null
+      "_inline_size": null,
+      "content_position": "center",
+      "animation": "zoomIn",
+      "animation_duration": "fast",
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
-       "id": "02e0860",
-       "elType": "section",
+       "id": "bebecf5",
+       "elType": "widget",
+       "widgetType": "html",
        "settings": {
-        "background_background": "gradient",
-        "background_color": "#0A64F0",
-        "background_color_b": "#0256DB",
-        "background_gradient_angle": {
-         "unit": "deg",
-         "size": 160,
+        "html": "\n    <style>\n    .ctabub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .ctabub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:ctabubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes ctabubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120vh);opacity:.2} }\n    </style>\n    <div class=\"ctabub\"><i style=\"left:82%;--s:38px;--d:18s;--dl:-2s\"></i><i style=\"left:47%;--s:45px;--d:14s;--dl:-11s\"></i><i style=\"left:3%;--s:10px;--d:18s;--dl:-16s\"></i><i style=\"left:78%;--s:38px;--d:24s;--dl:-16s\"></i><i style=\"left:55%;--s:27px;--d:11s;--dl:-16s\"></i><i style=\"left:2%;--s:22px;--d:11s;--dl:-13s\"></i></div>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1c419d6",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
+        "header_size": "h2",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Outfit",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
          "sizes": []
         },
-        "background_gradient_type": "linear",
-        "padding": {
+        "typography_font_weight": "700",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5f5a5e9",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Let’s bring clean water and fresh bread to more homes in Nigeria.",
+        "typography_typography": "custom",
+        "typography_font_family": "Nunito",
+        "typography_font_size": {
          "unit": "px",
-         "top": "56",
-         "right": "30",
-         "bottom": "56",
-         "left": "30",
-         "isLinked": false
+         "size": 17,
+         "sizes": []
         },
-        "border_radius": {
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "text_color": "#DCE8FF",
+        "align": "center"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1d7ae89",
+       "elType": "widget",
+       "widgetType": "spacer",
+       "settings": {
+        "space": {
          "unit": "px",
-         "top": "26",
-         "right": "26",
-         "bottom": "26",
-         "left": "26",
-         "isLinked": false
-        },
-        "position": "relative"
+         "size": 22,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0b951e7",
+       "elType": "section",
+       "settings": {
+        "content_position": "middle",
+        "gap": "narrow"
        },
        "elements": [
         {
-         "id": "cd420bc",
+         "id": "6791cf9",
          "elType": "column",
          "settings": {
-          "_column_size": 100,
-          "_inline_size": null,
-          "content_position": "center",
-          "animation": "zoomIn",
-          "animation_duration": "fast",
-          "_animation_delay": 0
+          "_column_size": 50,
+          "_inline_size": null
          },
          "elements": [
           {
-           "id": "58ca231",
+           "id": "5f63224",
            "elType": "widget",
-           "widgetType": "html",
+           "widgetType": "button",
            "settings": {
-            "html": "\n    <style>\n    .ctabub { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }\n    .ctabub i { position:absolute; bottom:-70px; width:var(--s); aspect-ratio:1; border-radius:50%;\n      background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4); animation:ctabubrise var(--d) linear infinite; animation-delay:var(--dl); }\n    @keyframes ctabubrise { 0%{transform:translate(0,0);opacity:0} 10%{opacity:1} 100%{transform:translate(24px,-120%);opacity:.2} }\n    </style>\n    <div class=\"ctabub\"><i style=\"left:60%;--s:30px;--d:24s;--dl:-14s\"></i><i style=\"left:72%;--s:41px;--d:21s;--dl:-10s\"></i><i style=\"left:25%;--s:38px;--d:24s;--dl:-11s\"></i><i style=\"left:5%;--s:21px;--d:20s;--dl:-9s\"></i><i style=\"left:11%;--s:46px;--d:24s;--dl:-11s\"></i><i style=\"left:71%;--s:9px;--d:15s;--dl:-4s\"></i></div>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "305336e",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
-            "header_size": "h2",
-            "title_color": "#FFFFFF",
+            "text": "Become a Distributor",
+            "link": {
+             "url": "/partnership/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#28A745",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "lg",
             "typography_typography": "custom",
             "typography_font_family": "Outfit",
             "typography_font_size": {
              "unit": "px",
-             "size": 36,
+             "size": 15.5,
              "sizes": []
             },
-            "typography_font_weight": "700",
-            "align": "center"
+            "typography_font_weight": "600",
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
-          },
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "218bdb2",
+         "elType": "column",
+         "settings": {
+          "_column_size": 50,
+          "_inline_size": null
+         },
+         "elements": [
           {
-           "id": "0bf4661",
+           "id": "4a4a174",
            "elType": "widget",
-           "widgetType": "text-editor",
+           "widgetType": "button",
            "settings": {
-            "editor": "Let’s bring clean water and fresh bread to more homes in Nigeria.",
+            "text": "Shop Now",
+            "link": {
+             "url": "/shop/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "rgba(255,255,255,.15)",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": false
+            },
+            "size": "lg",
             "typography_typography": "custom",
-            "typography_font_family": "Nunito",
+            "typography_font_family": "Outfit",
             "typography_font_size": {
              "unit": "px",
-             "size": 17,
+             "size": 15.5,
              "sizes": []
             },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#DCE8FF",
-            "align": "center"
+            "typography_font_weight": "600",
+            "align": "center",
+            "hover_animation": "float"
            },
            "elements": [],
            "isInner": false
-          },
-          {
-           "id": "a7db1ce",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 22,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "46b67d4",
-           "elType": "section",
-           "settings": {
-            "content_position": "middle",
-            "gap": "narrow"
-           },
-           "elements": [
-            {
-             "id": "862deeb",
-             "elType": "column",
-             "settings": {
-              "_column_size": 50,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "e974586",
-               "elType": "widget",
-               "widgetType": "button",
-               "settings": {
-                "text": "Become a Distributor",
-                "link": {
-                 "url": "/partnership/",
-                 "is_external": "",
-                 "nofollow": ""
-                },
-                "background_color": "#28A745",
-                "button_text_color": "#FFFFFF",
-                "border_radius": {
-                 "unit": "px",
-                 "top": "10",
-                 "right": "10",
-                 "bottom": "10",
-                 "left": "10",
-                 "isLinked": false
-                },
-                "size": "lg",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15.5,
-                 "sizes": []
-                },
-                "typography_font_weight": "600",
-                "align": "center",
-                "hover_animation": "float"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            },
-            {
-             "id": "695dda2",
-             "elType": "column",
-             "settings": {
-              "_column_size": 50,
-              "_inline_size": null
-             },
-             "elements": [
-              {
-               "id": "fafb56e",
-               "elType": "widget",
-               "widgetType": "button",
-               "settings": {
-                "text": "Shop Now",
-                "link": {
-                 "url": "/shop/",
-                 "is_external": "",
-                 "nofollow": ""
-                },
-                "background_color": "rgba(255,255,255,.15)",
-                "button_text_color": "#FFFFFF",
-                "border_radius": {
-                 "unit": "px",
-                 "top": "10",
-                 "right": "10",
-                 "bottom": "10",
-                 "left": "10",
-                 "isLinked": false
-                },
-                "size": "lg",
-                "typography_typography": "custom",
-                "typography_font_family": "Outfit",
-                "typography_font_size": {
-                 "unit": "px",
-                 "size": 15.5,
-                 "sizes": []
-                },
-                "typography_font_weight": "600",
-                "align": "center",
-                "hover_animation": "float"
-               },
-               "elements": [],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            }
-           ],
-           "isInner": true
           }
          ],
          "isInner": false
         }
        ],
-       "isInner": false
+       "isInner": true
       }
      ],
      "isInner": false

@@ -1,7 +1,7 @@
 {
  "content": [
   {
-   "id": "f244f58",
+   "id": "b50af03",
    "elType": "section",
    "settings": {
     "background_background": "gradient",
@@ -29,7 +29,7 @@
    },
    "elements": [
     {
-     "id": "b971722",
+     "id": "0853964",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -38,7 +38,7 @@
      },
      "elements": [
       {
-       "id": "8a39d5e",
+       "id": "f21345d",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -59,7 +59,7 @@
        "isInner": false
       },
       {
-       "id": "0853964",
+       "id": "2cce803",
        "elType": "widget",
        "widgetType": "divider",
        "settings": {
@@ -85,7 +85,7 @@
        "isInner": false
       },
       {
-       "id": "b50af03",
+       "id": "8a39d5e",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -116,7 +116,7 @@
    "isInner": false
   },
   {
-   "id": "2cce803",
+   "id": "78dcb74",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -136,28 +136,29 @@
    },
    "elements": [
     {
-     "id": "f21345d",
+     "id": "6fce484",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": null,
       "animation": "fadeInUp",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
        "id": "3087743",
        "elType": "widget",
-       "widgetType": "breadcrumbs",
+       "widgetType": "shortcode",
        "settings": {
-        "text_color": "#7A7A7A"
+        "shortcode": "[woocommerce_breadcrumb]"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "1ac826a",
+       "id": "ec87a17",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -182,7 +183,7 @@
          "id": "06d7e80",
          "elType": "column",
          "settings": {
-          "_column_size": 16,
+          "_column_size": 33.33,
           "_inline_size": null
          },
          "elements": [
@@ -229,7 +230,7 @@
          "id": "32c3bb8",
          "elType": "column",
          "settings": {
-          "_column_size": 16,
+          "_column_size": 33.33,
           "_inline_size": null
          },
          "elements": [
@@ -276,7 +277,7 @@
          "id": "6217927",
          "elType": "column",
          "settings": {
-          "_column_size": 22,
+          "_column_size": 33.34,
           "_inline_size": null
          },
          "elements": [
@@ -323,7 +324,7 @@
        "isInner": true
       },
       {
-       "id": "6fce484",
+       "id": "1ac826a",
        "elType": "widget",
        "widgetType": "spacer",
        "settings": {
@@ -337,35 +338,11 @@
        "isInner": false
       },
       {
-       "id": "ec87a17",
+       "id": "b682575",
        "elType": "widget",
        "widgetType": "shortcode",
        "settings": {
         "shortcode": "[products limit=\"12\" columns=\"4\" orderby=\"menu_order\" order=\"ASC\"]"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "78dcb74",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
-         "unit": "px",
-         "size": 18,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "b682575",
-       "elType": "widget",
-       "widgetType": "html",
-       "settings": {
-        "html": "<p style=\"margin:0;color:#7A7A7A;font:500 13.5px Nunito,sans-serif;text-align:center\">Tip: for live filtering + sorting + pagination controls, set this page as your WooCommerce Shop page (WooCommerce → Settings → Products) instead of using the shortcode below, or swap the Shortcode widget for Elementor Pro’s native “Products” widget.</p>"
        },
        "elements": [],
        "isInner": false

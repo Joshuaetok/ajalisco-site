@@ -162,7 +162,8 @@
       },
       "animation": "fadeInLeft",
       "animation_duration": "fast",
-      "_animation_delay": 0
+      "_animation_delay": 0,
+      "animation_delay": 0
      },
      "elements": [
       {
@@ -207,8 +208,10 @@
         "title_text": "Address",
         "description_text": "6B Mgborogwu Close, Attah Ibeku village, off Uzuakoli Road, Umuahia North LGA, Abia State, Nigeria.<br><a href=\"https://www.google.com/maps/search/?api=1&query=6B+Mgborogwu+Close+Attah+Ibeku+Umuahia+Abia+State+Nigeria\" target=\"_blank\" style=\"color:#0256DB;font-weight:700\">Open in Google Maps →</a>",
         "position": "left",
-        "icon_color": "#28A745",
-        "icon_secondary_color": "#FFFFFF",
+        "view": "stacked",
+        "shape": "circle",
+        "primary_color": "#28A745",
+        "secondary_color": "#FFFFFF",
         "title_color": "#0256DB",
         "description_color": "#54595F",
         "icon_size": {
@@ -221,7 +224,7 @@
          "size": 16,
          "sizes": []
         },
-        "shape": "circle",
+        "hover_animation": "float",
         "icon": "fas fa-map-marker-alt",
         "selected_icon": {
          "value": "fas fa-map-marker-alt",
@@ -274,8 +277,10 @@
         "title_text": "Phone",
         "description_text": "<a href=\"tel:+2347078581881\" style=\"color:inherit\">+234 707 858 1881</a><br><a href=\"tel:+2349075502807\" style=\"color:inherit\">+234 907 550 2807</a>",
         "position": "left",
-        "icon_color": "#28A745",
-        "icon_secondary_color": "#FFFFFF",
+        "view": "stacked",
+        "shape": "circle",
+        "primary_color": "#28A745",
+        "secondary_color": "#FFFFFF",
         "title_color": "#0256DB",
         "description_color": "#54595F",
         "icon_size": {
@@ -288,7 +293,7 @@
          "size": 16,
          "sizes": []
         },
-        "shape": "circle",
+        "hover_animation": "float",
         "icon": "fas fa-phone-alt",
         "selected_icon": {
          "value": "fas fa-phone-alt",
@@ -341,8 +346,10 @@
         "title_text": "Email",
         "description_text": "<a href=\"mailto:support@ajaliscogroup.com\" style=\"color:inherit\">support@ajaliscogroup.com</a>",
         "position": "left",
-        "icon_color": "#28A745",
-        "icon_secondary_color": "#FFFFFF",
+        "view": "stacked",
+        "shape": "circle",
+        "primary_color": "#28A745",
+        "secondary_color": "#FFFFFF",
         "title_color": "#0256DB",
         "description_color": "#54595F",
         "icon_size": {
@@ -355,7 +362,7 @@
          "size": 16,
          "sizes": []
         },
-        "shape": "circle",
+        "hover_animation": "float",
         "icon": "fas fa-envelope",
         "selected_icon": {
          "value": "fas fa-envelope",
@@ -408,8 +415,10 @@
         "title_text": "Office Hours",
         "description_text": "Monday – Saturday: 8AM – 6PM",
         "position": "left",
-        "icon_color": "#28A745",
-        "icon_secondary_color": "#FFFFFF",
+        "view": "stacked",
+        "shape": "circle",
+        "primary_color": "#28A745",
+        "secondary_color": "#FFFFFF",
         "title_color": "#0256DB",
         "description_color": "#54595F",
         "icon_size": {
@@ -422,7 +431,7 @@
          "size": 16,
          "sizes": []
         },
-        "shape": "circle",
+        "hover_animation": "float",
         "icon": "fas fa-clock",
         "selected_icon": {
          "value": "fas fa-clock",
@@ -539,7 +548,8 @@
       },
       "animation": "fadeInRight",
       "animation_duration": "fast",
-      "_animation_delay": 150
+      "_animation_delay": 150,
+      "animation_delay": 150
      },
      "elements": [
       {
@@ -609,52 +619,56 @@
         "form_fields": [
          {
           "_id": "78dcb74",
+          "custom_id": "full_name",
           "field_type": "text",
           "field_label": "Full Name",
-          "required": "true",
-          "width": "50"
+          "width": "50",
+          "required": "true"
          },
          {
           "_id": "f21345d",
+          "custom_id": "email",
           "field_type": "email",
           "field_label": "Email",
-          "required": "true",
-          "width": "50"
+          "width": "50",
+          "required": "true"
          },
          {
           "_id": "2cce803",
+          "custom_id": "phone_number",
           "field_type": "tel",
           "field_label": "Phone Number",
-          "required": "true",
-          "width": "50"
+          "width": "50",
+          "required": "true"
          },
          {
           "_id": "8a39d5e",
+          "custom_id": "business_name",
           "field_type": "text",
           "field_label": "Business Name",
-          "required": "false",
           "width": "50"
          },
          {
           "_id": "0853964",
+          "custom_id": "inquire_about_our_products",
           "field_type": "text",
           "field_label": "Inquire About Our Products",
-          "required": "false",
           "width": "100"
          },
          {
           "_id": "b50af03",
+          "custom_id": "message",
           "field_type": "textarea",
           "field_label": "Message",
-          "required": "true",
           "width": "100",
+          "required": "true",
           "rows": 4
          },
          {
           "_id": "b971722",
+          "custom_id": "i_agree_to_receive_updates_from_ajalisco",
           "field_type": "acceptance",
           "field_label": "I agree to receive updates from Ajalisco.",
-          "required": "false",
           "width": "100"
          }
         ],

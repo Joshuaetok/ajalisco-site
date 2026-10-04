@@ -97,7 +97,8 @@
         },
         "color_menu_item": "#16204A",
         "color_menu_item_hover": "#0256DB",
-        "pointer_color": "#28A745"
+        "pointer_color": "#28A745",
+        "pointer_color_menu_item_hover": "#28A745"
        },
        "elements": [],
        "isInner": false
@@ -134,14 +135,7 @@
            "id": "1e3c29b",
            "elType": "widget",
            "widgetType": "woocommerce-menu-cart",
-           "settings": {
-            "icon_type": "icon",
-            "icon_skin": "classic",
-            "cart_icon": {
-             "value": "fas fa-shopping-cart",
-             "library": "fa-solid"
-            }
-           },
+           "settings": {},
            "elements": [],
            "isInner": false
           }
