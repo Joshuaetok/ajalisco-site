@@ -1,0 +1,1092 @@
+/* ==========================================================================
+   AJALISCO HOMEPAGE — home.json styles
+   Ported from the live site's own styles.css, reorganized by homepage
+   section with comments, for Elementor's "Ajalisco styles & scripts
+   (keep)" HTML widget. Paste this whole file in place of the <style>
+   block's contents (keep the <style> and <script> tags around it).
+
+   CONTENTS
+     FOUNDATION
+     ANIMATIONS
+     BUTTONS
+     BUBBLES
+     LAYOUT
+     HERO
+     TAPES
+     ADVERT SHARED
+     BREAD
+     PICKER
+     WATER
+     PRODUCTS
+     PURIFY
+     SERVE
+     JOURNEY
+     VALUES
+     TESTIMONIALS
+     BLOG
+     CTA
+     REDUCED MOTION
+   ========================================================================== */
+
+
+/* ==========================================================================
+   FOUNDATION
+   Fonts, CSS reset, brand colour variables, base typography — applies to the
+   whole homepage
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.ajx-ptn {
+  --blue: #0256DB;
+  --blue-d: #0243A8;
+  --blue-dd: #012F7E;
+  --navy: #1C244B;
+  --green: #28A745;
+  --green-d: #1E8A38;
+  --leaf: #56A428;
+  --lime: #6FC324;
+  --sky: #DFEBFC;
+  --sky-2: #AAD0F0;
+  --gray: #F5F5F5;
+  --amber: #F7B650;
+  --text: #54595F;
+  --muted: #7A7A7A;
+  --ink: #16204A;
+  --line: #E3E9F2;
+  --r: 14px;
+  --r-lg: 22px;
+  --sh: 0 2px 4px rgba(28,36,75,.05), 0 14px 34px -16px rgba(2,67,168,.30);
+  --sh-lg: 0 30px 70px -30px rgba(2,50,140,.5);
+  --f-head: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ease: cubic-bezier(.2,.8,.2,1);
+  color-scheme: light;
+}
+
+.ajx-ptn *,
+.ajx-ptn *::before,
+.ajx-ptn *::after {
+  box-sizing: border-box;
+}
+
+.ajx-ptn {
+  font: 400 16px/1.7 var(--f-body);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.ajx-ptn img {
+  max-width: 100%;
+  display: block;
+}
+
+.ajx-ptn a {
+  color: inherit;
+}
+
+.ajx-ptn h1,
+.ajx-ptn h2,
+.ajx-ptn h3,
+.ajx-ptn h4,
+.ajx-ptn p,
+.ajx-ptn ul,
+.ajx-ptn ol,
+.ajx-ptn dl,
+.ajx-ptn dd,
+.ajx-ptn figure {
+  margin: 0;
+}
+
+.ajx-ptn ul,
+.ajx-ptn ol {
+  padding: 0;
+  list-style: none;
+}
+
+.ajx-ptn button {
+  font: inherit;
+  color: inherit;
+}
+
+.ajx-ptn button {
+  cursor: pointer;
+}
+
+.ajx-ptn :focus-visible {
+  outline: 3px solid #6FA6FF;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.ajx-ptn:not(#ajx-n) .sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.ajx-ptn:not(#ajx-n) .center {
+  text-align: center;
+  margin-top: 44px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+@keyframes ajx-rise {
+  0% { transform: translate(0, 0); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translate(24px, -120vh); opacity: .2; }
+}
+
+/* ==========================================================================
+   BUTTONS
+   The .btn family — used by almost every section (Hero, Bread/Water adverts,
+   Purify, CTA, ...)
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  font: 600 15.5px var(--f-head);
+  letter-spacing: .01em;
+  color: #fff;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s;
+}
+
+.ajx-ptn:not(#ajx-n) .btn:hover {
+  transform: translateY(-2px);
+}
+
+.ajx-ptn:not(#ajx-n) .btn:active {
+  transform: scale(.98);
+}
+
+.ajx-ptn:not(#ajx-n) .btn--lg {
+  padding: 15px 30px;
+  font-size: 16.5px;
+}
+
+.ajx-ptn:not(#ajx-n) .btn--block {
+  width: 100%;
+}
+
+.ajx-ptn:not(#ajx-n) .btn--green {
+  background: var(--green);
+  box-shadow: 0 12px 24px -12px rgba(40,167,69,.9);
+}
+
+.ajx-ptn:not(#ajx-n) .btn--green:hover {
+  background: var(--green-d);
+}
+
+.ajx-ptn:not(#ajx-n) .btn--blue {
+  background: var(--blue);
+  box-shadow: 0 12px 24px -12px rgba(2,86,219,.9);
+}
+
+.ajx-ptn:not(#ajx-n) .btn--blue:hover {
+  background: var(--blue-d);
+}
+
+.ajx-ptn:not(#ajx-n) .btn--ghost-light {
+  background: rgba(255,255,255,.1);
+  box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.55);
+}
+
+.ajx-ptn:not(#ajx-n) .btn--ghost-light:hover {
+  background: rgba(255,255,255,.2);
+}
+
+.ajx-ptn:not(#ajx-n) .btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.ajx-ptn:not(#ajx-n) .btn-row--center {
+  justify-content: center;
+}
+
+.ajx-ptn:not(#ajx-n) .btn--white {
+  background: #fff;
+  color: var(--green-d);
+  box-shadow: 0 12px 26px -14px rgba(0,0,0,.5);
+}
+
+.ajx-ptn:not(#ajx-n) .btn--white:hover {
+  background: #F2FFF5;
+}
+
+  /* --- Responsive: Phones, 640px and below --- */
+  @media (max-width: 640px) {
+    .ajx-ptn:not(#ajx-n) .btn-row .btn {
+      flex: 1 1 auto;
+    }
+
+  }
+
+
+
+/* ==========================================================================
+   BUBBLES
+   The floating-bubble background decoration — used by Hero, Water advert,
+   Purify, CTA
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .bubbles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i {
+  position: absolute;
+  bottom: -70px;
+  width: var(--s);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
+  animation: ajx-rise var(--d) linear infinite;
+  animation-delay: var(--dl);
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(1) {
+  left: 5%;
+  --s: 30px;
+  --d: 17s;
+  --dl: -3s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(2) {
+  left: 14%;
+  --s: 12px;
+  --d: 12s;
+  --dl: -8s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(3) {
+  left: 24%;
+  --s: 46px;
+  --d: 23s;
+  --dl: -14s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(4) {
+  left: 37%;
+  --s: 16px;
+  --d: 14s;
+  --dl: -2s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(5) {
+  left: 49%;
+  --s: 60px;
+  --d: 27s;
+  --dl: -18s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(6) {
+  left: 58%;
+  --s: 10px;
+  --d: 11s;
+  --dl: -6s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(7) {
+  left: 67%;
+  --s: 34px;
+  --d: 20s;
+  --dl: -11s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(8) {
+  left: 78%;
+  --s: 18px;
+  --d: 15s;
+  --dl: -1s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(9) {
+  left: 87%;
+  --s: 50px;
+  --d: 25s;
+  --dl: -9s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(10) {
+  left: 95%;
+  --s: 14px;
+  --d: 13s;
+  --dl: -5s;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles--sm i {
+  --s: 20px;
+}
+
+.ajx-ptn:not(#ajx-n) .bubbles--sm i:nth-child(n+7) {
+  display: none;
+}
+
+
+
+/* ==========================================================================
+   LAYOUT
+   Elementor Container plumbing: the flex split/column system, boxed-width
+   gutters, the hidden 'keep this block' label, shared section headings
+   (kicker/title/lede), and the scroll-reveal animation system. Not page
+   content — change this only if you understand the layout, not the design.
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .section,
+.ajx-ptn:not(#ajx-n).section {
+  padding-block: clamp(64px, 8vw, 110px);
+  position: relative;
+}
+
+.ajx-ptn:not(#ajx-n) .section--gray,
+.ajx-ptn:not(#ajx-n).section--gray {
+  background: var(--gray);
+}
+
+.ajx-ptn:not(#ajx-n) .kicker {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--sky);
+  color: var(--blue);
+  font: 600 14px var(--f-head);
+  margin-bottom: 14px;
+}
+
+.ajx-ptn:not(#ajx-n) .kicker--center {
+  margin-inline: auto;
+}
+
+.ajx-ptn:not(#ajx-n) .title {
+  font: 700 clamp(30px, 3.6vw, 44px)/1.15 var(--f-head);
+  letter-spacing: -.015em;
+  color: var(--blue);
+  text-wrap: balance;
+}
+
+.ajx-ptn:not(#ajx-n) .lede {
+  margin-top: 16px;
+  font-size: 17px;
+  color: var(--muted);
+  text-align: left;
+  max-width: 60ch;
+}
+
+.ajx-ptn:not(#ajx-n) .head-center {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  margin-bottom: clamp(30px, 4vw, 50px);
+}
+
+html.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .rv {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .8s var(--ease), transform .8s var(--ease);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+
+html.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+html.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .value.rv.in:hover,
+html.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .post.rv.in:hover {
+  transform: translateY(-8px);
+}
+
+.ajx-global {
+  min-height: 0!important;
+}
+
+body.elementor-editor-active .ajx-global .elementor-widget-html {
+  min-height: 22px;
+}
+
+body.elementor-editor-active .ajx-global .elementor-widget-html::before {
+  content: "Ajalisco homepage styles & scripts \2014 keep this block";
+  display: block;
+  padding: 4px 8px;
+  font: 12px/1.2 sans-serif;
+  color: #555;
+  background: #fff7d6;
+  border: 1px dashed #d9b84a;
+}
+
+.ajx-fill {
+  position: absolute!important;
+  inset: 0;
+  width: auto!important;
+  max-width: none!important;
+  margin: 0!important;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ajx-fill>.elementor-widget-container {
+  height: 100%;
+}
+
+.ajx-back {
+  z-index: -1;
+}
+
+.ajx-wave {
+  position: absolute!important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto!important;
+  max-width: none!important;
+  margin: 0!important;
+  height: clamp(50px,6vw,90px);
+  pointer-events: none;
+}
+
+.ajx-ptn:not(#ajx-n).e-con-boxed,
+.ajx-ptn:not(#ajx-n) .e-con-boxed {
+  padding-inline: clamp(16px,4vw,36px)!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split {
+  flex-direction: row!important;
+  flex-wrap: nowrap!important;
+  align-items: center!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-col {
+  flex: 1 1 0%!important;
+  width: auto!important;
+  max-width: none!important;
+  padding: 0!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-g105 {
+  flex-grow: 1.05!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-g95 {
+  flex-grow: .95!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-g80 {
+  flex-grow: .8!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split--hero {
+  gap: clamp(24px,4vw,56px)!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split--purify {
+  gap: clamp(30px,6vw,84px)!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-split--journey {
+  gap: clamp(36px,6vw,84px)!important;
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-head {
+  margin-bottom: clamp(30px,4vw,50px);
+}
+
+.ajx-ptn:not(#ajx-n) .ajx-title .elementor-heading-title {
+  text-wrap: balance;
+  font-size: clamp(30px,3.6vw,44px);
+}
+
+/* shared: also sizes the JOURNEY section's photo column, below */
+.ajx-ptn:not(#ajx-n) .hero__art,
+.ajx-ptn:not(#ajx-n) .journey__art {
+  margin-left: auto;
+}
+
+  /* --- Responsive: Tablets, 960px and below --- */
+  @media (max-width: 960px) {
+    .ajx-ptn:not(#ajx-n) .ajx-split--hero,
+    .ajx-ptn:not(#ajx-n) .ajx-split--purify,
+    .ajx-ptn:not(#ajx-n) .ajx-split--journey {
+      flex-direction: column!important;
+      align-items: stretch!important;
+    }
+
+    .ajx-ptn:not(#ajx-n) .ajx-split--bread {
+      flex-direction: column-reverse!important;
+      align-items: stretch!important;
+    }
+
+    .ajx-ptn:not(#ajx-n) .ajx-split--hero>.ajx-col,
+    .ajx-ptn:not(#ajx-n) .ajx-split--purify>.ajx-col,
+    .ajx-ptn:not(#ajx-n) .ajx-split--journey>.ajx-col,
+    .ajx-ptn:not(#ajx-n) .ajx-split--bread>.ajx-col {
+      flex: none!important;
+      width: 100%!important;
+    }
+
+    /* shared: also sizes the JOURNEY section's photo column, below */
+    .ajx-ptn:not(#ajx-n) .hero__art,
+    .ajx-ptn:not(#ajx-n) .journey__art {
+      margin-inline: auto;
+    }
+
+    .ajx-ptn:not(#ajx-n) .ajx-split--water>.ajx-g80 {
+      flex-grow: 1!important;
+    }
+
+  }
+
+  /* --- Responsive: Phones, 640px and below --- */
+  @media (max-width: 640px) {
+    .ajx-ptn:not(#ajx-n) .ajx-split--water {
+      flex-direction: column-reverse!important;
+      align-items: stretch!important;
+    }
+
+    .ajx-ptn:not(#ajx-n) .ajx-split--water>.ajx-col {
+      flex: none!important;
+      width: 100%!important;
+    }
+
+  }
+
+
+
+/* ==========================================================================
+   LAYOUT — "two" split variant (why-partner copy + form card)
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .ajx-split--two {
+  gap: clamp(30px, 5vw, 64px)!important;
+  align-items: flex-start!important;
+}
+
+  /* --- Responsive: Tablets, 960px and below --- */
+  @media (max-width: 960px) {
+    .ajx-ptn:not(#ajx-n) .ajx-split--two {
+      flex-direction: column!important;
+      align-items: stretch!important;
+    }
+
+    .ajx-ptn:not(#ajx-n) .ajx-split--two>.ajx-col {
+      flex: none!important;
+      width: 100%!important;
+    }
+  }
+
+/* ==========================================================================
+   BANNER
+   Page banner — "Partnership Hub" heading + sub-line
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .banner,
+.ajx-ptn:not(#ajx-n).banner {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+  color: #fff;
+  padding: clamp(46px, 6vw, 80px) 0;
+  background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 55%, var(--blue-d));
+}
+
+.ajx-ptn:not(#ajx-n) .banner .bubbles {
+  z-index: -1;
+}
+
+.ajx-ptn:not(#ajx-n) .banner h1 {
+  font: 700 clamp(30px, 4.4vw, 52px) var(--f-head);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.ajx-ptn:not(#ajx-n) .banner h1::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 3px;
+  background: var(--lime);
+}
+
+.ajx-ptn:not(#ajx-n) .banner p {
+  margin-top: 14px;
+  font-size: 18px;
+  color: #D6E4FF;
+}
+
+/* ==========================================================================
+   SECTION — "section--tight" padding variant
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .section--tight,
+.ajx-ptn:not(#ajx-n).section--tight {
+  padding-block: clamp(40px, 5vw, 70px) clamp(64px, 8vw, 100px);
+}
+
+/* ==========================================================================
+   WHY PARTNER — copy column (kicker, lede, ticks, reach, how)
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .lede--dark {
+  color: var(--text);
+  margin-top: 6px;
+}
+
+.ajx-ptn:not(#ajx-n) .ticks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+  margin: 24px 0 30px;
+}
+
+.ajx-ptn:not(#ajx-n) .ticks--1 {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.ajx-ptn:not(#ajx-n) .ticks li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ajx-ptn:not(#ajx-n) .ticks li::before {
+  content: "";
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 12.5 4 4 8-9' fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat;
+}
+
+  /* --- Responsive: Phones, 640px and below --- */
+  @media (max-width: 640px) {
+    .ajx-ptn:not(#ajx-n) .ticks {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.ajx-ptn:not(#ajx-n) .reach {
+  margin-top: 26px;
+  padding: 22px 24px;
+  border-radius: var(--r);
+  background: var(--sky);
+  border-left: 5px solid var(--blue);
+}
+
+.ajx-ptn:not(#ajx-n) .reach h3 {
+  font: 600 22px var(--f-head);
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+
+.ajx-ptn:not(#ajx-n) .how {
+  display: grid;
+  gap: 12px;
+  margin-top: 26px;
+  counter-reset: h;
+}
+
+.ajx-ptn:not(#ajx-n) .how li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ajx-ptn:not(#ajx-n) .how b {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  font: 700 15px var(--f-head);
+}
+
+/* ==========================================================================
+   FORM CARD — "Tell us about you and your business"
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .formcard {
+  padding: clamp(24px, 3.5vw, 38px);
+  border-radius: var(--r-lg);
+  background: #fff;
+  box-shadow: var(--sh-lg), 0 0 0 1px var(--line);
+}
+
+.ajx-ptn:not(#ajx-n) .formcard h2 {
+  font: 700 26px/1.2 var(--f-head);
+  color: var(--blue);
+}
+
+.ajx-ptn:not(#ajx-n) .formcard__sub {
+  color: var(--muted);
+  margin: 4px 0 22px;
+}
+
+.ajx-ptn:not(#ajx-n) .field {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.ajx-ptn:not(#ajx-n) .field input,
+.ajx-ptn:not(#ajx-n) .field textarea {
+  width: 100%;
+  padding: 20px 16px 8px;
+  border: 1.5px solid #D5DCE8;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  font: 500 16px var(--f-body);
+  transition: border-color .25s, box-shadow .25s;
+}
+
+.ajx-ptn:not(#ajx-n) .field textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+
+.ajx-ptn:not(#ajx-n) .field label {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  color: var(--muted);
+  font-size: 15.5px;
+  pointer-events: none;
+  transform-origin: left top;
+  transition: transform .25s var(--ease), color .25s;
+}
+
+.ajx-ptn:not(#ajx-n) .field input:focus,
+.ajx-ptn:not(#ajx-n) .field textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(2,86,219,.13);
+}
+
+.ajx-ptn:not(#ajx-n) .field input:focus + label,
+.ajx-ptn:not(#ajx-n) .field input:not(:placeholder-shown) + label,
+.ajx-ptn:not(#ajx-n) .field textarea:focus + label,
+.ajx-ptn:not(#ajx-n) .field textarea:not(:placeholder-shown) + label {
+  transform: translateY(-9px) scale(.78);
+  color: var(--blue);
+}
+
+.ajx-ptn:not(#ajx-n) .field.invalid input,
+.ajx-ptn:not(#ajx-n) .field.invalid textarea {
+  border-color: #D93B3B;
+  box-shadow: 0 0 0 4px rgba(217,59,59,.12);
+}
+
+.ajx-ptn:not(#ajx-n) .field.invalid label {
+  color: #D93B3B;
+}
+
+.ajx-ptn:not(#ajx-n) .agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 18px;
+  font-size: 14.5px;
+}
+
+.ajx-ptn:not(#ajx-n) .agree input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--green);
+}
+
+.ajx-ptn:not(#ajx-n) .form__hint {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.ajx-ptn:not(#ajx-n) .form__hint a,
+.ajx-ptn:not(#ajx-n) .link {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   TOAST — submit feedback (own copy per page, matches live site's #toast)
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .toast {
+  position: fixed;
+  z-index: 500;
+  left: 50%;
+  bottom: 26px;
+  translate: -50% 160%;
+  max-width: calc(100% - 32px);
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 24px 50px -16px rgba(0,0,0,.6);
+  transition: translate .5s var(--ease);
+}
+
+.ajx-ptn:not(#ajx-n) .toast.show {
+  translate: -50% 0;
+}
+
+.ajx-ptn:not(#ajx-n) .toast.err {
+  background: #B93131;
+}
+
+.ajx-ptn:not(#ajx-n) .toast.ok {
+  border-bottom: 3px solid var(--lime);
+}
+
+/* ==========================================================================
+   CTA
+   SECTION 13 — "Become a Distributor" call-to-action banner
+   ========================================================================== */
+
+.ajx-ptn:not(#ajx-n) .cta-wrap,
+.ajx-ptn:not(#ajx-n).cta-wrap {
+  padding-bottom: clamp(56px, 7vw, 96px);
+}
+
+.ajx-ptn:not(#ajx-n) .cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+  padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 60px);
+  border-radius: 26px;
+  color: #DCE8FF;
+  background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 50%, var(--blue-d));
+  box-shadow: var(--sh-lg);
+}
+
+.ajx-ptn:not(#ajx-n) .cta .bubbles {
+  z-index: -1;
+}
+
+.ajx-ptn:not(#ajx-n) .cta h2 {
+  font: 700 clamp(28px, 4vw, 46px)/1.15 var(--f-head);
+  color: #fff;
+  letter-spacing: -.02em;
+  text-wrap: balance;
+}
+
+.ajx-ptn:not(#ajx-n) .cta h2 span {
+  color: var(--lime);
+}
+
+.ajx-ptn:not(#ajx-n) .cta p {
+  margin: 14px auto 0;
+  max-width: 52ch;
+  font-size: 17px;
+}
+
+
+
+/* ==========================================================================
+   REDUCED MOTION
+   Accessibility — disables all of the above animations for visitors who have
+   "reduce motion" turned on at the OS level
+   ========================================================================== */
+
+  /* --- Accessibility: Visitors with "reduce motion" enabled --- */
+  @media (prefers-reduced-motion: reduce) {
+    .ajx-ptn *,
+    .ajx-ptn *::before,
+    .ajx-ptn *::after {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+
+    html.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .rv {
+      opacity: 1;
+      transform: none;
+    }
+
+    .ajx-ptn:not(#ajx-n) .tape__track,
+    .ajx-ptn:not(#ajx-n) .burst {
+      animation: none !important;
+    }
+
+  }

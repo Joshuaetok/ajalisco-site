@@ -1,2249 +1,833 @@
 {
  "content": [
   {
-   "id": "9ffea51",
-   "elType": "section",
+   "id": "abt0001",
+   "elType": "container",
    "settings": {
-    "background_background": "gradient",
-    "background_color": "#0A64F0",
-    "background_color_b": "#0243A8",
-    "background_gradient_angle": {
-     "unit": "deg",
-     "size": 160,
-     "sizes": []
+    "container_type": "flex",
+    "content_width": "full",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
     },
-    "background_gradient_type": "linear",
     "padding": {
      "unit": "px",
-     "top": "70",
-     "right": "20",
-     "bottom": "70",
-     "left": "20",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
      "isLinked": false
     },
-    "min_height": {
-     "unit": "px",
-     "size": 260,
-     "sizes": []
-    }
+    "css_classes": "ajx-abt-global",
+    "_title": "Ajalisco about-page styles & scripts (keep)"
    },
    "elements": [
     {
-     "id": "1194f30",
-     "elType": "column",
+     "id": "abt0002",
+     "elType": "widget",
+     "widgetType": "html",
      "settings": {
-      "_column_size": 100,
-      "_inline_size": null,
-      "content_position": "center"
+      "html": "<style>/* ==========================================================================\n   AJALISCO ABOUT PAGE — about.json styles\n   Ported from the live site's own styles.css, reorganized by About-page\n   section with comments, for Elementor's \"Ajalisco styles & scripts\n   (keep)\" HTML widget. Paste this whole file in place of the <style>\n   block's contents (keep the <style> and <script> tags around it).\n\n   CONTENTS\n     FOUNDATION\n     ANIMATIONS\n     BUTTONS\n     BUBBLES\n     LAYOUT\n     BANNER\n     SECTION--TIGHT\n     JOURNEY SPLIT\n     MISSION & VISION\n     CORE VALUES\n     TEAM\n     CERTIFICATIONS\n     CTA\n     REDUCED MOTION\n   ========================================================================== */\n\n\n/* ==========================================================================\n   FOUNDATION\n   Fonts, CSS reset, brand colour variables, base typography — applies to the\n   whole About page\n   ========================================================================== */\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n.ajx-abt {\n  --blue: #0256DB;\n  --blue-d: #0243A8;\n  --blue-dd: #012F7E;\n  --navy: #1C244B;\n  --green: #28A745;\n  --green-d: #1E8A38;\n  --leaf: #56A428;\n  --lime: #6FC324;\n  --sky: #DFEBFC;\n  --sky-2: #AAD0F0;\n  --gray: #F5F5F5;\n  --amber: #F7B650;\n  --text: #54595F;\n  --muted: #7A7A7A;\n  --ink: #16204A;\n  --line: #E3E9F2;\n  --r: 14px;\n  --r-lg: 22px;\n  --sh: 0 2px 4px rgba(28,36,75,.05), 0 14px 34px -16px rgba(2,67,168,.30);\n  --sh-lg: 0 30px 70px -30px rgba(2,50,140,.5);\n  --f-head: \"Outfit\", system-ui, -apple-system, \"Segoe UI\", sans-serif;\n  --f-body: \"Nunito\", system-ui, -apple-system, \"Segoe UI\", sans-serif;\n  --ease: cubic-bezier(.2,.8,.2,1);\n  color-scheme: light;\n}\n\n.ajx-abt *,\n.ajx-abt *::before,\n.ajx-abt *::after {\n  box-sizing: border-box;\n}\n\n.ajx-abt {\n  font: 400 16px/1.7 var(--f-body);\n  color: var(--text);\n  -webkit-font-smoothing: antialiased;\n}\n\n.ajx-abt img {\n  max-width: 100%;\n  display: block;\n}\n\n.ajx-abt a {\n  color: inherit;\n}\n\n.ajx-abt h1,\n.ajx-abt h2,\n.ajx-abt h3,\n.ajx-abt h4,\n.ajx-abt p,\n.ajx-abt ul,\n.ajx-abt ol,\n.ajx-abt dl,\n.ajx-abt dd,\n.ajx-abt figure {\n  margin: 0;\n}\n\n.ajx-abt ul,\n.ajx-abt ol {\n  padding: 0;\n  list-style: none;\n}\n\n.ajx-abt button {\n  font: inherit;\n  color: inherit;\n}\n\n.ajx-abt button {\n  cursor: pointer;\n}\n\n.ajx-abt :focus-visible {\n  outline: 3px solid #6FA6FF;\n  outline-offset: 3px;\n  border-radius: 8px;\n}\n\nhtml {\n  scroll-behavior: smooth;\n  scroll-padding-top: 90px;\n}\n\n\n\n/* ==========================================================================\n   ANIMATIONS\n   ========================================================================== */\n\n@keyframes ajx-rise {\n  0% { transform: translate(0, 0); opacity: 0; }\n  10% { opacity: 1; }\n  100% { transform: translate(24px, -120vh); opacity: .2; }\n}\n\n/* ==========================================================================\n   BUTTONS\n   The .btn family — only the CTA's \"Become a Distributor\" button needs it\n   on this page\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 12px 24px;\n  border: 0;\n  border-radius: 10px;\n  text-decoration: none;\n  white-space: nowrap;\n  font: 600 15.5px var(--f-head);\n  letter-spacing: .01em;\n  color: #fff;\n  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s;\n}\n\n.ajx-abt:not(#ajx-n) .btn:hover {\n  transform: translateY(-2px);\n}\n\n.ajx-abt:not(#ajx-n) .btn:active {\n  transform: scale(.98);\n}\n\n.ajx-abt:not(#ajx-n) .btn--lg {\n  padding: 15px 30px;\n  font-size: 16.5px;\n}\n\n.ajx-abt:not(#ajx-n) .btn--green {\n  background: var(--green);\n  box-shadow: 0 12px 24px -12px rgba(40,167,69,.9);\n}\n\n.ajx-abt:not(#ajx-n) .btn--green:hover {\n  background: var(--green-d);\n}\n\n.ajx-abt:not(#ajx-n) .btn-row {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 14px;\n  margin-top: 30px;\n}\n\n.ajx-abt:not(#ajx-n) .btn-row--center {\n  justify-content: center;\n}\n\n  /* --- Responsive: Phones, 640px and below --- */\n  @media (max-width: 640px) {\n    .ajx-abt:not(#ajx-n) .btn-row .btn {\n      flex: 1 1 auto;\n    }\n  }\n\n\n\n/* ==========================================================================\n   BUBBLES\n   The floating-bubble background decoration — used by the Banner and CTA\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .bubbles {\n  position: absolute;\n  inset: 0;\n  overflow: hidden;\n  pointer-events: none;\n}\n\n.ajx-abt:not(#ajx-n) .bubbles i {\n  position: absolute;\n  bottom: -70px;\n  width: var(--s);\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);\n  animation: ajx-rise var(--d) linear infinite;\n  animation-delay: var(--dl);\n}\n\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(2) { left: 14%; --s: 12px; --d: 12s; --dl: -8s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(3) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(4) { left: 37%; --s: 16px; --d: 14s; --dl: -2s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(5) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(6) { left: 58%; --s: 10px; --d: 11s; --dl: -6s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(7) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(8) { left: 78%; --s: 18px; --d: 15s; --dl: -1s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(9) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }\n.ajx-abt:not(#ajx-n) .bubbles i:nth-child(10) { left: 95%; --s: 14px; --d: 13s; --dl: -5s; }\n\n.ajx-abt:not(#ajx-n) .bubbles--sm i {\n  --s: 20px;\n}\n\n.ajx-abt:not(#ajx-n) .bubbles--sm i:nth-child(n+7) {\n  display: none;\n}\n\n\n\n/* ==========================================================================\n   LAYOUT\n   Elementor Container plumbing: the flex split/column system, boxed-width\n   gutters, the hidden 'keep this block' label, shared section headings\n   (kicker/title), and the scroll-reveal animation system. Not page content\n   — change this only if you understand the layout, not the design.\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .section,\n.ajx-abt:not(#ajx-n).section {\n  padding-block: clamp(64px, 8vw, 110px);\n  position: relative;\n}\n\n.ajx-abt:not(#ajx-n) .section--gray,\n.ajx-abt:not(#ajx-n).section--gray {\n  background: var(--gray);\n}\n\n.ajx-abt:not(#ajx-n) .kicker {\n  display: inline-block;\n  padding: 6px 16px;\n  border-radius: 999px;\n  background: var(--sky);\n  color: var(--blue);\n  font: 600 14px var(--f-head);\n  margin-bottom: 14px;\n}\n\n.ajx-abt:not(#ajx-n) .kicker--center {\n  margin-inline: auto;\n}\n\n.ajx-abt:not(#ajx-n) .title {\n  font: 700 clamp(30px, 3.6vw, 44px)/1.15 var(--f-head);\n  letter-spacing: -.015em;\n  color: var(--blue);\n  text-wrap: balance;\n}\n\n.ajx-abt:not(#ajx-n) .title--md {\n  font-size: clamp(28px, 3.2vw, 38px);\n}\n\n.ajx-abt:not(#ajx-n) .lede {\n  margin-top: 16px;\n  font-size: 17px;\n  color: var(--muted);\n  text-align: left;\n  max-width: 60ch;\n}\n\n.ajx-abt:not(#ajx-n) .head-center {\n  text-align: center;\n  display: grid;\n  justify-items: center;\n  margin-bottom: clamp(30px, 4vw, 50px);\n}\n\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-abt:not(#ajx-n) .rv {\n  opacity: 0;\n  transform: translateY(24px);\n  transition: opacity .8s var(--ease), transform .8s var(--ease);\n  transition-delay: calc(var(--i, 0) * 80ms);\n}\n\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-abt:not(#ajx-n) .rv.in {\n  opacity: 1;\n  transform: none;\n}\n\n.ajx-global {\n  min-height: 0!important;\n}\n\nbody.elementor-editor-active .ajx-global .elementor-widget-html {\n  min-height: 22px;\n}\n\nbody.elementor-editor-active .ajx-global .elementor-widget-html::before {\n  content: \"Ajalisco about-page styles & scripts \\2014 keep this block\";\n  display: block;\n  padding: 4px 8px;\n  font: 12px/1.2 sans-serif;\n  color: #555;\n  background: #fff7d6;\n  border: 1px dashed #d9b84a;\n}\n\n.ajx-abt:not(#ajx-n).e-con-boxed,\n.ajx-abt:not(#ajx-n) .e-con-boxed {\n  padding-inline: clamp(16px,4vw,36px)!important;\n}\n\n.ajx-abt:not(#ajx-n) .ajx-split {\n  flex-direction: row!important;\n  flex-wrap: nowrap!important;\n  align-items: center!important;\n}\n\n.ajx-abt:not(#ajx-n) .ajx-split>.ajx-col {\n  flex: 1 1 0%!important;\n  width: auto!important;\n  max-width: none!important;\n  padding: 0!important;\n}\n\n.ajx-abt:not(#ajx-n) .ajx-head {\n  margin-bottom: clamp(30px,4vw,50px);\n}\n\n.ajx-abt:not(#ajx-n) .ajx-title .elementor-heading-title {\n  text-wrap: balance;\n  font-size: clamp(30px,3.6vw,44px);\n}\n\n/* ==========================================================================\n   BANNER\n   Page banner — \"About Us\" heading + sub-line\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .banner,\n.ajx-abt:not(#ajx-n).banner {\n  position: relative;\n  overflow: hidden;\n  isolation: isolate;\n  text-align: center;\n  color: #fff;\n  padding: clamp(46px, 6vw, 80px) 0;\n  background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 55%, var(--blue-d));\n}\n\n.ajx-abt:not(#ajx-n) .banner .bubbles {\n  z-index: -1;\n}\n\n.ajx-abt:not(#ajx-n) .banner h1 {\n  font: 700 clamp(30px, 4.4vw, 52px) var(--f-head);\n  letter-spacing: .06em;\n  text-transform: uppercase;\n}\n\n.ajx-abt:not(#ajx-n) .banner h1::after {\n  content: \"\";\n  display: block;\n  width: 64px;\n  height: 4px;\n  margin: 14px auto 0;\n  border-radius: 3px;\n  background: var(--lime);\n}\n\n.ajx-abt:not(#ajx-n) .banner p {\n  margin-top: 14px;\n  font-size: 18px;\n  color: #D6E4FF;\n}\n\n/* ==========================================================================\n   SECTION — \"section--tight\" padding variant\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .section--tight,\n.ajx-abt:not(#ajx-n).section--tight {\n  padding-block: clamp(40px, 5vw, 70px) clamp(64px, 8vw, 100px);\n}\n\n/* ==========================================================================\n   JOURNEY SPLIT\n   \"Our Journey in the Production Industry\" — copy column + round photo\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .ajx-split--even {\n  gap: clamp(30px, 5vw, 70px)!important;\n}\n\n.ajx-abt:not(#ajx-n) .split__media img {\n  width: 100%;\n  border-radius: var(--r-lg);\n  box-shadow: var(--sh-lg);\n}\n\n.ajx-abt:not(#ajx-n) .split__media--round img {\n  border-radius: 200px 200px var(--r-lg) var(--r-lg);\n  aspect-ratio: 1;\n  object-fit: cover;\n  object-position: 60% 50%;\n}\n\n  /* --- Responsive: Tablets, 960px and below --- */\n  @media (max-width: 960px) {\n    .ajx-abt:not(#ajx-n) .ajx-split--even {\n      flex-direction: column!important;\n      align-items: stretch!important;\n    }\n\n    .ajx-abt:not(#ajx-n) .ajx-split--even>.ajx-col {\n      flex: none!important;\n      width: 100%!important;\n    }\n  }\n\n/* ==========================================================================\n   MISSION & VISION\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .mv {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 24px;\n}\n\n.ajx-abt:not(#ajx-n) .mvcard {\n  padding: 32px 30px;\n  border-radius: var(--r-lg);\n  background: #fff;\n  box-shadow: var(--sh), 0 0 0 1px var(--line);\n}\n\n.ajx-abt:not(#ajx-n) .mvcard__icon {\n  display: grid;\n  place-items: center;\n  width: 60px;\n  height: 60px;\n  margin-bottom: 14px;\n  border-radius: 50%;\n  background: var(--leaf);\n  color: #fff;\n}\n\n.ajx-abt:not(#ajx-n) .mvcard__icon svg {\n  width: 28px;\n  height: 28px;\n  fill: currentColor;\n}\n\n.ajx-abt:not(#ajx-n) .mvcard h3 {\n  font: 700 26px var(--f-head);\n  color: var(--blue);\n  margin-bottom: 8px;\n}\n\n  /* --- Responsive: Tablets, 960px and below --- */\n  @media (max-width: 960px) {\n    .ajx-abt:not(#ajx-n) .mv {\n      grid-template-columns: 1fr;\n    }\n  }\n\n/* ==========================================================================\n   CORE VALUES\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .cvals {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n}\n\n.ajx-abt:not(#ajx-n) .cval {\n  padding: 24px 24px 24px 26px;\n  border-radius: var(--r);\n  background: #fff;\n  border-left: 5px solid var(--green);\n  box-shadow: var(--sh), 0 0 0 1px var(--line);\n  transition: transform .4s var(--ease);\n}\n\n.ajx-abt:not(#ajx-n) .cval:hover {\n  transform: translateY(-6px);\n}\n\n.ajx-abt:not(#ajx-n) .cval h3 {\n  font: 600 20px var(--f-head);\n  color: var(--blue);\n  margin-bottom: 6px;\n}\n\n.ajx-abt:not(#ajx-n) .cval p {\n  font-size: 15.5px;\n  color: var(--muted);\n}\n\n  /* --- Responsive: Tablets/small desktops, 1100px and below --- */\n  @media (max-width: 1100px) {\n    .ajx-abt:not(#ajx-n) .cvals,\n    .ajx-abt:not(#ajx-n) .team {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  /* --- Responsive: Phones, 640px and below --- */\n  @media (max-width: 640px) {\n    .ajx-abt:not(#ajx-n) .cvals,\n    .ajx-abt:not(#ajx-n) .team {\n      grid-template-columns: 1fr;\n    }\n  }\n\n/* ==========================================================================\n   TEAM\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .team {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 24px;\n}\n\n.ajx-abt:not(#ajx-n) .member {\n  display: flex;\n  flex-direction: column;\n  border-radius: var(--r-lg);\n  background: #fff;\n  overflow: hidden;\n  box-shadow: var(--sh), 0 0 0 1px var(--line);\n  transition: transform .4s var(--ease);\n}\n\n.ajx-abt:not(#ajx-n) .member:hover {\n  transform: translateY(-8px);\n}\n\n.ajx-abt:not(#ajx-n) .member__img {\n  aspect-ratio: 1.1;\n  overflow: hidden;\n  background: var(--sky);\n}\n\n.ajx-abt:not(#ajx-n) .member__img img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  object-position: 50% 20%;\n  transition: transform .6s var(--ease);\n}\n\n.ajx-abt:not(#ajx-n) .member:hover .member__img img {\n  transform: scale(1.05);\n}\n\n.ajx-abt:not(#ajx-n) .member__body {\n  padding: 22px 24px 26px;\n}\n\n.ajx-abt:not(#ajx-n) .member h3 {\n  font: 700 22px var(--f-head);\n  color: var(--blue);\n}\n\n.ajx-abt:not(#ajx-n) .role {\n  margin-bottom: 10px;\n  font: 600 14px var(--f-head);\n  color: var(--leaf);\n  letter-spacing: .04em;\n  text-transform: uppercase;\n}\n\n.ajx-abt:not(#ajx-n) .member__body p:last-child {\n  font-size: 15px;\n  color: var(--muted);\n}\n\n/* ==========================================================================\n   CERTIFICATIONS\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .certs {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: stretch;\n  gap: 24px;\n}\n\n.ajx-abt:not(#ajx-n) .cert {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 12px;\n  padding: 20px;\n  width: min(320px, 100%);\n  border-radius: var(--r-lg);\n  background: #fff;\n  box-shadow: var(--sh), 0 0 0 1px var(--line);\n  text-align: center;\n}\n\n.ajx-abt:not(#ajx-n) .cert img {\n  width: 100%;\n  max-height: 380px;\n  object-fit: contain;\n  border-radius: 8px;\n}\n\n.ajx-abt:not(#ajx-n) .cert--nafdac {\n  justify-content: center;\n}\n\n.ajx-abt:not(#ajx-n) .cert--nafdac img {\n  width: 150px;\n}\n\n.ajx-abt:not(#ajx-n) .cert figcaption {\n  font: 600 18px var(--f-head);\n  color: var(--blue);\n  line-height: 1.3;\n}\n\n.ajx-abt:not(#ajx-n) .cert small {\n  display: block;\n  font: 500 14.5px var(--f-body);\n  color: var(--muted);\n}\n\n/* ==========================================================================\n   CTA\n   \"Become a Distributor\" call-to-action banner\n   ========================================================================== */\n\n.ajx-abt:not(#ajx-n) .cta-wrap,\n.ajx-abt:not(#ajx-n).cta-wrap {\n  padding-bottom: clamp(56px, 7vw, 96px);\n}\n\n.ajx-abt:not(#ajx-n) .cta {\n  position: relative;\n  overflow: hidden;\n  isolation: isolate;\n  text-align: center;\n  padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 60px);\n  border-radius: 26px;\n  color: #DCE8FF;\n  background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 50%, var(--blue-d));\n  box-shadow: var(--sh-lg);\n}\n\n.ajx-abt:not(#ajx-n) .cta .bubbles {\n  z-index: -1;\n}\n\n.ajx-abt:not(#ajx-n) .cta h2 {\n  font: 700 clamp(28px, 4vw, 46px)/1.15 var(--f-head);\n  color: #fff;\n  letter-spacing: -.02em;\n  text-wrap: balance;\n}\n\n.ajx-abt:not(#ajx-n) .cta h2 span {\n  color: var(--lime);\n}\n\n.ajx-abt:not(#ajx-n) .cta p {\n  margin: 14px auto 0;\n  max-width: 52ch;\n  font-size: 17px;\n}\n\n\n\n/* ==========================================================================\n   REDUCED MOTION\n   Accessibility — disables all of the above animations for visitors who have\n   \"reduce motion\" turned on at the OS level\n   ========================================================================== */\n\n  /* --- Accessibility: Visitors with \"reduce motion\" enabled --- */\n  @media (prefers-reduced-motion: reduce) {\n    .ajx-abt *,\n    .ajx-abt *::before,\n    .ajx-abt *::after {\n      animation: none !important;\n      transition: none !important;\n      scroll-behavior: auto !important;\n    }\n\n    html.ajx-js body:not(.elementor-editor-active) .ajx-abt:not(#ajx-n) .rv {\n      opacity: 1;\n      transform: none;\n    }\n  }\n</style><script>(function(){\nvar D=document,H=D.documentElement;\nvar RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;\nvar IO=!RM&&('IntersectionObserver' in window);\nif(IO)H.classList.add('ajx-js');\nfunction ready(f){if(D.readyState!=='loading')f();else D.addEventListener('DOMContentLoaded',f);}\nfunction $$(s,c){return Array.prototype.slice.call((c||D).querySelectorAll(s));}\nready(function(){\n  if(IO){\n    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{rootMargin:'0px 0px -6% 0px',threshold:0.05});\n    $$('.ajx-abt .rv').forEach(function(el){io.observe(el);});\n  }\n});\n})();</script>"
      },
-     "elements": [
-      {
-       "id": "736a356",
-       "elType": "widget",
-       "widgetType": "heading",
-       "settings": {
-        "title": "ABOUT US",
-        "header_size": "h1",
-        "title_color": "#FFFFFF",
-        "typography_typography": "custom",
-        "typography_font_family": "Outfit",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 44,
-         "sizes": []
-        },
-        "typography_font_weight": "700",
-        "align": "center"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "6f89369",
-       "elType": "widget",
-       "widgetType": "divider",
-       "settings": {
-        "align": "center",
-        "width": {
-         "unit": "px",
-         "size": 64,
-         "sizes": []
-        },
-        "color": "#6FC324",
-        "weight": {
-         "unit": "px",
-         "size": 4,
-         "sizes": []
-        },
-        "gap": {
-         "unit": "px",
-         "size": 14,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "7b59048",
-       "elType": "widget",
-       "widgetType": "text-editor",
-       "settings": {
-        "editor": "Pure quality, delivered fresh — since 2025",
-        "typography_typography": "custom",
-        "typography_font_family": "Nunito",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 18,
-         "sizes": []
-        },
-        "typography_font_weight": "400",
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.7,
-         "sizes": []
-        },
-        "text_color": "#D6E4FF",
-        "align": "center"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
+     "elements": [],
      "isInner": false
     }
    ],
    "isInner": false
   },
   {
-   "id": "b682575",
-   "elType": "section",
+   "id": "abt0005",
+   "elType": "container",
    "settings": {
-    "content_width": {
+    "container_type": "flex",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
      "unit": "px",
-     "size": 1220,
-     "sizes": []
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
     },
-    "layout": "boxed",
-    "gap": "wide",
     "padding": {
      "unit": "px",
-     "top": "70",
-     "right": "20",
-     "bottom": "50",
-     "left": "20",
+     "top": "0",
+     "right": "36",
+     "bottom": "0",
+     "left": "36",
      "isLinked": false
-    }
+    },
+    "css_classes": "ajx-abt banner",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1148,
+     "sizes": []
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "30",
+     "bottom": "0",
+     "left": "30",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Banner"
    },
    "elements": [
     {
-     "id": "1e3c29b",
-     "elType": "column",
+     "id": "abt0003",
+     "elType": "widget",
+     "widgetType": "html",
      "settings": {
-      "_column_size": 50,
-      "_inline_size": null,
-      "animation": "fadeInLeft",
-      "animation_duration": "fast",
-      "_animation_delay": 0,
-      "animation_delay": 0
+      "html": "<div class=\"bubbles bubbles--sm\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div>"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "abt0004",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<h1>About Us</h1><p>Pure quality, delivered fresh — since 2025</p>"
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "abt0011",
+   "elType": "container",
+   "settings": {
+    "container_type": "flex",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "36",
+     "bottom": "0",
+     "left": "36",
+     "isLinked": false
+    },
+    "css_classes": "ajx-abt section section--tight",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1148,
+     "sizes": []
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "30",
+     "bottom": "0",
+     "left": "30",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Journey"
+   },
+   "elements": [
+    {
+     "id": "abt0010",
+     "elType": "container",
+     "settings": {
+      "container_type": "flex",
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "nowrap",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "css_classes": "ajx-split ajx-split--even",
+      "flex_align_items": "center",
+      "flex_direction_tablet": "column"
      },
      "elements": [
       {
-       "id": "3087743",
+       "id": "abt0007",
+       "elType": "container",
+       "settings": {
+        "container_type": "flex",
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "css_classes": "ajx-col"
+       },
+       "elements": [
+        {
+         "id": "abt0006",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<div class=\"split__copy\"><p class=\"kicker rv\">Our Humble Beginnings</p><h2 class=\"title title--md rv\">Our Journey in the Production Industry</h2><p class=\"lede rv\">Founded in 2025, Ajalisco started as a humble sachet water factory in Nigeria, driven by a big dream to provide quality hydration. Today, we have grown into a trusted brand known for delivering clean water and wholesome bread. Our products are crafted with honesty, hygiene, and care, dedicated to serving our community with integrity. Our continuous growth reflects our unwavering commitment to quality and the well-being of the people we serve.</p></div>"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "abt0009",
+       "elType": "container",
+       "settings": {
+        "container_type": "flex",
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "css_classes": "ajx-col"
+       },
+       "elements": [
+        {
+         "id": "abt0008",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<div class=\"split__media split__media--round rv\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/kitchen.webp\" alt=\"Ajalisco bottled water and sachet water\" loading=\"lazy\"></div>"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "abt0013",
+   "elType": "container",
+   "settings": {
+    "container_type": "flex",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "36",
+     "bottom": "0",
+     "left": "36",
+     "isLinked": false
+    },
+    "css_classes": "ajx-abt section section--gray",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1148,
+     "sizes": []
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "30",
+     "bottom": "0",
+     "left": "30",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Mission & Vision"
+   },
+   "elements": [
+    {
+     "id": "abt0012",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"mv\"><article class=\"mvcard rv\"><span class=\"mvcard__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2a7 7 0 0 0-4 12.7V18h8v-3.3A7 7 0 0 0 12 2Zm-2 18h4v2h-4Z\"/></svg></span><h3>Mission</h3><p>To produce safe, high-quality consumables—including sachet water and wholesome bread—that nourish and delight families across Nigeria.</p></article><article class=\"mvcard rv\" style=\"--i:1\"><span class=\"mvcard__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 5C6.5 5 2.7 9 1.5 12c1.2 3 5 7 10.5 7s9.3-4 10.5-7C21.3 9 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-2.2a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6Z\"/></svg></span><h3>Vision</h3><p>To be Nigeria’s most trusted producer of high-quality, affordable, and nutritious products—delivering refreshment, health, and happiness to every home. We aspire to expand our reach, uphold the highest standards of hygiene and integrity, and positively impact the communities we serve through innovation and excellence.</p></article></div>"
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "abt0018",
+   "elType": "container",
+   "settings": {
+    "container_type": "flex",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "36",
+     "bottom": "0",
+     "left": "36",
+     "isLinked": false
+    },
+    "css_classes": "ajx-abt section",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1148,
+     "sizes": []
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "30",
+     "bottom": "0",
+     "left": "30",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Core Values"
+   },
+   "elements": [
+    {
+     "id": "abt0016",
+     "elType": "container",
+     "settings": {
+      "container_type": "flex",
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_wrap": "nowrap",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "css_classes": "ajx-head",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "abt0014",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Our Humble Beginnings</span>"
+        "html": "<p class=\"kicker kicker--center rv\">Values</p>"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "2d10267",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
-         "unit": "px",
-         "size": 16,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "06d7e80",
-       "elType": "widget",
-       "widgetType": "heading",
-       "settings": {
-        "title": "Our Journey in the Production Industry",
-        "header_size": "h2",
-        "title_color": "#0256DB",
-        "typography_typography": "custom",
-        "typography_font_family": "Outfit",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 34,
-         "sizes": []
-        },
-        "typography_font_weight": "700"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "5da846a",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
-         "unit": "px",
-         "size": 14,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "32c3bb8",
-       "elType": "widget",
-       "widgetType": "text-editor",
-       "settings": {
-        "editor": "Founded in 2025, Ajalisco started as a humble sachet water factory in Nigeria, driven by a big dream to provide quality hydration. Today, we have grown into a trusted brand known for delivering clean water and wholesome bread. Our products are crafted with honesty, hygiene, and care, dedicated to serving our community with integrity. Our continuous growth reflects our unwavering commitment to quality and the well-being of the people we serve.",
-        "typography_typography": "custom",
-        "typography_font_family": "Nunito",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 16.5,
-         "sizes": []
-        },
-        "typography_font_weight": "400",
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.7,
-         "sizes": []
-        },
-        "text_color": "#54595F"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
-     "isInner": false
-    },
-    {
-     "id": "3c8eb5b",
-     "elType": "column",
-     "settings": {
-      "_column_size": 50,
-      "_inline_size": null,
-      "border_radius": {
-       "unit": "px",
-       "top": "200",
-       "right": "200",
-       "bottom": "22",
-       "left": "22",
-       "isLinked": false
-      },
-      "animation": "fadeInRight",
-      "animation_duration": "fast",
-      "_animation_delay": 150,
-      "animation_delay": 150
-     },
-     "elements": [
-      {
-       "id": "6217927",
-       "elType": "widget",
-       "widgetType": "image",
-       "settings": {
-        "image": {
-         "url": "https://joshuaetok.github.io/ajalisco-site/assets/kitchen.webp",
-         "id": 0,
-         "alt": "Ajalisco bottled water and sachet water",
-         "source": "library"
-        },
-        "image_size": "full",
-        "hover_animation": "grow"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
-     "isInner": false
-    }
-   ],
-   "isInner": false
-  },
-  {
-   "id": "f21345d",
-   "elType": "section",
-   "settings": {
-    "background_background": "classic",
-    "background_color": "#F5F5F5",
-    "content_width": {
-     "unit": "px",
-     "size": 1220,
-     "sizes": []
-    },
-    "layout": "boxed",
-    "gap": "wide",
-    "padding": {
-     "unit": "px",
-     "top": "60",
-     "right": "20",
-     "bottom": "60",
-     "left": "20",
-     "isLinked": false
-    }
-   },
-   "elements": [
-    {
-     "id": "6fce484",
-     "elType": "column",
-     "settings": {
-      "_column_size": 50,
-      "_inline_size": null,
-      "background_background": "classic",
-      "background_color": "#FFFFFF",
-      "padding": {
-       "unit": "px",
-       "top": "32",
-       "right": "30",
-       "bottom": "32",
-       "left": "30",
-       "isLinked": false
-      },
-      "border_radius": {
-       "unit": "px",
-       "top": "20",
-       "right": "20",
-       "bottom": "20",
-       "left": "20",
-       "isLinked": false
-      },
-      "box_shadow_box_shadow": {
-       "horizontal": 0,
-       "vertical": 14,
-       "blur": 34,
-       "spread": -16,
-       "color": "rgba(28,36,75,.12)"
-      },
-      "animation": "fadeInUp",
-      "animation_duration": "fast",
-      "_animation_delay": 0,
-      "animation_delay": 0
-     },
-     "elements": [
-      {
-       "id": "ec87a17",
-       "elType": "widget",
-       "widgetType": "icon-box",
-       "settings": {
-        "title_text": "Mission",
-        "description_text": "To produce safe, high-quality consumables—including sachet water and wholesome bread—that nourish and delight families across Nigeria.",
-        "position": "top",
-        "view": "stacked",
-        "shape": "circle",
-        "primary_color": "#FFFFFF",
-        "secondary_color": "#56A428",
-        "title_color": "#0256DB",
-        "description_color": "#7A7A7A",
-        "icon_space": {
-         "unit": "px",
-         "size": 18,
-         "sizes": []
-        },
-        "icon_size": {
-         "unit": "px",
-         "size": 28,
-         "sizes": []
-        },
-        "icon": "fas fa-bullseye",
-        "selected_icon": {
-         "value": "fas fa-bullseye",
-         "library": "fa-solid"
-        },
-        "title_typography_typography": "custom",
-        "title_typography_font_family": "Outfit",
-        "title_typography_font_size": {
-         "unit": "px",
-         "size": 20,
-         "sizes": []
-        },
-        "title_typography_font_weight": "700",
-        "description_typography_typography": "custom",
-        "description_typography_font_family": "Nunito",
-        "description_typography_font_size": {
-         "unit": "px",
-         "size": 15,
-         "sizes": []
-        },
-        "description_typography_font_weight": "400",
-        "hover_animation": "float"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
-     "isInner": false
-    },
-    {
-     "id": "78dcb74",
-     "elType": "column",
-     "settings": {
-      "_column_size": 50,
-      "_inline_size": null,
-      "background_background": "classic",
-      "background_color": "#FFFFFF",
-      "padding": {
-       "unit": "px",
-       "top": "32",
-       "right": "30",
-       "bottom": "32",
-       "left": "30",
-       "isLinked": false
-      },
-      "border_radius": {
-       "unit": "px",
-       "top": "20",
-       "right": "20",
-       "bottom": "20",
-       "left": "20",
-       "isLinked": false
-      },
-      "box_shadow_box_shadow": {
-       "horizontal": 0,
-       "vertical": 14,
-       "blur": 34,
-       "spread": -16,
-       "color": "rgba(28,36,75,.12)"
-      },
-      "animation": "fadeInUp",
-      "animation_duration": "fast",
-      "_animation_delay": 150,
-      "animation_delay": 150
-     },
-     "elements": [
-      {
-       "id": "1ac826a",
-       "elType": "widget",
-       "widgetType": "icon-box",
-       "settings": {
-        "title_text": "Vision",
-        "description_text": "To be Nigeria’s most trusted producer of high-quality, affordable, and nutritious products—delivering refreshment, health, and happiness to every home. We aspire to expand our reach, uphold the highest standards of hygiene and integrity, and positively impact the communities we serve through innovation and excellence.",
-        "position": "top",
-        "view": "stacked",
-        "shape": "circle",
-        "primary_color": "#FFFFFF",
-        "secondary_color": "#56A428",
-        "title_color": "#0256DB",
-        "description_color": "#7A7A7A",
-        "icon_space": {
-         "unit": "px",
-         "size": 18,
-         "sizes": []
-        },
-        "icon_size": {
-         "unit": "px",
-         "size": 28,
-         "sizes": []
-        },
-        "icon": "fas fa-eye",
-        "selected_icon": {
-         "value": "fas fa-eye",
-         "library": "fa-solid"
-        },
-        "title_typography_typography": "custom",
-        "title_typography_font_family": "Outfit",
-        "title_typography_font_size": {
-         "unit": "px",
-         "size": 20,
-         "sizes": []
-        },
-        "title_typography_font_weight": "700",
-        "description_typography_typography": "custom",
-        "description_typography_font_family": "Nunito",
-        "description_typography_font_size": {
-         "unit": "px",
-         "size": 15,
-         "sizes": []
-        },
-        "description_typography_font_weight": "400",
-        "hover_animation": "float"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
-     "isInner": false
-    }
-   ],
-   "isInner": false
-  },
-  {
-   "id": "bd4755d",
-   "elType": "section",
-   "settings": {
-    "content_width": {
-     "unit": "px",
-     "size": 1220,
-     "sizes": []
-    },
-    "layout": "boxed",
-    "padding": {
-     "unit": "px",
-     "top": "70",
-     "right": "20",
-     "bottom": "70",
-     "left": "20",
-     "isLinked": false
-    }
-   },
-   "elements": [
-    {
-     "id": "9b1b673",
-     "elType": "column",
-     "settings": {
-      "_column_size": 100,
-      "_inline_size": null,
-      "content_position": "center"
-     },
-     "elements": [
-      {
-       "id": "6a68f81",
-       "elType": "widget",
-       "widgetType": "html",
-       "settings": {
-        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Values</span>"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "2d810a4",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
-         "unit": "px",
-         "size": 14,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "85ed032",
+       "id": "abt0015",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
         "title": "Our Core Values",
         "header_size": "h2",
+        "align": "center",
         "title_color": "#0256DB",
         "typography_typography": "custom",
         "typography_font_family": "Outfit",
+        "typography_font_weight": "700",
         "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
          "unit": "px",
          "size": 36,
          "sizes": []
         },
-        "typography_font_weight": "700",
-        "align": "center"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "41b4d41",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
+        "typography_font_size_mobile": {
          "unit": "px",
          "size": 30,
          "sizes": []
-        }
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.15,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": -0.6,
+         "sizes": []
+        },
+        "_css_classes": "rv ajx-title"
        },
        "elements": [],
        "isInner": false
-      },
-      {
-       "id": "31ca376",
-       "elType": "section",
-       "settings": {
-        "padding": {
-         "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "20",
-         "left": "0",
-         "isLinked": false
-        },
-        "gap": "wide"
-       },
-       "elements": [
-        {
-         "id": "b50af03",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "12",
-           "right": "12",
-           "bottom": "12",
-           "left": "12",
-           "isLinked": false
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "5",
-           "isLinked": false
-          },
-          "border_color": "#28A745",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 4,
-           "spread": 0,
-           "color": "rgba(28,36,75,.05)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 0,
-          "animation_delay": 0
-         },
-         "elements": [
-          {
-           "id": "2cce803",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Quality & Safety",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "8a39d5e",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 6,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "0853964",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "We are committed to producing products that meet the highest standards of safety, hygiene, and quality to ensure our customers receive only the best.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 15,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "e3772a0",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "12",
-           "right": "12",
-           "bottom": "12",
-           "left": "12",
-           "isLinked": false
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "5",
-           "isLinked": false
-          },
-          "border_color": "#28A745",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 4,
-           "spread": 0,
-           "color": "rgba(28,36,75,.05)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 100,
-          "animation_delay": 100
-         },
-         "elements": [
-          {
-           "id": "b971722",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Honesty & Transparency",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "f244f58",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 6,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "d669cbe",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Honesty and transparency guide everything we do, from sourcing ingredients to delivering our products to your hands.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 15,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "3dbdde1",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "12",
-           "right": "12",
-           "bottom": "12",
-           "left": "12",
-           "isLinked": false
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "5",
-           "isLinked": false
-          },
-          "border_color": "#28A745",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 4,
-           "spread": 0,
-           "color": "rgba(28,36,75,.05)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 200,
-          "animation_delay": 200
-         },
-         "elements": [
-          {
-           "id": "7702172",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Customer Focus",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "1a278f6",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 6,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "4f7fd63",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Our customers are at the heart of our business. We strive to exceed expectations and foster trust through consistent excellence.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 15,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        }
-       ],
-       "isInner": true
-      },
-      {
-       "id": "4833489",
-       "elType": "section",
-       "settings": {
-        "gap": "wide"
-       },
-       "elements": [
-        {
-         "id": "15c0c8e",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "12",
-           "right": "12",
-           "bottom": "12",
-           "left": "12",
-           "isLinked": false
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "5",
-           "isLinked": false
-          },
-          "border_color": "#28A745",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 4,
-           "spread": 0,
-           "color": "rgba(28,36,75,.05)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 0,
-          "animation_delay": 0
-         },
-         "elements": [
-          {
-           "id": "6e4d58e",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Innovation",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "72e3102",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 6,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "75dff6c",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "We continuously seek ways to improve our products and processes, embracing new ideas to serve our community better.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 15,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "3712da8",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "12",
-           "right": "12",
-           "bottom": "12",
-           "left": "12",
-           "isLinked": false
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "5",
-           "isLinked": false
-          },
-          "border_color": "#28A745",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 4,
-           "spread": 0,
-           "color": "rgba(28,36,75,.05)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 100,
-          "animation_delay": 100
-         },
-         "elements": [
-          {
-           "id": "9df4696",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Sustainability",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "11a11f5",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 6,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "125227c",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "We are dedicated to environmentally responsible practices that promote the well-being of our planet and future generations.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 15,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "95e9093",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "24",
-           "bottom": "24",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "12",
-           "right": "12",
-           "bottom": "12",
-           "left": "12",
-           "isLinked": false
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "0",
-           "left": "5",
-           "isLinked": false
-          },
-          "border_color": "#28A745",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 4,
-           "spread": 0,
-           "color": "rgba(28,36,75,.05)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 200,
-          "animation_delay": 200
-         },
-         "elements": [
-          {
-           "id": "6a78c49",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Community Impact",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 20,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "ea20e32",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 6,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "684b27b",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Our growth is intertwined with the well-being of our community. We aim to contribute positively through our products and practices.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 15,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        }
-       ],
-       "isInner": true
       }
      ],
+     "isInner": true
+    },
+    {
+     "id": "abt0017",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"cvals\"><article class=\"cval rv\"><h3>Quality &amp; Safety</h3><p>We are committed to producing products that meet the highest standards of safety, hygiene, and quality to ensure our customers receive only the best.</p></article><article class=\"cval rv\" style=\"--i:1\"><h3>Honesty &amp; Transparency</h3><p>Honesty and transparency guide everything we do, from sourcing ingredients to delivering our products to your hands.</p></article><article class=\"cval rv\" style=\"--i:2\"><h3>Customer Focus</h3><p>Our customers are at the heart of our business. We strive to exceed expectations and foster trust through consistent excellence.</p></article><article class=\"cval rv\"><h3>Innovation</h3><p>We continuously seek ways to improve our products and processes, embracing new ideas to serve our community better.</p></article><article class=\"cval rv\" style=\"--i:1\"><h3>Sustainability</h3><p>We are dedicated to environmentally responsible practices that promote the well-being of our planet and future generations.</p></article><article class=\"cval rv\" style=\"--i:2\"><h3>Community Impact</h3><p>Our growth is intertwined with the well-being of our community. We aim to contribute positively through our products and practices.</p></article></div>"
+     },
+     "elements": [],
      "isInner": false
     }
    ],
    "isInner": false
   },
   {
-   "id": "e40c02d",
-   "elType": "section",
+   "id": "abt0023",
+   "elType": "container",
    "settings": {
-    "background_background": "classic",
-    "background_color": "#F5F5F5",
-    "content_width": {
+    "container_type": "flex",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
      "unit": "px",
-     "size": 1220,
-     "sizes": []
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
     },
-    "layout": "boxed",
     "padding": {
      "unit": "px",
-     "top": "70",
-     "right": "20",
-     "bottom": "70",
-     "left": "20",
+     "top": "0",
+     "right": "36",
+     "bottom": "0",
+     "left": "36",
      "isLinked": false
-    }
+    },
+    "css_classes": "ajx-abt section section--gray",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1148,
+     "sizes": []
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "30",
+     "bottom": "0",
+     "left": "30",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Team"
    },
    "elements": [
     {
-     "id": "df0cac5",
-     "elType": "column",
+     "id": "abt0021",
+     "elType": "container",
      "settings": {
-      "_column_size": 100,
-      "_inline_size": null,
-      "content_position": "center"
+      "container_type": "flex",
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_wrap": "nowrap",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "css_classes": "ajx-head",
+      "flex_align_items": "center"
      },
      "elements": [
       {
-       "id": "447c462",
+       "id": "abt0019",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Meet the Team</span>"
+        "html": "<p class=\"kicker kicker--center rv\">Meet the Team</p>"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "ddaed16",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
-         "unit": "px",
-         "size": 14,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "dc0cf0b",
+       "id": "abt0020",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
         "title": "Experienced professionals delivering quality",
         "header_size": "h2",
+        "align": "center",
         "title_color": "#0256DB",
         "typography_typography": "custom",
         "typography_font_family": "Outfit",
+        "typography_font_weight": "700",
         "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
          "unit": "px",
          "size": 36,
          "sizes": []
         },
-        "typography_font_weight": "700",
-        "align": "center"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "9cd7f78",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
+        "typography_font_size_mobile": {
          "unit": "px",
          "size": 30,
          "sizes": []
-        }
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.15,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": -0.6,
+         "sizes": []
+        },
+        "_css_classes": "rv ajx-title"
        },
        "elements": [],
        "isInner": false
-      },
-      {
-       "id": "2978aa2",
-       "elType": "section",
-       "settings": {
-        "gap": "wide"
-       },
-       "elements": [
-        {
-         "id": "dbad3c6",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "24",
-           "bottom": "26",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": false
-          },
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 14,
-           "blur": 34,
-           "spread": -16,
-           "color": "rgba(28,36,75,.14)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 0,
-          "animation_delay": 0
-         },
-         "elements": [
-          {
-           "id": "05ad785",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-ceo.webp",
-             "id": 0,
-             "alt": "Engr. E. S. Ajala",
-             "source": "library"
-            },
-            "image_size": "full",
-            "hover_animation": "grow"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "3c1f76e",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "b97706c",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Engr. E. S. Ajala",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 21,
-             "sizes": []
-            },
-            "typography_font_weight": "700"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "a828bca",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">Chief Executive Officer (CEO)</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "0385813",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "A certified Mechanical Engineer with 22 years of experience in manufacturing, process optimization, maintenance, and quality control. Under his visionary leadership, the company has evolved from a small sachet water producer to a trusted Nigerian brand. Committed to innovation, quality, and community development, Engr. Ajala emphasizes integrity, teamwork, and continuous improvement to drive sustainable growth.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 14.5,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.6,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "529a279",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "24",
-           "bottom": "26",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": false
-          },
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 14,
-           "blur": 34,
-           "spread": -16,
-           "color": "rgba(28,36,75,.14)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 100,
-          "animation_delay": 100
-         },
-         "elements": [
-          {
-           "id": "81d06bd",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-emily.webp",
-             "id": 0,
-             "alt": "Emily Jennifer",
-             "source": "library"
-            },
-            "image_size": "full",
-            "hover_animation": "grow"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "2aa399d",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "ac946dc",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Emily Jennifer",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 21,
-             "sizes": []
-            },
-            "typography_font_weight": "700"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "59c0996",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">General Manager</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "daeee6f",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "The driving force behind Ajalisco Production Industries Ltd, overseeing production of sachet water and bread. With a strong focus on quality, hygiene, and innovation, she ensures that every product meets the highest standards. Her background in Science Laboratory Technology and Microbiology enables her to uphold strict safety and quality protocols, reaffirming our commitment to delivering trustworthy products to our community.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 14.5,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.6,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "878f78e",
-         "elType": "column",
-         "settings": {
-          "_column_size": 33.33,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "0",
-           "right": "24",
-           "bottom": "26",
-           "left": "24",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "20",
-           "right": "20",
-           "bottom": "20",
-           "left": "20",
-           "isLinked": false
-          },
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 14,
-           "blur": 34,
-           "spread": -16,
-           "color": "rgba(28,36,75,.14)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 200,
-          "animation_delay": 200
-         },
-         "elements": [
-          {
-           "id": "764017f",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "https://joshuaetok.github.io/ajalisco-site/assets/team-joshua.webp",
-             "id": 0,
-             "alt": "Joshua Etok",
-             "source": "library"
-            },
-            "image_size": "full",
-            "hover_animation": "grow"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "2ed6cfc",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "7403d75",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Joshua Etok",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 21,
-             "sizes": []
-            },
-            "typography_font_weight": "700"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "e173e4e",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p style=\"color:#56A428;font:700 13px Outfit,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin:4px 0 10px\">Head of Operations</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "aede5fe",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "A Mechanical and Aerospace Engineering graduate with a B.Eng in Mechanical Engineering. With a hands-on approach and strong foundation in technical systems, he oversees operations, streamlines processes, and ensures product quality. Driven by excellence, innovation, and efficiency, Joshua plays a key role in scaling the company’s production, logistics, and customer satisfaction.",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 14.5,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.6,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        }
-       ],
-       "isInner": true
       }
      ],
+     "isInner": true
+    },
+    {
+     "id": "abt0022",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"team\"><article class=\"member rv\"><div class=\"member__img\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/team-ceo.webp\" alt=\"Engr. E. S. Ajala\" loading=\"lazy\"></div><div class=\"member__body\"><h3>Engr. E. S. Ajala</h3><p class=\"role\">Chief Executive Officer (CEO)</p><p>A certified Mechanical Engineer with 22 years of experience in manufacturing, process optimization, maintenance, and quality control. Under his visionary leadership, the company has evolved from a small sachet water producer to a trusted Nigerian brand. Committed to innovation, quality, and community development, Engr. Ajala emphasizes integrity, teamwork, and continuous improvement to drive sustainable growth.</p></div></article><article class=\"member rv\" style=\"--i:1\"><div class=\"member__img\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/team-emily.webp\" alt=\"Emily Jennifer\" loading=\"lazy\"></div><div class=\"member__body\"><h3>Emily Jennifer</h3><p class=\"role\">General Manager</p><p>The driving force behind Ajalisco Production Industries Ltd, overseeing production of sachet water and bread. With a strong focus on quality, hygiene, and innovation, she ensures that every product meets the highest standards. Her background in Science Laboratory Technology and Microbiology enables her to uphold strict safety and quality protocols, reaffirming our commitment to delivering trustworthy products to our community.</p></div></article><article class=\"member rv\" style=\"--i:2\"><div class=\"member__img\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/team-joshua.webp\" alt=\"Joshua Etok\" loading=\"lazy\"></div><div class=\"member__body\"><h3>Joshua Etok</h3><p class=\"role\">Head of Operations</p><p>A Mechanical and Aerospace Engineering graduate with a B.Eng in Mechanical Engineering. With a hands-on approach and strong foundation in technical systems, he oversees operations, streamlines processes, and ensures product quality. Driven by excellence, innovation, and efficiency, Joshua plays a key role in scaling the company’s production, logistics, and customer satisfaction.</p></div></article></div>"
+     },
+     "elements": [],
      "isInner": false
     }
    ],
    "isInner": false
   },
   {
-   "id": "dabe898",
-   "elType": "section",
+   "id": "abt0028",
+   "elType": "container",
    "settings": {
-    "content_width": {
+    "container_type": "flex",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
      "unit": "px",
-     "size": 1220,
-     "sizes": []
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
     },
-    "layout": "boxed",
     "padding": {
      "unit": "px",
-     "top": "70",
-     "right": "20",
-     "bottom": "70",
-     "left": "20",
+     "top": "0",
+     "right": "36",
+     "bottom": "0",
+     "left": "36",
      "isLinked": false
-    }
+    },
+    "css_classes": "ajx-abt section",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1148,
+     "sizes": []
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "30",
+     "bottom": "0",
+     "left": "30",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Certifications"
    },
    "elements": [
     {
-     "id": "7c79bfb",
-     "elType": "column",
+     "id": "abt0026",
+     "elType": "container",
      "settings": {
-      "_column_size": 100,
-      "_inline_size": null,
-      "content_position": "center"
+      "container_type": "flex",
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_wrap": "nowrap",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "css_classes": "ajx-head",
+      "flex_align_items": "center"
      },
      "elements": [
       {
-       "id": "7eca0fa",
+       "id": "abt0024",
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "<span style=\"display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:#DFEBFC;color:#0256DB;font:600 14px Outfit,sans-serif;letter-spacing:.02em\"><span style=\"width:7px;height:7px;border-radius:50%;background:#28A745;display:inline-block\"></span>Certifications & Compliance</span>"
+        "html": "<p class=\"kicker kicker--center rv\">Certifications & Compliance</p>"
        },
        "elements": [],
        "isInner": false
       },
       {
-       "id": "5f6b8a8",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
-         "unit": "px",
-         "size": 14,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "80627df",
+       "id": "abt0025",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
         "title": "Verified credentials and regulatory approvals",
         "header_size": "h2",
+        "align": "center",
         "title_color": "#0256DB",
         "typography_typography": "custom",
         "typography_font_family": "Outfit",
+        "typography_font_weight": "700",
         "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
          "unit": "px",
          "size": 36,
          "sizes": []
         },
-        "typography_font_weight": "700",
-        "align": "center"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "7ffe029",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
+        "typography_font_size_mobile": {
          "unit": "px",
          "size": 30,
          "sizes": []
-        }
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.15,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": -0.6,
+         "sizes": []
+        },
+        "_css_classes": "rv ajx-title"
        },
        "elements": [],
        "isInner": false
-      },
-      {
-       "id": "d8a728e",
-       "elType": "section",
-       "settings": {
-        "flex_justify_content": "center",
-        "gap": "wide"
-       },
-       "elements": [
-        {
-         "id": "74f36e8",
-         "elType": "column",
-         "settings": {
-          "_column_size": 36,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "20",
-           "bottom": "24",
-           "left": "20",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "18",
-           "right": "18",
-           "bottom": "18",
-           "left": "18",
-           "isLinked": false
-          },
-          "content_position": "center",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 10,
-           "blur": 26,
-           "spread": -14,
-           "color": "rgba(28,36,75,.12)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 0,
-          "animation_delay": 0
-         },
-         "elements": [
-          {
-           "id": "4e518ca",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "https://joshuaetok.github.io/ajalisco-site/assets/cac.webp",
-             "id": 0,
-             "alt": "Corporate Affairs Commission",
-             "source": "library"
-            },
-            "image_size": "full",
-            "align": "center",
-            "hover_animation": "grow"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "6eaac8d",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 14,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "82f01b7",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Corporate Affairs Commission",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600",
-            "align": "center"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "2107604",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Certificate of Incorporation",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 14.5,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A",
-            "align": "center"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "e4d58fe",
-         "elType": "column",
-         "settings": {
-          "_column_size": 36,
-          "_inline_size": null,
-          "background_background": "classic",
-          "background_color": "#FFFFFF",
-          "padding": {
-           "unit": "px",
-           "top": "24",
-           "right": "20",
-           "bottom": "24",
-           "left": "20",
-           "isLinked": false
-          },
-          "border_radius": {
-           "unit": "px",
-           "top": "18",
-           "right": "18",
-           "bottom": "18",
-           "left": "18",
-           "isLinked": false
-          },
-          "content_position": "center",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 10,
-           "blur": 26,
-           "spread": -14,
-           "color": "rgba(28,36,75,.12)"
-          },
-          "animation": "fadeInUp",
-          "animation_duration": "fast",
-          "_animation_delay": 100,
-          "animation_delay": 100
-         },
-         "elements": [
-          {
-           "id": "b535930",
-           "elType": "widget",
-           "widgetType": "image",
-           "settings": {
-            "image": {
-             "url": "https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png",
-             "id": 0,
-             "alt": "NAFDAC Registered",
-             "source": "library"
-            },
-            "image_size": "full",
-            "align": "center",
-            "width": {
-             "unit": "%",
-             "size": 36,
-             "sizes": []
-            },
-            "hover_animation": "grow"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "9cc6273",
-           "elType": "widget",
-           "widgetType": "spacer",
-           "settings": {
-            "space": {
-             "unit": "px",
-             "size": 14,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "931bdb2",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "NAFDAC Registered",
-            "header_size": "h3",
-            "title_color": "#0256DB",
-            "typography_typography": "custom",
-            "typography_font_family": "Outfit",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600",
-            "align": "center"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "a0df3db",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Registration No. U2457R1NG",
-            "typography_typography": "custom",
-            "typography_font_family": "Nunito",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 14.5,
-             "sizes": []
-            },
-            "typography_font_weight": "400",
-            "typography_line_height": {
-             "unit": "em",
-             "size": 1.7,
-             "sizes": []
-            },
-            "text_color": "#7A7A7A",
-            "align": "center"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        }
-       ],
-       "isInner": true
       }
      ],
+     "isInner": true
+    },
+    {
+     "id": "abt0027",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"certs\"><figure class=\"cert rv\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/cac.webp\" alt=\"Certificate of incorporation — Ajalisco Production Industries Ltd\" loading=\"lazy\"><figcaption>Corporate Affairs Commission<small>Certificate of Incorporation</small></figcaption></figure><figure class=\"cert cert--nafdac rv\" style=\"--i:1\"><img src=\"https://joshuaetok.github.io/ajalisco-site/assets/nafdac.png\" alt=\"NAFDAC\" loading=\"lazy\"><figcaption>NAFDAC Registered<small>Registration No. U2457R1NG</small></figcaption></figure></div>"
+     },
+     "elements": [],
      "isInner": false
     }
    ],
    "isInner": false
   },
   {
-   "id": "ef91799",
-   "elType": "section",
+   "id": "abt0030",
+   "elType": "container",
    "settings": {
-    "background_background": "gradient",
-    "background_color": "#0A64F0",
-    "background_color_b": "#0256DB",
-    "background_gradient_angle": {
-     "unit": "deg",
-     "size": 160,
-     "sizes": []
-    },
-    "background_gradient_type": "linear",
-    "content_width": {
+    "container_type": "flex",
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_wrap": "nowrap",
+    "flex_gap": {
      "unit": "px",
-     "size": 1220,
-     "sizes": []
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": true
     },
-    "layout": "boxed",
     "padding": {
      "unit": "px",
-     "top": "56",
+     "top": "0",
+     "right": "36",
+     "bottom": "0",
+     "left": "36",
+     "isLinked": false
+    },
+    "css_classes": "ajx-abt cta-wrap",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1148,
+     "sizes": []
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
      "right": "30",
-     "bottom": "56",
+     "bottom": "0",
      "left": "30",
      "isLinked": false
     },
-    "border_radius": {
+    "padding_mobile": {
      "unit": "px",
-     "top": "26",
-     "right": "26",
-     "bottom": "26",
-     "left": "26",
+     "top": "0",
+     "right": "16",
+     "bottom": "0",
+     "left": "16",
      "isLinked": false
     },
-    "margin": {
-     "unit": "px",
-     "top": "10",
-     "right": "20",
-     "bottom": "70",
-     "left": "20",
-     "isLinked": false
-    }
+    "_title": "Call to action"
    },
    "elements": [
     {
-     "id": "575250d",
-     "elType": "column",
+     "id": "abt0029",
+     "elType": "widget",
+     "widgetType": "html",
      "settings": {
-      "_column_size": 100,
-      "_inline_size": null,
-      "content_position": "center",
-      "animation": "zoomIn",
-      "animation_duration": "fast",
-      "_animation_delay": 0,
-      "animation_delay": 0
+      "html": "<div class=\"cta rv\"><div class=\"bubbles bubbles--sm\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div><h2>Proudly Made in Nigeria, Trusted by <span>Thousands</span></h2><p>Let’s bring clean water and fresh bread to more homes in Nigeria.</p><div class=\"btn-row btn-row--center\"><a class=\"btn btn--green btn--lg\" href=\"/partnership/\">Become a Distributor</a></div></div>"
      },
-     "elements": [
-      {
-       "id": "8f32cf2",
-       "elType": "widget",
-       "widgetType": "heading",
-       "settings": {
-        "title": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
-        "header_size": "h2",
-        "title_color": "#FFFFFF",
-        "typography_typography": "custom",
-        "typography_font_family": "Outfit",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 36,
-         "sizes": []
-        },
-        "typography_font_weight": "700",
-        "align": "center"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "1449273",
-       "elType": "widget",
-       "widgetType": "text-editor",
-       "settings": {
-        "editor": "Let’s bring clean water and fresh bread to more homes in Nigeria.",
-        "typography_typography": "custom",
-        "typography_font_family": "Nunito",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 17,
-         "sizes": []
-        },
-        "typography_font_weight": "400",
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.7,
-         "sizes": []
-        },
-        "text_color": "#DCE8FF",
-        "align": "center"
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "d7cee9d",
-       "elType": "widget",
-       "widgetType": "spacer",
-       "settings": {
-        "space": {
-         "unit": "px",
-         "size": 20,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "isInner": false
-      },
-      {
-       "id": "9136682",
-       "elType": "widget",
-       "widgetType": "button",
-       "settings": {
-        "text": "Become a Distributor",
-        "link": {
-         "url": "/partnership/",
-         "is_external": "",
-         "nofollow": ""
-        },
-        "background_color": "#28A745",
-        "button_text_color": "#FFFFFF",
-        "border_radius": {
-         "unit": "px",
-         "top": "10",
-         "right": "10",
-         "bottom": "10",
-         "left": "10",
-         "isLinked": false
-        },
-        "size": "lg",
-        "typography_typography": "custom",
-        "typography_font_family": "Outfit",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 15.5,
-         "sizes": []
-        },
-        "typography_font_weight": "600",
-        "align": "center",
-        "hover_animation": "float"
-       },
-       "elements": [],
-       "isInner": false
-      }
-     ],
+     "elements": [],
      "isInner": false
     }
    ],
    "isInner": false
   }
  ],
- "page_settings": [],
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes"
+ },
  "version": "0.4",
- "title": "About Us",
+ "title": "About",
  "type": "page"
 }
