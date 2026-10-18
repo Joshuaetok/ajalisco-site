@@ -107,6 +107,396 @@
   ];
   const JOB_BY_SLUG = Object.fromEntries(JOBS.map((j) => [j.slug, j]));
 
+  /* ------------------------------------------------------------------
+     Blog — mirrors the real posts already published at
+     ajaliscogroup.com (fetched via the WordPress REST API), so this
+     preview matches the live blog content exactly rather than using
+     placeholder copy.
+  ------------------------------------------------------------------ */
+  const POSTS = [
+    {
+      slug: "hydration-myths-busted",
+      title: "Hydration Myths Busted: Expert Advice on Staying Hydrated in Nigeria",
+      date: "2025-07-15",
+      image: "assets/blog-hydration.webp",
+      excerpt: "In Nigeria\u2019s tropical climate, staying hydrated isn\u2019t just a health suggestion \u2014 it\u2019s a daily survival strategy . With scorching heat in the North,\u2026",
+      readMins: 4,
+      content: `<p>In Nigeria’s tropical climate, <strong>staying hydrated</strong> isn’t just a health suggestion — it’s a <strong>daily survival strategy</strong>. With scorching heat in the North, high humidity in the South, and intense outdoor activity across the country, millions of Nigerians sweat more than they realize. But here’s the catch: <strong>many people are unknowingly dehydrated</strong>, even while holding a bottle or sachet of water.</p>
+
+<p>In this article, we’ll clear the air on <strong>common hydration myths</strong>, share expert advice from a Nigerian <strong>sports coach</strong> and <strong>dermatologist</strong>, and explain why <strong>Ajalisco Premium Water</strong> is the smart hydration choice for your health, skin, and daily energy levels.</p>
+
+<h3 class="wp-block-heading">Myth #1: “If I’m Not Thirsty, I Don’t Need Water”</h3>
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><strong>Expert Insight (Coach David Olawale, Lagos)</strong><br>“Thirst is a <strong>late-stage signal</strong>. By the time you feel thirsty, your body has already lost about 1–2% of its total water. That can affect focus, mood, and muscle function — especially in hot environments like Nigeria.”</p>
+</blockquote>
+
+<p><strong>Truth:</strong> Your body needs water consistently throughout the day. Don&#8217;t wait for thirst to hit. Schedule water breaks every 1–2 hours, especially if you work outdoors or commute long distances.</p>
+
+<p><strong>Pro Tip:</strong> Keep <strong>Ajalisco Premium Water sachets or bottles</strong> in your bag, car, or office. The convenient packaging makes it easy to sip consistently without overpaying for water.</p>
+
+<h3 class="wp-block-heading">Myth #2: “Energy Drinks or Soft Drinks Can Replace Water”</h3>
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><strong>Dr. Uchechi Eze, Dermatologist (Enugu):</strong><br>“Sugar-packed drinks cause <strong>water loss</strong> instead of hydration. They make your kidneys work harder, and the excess sugar pulls fluid away from your skin and cells.”</p>
+</blockquote>
+
+<p><strong>Truth:</strong> While they may quench your immediate thirst, fizzy drinks and energy drinks often <strong>worsen dehydration</strong>. For real hydration, nothing beats clean, pure water.</p>
+
+<p><strong>Ajalisco Water</strong> is:</p>
+
+<ul class="wp-block-list">
+<li><strong>NAFDAC-approved</strong></li>
+
+<li><strong>Filtered using multi-stage purification</strong></li>
+
+<li><strong>Free from sugar, additives, and chemicals</strong></li>
+</ul>
+
+<p>Perfect for daily hydration without any health risks.</p>
+
+<h3 class="wp-block-heading">Myth #3: “I Don’t Need Much Water Because I Don’t Sweat”</h3>
+
+<p>Many people assume that only athletes or outdoor workers need to drink lots of water. But even <strong>sitting in traffic</strong>, <strong>working indoors</strong>, or <strong>sleeping in a hot room</strong> can lead to fluid loss through <strong>breathing</strong>, <strong>urination</strong>, and <strong>sweating</strong> — even if you don’t feel it.</p>
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><strong>Coach David:</strong> “You lose water <strong>all day</strong>, even when resting. If you wait until you’re sweating buckets, you’ve already dipped into dehydration.”</p>
+</blockquote>
+
+<p><strong>Solution:</strong> Make it a habit to drink water <strong>before</strong> you&#8217;re thirsty. Start your day with one sachet or glass of Ajalisco water and drink small amounts steadily.</p>
+
+<h3 class="wp-block-heading">Myth #4: “Drinking Too Much Water Is Harmful”</h3>
+
+<p>Yes, overhydration is real, but it’s extremely rare — and usually only a risk when people chug gallons at once. For the average Nigerian adult, the body easily regulates water through sweat and urination.</p>
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><strong>Dr. Uchechi:</strong> “For healthy individuals, the kidneys are excellent at removing excess water. As long as you space your intake across the day, there’s no harm in drinking more water.”</p>
+</blockquote>
+
+<p><strong>Ideal Intake:</strong></p>
+
+<ul class="wp-block-list">
+<li><strong>Men</strong>: 3.0–3.5 liters per day</li>
+
+<li><strong>Women</strong>: 2.5–3.0 liters per day</li>
+
+<li><strong>Children</strong>: At least 5–8 sachets of water depending on activity level and age</li>
+</ul>
+
+<h3 class="wp-block-heading">Myth #5: “My Skin Creams Keep My Skin Hydrated”</h3>
+
+<p>External moisturizers help seal moisture in, but <strong>true skin hydration starts from within</strong>.</p>
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><strong>Dr. Uchechi:</strong> “If your water intake is poor, no cream can replace what’s missing internally. Dehydrated skin looks dull, flakes easily, and reacts more to sunlight.”</p>
+</blockquote>
+
+<p><strong>What to do:</strong> Drink <strong>Ajalisco Premium Water</strong> consistently — your skin will become clearer, more elastic, and resistant to harsh weather. Combine it with sunscreen and a light moisturizer for best results.</p>
+
+<h3 class="wp-block-heading">Bonus Tip: Build a Hydration Habit (The “3-3-3 Rule”)</h3>
+
+<p>To stay hydrated effortlessly, follow this:</p>
+
+<ul class="wp-block-list">
+<li><strong>3 cups (or sachets) by noon</strong></li>
+
+<li><strong>3 sachets between lunch and dinner</strong></li>
+
+<li><strong>3 sachets before bedtime (early enough to not disrupt sleep)</strong></li>
+</ul>
+
+<p>Using <strong>Ajalisco sachet water</strong>, this adds up to just over 1.5 liters per day — a great baseline for most adults, especially during hot seasons.</p>
+
+<h3 class="wp-block-heading">Why Choose Ajalisco Premium Water?</h3>
+
+<p>Whether you’re in school, at work, at the gym, or on the road — Ajalisco Premium Water gives you:</p>
+
+<ul class="wp-block-list">
+<li><strong>NAFDAC certification</strong></li>
+
+<li><strong>ISO-compliant purity</strong></li>
+
+<li><strong>Affordable packaging for all lifestyles</strong></li>
+
+<li><strong>Available in sachets, bottles, and cartons</strong></li>
+
+<li><strong>Nationwide distribution with consistent quality</strong></li>
+</ul>
+
+<p>With <strong>Ajalisco</strong>, hydration is no longer a challenge — it’s a lifestyle.</p>
+
+<h2 class="wp-block-heading">Final Thoughts</h2>
+
+<p>Dehydration doesn&#8217;t always look dramatic — sometimes it’s just fatigue, dull skin, or low concentration. Don’t wait for signs. Stay ahead with smart hydration. Bust the myths. Drink smart. <strong>Choose Ajalisco.</strong></p>`,
+    },
+    {
+      slug: "quality-matters-testing-protocol",
+      title: "Quality Matters: Our Multi\u2011Stage Testing Protocol for Sachet and Bottled Water",
+      date: "2025-07-15",
+      image: "assets/blog-quality.webp",
+      excerpt: "In Nigeria\u2019s fast-growing bottled and sachet water industry, not all water is created equal. While clear packaging may give the illusion of purity,\u2026",
+      readMins: 4,
+      content: `<p>In Nigeria’s fast-growing bottled and sachet water industry, not all water is created equal. While clear packaging may give the illusion of purity, true water quality goes far beyond appearances. At Ajalisco Production Industries, we understand that every drop matters — and that’s why we have invested in world-class laboratory testing, modern machinery, and a team of certified experts to ensure that Ajalisco Premium Water is not just clean, but certified safe for everyday consumption.</p>
+
+<p>In this article, we’ll take you behind the scenes of our multi-stage quality testing protocol — the very system that ensures every sachet and bottle of Ajalisco Water you drink is trusted, traceable, and completely pure.</p>
+
+<h3 class="wp-block-heading">1. Water Quality Begins with Sourcing</h3>
+
+<p>Our commitment to quality starts long before filtration. We extract water from deep, geologically verified boreholes on our premises. These boreholes are lined, sealed, and monitored for:</p>
+
+<ul class="wp-block-list">
+<li>Turbidity (clarity)</li>
+
+<li>Mineral concentration</li>
+
+<li>Microbial presence</li>
+</ul>
+
+<p>Samples from each borehole undergo monthly geological and microbiological testing to ensure no contaminants seep into the source.</p>
+
+<h3 class="wp-block-heading">2. Multi-Stage Filtration &amp; Purification</h3>
+
+<p>Once extracted, raw water is directed through our <strong>closed-loop filtration system</strong>, which includes:</p>
+
+<h4 class="wp-block-heading">🌀 a. Sand and Sediment Filters</h4>
+
+<p>Removes large particles like sand, dirt, and rust.</p>
+
+<h4 class="wp-block-heading">🧪 b. Activated Carbon Filters</h4>
+
+<p>Eliminates chlorine, odor-causing compounds, and organic residues.</p>
+
+<h4 class="wp-block-heading">💠 c. Microfiltration Membrane</h4>
+
+<p>Traps microscopic particles and bacteria that pass through earlier filters.</p>
+
+<h4 class="wp-block-heading">🔄 d. Reverse Osmosis (RO)</h4>
+
+<p>This high-pressure system removes up to <strong>99% of dissolved solids</strong>, heavy metals, nitrates, and harmful chemicals.</p>
+
+<h4 class="wp-block-heading">🔬 e. UV Light Sterilization</h4>
+
+<p>Neutralizes remaining bacteria and viruses without altering taste.</p>
+
+<h4 class="wp-block-heading">🌬️ f. Ozonation</h4>
+
+<p>Our final stage introduces food-grade ozone, a powerful natural disinfectant that stabilizes the water for safe packaging.</p>
+
+<p>Each filtration stage is connected to <strong>real-time sensors</strong> that monitor:</p>
+
+<ul class="wp-block-list">
+<li>pH balance</li>
+
+<li>TDS (Total Dissolved Solids)</li>
+
+<li>Temperature</li>
+
+<li>Flow rate</li>
+</ul>
+
+<p>If any parameter moves out of range, our system automatically halts production to prevent compromised water from reaching packaging.</p>
+
+<h3 class="wp-block-heading">3. In-House Laboratory Testing</h3>
+
+<p>Ajalisco’s quality control team includes:</p>
+
+<ul class="wp-block-list">
+<li><strong>Certified microbiologists</strong></li>
+
+<li><strong>Food safety officers</strong></li>
+
+<li><strong>Chemical analysts</strong></li>
+</ul>
+
+<p>Every batch of sachet and bottled water is tested using:</p>
+
+<ul class="wp-block-list">
+<li><strong>Turbidity meters</strong></li>
+
+<li><strong>Coliform presence kits</strong></li>
+
+<li><strong>pH meters</strong></li>
+
+<li><strong>AAS (Atomic Absorption Spectrophotometers)</strong> for heavy metal detection</li>
+
+<li><strong>TDS/conductivity meters</strong></li>
+</ul>
+
+<p>We conduct:</p>
+
+<ul class="wp-block-list">
+<li><strong>Daily tests</strong> on pH, turbidity, and microbial activity</li>
+
+<li><strong>Weekly tests</strong> for heavy metals (lead, mercury, arsenic)</li>
+
+<li><strong>Monthly third-party tests</strong> for compliance with <strong>NAFDAC and SON standards</strong></li>
+</ul>
+
+<h3 class="wp-block-heading">4. Staff Expertise and Training</h3>
+
+<p>At Ajalisco, quality assurance isn’t just a department — it’s a culture. Our team undergoes:</p>
+
+<ul class="wp-block-list">
+<li><strong>Quarterly HACCP (Hazard Analysis Critical Control Point)</strong> training</li>
+
+<li><strong>ISO 22000 food safety management workshops</strong></li>
+
+<li>Emergency response drills for contamination alerts</li>
+
+<li>Equipment handling and calibration refreshers every 3 months</li>
+</ul>
+
+<p>We also conduct <strong>surprise audits</strong> and <strong>cross-inspections between departments</strong> to minimize human error and ensure transparency.</p>
+
+<h3 class="wp-block-heading">5. Packaging with Precision</h3>
+
+<p>Once water is tested and approved, it flows through <strong>fully automated filling lines</strong> for:</p>
+
+<ul class="wp-block-list">
+<li><strong>Sachet water</strong></li>
+
+<li><strong>500ml and 750ml PET bottled water</strong></li>
+
+<li><strong>1.5L family-size bottles</strong></li>
+</ul>
+
+<p>Each machine is:</p>
+
+<ul class="wp-block-list">
+<li><strong>UV sterilized</strong> before each production run</li>
+
+<li><strong>Temperature-monitored</strong> to ensure heat-seal quality</li>
+
+<li><strong>Batch-coded</strong> for traceability (including time, date, and shift)</li>
+</ul>
+
+<p>Our packaging films and PET bottles are <strong>food-grade</strong>, <strong>BPA-free</strong>, and certified by Nigeria’s SONCAP (Standards Organization of Nigeria Conformity Assessment Program).</p>
+
+<h3 class="wp-block-heading">6. Final Product Holding &amp; External Testing</h3>
+
+<p>Before leaving our facility:</p>
+
+<ul class="wp-block-list">
+<li>Products are held in <strong>sanitized storage rooms</strong> with temperature and humidity control.</li>
+
+<li>Batches are randomly selected and <strong>sent to NAFDAC-certified laboratories</strong> to verify all parameters.</li>
+</ul>
+
+<p>We also maintain a <strong>Customer Feedback and Reporting Desk</strong>, where any product issue can be traced back to the <strong>exact machine, operator, and batch</strong> for correction.</p>
+
+<h3 class="wp-block-heading">Why This Matters to You</h3>
+
+<p>Whether you buy a sachet at a roadside kiosk or a bottle in a supermarket, <strong>you deserve to know that your water is safe</strong>. At Ajalisco, our mission is simple:</p>
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Deliver clean, affordable, and truly safe water — every single time.</p>
+</blockquote>
+
+<p>That’s why schools, hospitals, offices, and families across Nigeria trust <strong>Ajalisco Premium Water</strong> for hydration that’s backed by science, not just claims.</p>
+
+<h2 class="wp-block-heading">Final Thoughts</h2>
+
+<p>Water is life — but only <strong>safe water</strong> sustains life. With our <strong>multi-layered filtration</strong>, <strong>advanced lab testing</strong>, and <strong>world-class staff</strong>, Ajalisco Premium Water leads the way in Nigeria’s packaged water industry. Every sip is proof of our promise: <strong>purity, quality, and care</strong> — from source to seal.</p>`,
+    },
+    {
+      slug: "inside-our-factory",
+      title: "Inside Our Factory: How Ajalisco Ensures 100% Pure Sachet Water",
+      date: "2025-07-15",
+      image: "assets/blog-factory.webp",
+      excerpt: "At Ajalisco Production Industries, purity is not just a promise \u2014 it\u2019s a process. In an industry where trust and health are closely tied to what\u2026",
+      readMins: 4,
+      content: `<p>At Ajalisco Production Industries, purity is not just a promise — it’s a process. In an industry where trust and health are closely tied to what people consume daily, we understand that ensuring clean, safe, and high-quality drinking water is not negotiable. That’s why every sachet of Ajalisco Premium Water undergoes a rigorous journey from sourcing to sealing, guided by strict hygiene standards, state-of-the-art technology, and full NAFDAC compliance.</p>
+
+<p>In this article, we’ll walk you through what happens behind the scenes at our water production facility — from the moment raw water is sourced to when it’s delivered to your hand in a crystal-clear sachet.</p>
+
+<h3 class="wp-block-heading">Step 1: Sourcing from Trusted Water Sources</h3>
+
+<p>Our journey begins with sourcing. Ajalisco only extracts raw water from <strong>certified boreholes</strong> located on our industrial premises. These sources are routinely tested to meet the <strong>World Health Organization (WHO)</strong> and <strong>Nigeria’s NAFDAC</strong> minimum safety standards. The borehole system is equipped with submersible pumps that deliver raw water directly to our treatment facility via sealed stainless-steel pipelines — preventing contamination at the very first stage.</p>
+
+<h3 class="wp-block-heading">Step 2: Multi-Stage Filtration and Purification</h3>
+
+<p>Once the water enters the plant, it undergoes a <strong>multi-stage purification process</strong> designed to eliminate physical impurities, organic contaminants, harmful microorganisms, and undesirable tastes or odors. Here&#8217;s a simplified breakdown of that journey:</p>
+
+<ol class="wp-block-list">
+<li><strong>Sediment Filtration</strong><br>The first layer of protection. Sand filters remove visible particles like dust, rust, and mud, ensuring the water is visually clear and physically stable.</li>
+
+<li><strong>Activated Carbon Filtration</strong><br>Next, the water passes through activated carbon filters to remove chlorine, volatile organic compounds (VOCs), and unpleasant odors or tastes.</li>
+
+<li><strong>Microfiltration &amp; Reverse Osmosis (RO)</strong><br>A precision membrane system filters out bacteria, viruses, and dissolved salts. Reverse osmosis ensures the water meets pharmaceutical-grade purity levels.</li>
+
+<li><strong>Ultraviolet (UV) Sterilization</strong><br>As an added line of defense, water is exposed to UV rays that deactivate any remaining microorganisms without the use of chemicals.</li>
+
+<li><strong>Ozonation</strong><br>Finally, a controlled dose of ozone gas is infused into the water. Ozone acts as a natural disinfectant and helps stabilize the water during storage.</li>
+</ol>
+
+<p>Each phase is <strong>fully automated</strong> and monitored using industrial-grade sensors. If any value strays from the safe range, the system immediately flags and halts the batch.</p>
+
+<h3 class="wp-block-heading">Step 3: Laboratory Testing &amp; Quality Assurance</h3>
+
+<p>Ajalisco employs an in-house team of trained microbiologists and water technologists who <strong>test samples from every batch</strong>, ensuring consistency and safety. The lab checks for:</p>
+
+<ul class="wp-block-list">
+<li>pH balance</li>
+
+<li>Total dissolved solids (TDS)</li>
+
+<li>Microbial activity</li>
+
+<li>Heavy metal presence</li>
+
+<li>Taste, smell, and appearance</li>
+</ul>
+
+<p>Only water that passes all parameters proceeds to the packaging stage. We also send routine samples to <strong>third-party laboratories</strong> for independent analysis.</p>
+
+<h3 class="wp-block-heading">Step 4: Hygienic Sachet Packaging</h3>
+
+<p>Once purified, the water is transferred through <strong>closed-loop, stainless-steel lines</strong> to the automatic sachet filling machines. These machines:</p>
+
+<ul class="wp-block-list">
+<li>Fill, seal, and batch-label each sachet</li>
+
+<li>Use <strong>food-grade LDPE film</strong> pre-tested for BPA-free compliance</li>
+
+<li>Seal at high temperatures to prevent leakage and external exposure</li>
+</ul>
+
+<p>Staff working in this zone wear <strong>sterile gear</strong>, including gloves, face masks, aprons, and hairnets. The environment is air-conditioned, sanitized regularly, and entry is restricted.</p>
+
+<p>Each sachet is batch-coded with a <strong>production date and expiration date</strong>, and once sealed, they&#8217;re packed into branded cartons and stored in temperature-controlled holding areas before distribution.</p>
+
+<h3 class="wp-block-heading">Step 5: NAFDAC Registration and Compliance</h3>
+
+<p>Ajalisco Premium Water is <strong>fully registered with NAFDAC</strong> and bears the official registration number clearly printed on each sachet and carton. Our facility is inspected periodically by NAFDAC officials to ensure ongoing compliance with:</p>
+
+<ul class="wp-block-list">
+<li>Good Manufacturing Practices (GMP)</li>
+
+<li>Environmental hygiene standards</li>
+
+<li>Documentation and traceability</li>
+
+<li>Employee health and safety policies</li>
+</ul>
+
+<p>Our factory is also aligned with <strong>ISO 22000 food safety standards</strong>, giving us an edge in quality and consumer confidence.</p>
+
+<h3 class="wp-block-heading">Distribution &amp; Customer Feedback</h3>
+
+<p>After approval, the sachets are loaded onto Ajalisco’s branded delivery vehicles and sent to distributors, supermarkets, schools, hospitals, and homes across Nigeria. We maintain a strong relationship with our partners to gather feedback, improve our processes, and uphold product freshness.</p>
+
+<p>We’ve also integrated a customer care line and QR code system for consumers to verify authenticity or report concerns — because transparency is part of the purity promise.</p>
+
+<h3 class="wp-block-heading">Final Thoughts: Purity is Our Reputation</h3>
+
+<p>At Ajalisco Production Industries, we don’t just sell water — we deliver <strong>hydration you can trust</strong>. Every single sachet is a result of science, diligence, and our unwavering commitment to public health. That’s why families, schools, and businesses across Nigeria choose Ajalisco Premium Water — clean, crisp, and crafted with care.</p>
+
+<p>So, the next time you enjoy a cool sachet of Ajalisco, you’ll know exactly what went into making it the best.</p>`,
+    },
+  ];
+  const POST_BY_SLUG = Object.fromEntries(POSTS.map((p) => [p.slug, p]));
+  const fmtDate = (iso) => new Date(iso + "T00:00:00").toLocaleDateString("en-NG", { year: "numeric", month: "long", day: "numeric" });
+
   const fmt = (n) => "₦" + n.toLocaleString("en-NG", { minimumFractionDigits: 2 });
   const priceHTML = (n) => `<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₦</span>${n.toLocaleString("en-NG", { minimumFractionDigits: 2 })}</bdi></span></span>`;
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -445,16 +835,65 @@
   jobModal.addEventListener("click", (e) => { if (e.target === jobModal) jobModal.close(); });
 
   /* --------------------------- CTA banners ----------------------- */
-  $$("[data-cta]").forEach((el) => {
+  function renderCta(el) {
     const c = JSON.parse(el.dataset.cta);
     el.innerHTML = `<div class="cta rv"><div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <h2>Proudly Made in Nigeria, Trusted by <span>Thousands</span></h2>
       <p>Let’s bring clean water and fresh bread to more homes in Nigeria.</p>
       <div class="btn-row btn-row--center"><a class="btn btn--green btn--lg" href="${c.primary[1]}">${c.primary[0]}</a>${c.secondary ? `<a class="btn btn--ghost-light btn--lg" href="${c.secondary[1]}">${c.secondary[0]}</a>` : ""}</div></div>`;
-  });
+  }
+  $$("[data-cta]").forEach(renderCta);
+
+  /* ------------------------------ Blog ---------------------------- */
+  function blogCardHTML(post, i) {
+    return `<a class="post rv" style="--i:${i % 3}" href="#/post/${post.slug}">
+      <div class="post__img"><img src="${post.image}" alt="" loading="lazy"></div>
+      <div class="post__body">
+        <p class="post__meta">${fmtDate(post.date)} · ${post.readMins} min read</p>
+        <h3>${esc(post.title)}</h3>
+        <p>${esc(post.excerpt)}</p>
+        <span class="more">Read More <b aria-hidden="true">→</b></span>
+      </div>
+    </a>`;
+  }
+  function renderHomePosts() {
+    const host = $("[data-home-posts]"); if (!host) return;
+    host.innerHTML = POSTS.map(blogCardHTML).join("");
+  }
+  function renderBlog() {
+    const host = $("[data-blog-posts]"); if (!host) return;
+    host.innerHTML = POSTS.length ? POSTS.map(blogCardHTML).join("") : `<p class="ajx-jobs__empty">No posts yet — please check back soon.</p>`;
+  }
+  function renderPost(slug) {
+    const p = POST_BY_SLUG[slug]; if (!p) { location.hash = "#/blog"; return; }
+    document.title = `${p.title} — Ajalisco Production Industries Limited`;
+    const related = POSTS.filter((x) => x.slug !== slug).slice(0, 2);
+    $("#postView").innerHTML = `
+      <div class="post-hero" style="background-image:linear-gradient(180deg, rgba(10,20,50,.15), rgba(10,20,50,.88)), url('${p.image}')">
+        <div class="wrap post-hero__inner">
+          <a class="post-hero__back rv" href="#/blog">← Back to Blog</a>
+          <h1 class="rv" style="--i:1">${esc(p.title)}</h1>
+          <p class="post-hero__meta rv" style="--i:2">${fmtDate(p.date)} · ${p.readMins} min read</p>
+        </div>
+      </div>
+      <section class="section section--tight">
+        <div class="wrap">
+          <div class="post-body rv">${p.content}</div>
+        </div>
+      </section>
+      ${related.length ? `
+      <section class="section section--gray">
+        <div class="wrap">
+          <div class="head-center"><p class="kicker kicker--center rv">Keep Reading</p><h2 class="title rv">You might also like</h2></div>
+          <div class="posts">${related.map(blogCardHTML).join("")}</div>
+        </div>
+      </section>` : ""}
+      <section class="wrap cta-wrap" data-cta='{"primary":["Become a Distributor","#/partnership"]}'></section>`;
+    $$("#postView [data-cta]").forEach(renderCta);
+  }
 
   /* ------------------------------ Router ------------------------- */
-  const ROUTES = ["home", "shop", "partnership", "about", "careers", "contact", "cart", "product"];
+  const ROUTES = ["home", "shop", "partnership", "about", "blog", "post", "careers", "contact", "cart", "product"];
   const io = "IntersectionObserver" in window && !reduce ? new IntersectionObserver((ents) => ents.forEach((en) => {
     if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
   }), { rootMargin: "0px 0px -6% 0px", threshold: 0.05 }) : null;
@@ -466,12 +905,13 @@
     $$(".page").forEach((p) => p.classList.toggle("active", p.id === "page-" + page));
     const el = $("#page-" + page);
     document.title = el.dataset.title;
-    const navKey = page === "product" || page === "cart" ? "shop" : page;
+    const navKey = page === "product" || page === "cart" ? "shop" : page === "post" ? "blog" : page;
     $$(".nav__links a[data-route]").forEach((a) => a.classList.toggle("active", a.dataset.route === navKey));
     setMenu(false);
     if (page === "product") renderProduct(parts[1]);
     if (page === "cart") renderCartPage();
     if (page === "shop") renderGrid("shop");
+    if (page === "post") renderPost(parts[1]);
     scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
     requestAnimationFrame(() => watch(el));
   }
@@ -494,7 +934,7 @@
   track.insertAdjacentHTML("beforeend", track.innerHTML.replace(/<figure class="review">/g, '<figure class="review" aria-hidden="true">'));
 
   /* ------------------------------ Init --------------------------- */
-  renderGrid("home"); renderGrid("shop"); renderPicker(); renderCareers(); refreshCart(); route();
+  renderGrid("home"); renderGrid("shop"); renderPicker(); renderCareers(); renderHomePosts(); renderBlog(); refreshCart(); route();
 
   const loader = $("#loader"), barEl = $("#loaderBar"), num = $("#loaderNum");
   let p = 0;
