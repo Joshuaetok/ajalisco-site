@@ -16,9 +16,18 @@ role-detail + application modal. No other plugin is required.
   **Receiving Email**. Every application submitted on the front end is
   emailed to that address; leave it blank to fall back to the site's
   admin email.
-- **`[ajalisco_jobs]` shortcode** — renders the role grid and the
-  detail/apply modal. Drop it into any page; in Elementor Pro, add a
-  **Shortcode** widget and paste `[ajalisco_jobs]` into it.
+- **`[ajalisco_jobs]` shortcode** — two distinct modes, and the shortcode
+  picks between them based on one attribute. Drop it into any page; in
+  Elementor Pro, add a **Shortcode** widget and paste the shortcode into it.
+  - **Bare — `[ajalisco_jobs]` — use this on the actual Careers page.**
+    Shows every published job in a plain responsive grid (3 columns, down
+    to 2 then 1 as the screen narrows). No cap, no slider, no "View All" —
+    you're already looking at the full list.
+  - **With `view_all_url` — use this anywhere else, e.g. a homepage
+    teaser section:** `[ajalisco_jobs view_all_url="/careers/"]`. Shows at
+    most 4 jobs in a horizontally-slidable row (swipe, trackpad-scroll, or
+    the prev/next arrows), followed by a "View All Roles" tile that links
+    to the URL you gave it.
 
 ## Installing
 

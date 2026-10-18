@@ -47,11 +47,16 @@ function ajx_careers_get_jobs_for_js() {
     return $jobs;
 }
 
-function ajx_careers_render_shortcode() {
+function ajx_careers_render_shortcode($atts) {
+    $atts = shortcode_atts(['view_all_url' => ''], $atts, 'ajalisco_jobs');
     ob_start();
     ?>
-    <div class="ajx-careers">
-      <div class="ajx-jobs" data-ajx-jobs aria-live="polite"></div>
+    <div class="ajx-careers" data-view-all-url="<?php echo esc_attr($atts['view_all_url']); ?>">
+      <div class="ajx-jobs-wrap">
+        <div class="ajx-jobs" data-ajx-jobs aria-live="polite"></div>
+        <button class="ajx-jobs__nav ajx-jobs__nav--prev" type="button" data-jobs-nav="-1" aria-label="Previous roles">‹</button>
+        <button class="ajx-jobs__nav ajx-jobs__nav--next" type="button" data-jobs-nav="1" aria-label="Next roles">›</button>
+      </div>
 
       <dialog class="ajx-modal" id="ajxJobModal" aria-labelledby="ajxJobModalTitle">
         <div class="ajx-modal__inner" data-ajx-job-body></div>

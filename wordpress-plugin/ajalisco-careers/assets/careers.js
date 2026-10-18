@@ -10,6 +10,13 @@
   const JOBS = Array.isArray(ajxCareers.jobs) ? ajxCareers.jobs : [];
   const JOB_BY_ID = Object.fromEntries(JOBS.map((j) => [String(j.id), j]));
   const pin = `<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Zm0-8.4a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2Z"/></svg>`;
+  const JOBS_PAGE_SIZE = 4;
+  const viewAllUrl = root.dataset.viewAllUrl || "";
+  // Two modes, chosen once, never mixed:
+  //  - no view_all_url (the Careers page itself): a plain grid, every job.
+  //  - view_all_url set (a teaser elsewhere, e.g. the homepage): capped to
+  //    4, a horizontal slider, and a "View All" tile linking out.
+  root.classList.toggle("ajx-careers--grid", !viewAllUrl);
 
   let toastT;
   function toast(msg, type = "ok") {
@@ -18,17 +25,34 @@
     clearTimeout(toastT); toastT = setTimeout(() => (t.className = "ajx-toast"), 4600);
   }
 
-  function renderJobs() {
-    const host = $("[data-ajx-jobs]"); if (!host) return;
-    if (!JOBS.length) { host.innerHTML = `<p class="ajx-jobs__empty">No open roles right now — please check back soon.</p>`; return; }
-    host.innerHTML = JOBS.map((j, i) => `
-      <button type="button" class="job" style="--i:${i % 3}" data-view-job="${j.id}">
+  function jobCardHTML(j, i) {
+    return `
+      <button type="button" class="job" style="--i:${i % 4}" data-view-job="${j.id}">
         <span class="job__tag">${esc(j.type)}</span>
         <h3>${esc(j.title)}</h3>
         <p class="job__loc">${pin} ${esc(j.location)}</p>
         <p class="job__sum">${esc(j.summary)}</p>
         <span class="job__link">View role &amp; apply →</span>
-      </button>`).join("");
+      </button>`;
+  }
+
+  function viewAllTileHTML(hiddenCount) {
+    return `<a href="${esc(viewAllUrl)}" class="job job--viewall">
+      <span class="job--viewall__count">+${hiddenCount}</span>
+      <span class="job--viewall__label">View All Roles</span>
+    </a>`;
+  }
+
+  function renderJobs() {
+    const host = $("[data-ajx-jobs]"); if (!host) return;
+    if (!JOBS.length) { host.innerHTML = `<p class="ajx-jobs__empty">No open roles right now — please check back soon.</p>`; return; }
+    if (!viewAllUrl) {
+      host.innerHTML = JOBS.map(jobCardHTML).join("");
+      return;
+    }
+    const visible = JOBS.slice(0, JOBS_PAGE_SIZE);
+    const hiddenCount = JOBS.length - visible.length;
+    host.innerHTML = visible.map(jobCardHTML).join("") + (hiddenCount > 0 ? viewAllTileHTML(hiddenCount) : "");
   }
 
   const jobModal = $("#ajxJobModal"), jobBody = $("[data-ajx-job-body]");
@@ -128,6 +152,13 @@
     const apply = e.target.closest("[data-show-apply]"); if (apply) { showApplyForm(apply.dataset.showApply); return; }
     const back = e.target.closest("[data-back-job]"); if (back) { openJobDetail(back.dataset.backJob); return; }
     const close = e.target.closest("[data-close]"); if (close) { close.closest("dialog")?.close(); return; }
+    const nav = e.target.closest("[data-jobs-nav]");
+    if (nav) {
+      const track = $("[data-ajx-jobs]");
+      const card = track?.querySelector(".job");
+      const step = card ? card.getBoundingClientRect().width + 22 : 320;
+      track?.scrollBy({ left: step * parseInt(nav.dataset.jobsNav, 10), behavior: "smooth" });
+    }
   });
   jobModal.addEventListener("click", (e) => { if (e.target === jobModal) jobModal.close(); });
 

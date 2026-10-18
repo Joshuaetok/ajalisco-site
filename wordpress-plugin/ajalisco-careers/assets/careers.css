@@ -34,10 +34,15 @@
 .ajx-careers .btn--green { background: var(--green); box-shadow: 0 12px 24px -12px rgba(40,167,69,.9); }
 .ajx-careers .btn--green:hover { background: var(--green-d); }
 
-/* job cards */
-.ajx-careers .ajx-jobs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+/* job cards — a horizontal slider, capped to 4 cards (+ a "View All" tile),
+   the same on desktop/tablet/mobile; only the card width changes per
+   breakpoint (how many peek into view), never the layout mechanism. */
+.ajx-careers .ajx-jobs-wrap { position: relative; }
+.ajx-careers .ajx-jobs { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: 4px; -webkit-overflow-scrolling: touch; padding: 4px 4px 14px; margin: -4px -4px 0; scrollbar-width: thin; scrollbar-color: var(--sky-2) transparent; }
+.ajx-careers .ajx-jobs::-webkit-scrollbar { height: 6px; }
+.ajx-careers .ajx-jobs::-webkit-scrollbar-thumb { background: var(--sky-2); border-radius: 999px; }
 .ajx-careers .ajx-jobs__empty { color: var(--muted); text-align: center; padding: 40px 0; }
-.ajx-careers .job { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 28px; border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: var(--sh), 0 0 0 1px var(--line); text-align: left; font-family: var(--f-body); cursor: pointer; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.ajx-careers .job { flex: 0 0 300px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 28px; border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: var(--sh), 0 0 0 1px var(--line); text-align: left; font-family: var(--f-body); cursor: pointer; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
 .ajx-careers .job:hover { transform: translateY(-6px); box-shadow: var(--sh-lg), 0 0 0 1px var(--line); }
 .ajx-careers .job__tag { padding: 5px 14px; border-radius: 999px; background: var(--sky); color: var(--blue); font: 700 12px var(--f-head); letter-spacing: .03em; text-transform: uppercase; }
 .ajx-careers .job h3 { font: 700 21px var(--f-head); color: var(--ink); margin: 0; }
@@ -45,6 +50,28 @@
 .ajx-careers .job__sum { color: var(--muted); font-size: 15px; line-height: 1.6; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .ajx-careers .job__link { margin-top: auto; padding-top: 6px; color: var(--blue); font: 700 15px var(--f-head); transition: transform .25s var(--ease); }
 .ajx-careers .job:hover .job__link { transform: translateX(4px); }
+
+.ajx-careers .job--viewall { align-items: center; justify-content: center; text-align: center; gap: 4px; background: var(--sky); border: 1.5px dashed var(--sky-2); text-decoration: none; }
+.ajx-careers .job--viewall:hover { background: #E6F0FF; }
+.ajx-careers .job--viewall__count { font: 700 26px var(--f-head); color: var(--blue); }
+.ajx-careers .job--viewall__label { font: 600 15px var(--f-head); color: var(--blue); }
+
+.ajx-careers .ajx-jobs__nav { position: absolute; top: 50%; translate: 0 -50%; z-index: 2; width: 42px; height: 42px; display: grid; place-items: center; border: 0; border-radius: 50%; background: #fff; color: var(--blue); box-shadow: var(--sh-lg); font-size: 18px; cursor: pointer; }
+.ajx-careers .ajx-jobs__nav:hover { background: var(--sky); }
+.ajx-careers .ajx-jobs__nav--prev { left: -18px; }
+
+/* Grid mode — the Careers page itself (no view_all_url): every job, in a
+   plain responsive grid, no slider, no nav arrows, no "View All" tile. */
+.ajx-careers.ajx-careers--grid .ajx-jobs { display: grid; grid-template-columns: repeat(3, 1fr); overflow: visible; scroll-snap-type: none; padding: 0; margin: 0; }
+.ajx-careers.ajx-careers--grid .job { flex: none; scroll-snap-align: none; }
+.ajx-careers.ajx-careers--grid .ajx-jobs__nav { display: none; }
+@media (max-width: 900px) {
+  .ajx-careers.ajx-careers--grid .ajx-jobs { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .ajx-careers.ajx-careers--grid .ajx-jobs { grid-template-columns: 1fr; }
+}
+.ajx-careers .ajx-jobs__nav--next { right: -18px; }
 
 /* modal */
 .ajx-careers dialog.ajx-modal { color: var(--text); width: min(880px, calc(100% - 24px)); max-height: calc(100dvh - 24px); padding: 0; border: 0; border-radius: 24px; background: #fff; box-shadow: 0 40px 90px -30px rgba(1,30,90,.7); overflow: auto; }
@@ -91,12 +118,14 @@
 .ajx-careers .ajx-toast.err { background: #B93131; }
 .ajx-careers .ajx-toast.ok { border-bottom: 3px solid #6FC324; }
 
-/* responsive */
+/* responsive — same horizontal-slider mechanism at every width; only the
+   card's flex-basis (how much of the next card peeks into view) changes. */
 @media (max-width: 900px) {
-  .ajx-careers .ajx-jobs { grid-template-columns: repeat(2, 1fr); }
+  .ajx-careers .job { flex-basis: 260px; }
 }
 @media (max-width: 640px) {
-  .ajx-careers .ajx-jobs { grid-template-columns: 1fr; }
+  .ajx-careers .job { flex-basis: 82%; }
+  .ajx-careers .ajx-jobs__nav { display: none; }
   .ajx-modal__inner { padding: 26px 20px 22px; }
   .ajx-careers dialog.ajx-modal { border-radius: 22px 22px 0 0; margin: auto 0 0; width: 100%; max-width: 100%; }
 }
