@@ -1,0 +1,85 @@
+/* ==========================================================================
+   AJALISCO BLOG SINGLE POST -- blog-single.json styles
+   Theme Builder Single Post template -- applies to every post
+   automatically. Hero background is the post's real Featured Image via
+   a Dynamic Tag (not a hardcoded URL), with Elementor's native
+   background-overlay gradient reproducing the live site's dark overlay
+   with zero custom CSS. Post Title, Post Date and the full article body
+   are all native dynamic widgets (theme-post-title, post-info,
+   theme-post-content) -- none of their content is hardcoded.
+
+   The only non-native pieces, pasted into the "Ajalisco blog-single
+   styles (keep)" HTML widget at the top of blog-single.json, are:
+     1. @font-face rules for Outfit/Nunito (loading only)
+     2. The rising-bubbles decorative animation (CTA only -- the hero
+        here is a real photo, not a gradient banner, so it needs no
+        bubbles/glow)
+     3. Per-tag typography for the article body (h2/h3/h4/blockquote/
+        ul/ol/strong) scoped strictly to
+        ".elementor-widget-theme-post-content" -- this is NOT the same
+        bug category as the other pages' ".ajx-title" override. The
+        native Post Content widget has no per-tag style controls at all
+        for these elements, so this isn't competing with (and silently
+        beating) a native setting the way the confirmed bug did -- it's
+        filling a gap where no native control exists. Still flagged here
+        as a deliberate exception, not glossed over.
+
+   Same two confirmed bugs fixed as every other page: zero font-size/
+   font-family/font-weight/color rules on any Heading/Text-Editor/
+   Button/Post-Title/Post-Info widget (verified -- the only typography
+   rules in this file are the flagged Post-Content exception above), and
+   boxed_width: 1220 on every boxed content container.
+   ========================================================================== */
+
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* Decorative rising bubbles (Banner, CTA) */
+.ajx-bls:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.ajx-bls:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxBlgRise var(--d) linear infinite; animation-delay: var(--dl); }
+.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }
+.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }
+.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }
+.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }
+.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }
+.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(6) { left: 95%; --s: 14px; --d: 13s; --dl: -5s; }
+@keyframes ajxBlgRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }
+
+/* Second gradient layer under the Banner/CTA native background */
+.ajx-bls:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }
+.ajx-bls:not(#ajx-n) .ajx-glow-cta { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ajx-bls:not(#ajx-n) .ajx-bubbles i { animation: none !important; }
+}
+
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content { max-width: 740px; margin-inline: auto; font-size: 17px; line-height: 1.8; color: #54595F; font-family: 'Nunito', sans-serif; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content > :first-child { margin-top: 0; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content p { margin: 0 0 20px; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content h2 { font: 700 28px/1.3 'Outfit', sans-serif; color: #0256DB; margin: 40px 0 16px; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content h3 { font: 700 22px/1.3 'Outfit', sans-serif; color: #0256DB; margin: 34px 0 14px; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content h4 { font: 600 18px 'Outfit', sans-serif; color: #16204A; margin: 26px 0 10px; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content strong { color: #16204A; font-weight: 700; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content ul, .ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content ol { margin: 0 0 20px; padding-left: 1.4em; display: grid; gap: 8px; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content li { padding-left: 4px; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content blockquote { margin: 28px 0; padding: 20px 24px; border-left: 4px solid #28A745; background: #F5F5F5; border-radius: 0 14px 14px 0; font-style: italic; color: #16204A; }
+.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content blockquote p { margin: 0; }
+
+/* Astra wraps this single-post template in its own .ast-container, and
+   specifically uses a 750px "narrow container" width for single posts
+   (meant for plain blog-text reading, not an edge-to-edge hero design) --
+   confirmed on the live site via the ast-narrow-container body class and
+   the --ast-narrow-container-width:750px custom property. Elementor's
+   page-level "Header Footer" template bypasses this wrapper on real
+   Pages (home/shop/about/etc. all use it) but Theme Builder archive/
+   single templates have no equivalent bypass, so it has to be
+   overridden here instead. */
+#content.site-content .ast-container { max-width: none !important; padding-inline: 0 !important; }

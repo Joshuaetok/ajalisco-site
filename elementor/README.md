@@ -656,13 +656,13 @@ flagged the same way here. Specific gaps:
   currently 404s on ajaliscogroup.com) — once you decide the real URL
   for the blog archive, update this link to match.
 
-### Three real bugs found and fixed by checking the actual live import
+### Four real bugs found and fixed by checking the actual live import
 Unlike every other page in this README, these two files have now actually
 been imported into a real WordPress/Elementor Pro install
 (ajaliscogroup.com) rather than just emulated — so for once this section
 reports confirmed facts, not a values sanity-check. Comparing
 `ajaliscogroup.com/blog/` and a real post against the GitHub Pages design
-turned up three real bugs, all now fixed in both JSON files:
+turned up four real bugs, all now fixed in both JSON files:
 
 1. **The Posts widget's "Classic" skin controls need a `classic_` prefix
    this export didn't use.** The live page's own rendered HTML
@@ -731,6 +731,29 @@ published posts, confirmed via the REST API and matched title-for-title
 against the rendered HTML) — not placeholder/dummy content. If posts ever
 show as empty or generic after a future import, that's a WordPress-side
 data issue, not a template problem.
+
+4. **Neither template is actually full width on the live site — Astra's
+   own `.ast-container` wrapper was clipping both.** Confirmed directly
+   from the live page's `<body>` classes and inline CSS: the blog archive
+   renders inside `#content.site-content > .ast-container` (max-width
+   `1200px`, via the `--ast-normal-container-width` custom property), and
+   single posts render inside the *same* wrapper but with Astra's
+   `ast-narrow-container` body class active, capping it at just **750px**
+   (`--ast-narrow-container-width:750px` — meant for plain blog-text
+   reading, not this design's edge-to-edge hero/Banner/CTA backgrounds).
+   This wrapper sits in the *theme's* own archive/single template,
+   outside anything Elementor's JSON controls — it's why `home.json`/
+   `about.json`/etc. don't have this problem (they're real WordPress
+   Pages set to Elementor's "Header Footer" page template, which bypasses
+   the theme's wrapper entirely), but Theme Builder archive/single
+   templates have no equivalent bypass setting. Fixed by adding one scoped
+   CSS override to each file's "keep" stylesheet:
+   `#content.site-content .ast-container { max-width: none !important;
+   padding-inline: 0 !important; }`. This only affects pages still
+   rendered through the theme's own wrapper (archive, single posts, and
+   anything else not using Elementor's Header-Footer template) — it has no
+   effect on home/shop/about/etc., which don't have this wrapper in their
+   markup at all.
 
 **Confirmed out of scope for this template** (seen while checking the
 live pages, not caused by or fixable in these two JSON files): the footer
