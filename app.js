@@ -29,6 +29,84 @@
   const BY_ID = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
   const BREADS = PRODUCTS.filter((p) => p.cat === "bread");
 
+  /* ------------------------------------------------------------------
+     Careers — mirrors how each role will exist as a "Job" custom post
+     type once this becomes a real WordPress plugin.
+  ------------------------------------------------------------------ */
+  const JOBS = [
+    { slug: "franchise", title: "Franchise Partner", type: "Business Partnership", location: "Nationwide, Nigeria",
+      summary: "Bring Ajalisco's water and bread products to your community by owning and running a franchise outlet backed by our production, training and brand support.",
+      responsibilities: [
+        "Set up and manage a retail or distribution outlet under the Ajalisco brand",
+        "Maintain agreed stock levels of Ajalisco water and Jalix bread products",
+        "Uphold Ajalisco's quality, hygiene and customer service standards",
+        "Report sales performance and inventory to the partnerships team",
+      ],
+      requirements: [
+        "Registered business, or willingness to register one",
+        "Suitable retail or storage space in your target location",
+        "Capital to meet the franchise's minimum stock order",
+        "Strong local market knowledge and customer network",
+      ] },
+    { slug: "baker", title: "Baker", type: "Full-time", location: "Umuahia, Abia State",
+      summary: "Produce Jalix bread to our quality and hygiene standards across every daily bake, from mixing through to the final bake.",
+      responsibilities: [
+        "Prepare and bake dough according to Ajalisco's recipes and standards",
+        "Monitor oven temperatures and bake times for consistent quality",
+        "Follow food safety and hygiene procedures at every stage",
+        "Work with the mixing and packaging teams to meet daily production targets",
+      ],
+      requirements: [
+        "Prior experience baking bread in a commercial or industrial setting",
+        "Comfortable with early shifts and a fast-paced production floor",
+        "Attention to detail and consistency",
+        "Basic literacy for reading recipes and production logs",
+      ] },
+    { slug: "bakery-assistant", title: "Bakery Assistant", type: "Full-time", location: "Umuahia, Abia State",
+      summary: "Support the bakery team with preparation, packaging and general production tasks that keep the line running smoothly.",
+      responsibilities: [
+        "Assist bakers with ingredient preparation and dough handling",
+        "Pack finished bread into Jalix bags, ready for dispatch",
+        "Keep the production area clean and organised throughout shifts",
+        "Support loading and unloading of ingredients and finished goods as needed",
+      ],
+      requirements: [
+        "No prior bakery experience required — training provided",
+        "Willing to work on your feet in a hands-on production role",
+        "Reliable, punctual and able to work as part of a team",
+        "Comfortable with early shifts",
+      ] },
+    { slug: "mixer-operator", title: "Mixer Operator", type: "Full-time", location: "Umuahia, Abia State",
+      summary: "Operate and maintain our dough mixing equipment, ensuring every batch meets Ajalisco's consistency and quality standards.",
+      responsibilities: [
+        "Measure and combine ingredients according to standard recipes",
+        "Operate industrial mixers safely and correctly",
+        "Monitor dough consistency and flag issues early",
+        "Carry out basic cleaning and maintenance checks on mixing equipment",
+      ],
+      requirements: [
+        "Experience operating industrial mixing or food-production equipment is an advantage",
+        "Comfortable following precise measurements and recipes",
+        "Basic mechanical aptitude for routine equipment checks",
+        "Physically able to lift and handle ingredient sacks",
+      ] },
+    { slug: "loader", title: "Loader", type: "Full-time", location: "Umuahia, Abia State",
+      summary: "Handle the loading, unloading and safe movement of finished water and bread products between production, storage and distribution vehicles.",
+      responsibilities: [
+        "Load and unload delivery vehicles safely and efficiently",
+        "Move finished goods between production, storage and dispatch areas",
+        "Check outgoing loads against delivery notes for accuracy",
+        "Keep loading bays and storage areas tidy and hazard-free",
+      ],
+      requirements: [
+        "Physically fit and comfortable with manual handling",
+        "Reliable and punctual, able to work early or flexible shifts",
+        "Basic literacy for checking delivery notes and stock sheets",
+        "Teamwork and safety-conscious attitude",
+      ] },
+  ];
+  const JOB_BY_SLUG = Object.fromEntries(JOBS.map((j) => [j.slug, j]));
+
   const fmt = (n) => "₦" + n.toLocaleString("en-NG", { minimumFractionDigits: 2 });
   const priceHTML = (n) => `<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₦</span>${n.toLocaleString("en-NG", { minimumFractionDigits: 2 })}</bdi></span></span>`;
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -279,6 +357,76 @@
     });
   });
 
+  /* --------------------------- Careers ---------------------------- */
+  const pin = `<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Zm0-8.4a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2Z"/></svg>`;
+  function renderCareers() {
+    const host = $("[data-jobs]"); if (!host) return;
+    host.innerHTML = JOBS.map((j, i) => `
+      <button type="button" class="job rv" style="--i:${i % 3}" data-view-job="${j.slug}">
+        <span class="job__tag">${esc(j.type)}</span>
+        <h3>${esc(j.title)}</h3>
+        <p class="job__loc">${pin} ${esc(j.location)}</p>
+        <p class="job__sum">${esc(j.summary)}</p>
+        <span class="job__link">View role &amp; apply →</span>
+      </button>`).join("");
+    requestAnimationFrame(() => watch(host));
+  }
+  const jobModal = $("#jobModal"), jobBody = $("[data-job-body]");
+  function openJobDetail(slug) {
+    const j = JOB_BY_SLUG[slug]; if (!j) return;
+    jobBody.innerHTML = `
+      <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+      <div class="jobview">
+        <span class="job__tag">${esc(j.type)}</span>
+        <h2 id="jobModalTitle">${esc(j.title)}</h2>
+        <p class="job__loc">${pin} ${esc(j.location)}</p>
+        <p class="jobview__sum">${esc(j.summary)}</p>
+        <h3>Responsibilities</h3>
+        <ul class="jobview__list">${j.responsibilities.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
+        <h3>What we're looking for</h3>
+        <ul class="jobview__list">${j.requirements.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
+        <button class="btn btn--green btn--lg btn--block" type="button" data-show-apply="${j.slug}">Apply for this role</button>
+      </div>`;
+    if (!jobModal.open) jobModal.showModal();
+  }
+  function showApplyForm(slug) {
+    const j = JOB_BY_SLUG[slug]; if (!j) return;
+    jobBody.innerHTML = `
+      <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+      <div class="jobapply">
+        <button class="jobapply__back" type="button" data-back-job="${j.slug}">← Back to role details</button>
+        <h2 id="jobModalTitle">Apply — ${esc(j.title)}</h2>
+        <form class="form" data-form="careers" novalidate>
+          <input type="hidden" name="position" value="${esc(j.title)}">
+          <div class="field"><input id="jName" name="name" type="text" placeholder=" " autocomplete="name" required><label for="jName">Full Name</label></div>
+          <div class="field"><input id="jEmail" name="email" type="email" placeholder=" " autocomplete="email" required><label for="jEmail">Email</label></div>
+          <div class="field"><input id="jPhone" name="phone" type="tel" placeholder=" " autocomplete="tel" required><label for="jPhone">Phone Number</label></div>
+          <div class="field"><textarea id="jMsg" name="message" placeholder=" " rows="4"></textarea><label for="jMsg">Why you're a great fit (optional)</label></div>
+          <button class="btn btn--green btn--lg btn--block" type="submit">Submit Application</button>
+          <p class="form__hint">Preview only on this test site — on your live site this sends the application straight to your hiring inbox.</p>
+        </form>
+      </div>`;
+    const form = $("form", jobBody);
+    form.addEventListener("input", (e) => e.target.closest(".field")?.classList.remove("invalid"));
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let bad = 0;
+      $$("[required]", form).forEach((inp) => {
+        const empty = !inp.value.trim(), badMail = inp.type === "email" && inp.value && !emailOK(inp.value.trim());
+        inp.closest(".field")?.classList.toggle("invalid", empty || badMail); if (empty || badMail) bad++;
+      });
+      if (bad) { toast("Please fill in the highlighted fields.", "err"); $(".invalid input, .invalid textarea", form)?.focus(); return; }
+      toast(`Preview only — on your live site this submits your application for ${j.title} to our hiring team.`);
+      jobModal.close();
+    });
+  }
+  document.addEventListener("click", (e) => {
+    const view = e.target.closest("[data-view-job]"); if (view) { openJobDetail(view.dataset.viewJob); return; }
+    const apply = e.target.closest("[data-show-apply]"); if (apply) { showApplyForm(apply.dataset.showApply); return; }
+    const back = e.target.closest("[data-back-job]"); if (back) { openJobDetail(back.dataset.backJob); return; }
+  });
+  jobModal.addEventListener("click", (e) => { if (e.target === jobModal) jobModal.close(); });
+
   /* --------------------------- CTA banners ----------------------- */
   $$("[data-cta]").forEach((el) => {
     const c = JSON.parse(el.dataset.cta);
@@ -289,7 +437,7 @@
   });
 
   /* ------------------------------ Router ------------------------- */
-  const ROUTES = ["home", "shop", "partnership", "about", "contact", "cart", "product"];
+  const ROUTES = ["home", "shop", "partnership", "about", "careers", "contact", "cart", "product"];
   const io = "IntersectionObserver" in window && !reduce ? new IntersectionObserver((ents) => ents.forEach((en) => {
     if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
   }), { rootMargin: "0px 0px -6% 0px", threshold: 0.05 }) : null;
@@ -329,7 +477,7 @@
   track.insertAdjacentHTML("beforeend", track.innerHTML.replace(/<figure class="review">/g, '<figure class="review" aria-hidden="true">'));
 
   /* ------------------------------ Init --------------------------- */
-  renderGrid("home"); renderGrid("shop"); renderPicker(); refreshCart(); route();
+  renderGrid("home"); renderGrid("shop"); renderPicker(); renderCareers(); refreshCart(); route();
 
   const loader = $("#loader"), barEl = $("#loaderBar"), num = $("#loaderNum");
   let p = 0;

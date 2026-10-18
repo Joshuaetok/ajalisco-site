@@ -36,6 +36,7 @@
         <a href="#/shop" data-route="shop">Shop</a>
         <a href="#/partnership" data-route="partnership">Partnership</a>
         <a href="#/about" data-route="about">About</a>
+        <a href="#/careers" data-route="careers">Careers</a>
         <a href="#/contact" data-route="contact">Contact Us</a>
         <a class="nav__mobile-cta" href="#/shop">Order Now</a>
       </nav>
@@ -80,7 +81,7 @@
           <div class="hero__art rv" aria-hidden="true">
             <div class="rings"><i></i><i></i><i></i></div>
             <div class="glow"></div>
-            <img class="hero__lineup" src="assets/lineup.webp" alt="" width="600" height="349">
+            <img class="hero__lineup" src="assets/lineup.webp" alt="" width="600" height="321">
             <div class="chip chip--a"><small>Jalix Bread from</small><b>₦250</b></div>
             <div class="chip chip--b"><span class="dot"></span> Baked fresh daily</div>
             <div class="chip chip--c"><small>Sachet Water</small><b>₦300<em>/bag</em></b></div>
@@ -439,6 +440,20 @@
       <section class="wrap cta-wrap" data-cta='{"primary":["Become a Distributor","#/partnership"]}'></section>
     </section>
 
+    <!-- ================= CAREERS ================= -->
+    <section class="page" id="page-careers" data-title="Careers — Ajalisco Production Industries Limited">
+      <div class="banner"><div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="wrap"><h1>Careers</h1><p>Join the team bringing clean water and fresh bread to more homes in Nigeria</p></div></div>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="head-center"><p class="kicker kicker--center rv">Open Roles</p><h2 class="title rv">Build something good with us</h2></div>
+          <div class="jobs" data-jobs></div>
+        </div>
+      </section>
+
+      <section class="wrap cta-wrap" data-cta='{"primary":["Become a Distributor","#/partnership"]}'></section>
+    </section>
+
     <!-- ================= CONTACT ================= -->
     <section class="page" id="page-contact" data-title="Contact Us — Ajalisco Production Industries Limited">
       <div class="banner"><div class="bubbles bubbles--sm" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="wrap"><h1>Contact Us</h1><p>We’d love to hear from you</p></div></div>
@@ -484,7 +499,7 @@
       <div>
         <h3>Quick Links</h3>
         <ul class="footer__links">
-          <li><a href="#/about">About</a></li><li><a href="#/shop">Shop</a></li><li><a href="#/partnership">Partnership</a></li><li><a href="#/contact">Contact</a></li>
+          <li><a href="#/about">About</a></li><li><a href="#/shop">Shop</a></li><li><a href="#/partnership">Partnership</a></li><li><a href="#/careers">Careers</a></li><li><a href="#/contact">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -514,6 +529,11 @@
   <dialog class="minicart woocommerce" id="miniCart" aria-labelledby="mcTitle">
     <div class="minicart__head"><h2 id="mcTitle" tabindex="-1">Shopping cart</h2><button class="icon-btn" type="button" data-close aria-label="Close cart"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button></div>
     <div class="minicart__body" id="mcBody"></div>
+  </dialog>
+
+  <!-- Job detail / apply modal -->
+  <dialog class="modal jobmodal" id="jobModal" aria-labelledby="jobModalTitle">
+    <div class="jobmodal__inner" data-job-body></div>
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
