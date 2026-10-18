@@ -402,12 +402,29 @@
           <div class="field"><input id="jEmail" name="email" type="email" placeholder=" " autocomplete="email" required><label for="jEmail">Email</label></div>
           <div class="field"><input id="jPhone" name="phone" type="tel" placeholder=" " autocomplete="tel" required><label for="jPhone">Phone Number</label></div>
           <div class="field"><textarea id="jMsg" name="message" placeholder=" " rows="4"></textarea><label for="jMsg">Why you're a great fit (optional)</label></div>
+          <div class="field--file">
+            <label class="field__file" for="jResume">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 15V4m0 0L7.5 8.5M12 4l4.5 4.5M5 16v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"/></svg>
+              <span data-file-label>Upload Resume / CV <small>(optional · PDF or Word, max 5MB)</small></span>
+            </label>
+            <input id="jResume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+          </div>
           <button class="btn btn--green btn--lg btn--block" type="submit">Submit Application</button>
           <p class="form__hint">Preview only on this test site — on your live site this sends the application straight to your hiring inbox.</p>
         </form>
       </div>`;
     const form = $("form", jobBody);
     form.addEventListener("input", (e) => e.target.closest(".field")?.classList.remove("invalid"));
+    const resume = $("#jResume", form), resumeLabel = $("[data-file-label]", form);
+    resume.addEventListener("change", () => {
+      const file = resume.files[0];
+      if (file && file.size > 5 * 1024 * 1024) {
+        toast("That file is over 5MB — please choose a smaller resume.", "err");
+        resume.value = ""; return;
+      }
+      resumeLabel.innerHTML = file ? `${esc(file.name)} selected ✓` : `Upload Resume / CV <small>(optional · PDF or Word, max 5MB)</small>`;
+      resume.closest(".field--file").classList.toggle("has-file", !!file);
+    });
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       let bad = 0;

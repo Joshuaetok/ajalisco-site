@@ -392,6 +392,14 @@ button { cursor: pointer; }
 .jobview .btn { margin-top: 10px; }
 .jobapply__back { align-self: flex-start; border: 0; background: none; padding: 0; color: var(--muted); font: 600 14.5px var(--f-body); cursor: pointer; }
 .jobapply__back:hover { color: var(--blue); }
+.field--file { margin-bottom: 16px; }
+.field__file { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1.5px dashed var(--sky-2); border-radius: 12px; background: var(--sky); color: var(--blue); cursor: pointer; transition: border-color .2s, background-color .2s; }
+.field__file:hover { border-color: var(--blue); background: #E6F0FF; }
+.field__file svg { flex: none; }
+.field__file span { font: 600 14.5px var(--f-body); color: var(--ink); }
+.field__file small { display: block; font: 500 12.5px var(--f-body); color: var(--muted); margin-top: 2px; }
+.field--file.has-file .field__file { border-style: solid; border-color: var(--green); background: #F2FBF4; color: var(--green-d); }
+.field--file.has-file .field__file span { color: var(--green-d); }
 
 /* footer */
 .footer { background: var(--blue); color: #DCE8FF; }
