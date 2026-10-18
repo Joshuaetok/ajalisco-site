@@ -1,1 +1,832 @@
-{"content": [{"id": "cnt0001", "elType": "container", "settings": {"container_type": "flex", "content_width": "full", "flex_direction": "column", "flex_wrap": "nowrap", "flex_gap": {"unit": "px", "size": 0, "column": "0", "row": "0", "isLinked": true}, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false}, "css_classes": "ajx-cnt-global", "_title": "Ajalisco contact-page styles & scripts (keep)"}, "elements": [{"id": "cnt0002", "elType": "widget", "widgetType": "html", "settings": {"html": "<style>/* ==========================================================================\n   AJALISCO CONTACT PAGE — contact.json styles\n   Ported from the live site's own styles.css, reorganized by section, for\n   Elementor's \"Ajalisco styles & scripts (keep)\" HTML widget. Paste this\n   whole file in place of the <style> block's contents (keep the <style>\n   and <script> tags around it).\n\n   CONTENTS\n     FOUNDATION\n     ANIMATIONS\n     BUTTONS\n     BUBBLES\n     LAYOUT\n     LAYOUT — \"two--contact\" split variant (contact info + form)\n     BANNER\n     SECTION — \"section--tight\" padding variant\n     CONTACT INFO — address/phone/email/hours + WhatsApp button\n     FORM CARD — \"Send us a message\"\n     TOAST — submit feedback (own copy per page, matches live site's #toast)\n     REDUCED MOTION\n   ========================================================================== */\n\n\n/* ==========================================================================\n   FOUNDATION\n   Fonts, CSS reset, brand colour variables, base typography\n   ========================================================================== */\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n.ajx-cnt {\n  --blue: #0256DB;\n  --blue-d: #0243A8;\n  --blue-dd: #012F7E;\n  --navy: #1C244B;\n  --green: #28A745;\n  --green-d: #1E8A38;\n  --leaf: #56A428;\n  --lime: #6FC324;\n  --sky: #DFEBFC;\n  --sky-2: #AAD0F0;\n  --gray: #F5F5F5;\n  --amber: #F7B650;\n  --text: #54595F;\n  --muted: #7A7A7A;\n  --ink: #16204A;\n  --line: #E3E9F2;\n  --r: 14px;\n  --r-lg: 22px;\n  --sh: 0 2px 4px rgba(28,36,75,.05), 0 14px 34px -16px rgba(2,67,168,.30);\n  --sh-lg: 0 30px 70px -30px rgba(2,50,140,.5);\n  --f-head: \"Outfit\", system-ui, -apple-system, \"Segoe UI\", sans-serif;\n  --f-body: \"Nunito\", system-ui, -apple-system, \"Segoe UI\", sans-serif;\n  --ease: cubic-bezier(.2,.8,.2,1);\n  color-scheme: light;\n}\n\n.ajx-cnt *,\n.ajx-cnt *::before,\n.ajx-cnt *::after {\n  box-sizing: border-box;\n}\n\n.ajx-cnt {\n  font: 400 16px/1.7 var(--f-body);\n  color: var(--text);\n  -webkit-font-smoothing: antialiased;\n}\n\n.ajx-cnt img {\n  max-width: 100%;\n  display: block;\n}\n\n.ajx-cnt a {\n  color: inherit;\n}\n\n.ajx-cnt h1,\n.ajx-cnt h2,\n.ajx-cnt h3,\n.ajx-cnt h4,\n.ajx-cnt p,\n.ajx-cnt ul,\n.ajx-cnt ol,\n.ajx-cnt dl,\n.ajx-cnt dd,\n.ajx-cnt figure {\n  margin: 0;\n}\n\n.ajx-cnt ul,\n.ajx-cnt ol {\n  padding: 0;\n  list-style: none;\n}\n\n.ajx-cnt button {\n  font: inherit;\n  color: inherit;\n}\n\n.ajx-cnt button {\n  cursor: pointer;\n}\n\n.ajx-cnt :focus-visible {\n  outline: 3px solid #6FA6FF;\n  outline-offset: 3px;\n  border-radius: 8px;\n}\n\n.ajx-cnt:not(#ajx-n) .sr {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  overflow: hidden;\n  clip: rect(0 0 0 0);\n  white-space: nowrap;\n}\n\nhtml {\n  scroll-behavior: smooth;\n  scroll-padding-top: 90px;\n}\n\n\n\n/* ==========================================================================\n   ANIMATIONS\n   ========================================================================== */\n\n@keyframes ajx-rise {\n  0% { transform: translate(0, 0); opacity: 0; }\n  10% { opacity: 1; }\n  100% { transform: translate(24px, -120vh); opacity: .2; }\n}\n\n/* ==========================================================================\n   BUTTONS\n   The .btn family — used by the WhatsApp button and the form's submit button\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 12px 24px;\n  border: 0;\n  border-radius: 10px;\n  text-decoration: none;\n  white-space: nowrap;\n  font: 600 15.5px var(--f-head);\n  letter-spacing: .01em;\n  color: #fff;\n  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s;\n}\n\n.ajx-cnt:not(#ajx-n) .btn:hover {\n  transform: translateY(-2px);\n}\n\n.ajx-cnt:not(#ajx-n) .btn:active {\n  transform: scale(.98);\n}\n\n.ajx-cnt:not(#ajx-n) .btn--lg {\n  padding: 15px 30px;\n  font-size: 16.5px;\n}\n\n.ajx-cnt:not(#ajx-n) .btn--block {\n  width: 100%;\n}\n\n.ajx-cnt:not(#ajx-n) .btn--green {\n  background: var(--green);\n  box-shadow: 0 12px 24px -12px rgba(40,167,69,.9);\n}\n\n.ajx-cnt:not(#ajx-n) .btn--green:hover {\n  background: var(--green-d);\n}\n\n.ajx-cnt:not(#ajx-n) .btn--whatsapp {\n  background: #1FAF5A;\n  box-shadow: 0 12px 24px -14px rgba(31,175,90,.9);\n}\n\n.ajx-cnt:not(#ajx-n) .btn--whatsapp:hover {\n  background: #1a9a4f;\n}\n\n\n\n/* ==========================================================================\n   BUBBLES\n   The floating-bubble background decoration — used by the Banner\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .bubbles {\n  position: absolute;\n  inset: 0;\n  overflow: hidden;\n  pointer-events: none;\n}\n\n.ajx-cnt:not(#ajx-n) .bubbles i {\n  position: absolute;\n  bottom: -70px;\n  width: var(--s);\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);\n  animation: ajx-rise var(--d) linear infinite;\n  animation-delay: var(--dl);\n}\n\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(2) { left: 14%; --s: 12px; --d: 12s; --dl: -8s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(3) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(4) { left: 37%; --s: 16px; --d: 14s; --dl: -2s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(5) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(6) { left: 58%; --s: 10px; --d: 11s; --dl: -6s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(7) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(8) { left: 78%; --s: 18px; --d: 15s; --dl: -1s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(9) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }\n.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(10) { left: 95%; --s: 14px; --d: 13s; --dl: -5s; }\n\n.ajx-cnt:not(#ajx-n) .bubbles--sm i {\n  --s: 20px;\n}\n\n.ajx-cnt:not(#ajx-n) .bubbles--sm i:nth-child(n+7) {\n  display: none;\n}\n\n\n\n/* ==========================================================================\n   LAYOUT\n   Elementor Container plumbing: the flex split/column system, boxed-width\n   gutters, the hidden 'keep this block' label, and the scroll-reveal\n   animation system. Not page content — change this only if you understand\n   the layout, not the design.\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .section,\n.ajx-cnt:not(#ajx-n).section {\n  padding-block: clamp(64px, 8vw, 110px);\n  position: relative;\n}\n\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-cnt:not(#ajx-n) .rv {\n  opacity: 0;\n  transform: translateY(24px);\n  transition: opacity .8s var(--ease), transform .8s var(--ease);\n  transition-delay: calc(var(--i, 0) * 80ms);\n}\n\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-cnt:not(#ajx-n) .rv.in {\n  opacity: 1;\n  transform: none;\n}\n\n.ajx-global {\n  min-height: 0!important;\n}\n\nbody.elementor-editor-active .ajx-global .elementor-widget-html {\n  min-height: 22px;\n}\n\nbody.elementor-editor-active .ajx-global .elementor-widget-html::before {\n  content: \"Ajalisco contact-page styles & scripts \\2014 keep this block\";\n  display: block;\n  padding: 4px 8px;\n  font: 12px/1.2 sans-serif;\n  color: #555;\n  background: #fff7d6;\n  border: 1px dashed #d9b84a;\n}\n\n.ajx-cnt:not(#ajx-n).e-con-boxed,\n.ajx-cnt:not(#ajx-n) .e-con-boxed {\n  padding-inline: clamp(16px,4vw,36px)!important;\n}\n\n.ajx-cnt:not(#ajx-n) .ajx-split {\n  flex-direction: row!important;\n  flex-wrap: nowrap!important;\n  align-items: flex-start!important;\n}\n\n.ajx-cnt:not(#ajx-n) .ajx-split>.ajx-col {\n  flex: 1 1 0%!important;\n  width: auto!important;\n  max-width: none!important;\n  padding: 0!important;\n}\n\n\n\n/* ==========================================================================\n   LAYOUT — \"two--contact\" split variant (contact info + form)\n   Mirrors the live site's `.two--contact` grid: grid-template-columns:\n   .9fr 1.1fr (info column narrower, form column wider), same gap and the\n   same 960px stack as the generic `.two` grid.\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .ajx-split>.ajx-g90 {\n  flex-grow: .9!important;\n}\n\n.ajx-cnt:not(#ajx-n) .ajx-split>.ajx-g110 {\n  flex-grow: 1.1!important;\n}\n\n.ajx-cnt:not(#ajx-n) .ajx-split--two {\n  gap: clamp(30px, 5vw, 64px)!important;\n  align-items: flex-start!important;\n}\n\n  /* --- Responsive: Tablets, 960px and below --- */\n  @media (max-width: 960px) {\n    .ajx-cnt:not(#ajx-n) .ajx-split--two {\n      flex-direction: column!important;\n      align-items: stretch!important;\n    }\n\n    .ajx-cnt:not(#ajx-n) .ajx-split--two>.ajx-col {\n      flex: none!important;\n      width: 100%!important;\n    }\n  }\n\n/* ==========================================================================\n   BANNER\n   Page banner — \"Contact Us\" heading + sub-line\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .banner,\n.ajx-cnt:not(#ajx-n).banner {\n  position: relative;\n  overflow: hidden;\n  isolation: isolate;\n  text-align: center;\n  color: #fff;\n  padding: clamp(46px, 6vw, 80px) 0;\n  background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 55%, var(--blue-d));\n}\n\n.ajx-cnt:not(#ajx-n) .banner .bubbles {\n  z-index: -1;\n}\n\n.ajx-cnt:not(#ajx-n) .banner h1 {\n  font: 700 clamp(30px, 4.4vw, 52px) var(--f-head);\n  letter-spacing: .06em;\n  text-transform: uppercase;\n}\n\n.ajx-cnt:not(#ajx-n) .banner h1::after {\n  content: \"\";\n  display: block;\n  width: 64px;\n  height: 4px;\n  margin: 14px auto 0;\n  border-radius: 3px;\n  background: var(--lime);\n}\n\n.ajx-cnt:not(#ajx-n) .banner p {\n  margin-top: 14px;\n  font-size: 18px;\n  color: #D6E4FF;\n}\n\n/* ==========================================================================\n   SECTION — \"section--tight\" padding variant\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .section--tight,\n.ajx-cnt:not(#ajx-n).section--tight {\n  padding-block: clamp(40px, 5vw, 70px) clamp(64px, 8vw, 100px);\n}\n\n/* ==========================================================================\n   CONTACT INFO — address/phone/email/hours + WhatsApp button\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .info {\n  padding: clamp(24px, 3.5vw, 36px);\n  border-radius: var(--r-lg);\n  background: var(--sky);\n}\n\n.ajx-cnt:not(#ajx-n) .info h2 {\n  font: 700 26px var(--f-head);\n  color: var(--blue);\n  margin-bottom: 22px;\n}\n\n.ajx-cnt:not(#ajx-n) .info__row {\n  display: flex;\n  gap: 16px;\n  margin-bottom: 22px;\n}\n\n.ajx-cnt:not(#ajx-n) .info__icon {\n  flex: none;\n  display: grid;\n  place-items: center;\n  width: 46px;\n  height: 46px;\n  border-radius: 50%;\n  background: #fff;\n  color: var(--green);\n  box-shadow: var(--sh);\n}\n\n.ajx-cnt:not(#ajx-n) .info__icon svg {\n  width: 22px;\n  height: 22px;\n  fill: currentColor;\n}\n\n.ajx-cnt:not(#ajx-n) .info h3 {\n  font: 600 19px var(--f-head);\n  color: var(--blue);\n}\n\n.ajx-cnt:not(#ajx-n) .info p {\n  color: var(--text);\n}\n\n.ajx-cnt:not(#ajx-n) .info a {\n  text-decoration: none;\n}\n\n.ajx-cnt:not(#ajx-n) .info a:hover {\n  text-decoration: underline;\n}\n\n.ajx-cnt:not(#ajx-n) .link {\n  color: var(--blue);\n  font-weight: 600;\n}\n\n/* ==========================================================================\n   FORM CARD — \"Send us a message\"\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .formcard {\n  padding: clamp(24px, 3.5vw, 38px);\n  border-radius: var(--r-lg);\n  background: #fff;\n  box-shadow: var(--sh-lg), 0 0 0 1px var(--line);\n}\n\n.ajx-cnt:not(#ajx-n) .formcard h2 {\n  font: 700 26px/1.2 var(--f-head);\n  color: var(--blue);\n}\n\n.ajx-cnt:not(#ajx-n) .formcard__sub {\n  color: var(--muted);\n  margin: 4px 0 22px;\n}\n\n.ajx-cnt:not(#ajx-n) .field {\n  position: relative;\n  margin-bottom: 16px;\n}\n\n.ajx-cnt:not(#ajx-n) .field input,\n.ajx-cnt:not(#ajx-n) .field textarea {\n  width: 100%;\n  padding: 20px 16px 8px;\n  border: 1.5px solid #D5DCE8;\n  border-radius: 10px;\n  background: #fff;\n  color: var(--ink);\n  font: 500 16px var(--f-body);\n  transition: border-color .25s, box-shadow .25s;\n}\n\n.ajx-cnt:not(#ajx-n) .field textarea {\n  resize: vertical;\n  min-height: 96px;\n}\n\n.ajx-cnt:not(#ajx-n) .field label {\n  position: absolute;\n  left: 16px;\n  top: 15px;\n  color: var(--muted);\n  font-size: 15.5px;\n  pointer-events: none;\n  transform-origin: left top;\n  transition: transform .25s var(--ease), color .25s;\n}\n\n.ajx-cnt:not(#ajx-n) .field input:focus,\n.ajx-cnt:not(#ajx-n) .field textarea:focus {\n  outline: none;\n  border-color: var(--blue);\n  box-shadow: 0 0 0 4px rgba(2,86,219,.13);\n}\n\n.ajx-cnt:not(#ajx-n) .field input:focus + label,\n.ajx-cnt:not(#ajx-n) .field input:not(:placeholder-shown) + label,\n.ajx-cnt:not(#ajx-n) .field textarea:focus + label,\n.ajx-cnt:not(#ajx-n) .field textarea:not(:placeholder-shown) + label {\n  transform: translateY(-9px) scale(.78);\n  color: var(--blue);\n}\n\n.ajx-cnt:not(#ajx-n) .field.invalid input,\n.ajx-cnt:not(#ajx-n) .field.invalid textarea {\n  border-color: #D93B3B;\n  box-shadow: 0 0 0 4px rgba(217,59,59,.12);\n}\n\n.ajx-cnt:not(#ajx-n) .field.invalid label {\n  color: #D93B3B;\n}\n\n.ajx-cnt:not(#ajx-n) .agree {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  margin: 4px 0 18px;\n  font-size: 14.5px;\n}\n\n.ajx-cnt:not(#ajx-n) .agree input {\n  width: 18px;\n  height: 18px;\n  accent-color: var(--green);\n}\n\n.ajx-cnt:not(#ajx-n) .form__hint {\n  margin-top: 12px;\n  text-align: center;\n  font-size: 13.5px;\n  color: var(--muted);\n}\n\n.ajx-cnt:not(#ajx-n) .form__hint a {\n  color: var(--blue);\n  font-weight: 600;\n}\n\n/* ==========================================================================\n   TOAST — submit feedback (own copy per page, matches live site's #toast)\n   ========================================================================== */\n\n.ajx-cnt:not(#ajx-n) .toast {\n  position: fixed;\n  z-index: 500;\n  left: 50%;\n  bottom: 26px;\n  translate: -50% 160%;\n  max-width: calc(100% - 32px);\n  padding: 14px 22px;\n  border-radius: 12px;\n  background: var(--navy);\n  color: #fff;\n  font-weight: 600;\n  box-shadow: 0 24px 50px -16px rgba(0,0,0,.6);\n  transition: translate .5s var(--ease);\n}\n\n.ajx-cnt:not(#ajx-n) .toast.show {\n  translate: -50% 0;\n}\n\n.ajx-cnt:not(#ajx-n) .toast.err {\n  background: #B93131;\n}\n\n.ajx-cnt:not(#ajx-n) .toast.ok {\n  border-bottom: 3px solid var(--lime);\n}\n\n\n\n/* ==========================================================================\n   REDUCED MOTION\n   Accessibility — disables all of the above animations for visitors who have\n   \"reduce motion\" turned on at the OS level\n   ========================================================================== */\n\n  /* --- Accessibility: Visitors with \"reduce motion\" enabled --- */\n  @media (prefers-reduced-motion: reduce) {\n    .ajx-cnt *,\n    .ajx-cnt *::before,\n    .ajx-cnt *::after {\n      animation: none !important;\n      transition: none !important;\n      scroll-behavior: auto !important;\n    }\n\n    html.ajx-js body:not(.elementor-editor-active) .ajx-cnt:not(#ajx-n) .rv {\n      opacity: 1;\n      transform: none;\n    }\n  }\n</style><script>(function(){\nvar D=document,H=D.documentElement;\nvar RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;\nvar IO=!RM&&('IntersectionObserver' in window);\nif(IO)H.classList.add('ajx-js');\nfunction ready(f){if(D.readyState!=='loading')f();else D.addEventListener('DOMContentLoaded',f);}\nfunction $(s,c){return (c||D).querySelector(s);}\nfunction $$(s,c){return Array.prototype.slice.call((c||D).querySelectorAll(s));}\nvar WHATSAPP='2347078581881';\nfunction openWhatsApp(text){window.open('https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(text),'_blank','noopener');}\nfunction emailOK(v){return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(v);}\nvar toastT;\nfunction toast(msg,type){\n  type=type||'ok';\n  var t=$('#ajxCntToast');if(!t)return;\n  t.textContent=msg;t.className='toast show '+type;\n  clearTimeout(toastT);toastT=setTimeout(function(){t.className='toast';},4600);\n}\nready(function(){\n  $$('[data-form]').forEach(function(form){\n    form.addEventListener('input',function(e){var fl=e.target.closest('.field');if(fl)fl.classList.remove('invalid');});\n    form.addEventListener('submit',function(e){\n      e.preventDefault();\n      var fd=new FormData(form);\n      var get=function(k){return (fd.get(k)||'').toString().trim();};\n      var bad=0;\n      $$('[required]',form).forEach(function(inp){\n        var empty=!inp.value.trim();\n        var badMail=inp.type==='email'&&inp.value&&!emailOK(inp.value.trim());\n        var field=inp.closest('.field');\n        if(field)field.classList.toggle('invalid',empty||badMail);\n        if(empty||badMail)bad++;\n      });\n      if(bad){\n        toast('Please fill in the highlighted fields.','err');\n        var badField=$('.invalid input, .invalid textarea',form);\n        if(badField)badField.focus();\n        return;\n      }\n      openWhatsApp(['Hello Ajalisco 👋 New message from the website:','','Name: '+get('name'),'Email: '+get('email'),'Phone: '+get('phone'),'Business: '+(get('business')||'-'),'Enquiry: '+(get('inquiry')||'-'),'Message: '+get('message')].join('\\n'));\n      toast('Opening WhatsApp — just press send to reach us.');\n    });\n  });\n  if(IO){\n    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{rootMargin:'0px 0px -6% 0px',threshold:0.05});\n    $$('.ajx-cnt .rv').forEach(function(el){io.observe(el);});\n  }\n});\n})();</script>"}, "elements": [], "isInner": false}], "isInner": false}, {"id": "cnt0003", "elType": "container", "settings": {"container_type": "flex", "content_width": "boxed", "flex_direction": "column", "flex_wrap": "nowrap", "flex_gap": {"unit": "px", "size": 0, "column": "0", "row": "0", "isLinked": true}, "padding": {"unit": "px", "top": "0", "right": "36", "bottom": "0", "left": "36", "isLinked": false}, "css_classes": "ajx-cnt banner", "boxed_width": {"unit": "px", "size": 1148, "sizes": []}, "padding_tablet": {"unit": "px", "top": "0", "right": "30", "bottom": "0", "left": "30", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "0", "right": "16", "bottom": "0", "left": "16", "isLinked": false}, "_title": "Banner"}, "elements": [{"id": "cnt0004", "elType": "widget", "widgetType": "html", "settings": {"html": "<div class=\"bubbles bubbles--sm\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div>"}, "elements": [], "isInner": false}, {"id": "cnt0005", "elType": "widget", "widgetType": "html", "settings": {"html": "<h1>Contact Us</h1><p>We’d love to hear from you</p>"}, "elements": [], "isInner": false}, {"id": "cnt0006", "elType": "widget", "widgetType": "html", "settings": {"html": "<div class=\"toast\" id=\"ajxCntToast\" role=\"status\" aria-live=\"polite\"></div>"}, "elements": [], "isInner": false}], "isInner": false}, {"id": "cnt0007", "elType": "container", "settings": {"container_type": "flex", "content_width": "boxed", "flex_direction": "column", "flex_wrap": "nowrap", "flex_gap": {"unit": "px", "size": 0, "column": "0", "row": "0", "isLinked": true}, "padding": {"unit": "px", "top": "0", "right": "36", "bottom": "0", "left": "36", "isLinked": false}, "css_classes": "ajx-cnt section section--tight", "boxed_width": {"unit": "px", "size": 1148, "sizes": []}, "padding_tablet": {"unit": "px", "top": "0", "right": "30", "bottom": "0", "left": "30", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "0", "right": "16", "bottom": "0", "left": "16", "isLinked": false}, "_title": "Contact info + form"}, "elements": [{"id": "cnt0008", "elType": "container", "settings": {"container_type": "flex", "content_width": "full", "flex_direction": "row", "flex_wrap": "nowrap", "flex_gap": {"unit": "px", "size": 0, "column": "0", "row": "0", "isLinked": true}, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false}, "css_classes": "ajx-split ajx-split--two", "flex_align_items": "flex-start", "flex_direction_tablet": "column"}, "elements": [{"id": "cnt0009", "elType": "container", "settings": {"container_type": "flex", "content_width": "full", "flex_direction": "column", "flex_wrap": "nowrap", "flex_gap": {"unit": "px", "size": 0, "column": "0", "row": "0", "isLinked": true}, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false}, "css_classes": "ajx-col ajx-g90"}, "elements": [{"id": "cnt0010", "elType": "widget", "widgetType": "html", "settings": {"html": "<aside class=\"info rv\"><h2>Our Contact Information</h2><div class=\"info__row\"><span class=\"info__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Zm0-8.4a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2Z\"/></svg></span><div><h3>Address</h3><p>6B Mgborogwu Close, Attah Ibeku village, off Uzuakoli Road, Umuahia North LGA, Abia State, Nigeria.</p><a class=\"link\" target=\"_blank\" rel=\"noopener\" href=\"https://www.google.com/maps/search/?api=1&amp;query=6B+Mgborogwu+Close+Attah+Ibeku+Umuahia+Abia+State+Nigeria\">Open in Google Maps →</a></div></div><div class=\"info__row\"><span class=\"info__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z\"/></svg></span><div><h3>Phone</h3><p><a href=\"tel:+2347078581881\">+234 707 858 1881</a><br><a href=\"tel:+2349075502807\">+234 907 550 2807</a></p></div></div><div class=\"info__row\"><span class=\"info__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M3 5h18v14H3zM3 6l9 7 9-7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg></span><div><h3>Email</h3><p><a href=\"mailto:support@ajaliscogroup.com\">support@ajaliscogroup.com</a></p></div></div><div class=\"info__row\"><span class=\"info__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 5v5.4l3.8 2.3-.8 1.3-4.5-2.7V7Z\"/></svg></span><div><h3>Office Hours</h3><p>Monday – Saturday: 8AM – 6PM</p></div></div><a class=\"btn btn--whatsapp btn--block\" target=\"_blank\" rel=\"noopener\" href=\"https://wa.me/2347078581881\">Chat with us on WhatsApp</a></aside>"}, "elements": [], "isInner": false}], "isInner": true}, {"id": "cnt0011", "elType": "container", "settings": {"container_type": "flex", "content_width": "full", "flex_direction": "column", "flex_wrap": "nowrap", "flex_gap": {"unit": "px", "size": 0, "column": "0", "row": "0", "isLinked": true}, "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false}, "css_classes": "ajx-col ajx-g110"}, "elements": [{"id": "cnt0012", "elType": "widget", "widgetType": "html", "settings": {"html": "<div class=\"formcard rv\" style=\"--i:1\"><h2>Send us a message</h2><p class=\"formcard__sub\">Questions, bulk orders or custom requests — we reply as soon as we can.</p><form class=\"form\" data-form=\"contact\" novalidate><div class=\"field\"><input id=\"cName\" name=\"name\" type=\"text\" placeholder=\" \" autocomplete=\"name\" required><label for=\"cName\">Full Name</label></div><div class=\"field\"><input id=\"cEmail\" name=\"email\" type=\"email\" placeholder=\" \" autocomplete=\"email\" required><label for=\"cEmail\">Email</label></div><div class=\"field\"><input id=\"cPhone\" name=\"phone\" type=\"tel\" placeholder=\" \" autocomplete=\"tel\" required><label for=\"cPhone\">Phone Number</label></div><div class=\"field\"><input id=\"cBiz\" name=\"business\" type=\"text\" placeholder=\" \" autocomplete=\"organization\"><label for=\"cBiz\">Business Name</label></div><div class=\"field\"><input id=\"cInq\" name=\"inquiry\" type=\"text\" placeholder=\" \"><label for=\"cInq\">Inquire About Our Products</label></div><div class=\"field\"><textarea id=\"cMsg\" name=\"message\" placeholder=\" \" rows=\"4\" required></textarea><label for=\"cMsg\">Message</label></div><label class=\"agree\"><input type=\"checkbox\" name=\"agree\" checked> <span>I agree to receive updates from Ajalisco.</span></label><button class=\"btn btn--green btn--lg btn--block\" type=\"submit\">Send a message</button><p class=\"form__hint\">Your message opens in WhatsApp. Prefer email? <a href=\"mailto:support@ajaliscogroup.com\">support@ajaliscogroup.com</a></p></form></div>"}, "elements": [], "isInner": false}], "isInner": true}], "isInner": true}], "isInner": false}], "page_settings": {"template": "elementor_header_footer", "hide_title": "yes"}, "version": "0.4", "title": "Contact", "type": "page"}
+{
+  "content": [
+    {
+      "id": "d00002",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "css_classes": "ajx-global",
+        "_title": "Ajalisco contact-page styles & scripts (keep)",
+        "content_width": "full"
+      },
+      "elements": [
+        {
+          "id": "d00001",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<style>\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n\n/* Decorative rising bubbles (Banner) — no native Elementor equivalent for randomized per-bubble rise timing. Touches position/background/animation only, never typography. */\n.ajx-cnt:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }\n.ajx-cnt:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxCntRise var(--d) linear infinite; animation-delay: var(--dl); }\n.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }\n.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }\n.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }\n.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }\n.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }\n@keyframes ajxCntRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }\n\n/* Second gradient layer under the Banner's native gradient background — Elementor's own background control only supports one gradient layer. Position/background only, never typography. */\n.ajx-cnt:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }\n\n@media (prefers-reduced-motion: reduce) {\n  .ajx-cnt:not(#ajx-n) .ajx-bubbles i { animation: none !important; }\n}\n\n/* WhatsApp submit hook: the live site's real contact-form behaviour (confirmed in app.js) is opening WhatsApp with a pre-filled message, not emailing anyone. Elementor's native Form widget has no built-in action that builds a wa.me link from field values, so this one piece of behaviour is a deliberate, isolated JS exception. It only reads field values and sets no styling. */\n</style>\n<script>\n(function () {\n  function openWhatsApp(text) {\n    window.open('https://wa.me/2347078581881?text=' + encodeURIComponent(text), '_blank', 'noopener');\n  }\n  function fieldValue(form, cls) {\n    var el = form.querySelector('.' + cls + ' input, .' + cls + ' textarea, input.' + cls + ', textarea.' + cls);\n    return el ? (el.value || '').trim() : '';\n  }\n  document.addEventListener('submit_success', function (e) {\n    var form = e.target.closest ? e.target.closest('.ajx-contact-form') : null;\n    if (!form) return;\n    var name = fieldValue(form, 'ajx-f-name'), email = fieldValue(form, 'ajx-f-email'), phone = fieldValue(form, 'ajx-f-phone'),\n        business = fieldValue(form, 'ajx-f-business'), inquiry = fieldValue(form, 'ajx-f-inquiry'), message = fieldValue(form, 'ajx-f-message');\n    openWhatsApp([\n      'Hello Ajalisco \\ud83d\\udc4b New message from the website:', '',\n      'Name: ' + name, 'Email: ' + email, 'Phone: ' + phone,\n      'Business: ' + (business || '-'), 'Enquiry: ' + (inquiry || '-'), 'Message: ' + message\n    ].join('\\n'));\n  });\n})();\n</script>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d00008",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "right": "36",
+          "bottom": "64",
+          "left": "36",
+          "isLinked": false
+        },
+        "css_classes": "ajx-cnt ajx-banner",
+        "_title": "Banner",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "50",
+          "right": "30",
+          "bottom": "50",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "38",
+          "right": "16",
+          "bottom": "38",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#0A64F0",
+        "background_color_b": "#0243A8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160,
+          "sizes": []
+        },
+        "position": "relative"
+      },
+      "elements": [
+        {
+          "id": "d00003",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-glow-banner\" aria-hidden=\"true\"></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "d00004",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-bubbles\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "d00005",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Contact Us",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 52,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 34,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            },
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 1.8,
+              "sizes": []
+            },
+            "typography_text_transform": "uppercase"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "d00006",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "solid",
+            "color": "#6FC324",
+            "weight": {
+              "unit": "px",
+              "size": 4,
+              "sizes": []
+            },
+            "width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+            },
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "d00007",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "We'd love to hear from you",
+            "text_color": "#D6E4FF",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d00015",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "row",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "36",
+          "bottom": "64",
+          "left": "36",
+          "isLinked": false
+        },
+        "css_classes": "ajx-cnt",
+        "_title": "Contact info + form",
+        "flex_direction_tablet": "column",
+        "align_items": "flex-start",
+        "gap": {
+          "unit": "px",
+          "size": 50,
+          "sizes": [],
+          "column": "50",
+          "row": "50",
+          "isLinked": true
+        },
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "30",
+          "right": "30",
+          "bottom": "50",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "24",
+          "right": "16",
+          "bottom": "38",
+          "left": "16",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "d0000f",
+          "elType": "container",
+          "settings": {
+            "container_type": "flex",
+            "flex_direction": "column",
+            "flex_wrap": "nowrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 0,
+              "sizes": [],
+              "column": "0",
+              "row": "0",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "30",
+              "right": "30",
+              "bottom": "30",
+              "left": "30",
+              "isLinked": false
+            },
+            "css_classes": "ajx-cnt",
+            "_title": "Contact info",
+            "gap": {
+              "unit": "px",
+              "size": 22,
+              "sizes": [],
+              "column": "22",
+              "row": "22",
+              "isLinked": true
+            },
+            "background_background": "classic",
+            "background_color": "#DFEBFC",
+            "border_radius": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": false
+            },
+            "flex_grow": "90",
+            "flex_shrink": "1",
+            "_flex_basis": "0%"
+          },
+          "elements": [
+            {
+              "id": "d00010",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Contact Information",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#0256DB",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d0000a",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-location-dot",
+                  "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "circle",
+                "primary_color": "#ffffff",
+                "secondary_color": "#28A745",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "title_text": "Address",
+                "title_size": "h3",
+                "title_color": "#0256DB",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_weight": "600",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 19,
+                  "sizes": []
+                },
+                "description_text": "6B Mgborogwu Close, Attah Ibeku village, off Uzuakoli Road, Umuahia North LGA, Abia State, Nigeria.",
+                "description_color": "#54595F",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_weight": "400",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "position": "left",
+                "icon_space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d00009",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://www.google.com/maps/search/?api=1&query=6B+Mgborogwu+Close+Attah+Ibeku+Umuahia+Abia+State+Nigeria\" target=\"_blank\" rel=\"noopener\" style=\"color:#0256DB;font-weight:600;text-decoration:none\">Open in Google Maps →</a>",
+                "text_color": "#0256DB",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14.5,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d0000b",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-phone",
+                  "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "circle",
+                "primary_color": "#ffffff",
+                "secondary_color": "#28A745",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "title_text": "Phone",
+                "title_size": "h3",
+                "title_color": "#0256DB",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_weight": "600",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 19,
+                  "sizes": []
+                },
+                "description_text": "<a href=\"tel:+2347078581881\" style=\"color:inherit;text-decoration:none\">+234 707 858 1881</a><br><a href=\"tel:+2349075502807\" style=\"color:inherit;text-decoration:none\">+234 907 550 2807</a>",
+                "description_color": "#54595F",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_weight": "400",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "position": "left",
+                "icon_space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d0000c",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-envelope",
+                  "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "circle",
+                "primary_color": "#ffffff",
+                "secondary_color": "#28A745",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "title_text": "Email",
+                "title_size": "h3",
+                "title_color": "#0256DB",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_weight": "600",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 19,
+                  "sizes": []
+                },
+                "description_text": "<a href=\"mailto:support@ajaliscogroup.com\" style=\"color:inherit;text-decoration:none\">support@ajaliscogroup.com</a>",
+                "description_color": "#54595F",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_weight": "400",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "position": "left",
+                "icon_space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d0000d",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-clock",
+                  "library": "fa-solid"
+                },
+                "view": "stacked",
+                "shape": "circle",
+                "primary_color": "#ffffff",
+                "secondary_color": "#28A745",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "title_text": "Office Hours",
+                "title_size": "h3",
+                "title_color": "#0256DB",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Outfit",
+                "title_typography_font_weight": "600",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 19,
+                  "sizes": []
+                },
+                "description_text": "Monday – Saturday: 8AM – 6PM",
+                "description_color": "#54595F",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Nunito",
+                "description_typography_font_weight": "400",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "position": "left",
+                "icon_space": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d0000e",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Chat with us on WhatsApp",
+                "link": {
+                  "url": "https://wa.me/2347078581881",
+                  "is_external": "yes",
+                  "nofollow": ""
+                },
+                "align": "center",
+                "size": "lg",
+                "background_color": "#1FAF5A",
+                "button_text_color": "#ffffff",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "10",
+                  "bottom": "10",
+                  "left": "10",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16.5,
+                  "sizes": []
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 24,
+                  "spread": -14,
+                  "color": "rgba(31,175,90,.9)"
+                },
+                "_element_width": "initial",
+                "width": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "d00014",
+          "elType": "container",
+          "settings": {
+            "container_type": "flex",
+            "flex_direction": "column",
+            "flex_wrap": "nowrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 0,
+              "sizes": [],
+              "column": "0",
+              "row": "0",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "38",
+              "right": "38",
+              "bottom": "38",
+              "left": "38",
+              "isLinked": false
+            },
+            "css_classes": "ajx-cnt",
+            "_title": "Form card",
+            "gap": {
+              "unit": "px",
+              "size": 4,
+              "sizes": [],
+              "column": "4",
+              "row": "4",
+              "isLinked": true
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff",
+            "border_radius": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": false
+            },
+            "flex_grow": "110",
+            "flex_shrink": "1",
+            "_flex_basis": "0%"
+          },
+          "elements": [
+            {
+              "id": "d00011",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Send us a message",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#0256DB",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d00012",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Questions, bulk orders or custom requests — we reply as soon as we can.",
+                "text_color": "#7A7A7A",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d00013",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "Contact Form",
+                "form_fields": [
+                  {
+                    "_id": "cname",
+                    "field_type": "text",
+                    "field_label": "Full Name",
+                    "placeholder": "Full Name",
+                    "required": "true",
+                    "width": "100",
+                    "css_classes": "ajx-f-name"
+                  },
+                  {
+                    "_id": "cemail",
+                    "field_type": "email",
+                    "field_label": "Email",
+                    "placeholder": "Email",
+                    "required": "true",
+                    "width": "100",
+                    "css_classes": "ajx-f-email"
+                  },
+                  {
+                    "_id": "cphone",
+                    "field_type": "tel",
+                    "field_label": "Phone Number",
+                    "placeholder": "Phone Number",
+                    "required": "true",
+                    "width": "100",
+                    "css_classes": "ajx-f-phone"
+                  },
+                  {
+                    "_id": "cbiz",
+                    "field_type": "text",
+                    "field_label": "Business Name",
+                    "placeholder": "Business Name",
+                    "required": "",
+                    "width": "100",
+                    "css_classes": "ajx-f-business"
+                  },
+                  {
+                    "_id": "cinq",
+                    "field_type": "text",
+                    "field_label": "Inquire About Our Products",
+                    "placeholder": "Inquire About Our Products",
+                    "required": "",
+                    "width": "100",
+                    "css_classes": "ajx-f-inquiry"
+                  },
+                  {
+                    "_id": "cmsg",
+                    "field_type": "textarea",
+                    "field_label": "Message",
+                    "placeholder": "Message",
+                    "required": "true",
+                    "width": "100",
+                    "rows": 4,
+                    "css_classes": "ajx-f-message"
+                  },
+                  {
+                    "_id": "cagree",
+                    "field_type": "acceptance",
+                    "field_label": "",
+                    "field_value": "I agree to receive updates from Ajalisco.",
+                    "required": "true",
+                    "width": "100"
+                  }
+                ],
+                "button_text": "Send a message",
+                "button_size": "lg",
+                "button_background_color": "#28A745",
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Outfit",
+                "button_typography_font_weight": "600",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 16.5,
+                  "sizes": []
+                },
+                "label_typography_typography": "custom",
+                "label_typography_font_family": "Nunito",
+                "label_typography_font_weight": "600",
+                "label_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "field_typography_typography": "custom",
+                "field_typography_font_family": "Nunito",
+                "field_typography_font_weight": "500",
+                "field_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "css_classes": "ajx-contact-form",
+                "submit_actions": []
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_header_footer",
+    "hide_title": "yes"
+  },
+  "version": "0.4",
+  "title": "Contact",
+  "type": "page"
+}

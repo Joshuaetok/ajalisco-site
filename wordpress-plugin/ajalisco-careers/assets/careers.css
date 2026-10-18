@@ -1,0 +1,102 @@
+/* Ajalisco Careers — self-contained styles, scoped under .ajx-careers so
+   they don't leak into (or depend on) the active theme. */
+
+.ajx-careers {
+  --blue: #0256DB;
+  --blue-d: #0243A8;
+  --navy: #1C244B;
+  --green: #28A745;
+  --green-d: #1E8A38;
+  --sky: #DFEBFC;
+  --sky-2: #AAD0F0;
+  --muted: #7A7A7A;
+  --ink: #16204A;
+  --line: #E3E9F2;
+  --text: #54595F;
+  --r: 14px;
+  --r-lg: 22px;
+  --sh: 0 2px 4px rgba(28,36,75,.05), 0 14px 34px -16px rgba(2,67,168,.30);
+  --sh-lg: 0 30px 70px -30px rgba(2,50,140,.5);
+  --f-head: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ease: cubic-bezier(.2,.8,.2,1);
+  font-family: var(--f-body);
+  color: var(--text);
+}
+.ajx-careers *, .ajx-careers *::before, .ajx-careers *::after { box-sizing: border-box; }
+
+/* buttons */
+.ajx-careers .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 24px; border: 0; border-radius: 10px; text-decoration: none; white-space: nowrap; font: 600 15.5px var(--f-head); letter-spacing: .01em; color: #fff; cursor: pointer; transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s; }
+.ajx-careers .btn:hover { transform: translateY(-2px); }
+.ajx-careers .btn:disabled { opacity: .7; cursor: default; transform: none; }
+.ajx-careers .btn--lg { padding: 15px 30px; font-size: 16.5px; }
+.ajx-careers .btn--block { width: 100%; }
+.ajx-careers .btn--green { background: var(--green); box-shadow: 0 12px 24px -12px rgba(40,167,69,.9); }
+.ajx-careers .btn--green:hover { background: var(--green-d); }
+
+/* job cards */
+.ajx-careers .ajx-jobs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.ajx-careers .ajx-jobs__empty { color: var(--muted); text-align: center; padding: 40px 0; }
+.ajx-careers .job { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 28px; border: 0; border-radius: var(--r-lg); background: #fff; box-shadow: var(--sh), 0 0 0 1px var(--line); text-align: left; font-family: var(--f-body); cursor: pointer; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.ajx-careers .job:hover { transform: translateY(-6px); box-shadow: var(--sh-lg), 0 0 0 1px var(--line); }
+.ajx-careers .job__tag { padding: 5px 14px; border-radius: 999px; background: var(--sky); color: var(--blue); font: 700 12px var(--f-head); letter-spacing: .03em; text-transform: uppercase; }
+.ajx-careers .job h3 { font: 700 21px var(--f-head); color: var(--ink); margin: 0; }
+.ajx-careers .job__loc { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 14px; margin: 0; }
+.ajx-careers .job__sum { color: var(--muted); font-size: 15px; line-height: 1.6; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.ajx-careers .job__link { margin-top: auto; padding-top: 6px; color: var(--blue); font: 700 15px var(--f-head); transition: transform .25s var(--ease); }
+.ajx-careers .job:hover .job__link { transform: translateX(4px); }
+
+/* modal */
+.ajx-careers dialog.ajx-modal { color: var(--text); width: min(880px, calc(100% - 24px)); max-height: calc(100dvh - 24px); padding: 0; border: 0; border-radius: 24px; background: #fff; box-shadow: 0 40px 90px -30px rgba(1,30,90,.7); overflow: auto; }
+.ajx-careers dialog.ajx-modal::backdrop { background: rgba(10,22,60,.55); backdrop-filter: blur(4px); }
+.ajx-careers dialog.ajx-modal[open] { animation: ajxSheetIn .35s var(--ease); }
+@keyframes ajxSheetIn { from { opacity: 0; transform: translateY(24px) scale(.98); } }
+.ajx-careers .modal__close { position: absolute; z-index: 5; top: 14px; right: 14px; width: 42px; height: 42px; display: grid; place-items: center; border: 0; border-radius: 50%; background: #F5F5F5; cursor: pointer; font-size: 18px; }
+.ajx-modal__inner { padding: 36px 34px 30px; display: grid; gap: 14px; }
+.ajx-careers .jobview h2, .ajx-careers .jobapply h2 { font: 700 28px var(--f-head); color: var(--blue); margin: 6px 0 0; }
+.ajx-careers .jobview__sum { font-size: 16px; line-height: 1.7; margin: 0; }
+.ajx-careers .jobview h3 { font: 600 17px var(--f-head); color: var(--ink); margin: 8px 0 0; }
+.ajx-careers .jobview__list { display: grid; gap: 8px; margin: 2px 0 4px; padding: 0; list-style: none; }
+.ajx-careers .jobview__list li { padding-left: 24px; position: relative; font-size: 15px; line-height: 1.5; }
+.ajx-careers .jobview__list li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 800; }
+.ajx-careers .jobview .btn { margin-top: 10px; }
+.ajx-careers .jobapply__back { align-self: flex-start; border: 0; background: none; padding: 0; color: var(--muted); font: 600 14.5px var(--f-body); cursor: pointer; }
+.ajx-careers .jobapply__back:hover { color: var(--blue); }
+
+/* form fields */
+.ajx-careers .ajx-hp { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.ajx-careers .field { position: relative; margin-bottom: 16px; }
+.ajx-careers .field input, .ajx-careers .field textarea { width: 100%; padding: 20px 16px 8px; border: 1.5px solid #D5DCE8; border-radius: 10px; background: #fff; color: var(--ink); font: 500 16px var(--f-body); transition: border-color .25s, box-shadow .25s; }
+.ajx-careers .field textarea { resize: vertical; min-height: 96px; }
+.ajx-careers .field label { position: absolute; left: 16px; top: 15px; color: var(--muted); font-size: 15.5px; pointer-events: none; transform-origin: left top; transition: transform .25s var(--ease), color .25s; }
+.ajx-careers .field input:focus, .ajx-careers .field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px rgba(2,86,219,.13); }
+.ajx-careers .field input:focus + label, .ajx-careers .field input:not(:placeholder-shown) + label,
+.ajx-careers .field textarea:focus + label, .ajx-careers .field textarea:not(:placeholder-shown) + label { transform: translateY(-9px) scale(.78); color: var(--blue); }
+.ajx-careers .field.invalid input, .ajx-careers .field.invalid textarea { border-color: #D93B3B; box-shadow: 0 0 0 4px rgba(217,59,59,.12); }
+.ajx-careers .field.invalid label { color: #D93B3B; }
+.ajx-careers .form__hint { text-align: center; font-size: 13.5px; color: var(--muted); margin: 10px 0 0; }
+
+.ajx-careers .field--file { margin-bottom: 16px; }
+.ajx-careers .field__file { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1.5px dashed var(--sky-2); border-radius: 12px; background: var(--sky); color: var(--blue); cursor: pointer; transition: border-color .2s, background-color .2s; }
+.ajx-careers .field__file:hover { border-color: var(--blue); background: #E6F0FF; }
+.ajx-careers .field__file svg { flex: none; }
+.ajx-careers .field__file span { font: 600 14.5px var(--f-body); color: var(--ink); }
+.ajx-careers .field__file small { display: block; font: 500 12.5px var(--f-body); color: var(--muted); margin-top: 2px; }
+.ajx-careers .field--file.has-file .field__file { border-style: solid; border-color: var(--green); background: #F2FBF4; color: var(--green-d); }
+.ajx-careers .field--file.has-file .field__file span { color: var(--green-d); }
+
+/* toast */
+.ajx-careers .ajx-toast { position: fixed; z-index: 10000; left: 50%; bottom: 26px; translate: -50% 160%; max-width: calc(100% - 32px); padding: 14px 22px; border-radius: 12px; background: var(--navy); color: #fff; font-weight: 600; box-shadow: 0 24px 50px -16px rgba(0,0,0,.6); transition: translate .5s var(--ease); }
+.ajx-careers .ajx-toast.show { translate: -50% 0; }
+.ajx-careers .ajx-toast.err { background: #B93131; }
+.ajx-careers .ajx-toast.ok { border-bottom: 3px solid #6FC324; }
+
+/* responsive */
+@media (max-width: 900px) {
+  .ajx-careers .ajx-jobs { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .ajx-careers .ajx-jobs { grid-template-columns: 1fr; }
+  .ajx-modal__inner { padding: 26px 20px 22px; }
+  .ajx-careers dialog.ajx-modal { border-radius: 22px 22px 0 0; margin: auto 0 0; width: 100%; max-width: 100%; }
+}

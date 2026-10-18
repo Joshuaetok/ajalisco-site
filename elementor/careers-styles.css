@@ -1,0 +1,128 @@
+/* ==========================================================================
+   AJALISCO CAREERS — careers.json styles
+   This page is almost entirely native Elementor widgets (Heading, Text
+   Editor, Divider, Button, Shortcode) — there is no component-level custom
+   CSS here, unlike the other pages. The only exceptions, pasted into the
+   "Ajalisco styles (keep)" HTML widget at the top of careers.json, are:
+
+     1. @font-face rules for Outfit/Nunito (font loading only — never
+        overrides which font-size/weight/family actually gets used; that
+        is governed solely by each widget's own native Typography
+        controls)
+     2. The rising-bubbles decorative animation (Banner, CTA)
+     3. A radial-gradient highlight layered under the Banner/CTA's native
+        gradient background, approximating the live site's two-layer
+        gradient (Elementor's native background control only supports
+        one gradient layer)
+
+   None of the exceptions above touch font-family, font-size, font-weight,
+   or color on any heading/text element — that was the bug in the
+   previous Partnership/About/Contact export (a ".ajx-title" override
+   class with ":not(#ajx-n)" specificity high enough to silently beat the
+   native Typography settings, making them look native but do nothing).
+   This file has no such rule, by construction.
+
+   The actual role cards, detail/apply modal, form validation and email
+   delivery are handled entirely by the Ajalisco Careers WordPress plugin
+   (wordpress-plugin/ajalisco-careers/) via the single native Shortcode
+   widget [ajalisco_jobs] placed in the "Open Roles" section below.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Decorative rising bubbles (Banner, CTA) */
+.ajx-crs:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.ajx-crs:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxCrsRise var(--d) linear infinite; animation-delay: var(--dl); }
+.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }
+.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }
+.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }
+.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }
+.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }
+@keyframes ajxCrsRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }
+
+/* Second gradient layer under the Banner/CTA native background */
+.ajx-crs:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }
+.ajx-crs:not(#ajx-n) .ajx-glow-cta { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ajx-crs:not(#ajx-n) .ajx-bubbles i { animation: none !important; }
+}

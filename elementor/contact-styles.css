@@ -1,29 +1,43 @@
 /* ==========================================================================
-   AJALISCO CONTACT PAGE — contact.json styles
-   Ported from the live site's own styles.css, reorganized by section, for
-   Elementor's "Ajalisco styles & scripts (keep)" HTML widget. Paste this
-   whole file in place of the <style> block's contents (keep the <style>
-   and <script> tags around it).
+   AJALISCO CONTACT — contact.json styles & script
+   This page is almost entirely native Elementor widgets (Heading, Text
+   Editor, Divider, Icon Box, Button, Form) — there is no component-level
+   custom CSS here, the same as careers.json/partnership.json/about.json.
+   The only exceptions, pasted into the "Ajalisco contact-page styles &
+   scripts (keep)" HTML widget at the top of contact.json, are:
 
-   CONTENTS
-     FOUNDATION
-     ANIMATIONS
-     BUTTONS
-     BUBBLES
-     LAYOUT
-     LAYOUT — "two--contact" split variant (contact info + form)
-     BANNER
-     SECTION — "section--tight" padding variant
-     CONTACT INFO — address/phone/email/hours + WhatsApp button
-     FORM CARD — "Send us a message"
-     TOAST — submit feedback (own copy per page, matches live site's #toast)
-     REDUCED MOTION
-   ========================================================================== */
+     1. @font-face rules for Outfit/Nunito (font loading only — never
+        overrides which font-size/weight/family actually gets used; that
+        is governed solely by each widget's own native Typography
+        controls)
+     2. The rising-bubbles decorative animation (Banner)
+     3. A radial-gradient highlight layered under the Banner's native
+        gradient background, approximating the live site's two-layer
+        gradient (Elementor's native background control only supports
+        one gradient layer)
+     4. One isolated script that opens WhatsApp with a pre-filled message
+        on form submit (see below) — it only reads field values and sets
+        no styling
 
+   None of the CSS exceptions above touch font-family, font-size,
+   font-weight, or color on any heading/text/form element — that was the
+   bug in the original Partnership/About/Contact export (a ".ajx-title"
+   override class with ":not(#ajx-n)" specificity high enough to silently
+   beat the native Typography settings, making them look native but do
+   nothing). This file has no such rule, by construction.
 
-/* ==========================================================================
-   FOUNDATION
-   Fonts, CSS reset, brand colour variables, base typography
+   THE FORM'S REAL BEHAVIOUR: confirmed by reading app.js directly (the
+   default/"contact" branch of its form submit handler) — it opens
+   WhatsApp with a pre-filled message, NOT email. Elementor's native Form
+   widget has no built-in action that builds a wa.me link from field
+   values, so this is a deliberate, isolated JS exception: it listens for
+   Elementor Pro's own documented `submit_success` event on this specific
+   form (`.ajx-contact-form`) and opens WhatsApp with the exact same
+   message format app.js uses, reading each field by its `css_classes`
+   (`ajx-f-name`, `ajx-f-email`, `ajx-f-phone`, `ajx-f-business`,
+   `ajx-f-inquiry`, `ajx-f-message`). Those css_classes are what the form
+   fields are set up with — they keep working even if a Form-widget
+   typography key name needs correcting after import.
    ========================================================================== */
 
 @font-face {
@@ -34,7 +48,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -43,25 +56,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -70,7 +64,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -79,7 +72,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -88,7 +80,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -97,43 +88,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -142,7 +96,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -151,7 +104,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -160,7 +112,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -170,584 +121,45 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.ajx-cnt {
-  --blue: #0256DB;
-  --blue-d: #0243A8;
-  --blue-dd: #012F7E;
-  --navy: #1C244B;
-  --green: #28A745;
-  --green-d: #1E8A38;
-  --leaf: #56A428;
-  --lime: #6FC324;
-  --sky: #DFEBFC;
-  --sky-2: #AAD0F0;
-  --gray: #F5F5F5;
-  --amber: #F7B650;
-  --text: #54595F;
-  --muted: #7A7A7A;
-  --ink: #16204A;
-  --line: #E3E9F2;
-  --r: 14px;
-  --r-lg: 22px;
-  --sh: 0 2px 4px rgba(28,36,75,.05), 0 14px 34px -16px rgba(2,67,168,.30);
-  --sh-lg: 0 30px 70px -30px rgba(2,50,140,.5);
-  --f-head: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --ease: cubic-bezier(.2,.8,.2,1);
-  color-scheme: light;
+/* Decorative rising bubbles (Banner) */
+.ajx-cnt:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.ajx-cnt:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxCntRise var(--d) linear infinite; animation-delay: var(--dl); }
+.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }
+.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }
+.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }
+.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }
+.ajx-cnt:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }
+@keyframes ajxCntRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }
+
+/* Second gradient layer under the Banner's native gradient background */
+.ajx-cnt:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ajx-cnt:not(#ajx-n) .ajx-bubbles i { animation: none !important; }
 }
 
-.ajx-cnt *,
-.ajx-cnt *::before,
-.ajx-cnt *::after {
-  box-sizing: border-box;
-}
+/* WhatsApp submit hook: the live site's real contact-form behaviour (confirmed in app.js) is opening WhatsApp with a pre-filled message, not emailing anyone. Elementor's native Form widget has no built-in action that builds a wa.me link from field values, so this one piece of behaviour is a deliberate, isolated JS exception. It only reads field values and sets no styling. */
 
-.ajx-cnt {
-  font: 400 16px/1.7 var(--f-body);
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-}
-
-.ajx-cnt img {
-  max-width: 100%;
-  display: block;
-}
-
-.ajx-cnt a {
-  color: inherit;
-}
-
-.ajx-cnt h1,
-.ajx-cnt h2,
-.ajx-cnt h3,
-.ajx-cnt h4,
-.ajx-cnt p,
-.ajx-cnt ul,
-.ajx-cnt ol,
-.ajx-cnt dl,
-.ajx-cnt dd,
-.ajx-cnt figure {
-  margin: 0;
-}
-
-.ajx-cnt ul,
-.ajx-cnt ol {
-  padding: 0;
-  list-style: none;
-}
-
-.ajx-cnt button {
-  font: inherit;
-  color: inherit;
-}
-
-.ajx-cnt button {
-  cursor: pointer;
-}
-
-.ajx-cnt :focus-visible {
-  outline: 3px solid #6FA6FF;
-  outline-offset: 3px;
-  border-radius: 8px;
-}
-
-.ajx-cnt:not(#ajx-n) .sr {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
-}
-
-
-
-/* ==========================================================================
-   ANIMATIONS
-   ========================================================================== */
-
-@keyframes ajx-rise {
-  0% { transform: translate(0, 0); opacity: 0; }
-  10% { opacity: 1; }
-  100% { transform: translate(24px, -120vh); opacity: .2; }
-}
-
-/* ==========================================================================
-   BUTTONS
-   The .btn family — used by the WhatsApp button and the form's submit button
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 24px;
-  border: 0;
-  border-radius: 10px;
-  text-decoration: none;
-  white-space: nowrap;
-  font: 600 15.5px var(--f-head);
-  letter-spacing: .01em;
-  color: #fff;
-  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s;
-}
-
-.ajx-cnt:not(#ajx-n) .btn:hover {
-  transform: translateY(-2px);
-}
-
-.ajx-cnt:not(#ajx-n) .btn:active {
-  transform: scale(.98);
-}
-
-.ajx-cnt:not(#ajx-n) .btn--lg {
-  padding: 15px 30px;
-  font-size: 16.5px;
-}
-
-.ajx-cnt:not(#ajx-n) .btn--block {
-  width: 100%;
-}
-
-.ajx-cnt:not(#ajx-n) .btn--green {
-  background: var(--green);
-  box-shadow: 0 12px 24px -12px rgba(40,167,69,.9);
-}
-
-.ajx-cnt:not(#ajx-n) .btn--green:hover {
-  background: var(--green-d);
-}
-
-.ajx-cnt:not(#ajx-n) .btn--whatsapp {
-  background: #1FAF5A;
-  box-shadow: 0 12px 24px -14px rgba(31,175,90,.9);
-}
-
-.ajx-cnt:not(#ajx-n) .btn--whatsapp:hover {
-  background: #1a9a4f;
-}
-
-
-
-/* ==========================================================================
-   BUBBLES
-   The floating-bubble background decoration — used by the Banner
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .bubbles {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.ajx-cnt:not(#ajx-n) .bubbles i {
-  position: absolute;
-  bottom: -70px;
-  width: var(--s);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
-  animation: ajx-rise var(--d) linear infinite;
-  animation-delay: var(--dl);
-}
-
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(2) { left: 14%; --s: 12px; --d: 12s; --dl: -8s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(3) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(4) { left: 37%; --s: 16px; --d: 14s; --dl: -2s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(5) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(6) { left: 58%; --s: 10px; --d: 11s; --dl: -6s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(7) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(8) { left: 78%; --s: 18px; --d: 15s; --dl: -1s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(9) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }
-.ajx-cnt:not(#ajx-n) .bubbles i:nth-child(10) { left: 95%; --s: 14px; --d: 13s; --dl: -5s; }
-
-.ajx-cnt:not(#ajx-n) .bubbles--sm i {
-  --s: 20px;
-}
-
-.ajx-cnt:not(#ajx-n) .bubbles--sm i:nth-child(n+7) {
-  display: none;
-}
-
-
-
-/* ==========================================================================
-   LAYOUT
-   Elementor Container plumbing: the flex split/column system, boxed-width
-   gutters, the hidden 'keep this block' label, and the scroll-reveal
-   animation system. Not page content — change this only if you understand
-   the layout, not the design.
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .section,
-.ajx-cnt:not(#ajx-n).section {
-  padding-block: clamp(64px, 8vw, 110px);
-  position: relative;
-}
-
-html.ajx-js body:not(.elementor-editor-active) .ajx-cnt:not(#ajx-n) .rv {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity .8s var(--ease), transform .8s var(--ease);
-  transition-delay: calc(var(--i, 0) * 80ms);
-}
-
-html.ajx-js body:not(.elementor-editor-active) .ajx-cnt:not(#ajx-n) .rv.in {
-  opacity: 1;
-  transform: none;
-}
-
-.ajx-global {
-  min-height: 0!important;
-}
-
-body.elementor-editor-active .ajx-global .elementor-widget-html {
-  min-height: 22px;
-}
-
-body.elementor-editor-active .ajx-global .elementor-widget-html::before {
-  content: "Ajalisco contact-page styles & scripts \2014 keep this block";
-  display: block;
-  padding: 4px 8px;
-  font: 12px/1.2 sans-serif;
-  color: #555;
-  background: #fff7d6;
-  border: 1px dashed #d9b84a;
-}
-
-.ajx-cnt:not(#ajx-n).e-con-boxed,
-.ajx-cnt:not(#ajx-n) .e-con-boxed {
-  padding-inline: clamp(16px,4vw,36px)!important;
-}
-
-.ajx-cnt:not(#ajx-n) .ajx-split {
-  flex-direction: row!important;
-  flex-wrap: nowrap!important;
-  align-items: flex-start!important;
-}
-
-.ajx-cnt:not(#ajx-n) .ajx-split>.ajx-col {
-  flex: 1 1 0%!important;
-  width: auto!important;
-  max-width: none!important;
-  padding: 0!important;
-}
-
-
-
-/* ==========================================================================
-   LAYOUT — "two--contact" split variant (contact info + form)
-   Mirrors the live site's `.two--contact` grid: grid-template-columns:
-   .9fr 1.1fr (info column narrower, form column wider), same gap and the
-   same 960px stack as the generic `.two` grid.
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .ajx-split>.ajx-g90 {
-  flex-grow: .9!important;
-}
-
-.ajx-cnt:not(#ajx-n) .ajx-split>.ajx-g110 {
-  flex-grow: 1.1!important;
-}
-
-.ajx-cnt:not(#ajx-n) .ajx-split--two {
-  gap: clamp(30px, 5vw, 64px)!important;
-  align-items: flex-start!important;
-}
-
-  /* --- Responsive: Tablets, 960px and below --- */
-  @media (max-width: 960px) {
-    .ajx-cnt:not(#ajx-n) .ajx-split--two {
-      flex-direction: column!important;
-      align-items: stretch!important;
-    }
-
-    .ajx-cnt:not(#ajx-n) .ajx-split--two>.ajx-col {
-      flex: none!important;
-      width: 100%!important;
-    }
+/* --- script (pasted into the same "keep" HTML widget, inside a <script> tag) --- */
+/*
+(function () {
+  function openWhatsApp(text) {
+    window.open('https://wa.me/2347078581881?text=' + encodeURIComponent(text), '_blank', 'noopener');
   }
-
-/* ==========================================================================
-   BANNER
-   Page banner — "Contact Us" heading + sub-line
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .banner,
-.ajx-cnt:not(#ajx-n).banner {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  text-align: center;
-  color: #fff;
-  padding: clamp(46px, 6vw, 80px) 0;
-  background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 55%, var(--blue-d));
-}
-
-.ajx-cnt:not(#ajx-n) .banner .bubbles {
-  z-index: -1;
-}
-
-.ajx-cnt:not(#ajx-n) .banner h1 {
-  font: 700 clamp(30px, 4.4vw, 52px) var(--f-head);
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-
-.ajx-cnt:not(#ajx-n) .banner h1::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 4px;
-  margin: 14px auto 0;
-  border-radius: 3px;
-  background: var(--lime);
-}
-
-.ajx-cnt:not(#ajx-n) .banner p {
-  margin-top: 14px;
-  font-size: 18px;
-  color: #D6E4FF;
-}
-
-/* ==========================================================================
-   SECTION — "section--tight" padding variant
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .section--tight,
-.ajx-cnt:not(#ajx-n).section--tight {
-  padding-block: clamp(40px, 5vw, 70px) clamp(64px, 8vw, 100px);
-}
-
-/* ==========================================================================
-   CONTACT INFO — address/phone/email/hours + WhatsApp button
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .info {
-  padding: clamp(24px, 3.5vw, 36px);
-  border-radius: var(--r-lg);
-  background: var(--sky);
-}
-
-.ajx-cnt:not(#ajx-n) .info h2 {
-  font: 700 26px var(--f-head);
-  color: var(--blue);
-  margin-bottom: 22px;
-}
-
-.ajx-cnt:not(#ajx-n) .info__row {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 22px;
-}
-
-.ajx-cnt:not(#ajx-n) .info__icon {
-  flex: none;
-  display: grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: #fff;
-  color: var(--green);
-  box-shadow: var(--sh);
-}
-
-.ajx-cnt:not(#ajx-n) .info__icon svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
-}
-
-.ajx-cnt:not(#ajx-n) .info h3 {
-  font: 600 19px var(--f-head);
-  color: var(--blue);
-}
-
-.ajx-cnt:not(#ajx-n) .info p {
-  color: var(--text);
-}
-
-.ajx-cnt:not(#ajx-n) .info a {
-  text-decoration: none;
-}
-
-.ajx-cnt:not(#ajx-n) .info a:hover {
-  text-decoration: underline;
-}
-
-.ajx-cnt:not(#ajx-n) .link {
-  color: var(--blue);
-  font-weight: 600;
-}
-
-/* ==========================================================================
-   FORM CARD — "Send us a message"
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .formcard {
-  padding: clamp(24px, 3.5vw, 38px);
-  border-radius: var(--r-lg);
-  background: #fff;
-  box-shadow: var(--sh-lg), 0 0 0 1px var(--line);
-}
-
-.ajx-cnt:not(#ajx-n) .formcard h2 {
-  font: 700 26px/1.2 var(--f-head);
-  color: var(--blue);
-}
-
-.ajx-cnt:not(#ajx-n) .formcard__sub {
-  color: var(--muted);
-  margin: 4px 0 22px;
-}
-
-.ajx-cnt:not(#ajx-n) .field {
-  position: relative;
-  margin-bottom: 16px;
-}
-
-.ajx-cnt:not(#ajx-n) .field input,
-.ajx-cnt:not(#ajx-n) .field textarea {
-  width: 100%;
-  padding: 20px 16px 8px;
-  border: 1.5px solid #D5DCE8;
-  border-radius: 10px;
-  background: #fff;
-  color: var(--ink);
-  font: 500 16px var(--f-body);
-  transition: border-color .25s, box-shadow .25s;
-}
-
-.ajx-cnt:not(#ajx-n) .field textarea {
-  resize: vertical;
-  min-height: 96px;
-}
-
-.ajx-cnt:not(#ajx-n) .field label {
-  position: absolute;
-  left: 16px;
-  top: 15px;
-  color: var(--muted);
-  font-size: 15.5px;
-  pointer-events: none;
-  transform-origin: left top;
-  transition: transform .25s var(--ease), color .25s;
-}
-
-.ajx-cnt:not(#ajx-n) .field input:focus,
-.ajx-cnt:not(#ajx-n) .field textarea:focus {
-  outline: none;
-  border-color: var(--blue);
-  box-shadow: 0 0 0 4px rgba(2,86,219,.13);
-}
-
-.ajx-cnt:not(#ajx-n) .field input:focus + label,
-.ajx-cnt:not(#ajx-n) .field input:not(:placeholder-shown) + label,
-.ajx-cnt:not(#ajx-n) .field textarea:focus + label,
-.ajx-cnt:not(#ajx-n) .field textarea:not(:placeholder-shown) + label {
-  transform: translateY(-9px) scale(.78);
-  color: var(--blue);
-}
-
-.ajx-cnt:not(#ajx-n) .field.invalid input,
-.ajx-cnt:not(#ajx-n) .field.invalid textarea {
-  border-color: #D93B3B;
-  box-shadow: 0 0 0 4px rgba(217,59,59,.12);
-}
-
-.ajx-cnt:not(#ajx-n) .field.invalid label {
-  color: #D93B3B;
-}
-
-.ajx-cnt:not(#ajx-n) .agree {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 4px 0 18px;
-  font-size: 14.5px;
-}
-
-.ajx-cnt:not(#ajx-n) .agree input {
-  width: 18px;
-  height: 18px;
-  accent-color: var(--green);
-}
-
-.ajx-cnt:not(#ajx-n) .form__hint {
-  margin-top: 12px;
-  text-align: center;
-  font-size: 13.5px;
-  color: var(--muted);
-}
-
-.ajx-cnt:not(#ajx-n) .form__hint a {
-  color: var(--blue);
-  font-weight: 600;
-}
-
-/* ==========================================================================
-   TOAST — submit feedback (own copy per page, matches live site's #toast)
-   ========================================================================== */
-
-.ajx-cnt:not(#ajx-n) .toast {
-  position: fixed;
-  z-index: 500;
-  left: 50%;
-  bottom: 26px;
-  translate: -50% 160%;
-  max-width: calc(100% - 32px);
-  padding: 14px 22px;
-  border-radius: 12px;
-  background: var(--navy);
-  color: #fff;
-  font-weight: 600;
-  box-shadow: 0 24px 50px -16px rgba(0,0,0,.6);
-  transition: translate .5s var(--ease);
-}
-
-.ajx-cnt:not(#ajx-n) .toast.show {
-  translate: -50% 0;
-}
-
-.ajx-cnt:not(#ajx-n) .toast.err {
-  background: #B93131;
-}
-
-.ajx-cnt:not(#ajx-n) .toast.ok {
-  border-bottom: 3px solid var(--lime);
-}
-
-
-
-/* ==========================================================================
-   REDUCED MOTION
-   Accessibility — disables all of the above animations for visitors who have
-   "reduce motion" turned on at the OS level
-   ========================================================================== */
-
-  /* --- Accessibility: Visitors with "reduce motion" enabled --- */
-  @media (prefers-reduced-motion: reduce) {
-    .ajx-cnt *,
-    .ajx-cnt *::before,
-    .ajx-cnt *::after {
-      animation: none !important;
-      transition: none !important;
-      scroll-behavior: auto !important;
-    }
-
-    html.ajx-js body:not(.elementor-editor-active) .ajx-cnt:not(#ajx-n) .rv {
-      opacity: 1;
-      transform: none;
-    }
+  function fieldValue(form, cls) {
+    var el = form.querySelector('.' + cls + ' input, .' + cls + ' textarea, input.' + cls + ', textarea.' + cls);
+    return el ? (el.value || '').trim() : '';
   }
+  document.addEventListener('submit_success', function (e) {
+    var form = e.target.closest ? e.target.closest('.ajx-contact-form') : null;
+    if (!form) return;
+    var name = fieldValue(form, 'ajx-f-name'), email = fieldValue(form, 'ajx-f-email'), phone = fieldValue(form, 'ajx-f-phone'),
+        business = fieldValue(form, 'ajx-f-business'), inquiry = fieldValue(form, 'ajx-f-inquiry'), message = fieldValue(form, 'ajx-f-message');
+    openWhatsApp([
+      'Hello Ajalisco 👋 New message from the website:', '',
+      'Name: ' + name, 'Email: ' + email, 'Phone: ' + phone,
+      'Business: ' + (business || '-'), 'Enquiry: ' + (inquiry || '-'), 'Message: ' + message
+    ].join('\n'));
+  });
+})();
+*/

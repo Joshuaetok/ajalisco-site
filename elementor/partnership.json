@@ -1,353 +1,1395 @@
 {
- "content": [
-  {
-   "id": "ptn0001",
-   "elType": "container",
-   "settings": {
-    "container_type": "flex",
-    "content_width": "full",
-    "flex_direction": "column",
-    "flex_wrap": "nowrap",
-    "flex_gap": {
-     "unit": "px",
-     "size": 0,
-     "column": "0",
-     "row": "0",
-     "isLinked": true
-    },
-    "padding": {
-     "unit": "px",
-     "top": "0",
-     "right": "0",
-     "bottom": "0",
-     "left": "0",
-     "isLinked": false
-    },
-    "css_classes": "ajx-ptn-global",
-    "_title": "Ajalisco partnership-page styles & scripts (keep)"
-   },
-   "elements": [
+  "content": [
     {
-     "id": "ptn0002",
-     "elType": "widget",
-     "widgetType": "html",
-     "settings": {
-      "html": "<style>/* ==========================================================================\n   AJALISCO HOMEPAGE — home.json styles\n   Ported from the live site's own styles.css, reorganized by homepage\n   section with comments, for Elementor's \"Ajalisco styles & scripts\n   (keep)\" HTML widget. Paste this whole file in place of the <style>\n   block's contents (keep the <style> and <script> tags around it).\n\n   CONTENTS\n     FOUNDATION\n     ANIMATIONS\n     BUTTONS\n     BUBBLES\n     LAYOUT\n     HERO\n     TAPES\n     ADVERT SHARED\n     BREAD\n     PICKER\n     WATER\n     PRODUCTS\n     PURIFY\n     SERVE\n     JOURNEY\n     VALUES\n     TESTIMONIALS\n     BLOG\n     CTA\n     REDUCED MOTION\n   ========================================================================== */\n\n\n/* ==========================================================================\n   FOUNDATION\n   Fonts, CSS reset, brand colour variables, base typography — applies to the\n   whole homepage\n   ========================================================================== */\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n\n@font-face {\n  font-family: 'Outfit';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n.ajx-ptn {\n  --blue: #0256DB;\n  --blue-d: #0243A8;\n  --blue-dd: #012F7E;\n  --navy: #1C244B;\n  --green: #28A745;\n  --green-d: #1E8A38;\n  --leaf: #56A428;\n  --lime: #6FC324;\n  --sky: #DFEBFC;\n  --sky-2: #AAD0F0;\n  --gray: #F5F5F5;\n  --amber: #F7B650;\n  --text: #54595F;\n  --muted: #7A7A7A;\n  --ink: #16204A;\n  --line: #E3E9F2;\n  --r: 14px;\n  --r-lg: 22px;\n  --sh: 0 2px 4px rgba(28,36,75,.05), 0 14px 34px -16px rgba(2,67,168,.30);\n  --sh-lg: 0 30px 70px -30px rgba(2,50,140,.5);\n  --f-head: \"Outfit\", system-ui, -apple-system, \"Segoe UI\", sans-serif;\n  --f-body: \"Nunito\", system-ui, -apple-system, \"Segoe UI\", sans-serif;\n  --ease: cubic-bezier(.2,.8,.2,1);\n  color-scheme: light;\n}\n\n.ajx-ptn *,\n.ajx-ptn *::before,\n.ajx-ptn *::after {\n  box-sizing: border-box;\n}\n\n.ajx-ptn {\n  font: 400 16px/1.7 var(--f-body);\n  color: var(--text);\n  -webkit-font-smoothing: antialiased;\n}\n\n.ajx-ptn img {\n  max-width: 100%;\n  display: block;\n}\n\n.ajx-ptn a {\n  color: inherit;\n}\n\n.ajx-ptn h1,\n.ajx-ptn h2,\n.ajx-ptn h3,\n.ajx-ptn h4,\n.ajx-ptn p,\n.ajx-ptn ul,\n.ajx-ptn ol,\n.ajx-ptn dl,\n.ajx-ptn dd,\n.ajx-ptn figure {\n  margin: 0;\n}\n\n.ajx-ptn ul,\n.ajx-ptn ol {\n  padding: 0;\n  list-style: none;\n}\n\n.ajx-ptn button {\n  font: inherit;\n  color: inherit;\n}\n\n.ajx-ptn button {\n  cursor: pointer;\n}\n\n.ajx-ptn :focus-visible {\n  outline: 3px solid #6FA6FF;\n  outline-offset: 3px;\n  border-radius: 8px;\n}\n\n.ajx-ptn:not(#ajx-n) .sr {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  overflow: hidden;\n  clip: rect(0 0 0 0);\n  white-space: nowrap;\n}\n\n.ajx-ptn:not(#ajx-n) .center {\n  text-align: center;\n  margin-top: 44px;\n}\n\nhtml {\n  scroll-behavior: smooth;\n  scroll-padding-top: 90px;\n}\n\n\n\n/* ==========================================================================\n   ANIMATIONS\n   ========================================================================== */\n\n@keyframes ajx-rise {\n  0% { transform: translate(0, 0); opacity: 0; }\n  10% { opacity: 1; }\n  100% { transform: translate(24px, -120vh); opacity: .2; }\n}\n\n/* ==========================================================================\n   BUTTONS\n   The .btn family — used by almost every section (Hero, Bread/Water adverts,\n   Purify, CTA, ...)\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 12px 24px;\n  border: 0;\n  border-radius: 10px;\n  text-decoration: none;\n  white-space: nowrap;\n  font: 600 15.5px var(--f-head);\n  letter-spacing: .01em;\n  color: #fff;\n  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s;\n}\n\n.ajx-ptn:not(#ajx-n) .btn:hover {\n  transform: translateY(-2px);\n}\n\n.ajx-ptn:not(#ajx-n) .btn:active {\n  transform: scale(.98);\n}\n\n.ajx-ptn:not(#ajx-n) .btn--lg {\n  padding: 15px 30px;\n  font-size: 16.5px;\n}\n\n.ajx-ptn:not(#ajx-n) .btn--block {\n  width: 100%;\n}\n\n.ajx-ptn:not(#ajx-n) .btn--green {\n  background: var(--green);\n  box-shadow: 0 12px 24px -12px rgba(40,167,69,.9);\n}\n\n.ajx-ptn:not(#ajx-n) .btn--green:hover {\n  background: var(--green-d);\n}\n\n.ajx-ptn:not(#ajx-n) .btn--blue {\n  background: var(--blue);\n  box-shadow: 0 12px 24px -12px rgba(2,86,219,.9);\n}\n\n.ajx-ptn:not(#ajx-n) .btn--blue:hover {\n  background: var(--blue-d);\n}\n\n.ajx-ptn:not(#ajx-n) .btn--ghost-light {\n  background: rgba(255,255,255,.1);\n  box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.55);\n}\n\n.ajx-ptn:not(#ajx-n) .btn--ghost-light:hover {\n  background: rgba(255,255,255,.2);\n}\n\n.ajx-ptn:not(#ajx-n) .btn-row {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 14px;\n  margin-top: 30px;\n}\n\n.ajx-ptn:not(#ajx-n) .btn-row--center {\n  justify-content: center;\n}\n\n.ajx-ptn:not(#ajx-n) .btn--white {\n  background: #fff;\n  color: var(--green-d);\n  box-shadow: 0 12px 26px -14px rgba(0,0,0,.5);\n}\n\n.ajx-ptn:not(#ajx-n) .btn--white:hover {\n  background: #F2FFF5;\n}\n\n  /* --- Responsive: Phones, 640px and below --- */\n  @media (max-width: 640px) {\n    .ajx-ptn:not(#ajx-n) .btn-row .btn {\n      flex: 1 1 auto;\n    }\n\n  }\n\n\n\n/* ==========================================================================\n   BUBBLES\n   The floating-bubble background decoration — used by Hero, Water advert,\n   Purify, CTA\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .bubbles {\n  position: absolute;\n  inset: 0;\n  overflow: hidden;\n  pointer-events: none;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i {\n  position: absolute;\n  bottom: -70px;\n  width: var(--s);\n  aspect-ratio: 1;\n  border-radius: 50%;\n  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);\n  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);\n  animation: ajx-rise var(--d) linear infinite;\n  animation-delay: var(--dl);\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(1) {\n  left: 5%;\n  --s: 30px;\n  --d: 17s;\n  --dl: -3s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(2) {\n  left: 14%;\n  --s: 12px;\n  --d: 12s;\n  --dl: -8s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(3) {\n  left: 24%;\n  --s: 46px;\n  --d: 23s;\n  --dl: -14s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(4) {\n  left: 37%;\n  --s: 16px;\n  --d: 14s;\n  --dl: -2s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(5) {\n  left: 49%;\n  --s: 60px;\n  --d: 27s;\n  --dl: -18s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(6) {\n  left: 58%;\n  --s: 10px;\n  --d: 11s;\n  --dl: -6s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(7) {\n  left: 67%;\n  --s: 34px;\n  --d: 20s;\n  --dl: -11s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(8) {\n  left: 78%;\n  --s: 18px;\n  --d: 15s;\n  --dl: -1s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(9) {\n  left: 87%;\n  --s: 50px;\n  --d: 25s;\n  --dl: -9s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles i:nth-child(10) {\n  left: 95%;\n  --s: 14px;\n  --d: 13s;\n  --dl: -5s;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles--sm i {\n  --s: 20px;\n}\n\n.ajx-ptn:not(#ajx-n) .bubbles--sm i:nth-child(n+7) {\n  display: none;\n}\n\n\n\n/* ==========================================================================\n   LAYOUT\n   Elementor Container plumbing: the flex split/column system, boxed-width\n   gutters, the hidden 'keep this block' label, shared section headings\n   (kicker/title/lede), and the scroll-reveal animation system. Not page\n   content — change this only if you understand the layout, not the design.\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .section,\n.ajx-ptn:not(#ajx-n).section {\n  padding-block: clamp(64px, 8vw, 110px);\n  position: relative;\n}\n\n.ajx-ptn:not(#ajx-n) .section--gray,\n.ajx-ptn:not(#ajx-n).section--gray {\n  background: var(--gray);\n}\n\n.ajx-ptn:not(#ajx-n) .kicker {\n  display: inline-block;\n  padding: 6px 16px;\n  border-radius: 999px;\n  background: var(--sky);\n  color: var(--blue);\n  font: 600 14px var(--f-head);\n  margin-bottom: 14px;\n}\n\n.ajx-ptn:not(#ajx-n) .kicker--center {\n  margin-inline: auto;\n}\n\n.ajx-ptn:not(#ajx-n) .title {\n  font: 700 clamp(30px, 3.6vw, 44px)/1.15 var(--f-head);\n  letter-spacing: -.015em;\n  color: var(--blue);\n  text-wrap: balance;\n}\n\n.ajx-ptn:not(#ajx-n) .lede {\n  margin-top: 16px;\n  font-size: 17px;\n  color: var(--muted);\n  text-align: left;\n  max-width: 60ch;\n}\n\n.ajx-ptn:not(#ajx-n) .head-center {\n  text-align: center;\n  display: grid;\n  justify-items: center;\n  margin-bottom: clamp(30px, 4vw, 50px);\n}\n\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .rv {\n  opacity: 0;\n  transform: translateY(24px);\n  transition: opacity .8s var(--ease), transform .8s var(--ease);\n  transition-delay: calc(var(--i, 0) * 80ms);\n}\n\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .rv.in {\n  opacity: 1;\n  transform: none;\n}\n\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .value.rv.in:hover,\nhtml.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .post.rv.in:hover {\n  transform: translateY(-8px);\n}\n\n.ajx-global {\n  min-height: 0!important;\n}\n\nbody.elementor-editor-active .ajx-global .elementor-widget-html {\n  min-height: 22px;\n}\n\nbody.elementor-editor-active .ajx-global .elementor-widget-html::before {\n  content: \"Ajalisco homepage styles & scripts \\2014 keep this block\";\n  display: block;\n  padding: 4px 8px;\n  font: 12px/1.2 sans-serif;\n  color: #555;\n  background: #fff7d6;\n  border: 1px dashed #d9b84a;\n}\n\n.ajx-fill {\n  position: absolute!important;\n  inset: 0;\n  width: auto!important;\n  max-width: none!important;\n  margin: 0!important;\n  pointer-events: none;\n  overflow: hidden;\n}\n\n.ajx-fill>.elementor-widget-container {\n  height: 100%;\n}\n\n.ajx-back {\n  z-index: -1;\n}\n\n.ajx-wave {\n  position: absolute!important;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  width: auto!important;\n  max-width: none!important;\n  margin: 0!important;\n  height: clamp(50px,6vw,90px);\n  pointer-events: none;\n}\n\n.ajx-ptn:not(#ajx-n).e-con-boxed,\n.ajx-ptn:not(#ajx-n) .e-con-boxed {\n  padding-inline: clamp(16px,4vw,36px)!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split {\n  flex-direction: row!important;\n  flex-wrap: nowrap!important;\n  align-items: center!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-col {\n  flex: 1 1 0%!important;\n  width: auto!important;\n  max-width: none!important;\n  padding: 0!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-g105 {\n  flex-grow: 1.05!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-g95 {\n  flex-grow: .95!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split>.ajx-g80 {\n  flex-grow: .8!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split--hero {\n  gap: clamp(24px,4vw,56px)!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split--purify {\n  gap: clamp(30px,6vw,84px)!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-split--journey {\n  gap: clamp(36px,6vw,84px)!important;\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-head {\n  margin-bottom: clamp(30px,4vw,50px);\n}\n\n.ajx-ptn:not(#ajx-n) .ajx-title .elementor-heading-title {\n  text-wrap: balance;\n  font-size: clamp(30px,3.6vw,44px);\n}\n\n/* shared: also sizes the JOURNEY section's photo column, below */\n.ajx-ptn:not(#ajx-n) .hero__art,\n.ajx-ptn:not(#ajx-n) .journey__art {\n  margin-left: auto;\n}\n\n  /* --- Responsive: Tablets, 960px and below --- */\n  @media (max-width: 960px) {\n    .ajx-ptn:not(#ajx-n) .ajx-split--hero,\n    .ajx-ptn:not(#ajx-n) .ajx-split--purify,\n    .ajx-ptn:not(#ajx-n) .ajx-split--journey {\n      flex-direction: column!important;\n      align-items: stretch!important;\n    }\n\n    .ajx-ptn:not(#ajx-n) .ajx-split--bread {\n      flex-direction: column-reverse!important;\n      align-items: stretch!important;\n    }\n\n    .ajx-ptn:not(#ajx-n) .ajx-split--hero>.ajx-col,\n    .ajx-ptn:not(#ajx-n) .ajx-split--purify>.ajx-col,\n    .ajx-ptn:not(#ajx-n) .ajx-split--journey>.ajx-col,\n    .ajx-ptn:not(#ajx-n) .ajx-split--bread>.ajx-col {\n      flex: none!important;\n      width: 100%!important;\n    }\n\n    /* shared: also sizes the JOURNEY section's photo column, below */\n    .ajx-ptn:not(#ajx-n) .hero__art,\n    .ajx-ptn:not(#ajx-n) .journey__art {\n      margin-inline: auto;\n    }\n\n    .ajx-ptn:not(#ajx-n) .ajx-split--water>.ajx-g80 {\n      flex-grow: 1!important;\n    }\n\n  }\n\n  /* --- Responsive: Phones, 640px and below --- */\n  @media (max-width: 640px) {\n    .ajx-ptn:not(#ajx-n) .ajx-split--water {\n      flex-direction: column-reverse!important;\n      align-items: stretch!important;\n    }\n\n    .ajx-ptn:not(#ajx-n) .ajx-split--water>.ajx-col {\n      flex: none!important;\n      width: 100%!important;\n    }\n\n  }\n\n\n\n/* ==========================================================================\n   LAYOUT — \"two\" split variant (why-partner copy + form card)\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .ajx-split--two {\n  gap: clamp(30px, 5vw, 64px)!important;\n  align-items: flex-start!important;\n}\n\n  /* --- Responsive: Tablets, 960px and below --- */\n  @media (max-width: 960px) {\n    .ajx-ptn:not(#ajx-n) .ajx-split--two {\n      flex-direction: column!important;\n      align-items: stretch!important;\n    }\n\n    .ajx-ptn:not(#ajx-n) .ajx-split--two>.ajx-col {\n      flex: none!important;\n      width: 100%!important;\n    }\n  }\n\n/* ==========================================================================\n   BANNER\n   Page banner — \"Partnership Hub\" heading + sub-line\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .banner,\n.ajx-ptn:not(#ajx-n).banner {\n  position: relative;\n  overflow: hidden;\n  isolation: isolate;\n  text-align: center;\n  color: #fff;\n  padding: clamp(46px, 6vw, 80px) 0;\n  background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 55%, var(--blue-d));\n}\n\n.ajx-ptn:not(#ajx-n) .banner .bubbles {\n  z-index: -1;\n}\n\n.ajx-ptn:not(#ajx-n) .banner h1 {\n  font: 700 clamp(30px, 4.4vw, 52px) var(--f-head);\n  letter-spacing: .06em;\n  text-transform: uppercase;\n}\n\n.ajx-ptn:not(#ajx-n) .banner h1::after {\n  content: \"\";\n  display: block;\n  width: 64px;\n  height: 4px;\n  margin: 14px auto 0;\n  border-radius: 3px;\n  background: var(--lime);\n}\n\n.ajx-ptn:not(#ajx-n) .banner p {\n  margin-top: 14px;\n  font-size: 18px;\n  color: #D6E4FF;\n}\n\n/* ==========================================================================\n   SECTION — \"section--tight\" padding variant\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .section--tight,\n.ajx-ptn:not(#ajx-n).section--tight {\n  padding-block: clamp(40px, 5vw, 70px) clamp(64px, 8vw, 100px);\n}\n\n/* ==========================================================================\n   WHY PARTNER — copy column (kicker, lede, ticks, reach, how)\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .lede--dark {\n  color: var(--text);\n  margin-top: 6px;\n}\n\n.ajx-ptn:not(#ajx-n) .ticks {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 12px 24px;\n  margin: 24px 0 30px;\n}\n\n.ajx-ptn:not(#ajx-n) .ticks--1 {\n  grid-template-columns: 1fr;\n  gap: 10px;\n}\n\n.ajx-ptn:not(#ajx-n) .ticks li {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-weight: 600;\n  color: var(--text);\n}\n\n.ajx-ptn:not(#ajx-n) .ticks li::before {\n  content: \"\";\n  flex: none;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n  background: var(--green) url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 12.5 4 4 8-9' fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\") center/14px no-repeat;\n}\n\n  /* --- Responsive: Phones, 640px and below --- */\n  @media (max-width: 640px) {\n    .ajx-ptn:not(#ajx-n) .ticks {\n      grid-template-columns: 1fr;\n    }\n  }\n\n.ajx-ptn:not(#ajx-n) .reach {\n  margin-top: 26px;\n  padding: 22px 24px;\n  border-radius: var(--r);\n  background: var(--sky);\n  border-left: 5px solid var(--blue);\n}\n\n.ajx-ptn:not(#ajx-n) .reach h3 {\n  font: 600 22px var(--f-head);\n  color: var(--blue);\n  margin-bottom: 4px;\n}\n\n.ajx-ptn:not(#ajx-n) .how {\n  display: grid;\n  gap: 12px;\n  margin-top: 26px;\n  counter-reset: h;\n}\n\n.ajx-ptn:not(#ajx-n) .how li {\n  display: flex;\n  align-items: center;\n  gap: 14px;\n  font-weight: 600;\n  color: var(--ink);\n}\n\n.ajx-ptn:not(#ajx-n) .how b {\n  flex: none;\n  width: 34px;\n  height: 34px;\n  display: grid;\n  place-items: center;\n  border-radius: 50%;\n  background: var(--green);\n  color: #fff;\n  font: 700 15px var(--f-head);\n}\n\n/* ==========================================================================\n   FORM CARD — \"Tell us about you and your business\"\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .formcard {\n  padding: clamp(24px, 3.5vw, 38px);\n  border-radius: var(--r-lg);\n  background: #fff;\n  box-shadow: var(--sh-lg), 0 0 0 1px var(--line);\n}\n\n.ajx-ptn:not(#ajx-n) .formcard h2 {\n  font: 700 26px/1.2 var(--f-head);\n  color: var(--blue);\n}\n\n.ajx-ptn:not(#ajx-n) .formcard__sub {\n  color: var(--muted);\n  margin: 4px 0 22px;\n}\n\n.ajx-ptn:not(#ajx-n) .field {\n  position: relative;\n  margin-bottom: 16px;\n}\n\n.ajx-ptn:not(#ajx-n) .field input,\n.ajx-ptn:not(#ajx-n) .field textarea {\n  width: 100%;\n  padding: 20px 16px 8px;\n  border: 1.5px solid #D5DCE8;\n  border-radius: 10px;\n  background: #fff;\n  color: var(--ink);\n  font: 500 16px var(--f-body);\n  transition: border-color .25s, box-shadow .25s;\n}\n\n.ajx-ptn:not(#ajx-n) .field textarea {\n  resize: vertical;\n  min-height: 96px;\n}\n\n.ajx-ptn:not(#ajx-n) .field label {\n  position: absolute;\n  left: 16px;\n  top: 15px;\n  color: var(--muted);\n  font-size: 15.5px;\n  pointer-events: none;\n  transform-origin: left top;\n  transition: transform .25s var(--ease), color .25s;\n}\n\n.ajx-ptn:not(#ajx-n) .field input:focus,\n.ajx-ptn:not(#ajx-n) .field textarea:focus {\n  outline: none;\n  border-color: var(--blue);\n  box-shadow: 0 0 0 4px rgba(2,86,219,.13);\n}\n\n.ajx-ptn:not(#ajx-n) .field input:focus + label,\n.ajx-ptn:not(#ajx-n) .field input:not(:placeholder-shown) + label,\n.ajx-ptn:not(#ajx-n) .field textarea:focus + label,\n.ajx-ptn:not(#ajx-n) .field textarea:not(:placeholder-shown) + label {\n  transform: translateY(-9px) scale(.78);\n  color: var(--blue);\n}\n\n.ajx-ptn:not(#ajx-n) .field.invalid input,\n.ajx-ptn:not(#ajx-n) .field.invalid textarea {\n  border-color: #D93B3B;\n  box-shadow: 0 0 0 4px rgba(217,59,59,.12);\n}\n\n.ajx-ptn:not(#ajx-n) .field.invalid label {\n  color: #D93B3B;\n}\n\n.ajx-ptn:not(#ajx-n) .agree {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  margin: 4px 0 18px;\n  font-size: 14.5px;\n}\n\n.ajx-ptn:not(#ajx-n) .agree input {\n  width: 18px;\n  height: 18px;\n  accent-color: var(--green);\n}\n\n.ajx-ptn:not(#ajx-n) .form__hint {\n  margin-top: 12px;\n  text-align: center;\n  font-size: 13.5px;\n  color: var(--muted);\n}\n\n.ajx-ptn:not(#ajx-n) .form__hint a,\n.ajx-ptn:not(#ajx-n) .link {\n  color: var(--blue);\n  font-weight: 600;\n}\n\n/* ==========================================================================\n   TOAST — submit feedback (own copy per page, matches live site's #toast)\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .toast {\n  position: fixed;\n  z-index: 500;\n  left: 50%;\n  bottom: 26px;\n  translate: -50% 160%;\n  max-width: calc(100% - 32px);\n  padding: 14px 22px;\n  border-radius: 12px;\n  background: var(--navy);\n  color: #fff;\n  font-weight: 600;\n  box-shadow: 0 24px 50px -16px rgba(0,0,0,.6);\n  transition: translate .5s var(--ease);\n}\n\n.ajx-ptn:not(#ajx-n) .toast.show {\n  translate: -50% 0;\n}\n\n.ajx-ptn:not(#ajx-n) .toast.err {\n  background: #B93131;\n}\n\n.ajx-ptn:not(#ajx-n) .toast.ok {\n  border-bottom: 3px solid var(--lime);\n}\n\n/* ==========================================================================\n   CTA\n   SECTION 13 — \"Become a Distributor\" call-to-action banner\n   ========================================================================== */\n\n.ajx-ptn:not(#ajx-n) .cta-wrap,\n.ajx-ptn:not(#ajx-n).cta-wrap {\n  padding-bottom: clamp(56px, 7vw, 96px);\n}\n\n.ajx-ptn:not(#ajx-n) .cta {\n  position: relative;\n  overflow: hidden;\n  isolation: isolate;\n  text-align: center;\n  padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 60px);\n  border-radius: 26px;\n  color: #DCE8FF;\n  background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 50%, var(--blue-d));\n  box-shadow: var(--sh-lg);\n}\n\n.ajx-ptn:not(#ajx-n) .cta .bubbles {\n  z-index: -1;\n}\n\n.ajx-ptn:not(#ajx-n) .cta h2 {\n  font: 700 clamp(28px, 4vw, 46px)/1.15 var(--f-head);\n  color: #fff;\n  letter-spacing: -.02em;\n  text-wrap: balance;\n}\n\n.ajx-ptn:not(#ajx-n) .cta h2 span {\n  color: var(--lime);\n}\n\n.ajx-ptn:not(#ajx-n) .cta p {\n  margin: 14px auto 0;\n  max-width: 52ch;\n  font-size: 17px;\n}\n\n\n\n/* ==========================================================================\n   REDUCED MOTION\n   Accessibility — disables all of the above animations for visitors who have\n   \"reduce motion\" turned on at the OS level\n   ========================================================================== */\n\n  /* --- Accessibility: Visitors with \"reduce motion\" enabled --- */\n  @media (prefers-reduced-motion: reduce) {\n    .ajx-ptn *,\n    .ajx-ptn *::before,\n    .ajx-ptn *::after {\n      animation: none !important;\n      transition: none !important;\n      scroll-behavior: auto !important;\n    }\n\n    html.ajx-js body:not(.elementor-editor-active) .ajx-ptn:not(#ajx-n) .rv {\n      opacity: 1;\n      transform: none;\n    }\n\n    .ajx-ptn:not(#ajx-n) .tape__track,\n    .ajx-ptn:not(#ajx-n) .burst {\n      animation: none !important;\n    }\n\n  }\n</style><script>(function(){\nvar D=document,H=D.documentElement;\nvar RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;\nvar IO=!RM&&('IntersectionObserver' in window);\nif(IO)H.classList.add('ajx-js');\nfunction ready(f){if(D.readyState!=='loading')f();else D.addEventListener('DOMContentLoaded',f);}\nfunction $(s,c){return (c||D).querySelector(s);}\nfunction $$(s,c){return Array.prototype.slice.call((c||D).querySelectorAll(s));}\nvar WHATSAPP='2347078581881';\nfunction openWhatsApp(text){window.open('https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(text),'_blank','noopener');}\nfunction emailOK(v){return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(v);}\nvar toastT;\nfunction toast(msg,type){\n  type=type||'ok';\n  var t=$('#ajxPtnToast');if(!t)return;\n  t.textContent=msg;t.className='toast show '+type;\n  clearTimeout(toastT);toastT=setTimeout(function(){t.className='toast';},4600);\n}\nready(function(){\n  $$('[data-form]').forEach(function(form){\n    form.addEventListener('input',function(e){var fl=e.target.closest('.field');if(fl)fl.classList.remove('invalid');});\n    form.addEventListener('submit',function(e){\n      e.preventDefault();\n      var fd=new FormData(form);\n      var get=function(k){return (fd.get(k)||'').toString().trim();};\n      var bad=0;\n      $$('[required]',form).forEach(function(inp){\n        var empty=!inp.value.trim();\n        var badMail=inp.type==='email'&&inp.value&&!emailOK(inp.value.trim());\n        var field=inp.closest('.field');\n        if(field)field.classList.toggle('invalid',empty||badMail);\n        if(empty||badMail)bad++;\n      });\n      if(bad){\n        toast('Please fill in the highlighted fields.','err');\n        var badField=$('.invalid input, .invalid textarea',form);\n        if(badField)badField.focus();\n        return;\n      }\n      openWhatsApp(['Hello Ajalisco 👋 Partnership request:','','Name: '+get('name'),'Email: '+get('email'),'Phone: '+get('phone'),'Business: '+(get('business')||'-'),'Location: '+get('location'),'Message: '+(get('message')||'-')].join('\\n'));\n      toast('Opening WhatsApp — just press send to reach us.');\n    });\n  });\n  if(IO){\n    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{rootMargin:'0px 0px -6% 0px',threshold:0.05});\n    $$('.ajx-ptn .rv').forEach(function(el){io.observe(el);});\n  }\n});\n})();</script>"
-     },
-     "elements": [],
-     "isInner": false
-    }
-   ],
-   "isInner": false
-  },
-  {
-   "id": "ptn0003",
-   "elType": "container",
-   "settings": {
-    "container_type": "flex",
-    "content_width": "boxed",
-    "flex_direction": "column",
-    "flex_wrap": "nowrap",
-    "flex_gap": {
-     "unit": "px",
-     "size": 0,
-     "column": "0",
-     "row": "0",
-     "isLinked": true
-    },
-    "padding": {
-     "unit": "px",
-     "top": "0",
-     "right": "36",
-     "bottom": "0",
-     "left": "36",
-     "isLinked": false
-    },
-    "css_classes": "ajx-ptn banner",
-    "boxed_width": {
-     "unit": "px",
-     "size": 1148,
-     "sizes": []
-    },
-    "padding_tablet": {
-     "unit": "px",
-     "top": "0",
-     "right": "30",
-     "bottom": "0",
-     "left": "30",
-     "isLinked": false
-    },
-    "padding_mobile": {
-     "unit": "px",
-     "top": "0",
-     "right": "16",
-     "bottom": "0",
-     "left": "16",
-     "isLinked": false
-    },
-    "_title": "Banner"
-   },
-   "elements": [
-    {
-     "id": "ptn0004",
-     "elType": "widget",
-     "widgetType": "html",
-     "settings": {
-      "html": "<div class=\"bubbles bubbles--sm\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div>"
-     },
-     "elements": [],
-     "isInner": false
-    },
-    {
-     "id": "ptn0005",
-     "elType": "widget",
-     "widgetType": "html",
-     "settings": {
-      "html": "<h1>Partnership Hub</h1><p>Grow with Ajalisco</p>"
-     },
-     "elements": [],
-     "isInner": false
-    },
-    {
-     "id": "ptn0006",
-     "elType": "widget",
-     "widgetType": "html",
-     "settings": {
-      "html": "<div class=\"toast\" id=\"ajxPtnToast\" role=\"status\" aria-live=\"polite\"></div>"
-     },
-     "elements": [],
-     "isInner": false
-    }
-   ],
-   "isInner": false
-  },
-  {
-   "id": "ptn0007",
-   "elType": "container",
-   "settings": {
-    "container_type": "flex",
-    "content_width": "boxed",
-    "flex_direction": "column",
-    "flex_wrap": "nowrap",
-    "flex_gap": {
-     "unit": "px",
-     "size": 0,
-     "column": "0",
-     "row": "0",
-     "isLinked": true
-    },
-    "padding": {
-     "unit": "px",
-     "top": "0",
-     "right": "36",
-     "bottom": "0",
-     "left": "36",
-     "isLinked": false
-    },
-    "css_classes": "ajx-ptn section section--tight",
-    "boxed_width": {
-     "unit": "px",
-     "size": 1148,
-     "sizes": []
-    },
-    "padding_tablet": {
-     "unit": "px",
-     "top": "0",
-     "right": "30",
-     "bottom": "0",
-     "left": "30",
-     "isLinked": false
-    },
-    "padding_mobile": {
-     "unit": "px",
-     "top": "0",
-     "right": "16",
-     "bottom": "0",
-     "left": "16",
-     "isLinked": false
-    },
-    "_title": "Why partner + form"
-   },
-   "elements": [
-    {
-     "id": "ptn0010",
-     "elType": "container",
-     "settings": {
-      "container_type": "flex",
-      "content_width": "full",
-      "flex_direction": "row",
-      "flex_wrap": "nowrap",
-      "flex_gap": {
-       "unit": "px",
-       "size": 0,
-       "column": "0",
-       "row": "0",
-       "isLinked": true
-      },
-      "padding": {
-       "unit": "px",
-       "top": "0",
-       "right": "0",
-       "bottom": "0",
-       "left": "0",
-       "isLinked": false
-      },
-      "flex_align_items": "flex-start",
-      "flex_direction_tablet": "column",
-      "css_classes": "ajx-split ajx-split--two"
-     },
-     "elements": [
-      {
-       "id": "ptn0011",
-       "elType": "container",
-       "settings": {
+      "id": "b00002",
+      "elType": "container",
+      "settings": {
         "container_type": "flex",
-        "content_width": "full",
         "flex_direction": "column",
         "flex_wrap": "nowrap",
         "flex_gap": {
-         "unit": "px",
-         "size": 0,
-         "column": "0",
-         "row": "0",
-         "isLinked": true
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
         },
         "padding": {
-         "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "0",
-         "left": "0",
-         "isLinked": false
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
         },
-        "css_classes": "ajx-col ajx-g105"
-       },
-       "elements": [
-        {
-         "id": "ptn0012",
-         "elType": "widget",
-         "widgetType": "html",
-         "settings": {
-          "html": "<div class=\"two__copy\"><p class=\"kicker rv\">Why Partner with Us?</p><p class=\"lede lede--dark rv\">At Ajalisco Production Industries, we believe in mutual growth. Our partners are the heartbeat of our distribution system—bringing Jalix Bread and Ajalisco Water to communities near and far. Whether you’re a supermarket owner, a small shop vendor, or a logistics company, there’s room to thrive with us.</p><ul class=\"ticks ticks--1 rv\"><li>Reliable Supply Chain</li><li>Attractive Margins</li><li>Marketing Support</li><li>Bulk Order Access</li></ul><div class=\"reach rv\"><h3>Reach Out Lets Discuss</h3><p>Get all the details on pricing, logistics, and benefits.</p></div><ol class=\"how rv\"><li><b>1</b><span>Send us your details</span></li><li><b>2</b><span>We discuss pricing &amp; logistics</span></li><li><b>3</b><span>You start supplying your community</span></li></ol></div>"
-         },
-         "elements": [],
-         "isInner": false
-        }
-       ],
-       "isInner": true
+        "css_classes": "ajx-global",
+        "_title": "Ajalisco styles (keep)",
+        "content_width": "full"
       },
-      {
-       "id": "ptn0013",
-       "elType": "container",
-       "settings": {
+      "elements": [
+        {
+          "id": "b00001",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<style>\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n\n/* Decorative rising bubbles (Banner, CTA) */\n.ajx-ptn:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }\n.ajx-ptn:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxPtnRise var(--d) linear infinite; animation-delay: var(--dl); }\n.ajx-ptn:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }\n.ajx-ptn:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }\n.ajx-ptn:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }\n.ajx-ptn:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }\n.ajx-ptn:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }\n@keyframes ajxPtnRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }\n\n/* Second gradient layer under the Banner/CTA native background */\n.ajx-ptn:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }\n.ajx-ptn:not(#ajx-n) .ajx-glow-cta { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%); }\n\n/* \"Reach out\" callout box — Advanced-tab background/border/padding equivalent, kept here only because a left accent border isn't an Advanced-tab control; no typography. */\n.ajx-ptn:not(#ajx-n) .ajx-reach { border-left: 5px solid #0256DB; }\n\n@media (prefers-reduced-motion: reduce) {\n  .ajx-ptn:not(#ajx-n) .ajx-bubbles i { animation: none !important; }\n}\n</style>\n<script>\n(function () {\n  function openWhatsApp(text) {\n    window.open('https://wa.me/2347078581881?text=' + encodeURIComponent(text), '_blank', 'noopener');\n  }\n  function fieldValue(form, cls) {\n    var el = form.querySelector('.' + cls + ' input, .' + cls + ' textarea, input.' + cls + ', textarea.' + cls);\n    return el ? (el.value || '').trim() : '';\n  }\n  document.addEventListener('submit_success', function (e) {\n    var form = e.target.closest ? e.target.closest('.ajx-partnership-form') : null;\n    if (!form) return;\n    var name = fieldValue(form, 'ajx-f-name'), email = fieldValue(form, 'ajx-f-email'), phone = fieldValue(form, 'ajx-f-phone'),\n        business = fieldValue(form, 'ajx-f-business'), location = fieldValue(form, 'ajx-f-location'), message = fieldValue(form, 'ajx-f-message');\n    openWhatsApp([\n      'Hello Ajalisco \\ud83d\\udc4b Partnership request:', '',\n      'Name: ' + name, 'Email: ' + email, 'Phone: ' + phone,\n      'Business: ' + (business || '-'), 'Location: ' + location, 'Message: ' + (message || '-')\n    ].join('\\n'));\n  });\n})();\n</script>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b00008",
+      "elType": "container",
+      "settings": {
         "container_type": "flex",
-        "content_width": "full",
         "flex_direction": "column",
         "flex_wrap": "nowrap",
         "flex_gap": {
-         "unit": "px",
-         "size": 0,
-         "column": "0",
-         "row": "0",
-         "isLinked": true
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
         },
         "padding": {
-         "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "0",
-         "left": "0",
-         "isLinked": false
+          "unit": "px",
+          "top": "64",
+          "right": "36",
+          "bottom": "64",
+          "left": "36",
+          "isLinked": false
         },
-        "css_classes": "ajx-col ajx-g95"
-       },
-       "elements": [
+        "css_classes": "ajx-ptn ajx-banner",
+        "_title": "Banner",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "50",
+          "right": "30",
+          "bottom": "50",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "38",
+          "right": "16",
+          "bottom": "38",
+          "left": "16",
+          "isLinked": false
+        },
+        "gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "background_background": "gradient",
+        "background_color": "#0A64F0",
+        "background_color_b": "#0243A8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160,
+          "sizes": []
+        },
+        "position": "relative"
+      },
+      "elements": [
         {
-         "id": "ptn0014",
-         "elType": "widget",
-         "widgetType": "html",
-         "settings": {
-          "html": "<div class=\"formcard rv\"><h2>Tell us about you and your business</h2><p class=\"formcard__sub\">We’ll get back to you within 2 business days.</p><form class=\"form\" data-form=\"partnership\" novalidate><div class=\"field\"><input id=\"pName\" name=\"name\" type=\"text\" placeholder=\" \" autocomplete=\"name\" required><label for=\"pName\">Full Name</label></div><div class=\"field\"><input id=\"pEmail\" name=\"email\" type=\"email\" placeholder=\" \" autocomplete=\"email\" required><label for=\"pEmail\">Email</label></div><div class=\"field\"><input id=\"pPhone\" name=\"phone\" type=\"tel\" placeholder=\" \" autocomplete=\"tel\" required><label for=\"pPhone\">Phone Number</label></div><div class=\"field\"><input id=\"pBiz\" name=\"business\" type=\"text\" placeholder=\" \" autocomplete=\"organization\"><label for=\"pBiz\">Business Name</label></div><div class=\"field\"><input id=\"pLoc\" name=\"location\" type=\"text\" placeholder=\" \" required><label for=\"pLoc\">Location (Town/State)</label></div><div class=\"field\"><textarea id=\"pMsg\" name=\"message\" placeholder=\" \" rows=\"3\"></textarea><label for=\"pMsg\">Message</label></div><label class=\"agree\"><input type=\"checkbox\" name=\"agree\" checked> <span>I agree to receive updates from Ajalisco.</span></label><button class=\"btn btn--green btn--lg btn--block\" type=\"submit\">Send Partnership Request</button><p class=\"form__hint\">Your request opens in WhatsApp so we can reply quickly. Prefer email? <a href=\"mailto:support@ajaliscogroup.com\">support@ajaliscogroup.com</a></p></form></div>"
-         },
-         "elements": [],
-         "isInner": false
+          "id": "b00003",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-glow-banner\" aria-hidden=\"true\"></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00004",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-bubbles\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00005",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Partnership Hub",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 52,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 34,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            },
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 1.8,
+              "sizes": []
+            },
+            "typography_text_transform": "uppercase"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00006",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "solid",
+            "color": "#6FC324",
+            "weight": {
+              "unit": "px",
+              "size": 4,
+              "sizes": []
+            },
+            "width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+            },
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00007",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Grow with Ajalisco",
+            "text_color": "#D6E4FF",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
         }
-       ],
-       "isInner": true
-      }
-     ],
-     "isInner": true
-    }
-   ],
-   "isInner": false
-  },
-  {
-   "id": "ptn0015",
-   "elType": "container",
-   "settings": {
-    "container_type": "flex",
-    "content_width": "boxed",
-    "flex_direction": "column",
-    "flex_wrap": "nowrap",
-    "flex_gap": {
-     "unit": "px",
-     "size": 0,
-     "column": "0",
-     "row": "0",
-     "isLinked": true
+      ],
+      "isInner": false
     },
-    "padding": {
-     "unit": "px",
-     "top": "0",
-     "right": "36",
-     "bottom": "0",
-     "left": "36",
-     "isLinked": false
-    },
-    "css_classes": "ajx-ptn cta-wrap",
-    "boxed_width": {
-     "unit": "px",
-     "size": 1148,
-     "sizes": []
-    },
-    "padding_tablet": {
-     "unit": "px",
-     "top": "0",
-     "right": "30",
-     "bottom": "0",
-     "left": "30",
-     "isLinked": false
-    },
-    "padding_mobile": {
-     "unit": "px",
-     "top": "0",
-     "right": "16",
-     "bottom": "0",
-     "left": "16",
-     "isLinked": false
-    },
-    "_title": "Call to action"
-   },
-   "elements": [
     {
-     "id": "ptn0016",
-     "elType": "widget",
-     "widgetType": "html",
-     "settings": {
-      "html": "<div class=\"cta rv\"><div class=\"bubbles bubbles--sm\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div><h2>Proudly Made in Nigeria, Trusted by <span>Thousands</span></h2><p>Let’s bring clean water and fresh bread to more homes in Nigeria.</p><div class=\"btn-row btn-row--center\"><a class=\"btn btn--green btn--lg\" href=\"/shop/\">Explore Our Products</a></div></div>"
-     },
-     "elements": [],
-     "isInner": false
+      "id": "b00023",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "row",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "36",
+          "bottom": "64",
+          "left": "36",
+          "isLinked": false
+        },
+        "css_classes": "ajx-ptn",
+        "_title": "Why Partner + Form",
+        "flex_direction_tablet": "column",
+        "align_items": "flex-start",
+        "gap": {
+          "unit": "px",
+          "size": 50,
+          "sizes": [],
+          "column": "50",
+          "row": "50",
+          "isLinked": true
+        },
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "30",
+          "right": "30",
+          "bottom": "50",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "24",
+          "right": "16",
+          "bottom": "38",
+          "left": "16",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "b0001d",
+          "elType": "container",
+          "settings": {
+            "container_type": "flex",
+            "flex_direction": "column",
+            "flex_wrap": "nowrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 0,
+              "sizes": [],
+              "column": "0",
+              "row": "0",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "css_classes": "",
+            "_title": "Why Partner copy",
+            "gap": {
+              "unit": "px",
+              "size": 16,
+              "sizes": [],
+              "column": "16",
+              "row": "16",
+              "isLinked": true
+            },
+            "flex_grow": "105",
+            "flex_shrink": "1",
+            "_flex_basis": "0%"
+          },
+          "elements": [
+            {
+              "id": "b00009",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Why Partner with Us?",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#0256DB",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "background_background": "classic",
+                "background_color": "#DFEBFC",
+                "padding": {
+                  "unit": "px",
+                  "top": "6",
+                  "right": "16",
+                  "bottom": "6",
+                  "left": "16",
+                  "isLinked": false
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": false
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b0000a",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "At Ajalisco Production Industries, we believe in mutual growth. Our partners are the heartbeat of our distribution system—bringing Jalix Bread and Ajalisco Water to communities near and far. Whether you’re a supermarket owner, a small shop vendor, or a logistics company, there’s room to thrive with us.",
+                "text_color": "#54595F",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b0000b",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "_id": "b0000c",
+                    "text": "Reliable Supply Chain",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": ""
+                    }
+                  },
+                  {
+                    "_id": "b0000d",
+                    "text": "Attractive Margins",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": ""
+                    }
+                  },
+                  {
+                    "_id": "b0000e",
+                    "text": "Marketing Support",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": ""
+                    }
+                  },
+                  {
+                    "_id": "b0000f",
+                    "text": "Bulk Order Access",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    },
+                    "link": {
+                      "url": ""
+                    }
+                  }
+                ],
+                "icon_color": "#28A745",
+                "text_color": "#54595F",
+                "icon_typography_typography": "custom",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "icon_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "space_between": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "icon_list_columns": "1"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b00012",
+              "elType": "container",
+              "settings": {
+                "container_type": "flex",
+                "flex_direction": "column",
+                "flex_wrap": "nowrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": [],
+                  "column": "0",
+                  "row": "0",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "22",
+                  "right": "24",
+                  "bottom": "22",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "css_classes": "ajx-ptn ajx-reach",
+                "_title": "Reach callout",
+                "background_background": "classic",
+                "background_color": "#DFEBFC",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "14",
+                  "right": "14",
+                  "bottom": "14",
+                  "left": "14",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "b00010",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Reach Out Lets Discuss",
+                    "header_size": "h3",
+                    "align": "left",
+                    "title_color": "#0256DB",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Outfit",
+                    "typography_font_weight": "600",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "b00011",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "Get all the details on pricing, logistics, and benefits.",
+                    "text_color": "#54595F",
+                    "align": "left",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Nunito",
+                    "typography_font_weight": "400",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "b0001c",
+              "elType": "container",
+              "settings": {
+                "container_type": "flex",
+                "flex_direction": "column",
+                "flex_wrap": "nowrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": [],
+                  "column": "0",
+                  "row": "0",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "css_classes": "",
+                "_title": "How it works",
+                "gap": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": [],
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "b00015",
+                  "elType": "container",
+                  "settings": {
+                    "container_type": "flex",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 0,
+                      "sizes": [],
+                      "column": "0",
+                      "row": "0",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "css_classes": "",
+                    "_title": "Step 1",
+                    "align_items": "center",
+                    "gap": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": [],
+                      "column": "14",
+                      "row": "14",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "b00013",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "1",
+                        "header_size": "span",
+                        "align": "center",
+                        "title_color": "#ffffff",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_weight": "700",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "background_background": "classic",
+                        "background_color": "#28A745",
+                        "_element_width": "initial",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "999",
+                          "right": "999",
+                          "bottom": "999",
+                          "left": "999",
+                          "isLinked": false
+                        },
+                        "custom_width": {
+                          "unit": "px",
+                          "size": 34,
+                          "sizes": []
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "9",
+                          "right": "0",
+                          "bottom": "9",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "b00014",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Send us your details",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#16204A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Nunito",
+                        "typography_font_weight": "600",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "_element_width": "initial"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "b00018",
+                  "elType": "container",
+                  "settings": {
+                    "container_type": "flex",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 0,
+                      "sizes": [],
+                      "column": "0",
+                      "row": "0",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "css_classes": "",
+                    "_title": "Step 2",
+                    "align_items": "center",
+                    "gap": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": [],
+                      "column": "14",
+                      "row": "14",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "b00016",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "2",
+                        "header_size": "span",
+                        "align": "center",
+                        "title_color": "#ffffff",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_weight": "700",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "background_background": "classic",
+                        "background_color": "#28A745",
+                        "_element_width": "initial",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "999",
+                          "right": "999",
+                          "bottom": "999",
+                          "left": "999",
+                          "isLinked": false
+                        },
+                        "custom_width": {
+                          "unit": "px",
+                          "size": 34,
+                          "sizes": []
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "9",
+                          "right": "0",
+                          "bottom": "9",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "b00017",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "We discuss pricing & logistics",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#16204A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Nunito",
+                        "typography_font_weight": "600",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "_element_width": "initial"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "b0001b",
+                  "elType": "container",
+                  "settings": {
+                    "container_type": "flex",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 0,
+                      "sizes": [],
+                      "column": "0",
+                      "row": "0",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "css_classes": "",
+                    "_title": "Step 3",
+                    "align_items": "center",
+                    "gap": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": [],
+                      "column": "14",
+                      "row": "14",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "b00019",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "3",
+                        "header_size": "span",
+                        "align": "center",
+                        "title_color": "#ffffff",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_weight": "700",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "background_background": "classic",
+                        "background_color": "#28A745",
+                        "_element_width": "initial",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "999",
+                          "right": "999",
+                          "bottom": "999",
+                          "left": "999",
+                          "isLinked": false
+                        },
+                        "custom_width": {
+                          "unit": "px",
+                          "size": 34,
+                          "sizes": []
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "9",
+                          "right": "0",
+                          "bottom": "9",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "b0001a",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "You start supplying your community",
+                        "header_size": "span",
+                        "align": "left",
+                        "title_color": "#16204A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Nunito",
+                        "typography_font_weight": "600",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "typography_font_size_tablet": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "_element_width": "initial"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "b00022",
+          "elType": "container",
+          "settings": {
+            "container_type": "flex",
+            "flex_direction": "column",
+            "flex_wrap": "nowrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 0,
+              "sizes": [],
+              "column": "0",
+              "row": "0",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "38",
+              "right": "38",
+              "bottom": "38",
+              "left": "38",
+              "isLinked": false
+            },
+            "css_classes": "ajx-ptn",
+            "_title": "Form card",
+            "gap": {
+              "unit": "px",
+              "size": 4,
+              "sizes": [],
+              "column": "4",
+              "row": "4",
+              "isLinked": true
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff",
+            "border_radius": {
+              "unit": "px",
+              "top": "22",
+              "right": "22",
+              "bottom": "22",
+              "left": "22",
+              "isLinked": false
+            },
+            "flex_grow": "95",
+            "flex_shrink": "1",
+            "_flex_basis": "0%"
+          },
+          "elements": [
+            {
+              "id": "b0001f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tell us about you and your business",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#0256DB",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 26,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b00020",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "We’ll get back to you within 2 business days.",
+                "text_color": "#7A7A7A",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b0001e",
+              "elType": "widget",
+              "widgetType": "form",
+              "elements": [],
+              "isInner": false,
+              "settings": {
+                "form_name": "Partnership Request",
+                "form_fields": [
+                  {
+                    "_id": "pname",
+                    "field_type": "text",
+                    "field_label": "Full Name",
+                    "placeholder": "Full Name",
+                    "required": "true",
+                    "width": "100",
+                    "css_classes": "ajx-f-name"
+                  },
+                  {
+                    "_id": "pemail",
+                    "field_type": "email",
+                    "field_label": "Email",
+                    "placeholder": "Email",
+                    "required": "true",
+                    "width": "100",
+                    "css_classes": "ajx-f-email"
+                  },
+                  {
+                    "_id": "pphone",
+                    "field_type": "tel",
+                    "field_label": "Phone Number",
+                    "placeholder": "Phone Number",
+                    "required": "true",
+                    "width": "100",
+                    "css_classes": "ajx-f-phone"
+                  },
+                  {
+                    "_id": "pbiz",
+                    "field_type": "text",
+                    "field_label": "Business Name",
+                    "placeholder": "Business Name",
+                    "required": "",
+                    "width": "100",
+                    "css_classes": "ajx-f-business"
+                  },
+                  {
+                    "_id": "ploc",
+                    "field_type": "text",
+                    "field_label": "Location (Town/State)",
+                    "placeholder": "Location (Town/State)",
+                    "required": "true",
+                    "width": "100",
+                    "css_classes": "ajx-f-location"
+                  },
+                  {
+                    "_id": "pmsg",
+                    "field_type": "textarea",
+                    "field_label": "Message",
+                    "placeholder": "Message",
+                    "required": "",
+                    "width": "100",
+                    "rows": 3,
+                    "css_classes": "ajx-f-message"
+                  },
+                  {
+                    "_id": "pagree",
+                    "field_type": "acceptance",
+                    "field_label": "",
+                    "field_value": "I agree to receive updates from Ajalisco.",
+                    "required": "true",
+                    "width": "100"
+                  }
+                ],
+                "button_text": "Send Partnership Request",
+                "button_size": "lg",
+                "button_background_color": "#28A745",
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Outfit",
+                "button_typography_font_weight": "600",
+                "button_typography_font_size": {
+                  "unit": "px",
+                  "size": 16.5,
+                  "sizes": []
+                },
+                "label_typography_typography": "custom",
+                "label_typography_font_family": "Nunito",
+                "label_typography_font_weight": "600",
+                "label_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "field_typography_typography": "custom",
+                "field_typography_font_family": "Nunito",
+                "field_typography_font_weight": "500",
+                "field_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "css_classes": "ajx-partnership-form",
+                "submit_actions": []
+              }
+            },
+            {
+              "id": "b00021",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Your request opens in WhatsApp so we can reply quickly. Prefer email? <a href=\"mailto:support@ajaliscogroup.com\" style=\"color:#0256DB;font-weight:600\">support@ajaliscogroup.com</a>",
+                "text_color": "#7A7A7A",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13.5,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b00029",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "72",
+          "right": "60",
+          "bottom": "72",
+          "left": "60",
+          "isLinked": false
+        },
+        "css_classes": "ajx-ptn ajx-cta",
+        "_title": "CTA",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "56",
+          "right": "40",
+          "bottom": "56",
+          "left": "40",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#0A64F0",
+        "background_color_b": "#0243A8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160,
+          "sizes": []
+        },
+        "position": "relative",
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "b00024",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-glow-cta\" aria-hidden=\"true\"></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00025",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-bubbles\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00026",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
+            "text_color": "#ffffff",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44,
+              "sizes": []
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.15,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 34,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00027",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Let's bring clean water and fresh bread to more homes in Nigeria.",
+            "text_color": "#DCE8FF",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00028",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Explore Our Products",
+            "link": {
+              "url": "/shop/",
+              "is_external": "",
+              "nofollow": ""
+            },
+            "align": "center",
+            "size": "lg",
+            "background_color": "#28A745",
+            "button_text_color": "#ffffff",
+            "border_radius": {
+              "unit": "px",
+              "top": "10",
+              "right": "10",
+              "bottom": "10",
+              "left": "10",
+              "isLinked": false
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 16.5,
+              "sizes": []
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 12,
+              "blur": 24,
+              "spread": -12,
+              "color": "rgba(40,167,69,.9)"
+            }
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
     }
-   ],
-   "isInner": false
-  }
- ],
- "page_settings": {
-  "template": "elementor_header_footer",
-  "hide_title": "yes"
- },
- "version": "0.4",
- "title": "Partnership",
- "type": "page"
+  ],
+  "page_settings": {
+    "template": "elementor_header_footer",
+    "hide_title": "yes"
+  },
+  "version": "0.4",
+  "title": "Partnership",
+  "type": "page"
 }

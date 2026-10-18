@@ -1,32 +1,37 @@
 /* ==========================================================================
    AJALISCO ABOUT PAGE — about.json styles
-   Ported from the live site's own styles.css, reorganized by About-page
-   section with comments, for Elementor's "Ajalisco styles & scripts
-   (keep)" HTML widget. Paste this whole file in place of the <style>
-   block's contents (keep the <style> and <script> tags around it).
+   This page is almost entirely native Elementor widgets (Heading, Text
+   Editor, Divider, Image, Icon Box, Button) — there is no component-level
+   custom CSS here, unlike the original version of this export. The only
+   exceptions, pasted into the "Ajalisco styles (keep)" HTML widget at the
+   top of about.json, are:
 
-   CONTENTS
-     FOUNDATION
-     ANIMATIONS
-     BUTTONS
-     BUBBLES
-     LAYOUT
-     BANNER
-     SECTION--TIGHT
-     JOURNEY SPLIT
-     MISSION & VISION
-     CORE VALUES
-     TEAM
-     CERTIFICATIONS
-     CTA
-     REDUCED MOTION
-   ========================================================================== */
+     1. @font-face rules for Outfit/Nunito (font loading only — never
+        overrides which font-size/weight/family actually gets used; that
+        is governed solely by each widget's own native Typography
+        controls)
+     2. The rising-bubbles decorative animation (Banner, CTA)
+     3. A radial-gradient highlight layered under the Banner/CTA's native
+        gradient background (Elementor's native background control only
+        supports one gradient layer, so the live site's two-layer effect
+        is approximated, not reproduced exactly)
+     4. object-position (and, for the Journey photo, aspect-ratio) on four
+        specific images — Elementor's native Image widget has no
+        object-position control, and this rebuild could not confirm the
+        exact key/shape of Elementor's native Aspect Ratio control against
+        a real install, so rather than guess a possibly-wrong settings
+        key, both are handled here as plain CSS instead. Check after
+        import whether a native Aspect Ratio control exists on your
+        Elementor version and could replace the aspect-ratio rule below.
 
-
-/* ==========================================================================
-   FOUNDATION
-   Fonts, CSS reset, brand colour variables, base typography — applies to the
-   whole About page
+   None of the exceptions above touch font-family, font-size, font-weight,
+   or color on any heading/text element — that was the bug in the original
+   version of this export (a ".ajx-title" override class with
+   ":not(#ajx-n)" specificity high enough to silently beat the native
+   Typography settings, making them look native but do nothing). This file
+   has no such rule, by construction. See the "about.json" section of
+   elementor/README.md for the full writeup of that bug and the
+   `boxed_width` bug (was 1148, now 1220) also fixed in this rebuild.
    ========================================================================== */
 
 @font-face {
@@ -37,7 +42,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -46,25 +50,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -73,7 +58,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -82,7 +66,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -91,7 +74,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -100,43 +82,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -145,7 +90,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -154,7 +98,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -163,7 +106,6 @@
   src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -173,692 +115,24 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.ajx-abt {
-  --blue: #0256DB;
-  --blue-d: #0243A8;
-  --blue-dd: #012F7E;
-  --navy: #1C244B;
-  --green: #28A745;
-  --green-d: #1E8A38;
-  --leaf: #56A428;
-  --lime: #6FC324;
-  --sky: #DFEBFC;
-  --sky-2: #AAD0F0;
-  --gray: #F5F5F5;
-  --amber: #F7B650;
-  --text: #54595F;
-  --muted: #7A7A7A;
-  --ink: #16204A;
-  --line: #E3E9F2;
-  --r: 14px;
-  --r-lg: 22px;
-  --sh: 0 2px 4px rgba(28,36,75,.05), 0 14px 34px -16px rgba(2,67,168,.30);
-  --sh-lg: 0 30px 70px -30px rgba(2,50,140,.5);
-  --f-head: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --ease: cubic-bezier(.2,.8,.2,1);
-  color-scheme: light;
+/* Decorative rising bubbles (Banner, CTA) */
+.ajx-abt:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.ajx-abt:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxAbtRise var(--d) linear infinite; animation-delay: var(--dl); }
+.ajx-abt:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }
+.ajx-abt:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }
+.ajx-abt:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }
+.ajx-abt:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }
+.ajx-abt:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }
+@keyframes ajxAbtRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }
+
+/* Second gradient layer under the Banner/CTA native background */
+.ajx-abt:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }
+.ajx-abt:not(#ajx-n) .ajx-glow-cta { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%); }
+
+/* object-position/aspect-ratio exceptions — see note 4 above */
+.ajx-abt:not(#ajx-n) .ajx-img-journey img { object-position: 60% 50%; aspect-ratio: 1; }
+.ajx-abt:not(#ajx-n) .ajx-img-ceo img, .ajx-abt:not(#ajx-n) .ajx-img-emily img, .ajx-abt:not(#ajx-n) .ajx-img-joshua img { object-position: 50% 20%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ajx-abt:not(#ajx-n) .ajx-bubbles i { animation: none !important; }
 }
-
-.ajx-abt *,
-.ajx-abt *::before,
-.ajx-abt *::after {
-  box-sizing: border-box;
-}
-
-.ajx-abt {
-  font: 400 16px/1.7 var(--f-body);
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-}
-
-.ajx-abt img {
-  max-width: 100%;
-  display: block;
-}
-
-.ajx-abt a {
-  color: inherit;
-}
-
-.ajx-abt h1,
-.ajx-abt h2,
-.ajx-abt h3,
-.ajx-abt h4,
-.ajx-abt p,
-.ajx-abt ul,
-.ajx-abt ol,
-.ajx-abt dl,
-.ajx-abt dd,
-.ajx-abt figure {
-  margin: 0;
-}
-
-.ajx-abt ul,
-.ajx-abt ol {
-  padding: 0;
-  list-style: none;
-}
-
-.ajx-abt button {
-  font: inherit;
-  color: inherit;
-}
-
-.ajx-abt button {
-  cursor: pointer;
-}
-
-.ajx-abt :focus-visible {
-  outline: 3px solid #6FA6FF;
-  outline-offset: 3px;
-  border-radius: 8px;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
-}
-
-
-
-/* ==========================================================================
-   ANIMATIONS
-   ========================================================================== */
-
-@keyframes ajx-rise {
-  0% { transform: translate(0, 0); opacity: 0; }
-  10% { opacity: 1; }
-  100% { transform: translate(24px, -120vh); opacity: .2; }
-}
-
-/* ==========================================================================
-   BUTTONS
-   The .btn family — only the CTA's "Become a Distributor" button needs it
-   on this page
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 24px;
-  border: 0;
-  border-radius: 10px;
-  text-decoration: none;
-  white-space: nowrap;
-  font: 600 15.5px var(--f-head);
-  letter-spacing: .01em;
-  color: #fff;
-  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s;
-}
-
-.ajx-abt:not(#ajx-n) .btn:hover {
-  transform: translateY(-2px);
-}
-
-.ajx-abt:not(#ajx-n) .btn:active {
-  transform: scale(.98);
-}
-
-.ajx-abt:not(#ajx-n) .btn--lg {
-  padding: 15px 30px;
-  font-size: 16.5px;
-}
-
-.ajx-abt:not(#ajx-n) .btn--green {
-  background: var(--green);
-  box-shadow: 0 12px 24px -12px rgba(40,167,69,.9);
-}
-
-.ajx-abt:not(#ajx-n) .btn--green:hover {
-  background: var(--green-d);
-}
-
-.ajx-abt:not(#ajx-n) .btn-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 30px;
-}
-
-.ajx-abt:not(#ajx-n) .btn-row--center {
-  justify-content: center;
-}
-
-  /* --- Responsive: Phones, 640px and below --- */
-  @media (max-width: 640px) {
-    .ajx-abt:not(#ajx-n) .btn-row .btn {
-      flex: 1 1 auto;
-    }
-  }
-
-
-
-/* ==========================================================================
-   BUBBLES
-   The floating-bubble background decoration — used by the Banner and CTA
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .bubbles {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.ajx-abt:not(#ajx-n) .bubbles i {
-  position: absolute;
-  bottom: -70px;
-  width: var(--s);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
-  animation: ajx-rise var(--d) linear infinite;
-  animation-delay: var(--dl);
-}
-
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(2) { left: 14%; --s: 12px; --d: 12s; --dl: -8s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(3) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(4) { left: 37%; --s: 16px; --d: 14s; --dl: -2s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(5) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(6) { left: 58%; --s: 10px; --d: 11s; --dl: -6s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(7) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(8) { left: 78%; --s: 18px; --d: 15s; --dl: -1s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(9) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }
-.ajx-abt:not(#ajx-n) .bubbles i:nth-child(10) { left: 95%; --s: 14px; --d: 13s; --dl: -5s; }
-
-.ajx-abt:not(#ajx-n) .bubbles--sm i {
-  --s: 20px;
-}
-
-.ajx-abt:not(#ajx-n) .bubbles--sm i:nth-child(n+7) {
-  display: none;
-}
-
-
-
-/* ==========================================================================
-   LAYOUT
-   Elementor Container plumbing: the flex split/column system, boxed-width
-   gutters, the hidden 'keep this block' label, shared section headings
-   (kicker/title), and the scroll-reveal animation system. Not page content
-   — change this only if you understand the layout, not the design.
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .section,
-.ajx-abt:not(#ajx-n).section {
-  padding-block: clamp(64px, 8vw, 110px);
-  position: relative;
-}
-
-.ajx-abt:not(#ajx-n) .section--gray,
-.ajx-abt:not(#ajx-n).section--gray {
-  background: var(--gray);
-}
-
-.ajx-abt:not(#ajx-n) .kicker {
-  display: inline-block;
-  padding: 6px 16px;
-  border-radius: 999px;
-  background: var(--sky);
-  color: var(--blue);
-  font: 600 14px var(--f-head);
-  margin-bottom: 14px;
-}
-
-.ajx-abt:not(#ajx-n) .kicker--center {
-  margin-inline: auto;
-}
-
-.ajx-abt:not(#ajx-n) .title {
-  font: 700 clamp(30px, 3.6vw, 44px)/1.15 var(--f-head);
-  letter-spacing: -.015em;
-  color: var(--blue);
-  text-wrap: balance;
-}
-
-.ajx-abt:not(#ajx-n) .title--md {
-  font-size: clamp(28px, 3.2vw, 38px);
-}
-
-.ajx-abt:not(#ajx-n) .lede {
-  margin-top: 16px;
-  font-size: 17px;
-  color: var(--muted);
-  text-align: left;
-  max-width: 60ch;
-}
-
-.ajx-abt:not(#ajx-n) .head-center {
-  text-align: center;
-  display: grid;
-  justify-items: center;
-  margin-bottom: clamp(30px, 4vw, 50px);
-}
-
-html.ajx-js body:not(.elementor-editor-active) .ajx-abt:not(#ajx-n) .rv {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity .8s var(--ease), transform .8s var(--ease);
-  transition-delay: calc(var(--i, 0) * 80ms);
-}
-
-html.ajx-js body:not(.elementor-editor-active) .ajx-abt:not(#ajx-n) .rv.in {
-  opacity: 1;
-  transform: none;
-}
-
-.ajx-global {
-  min-height: 0!important;
-}
-
-body.elementor-editor-active .ajx-global .elementor-widget-html {
-  min-height: 22px;
-}
-
-body.elementor-editor-active .ajx-global .elementor-widget-html::before {
-  content: "Ajalisco about-page styles & scripts \2014 keep this block";
-  display: block;
-  padding: 4px 8px;
-  font: 12px/1.2 sans-serif;
-  color: #555;
-  background: #fff7d6;
-  border: 1px dashed #d9b84a;
-}
-
-.ajx-abt:not(#ajx-n).e-con-boxed,
-.ajx-abt:not(#ajx-n) .e-con-boxed {
-  padding-inline: clamp(16px,4vw,36px)!important;
-}
-
-.ajx-abt:not(#ajx-n) .ajx-split {
-  flex-direction: row!important;
-  flex-wrap: nowrap!important;
-  align-items: center!important;
-}
-
-.ajx-abt:not(#ajx-n) .ajx-split>.ajx-col {
-  flex: 1 1 0%!important;
-  width: auto!important;
-  max-width: none!important;
-  padding: 0!important;
-}
-
-.ajx-abt:not(#ajx-n) .ajx-head {
-  margin-bottom: clamp(30px,4vw,50px);
-}
-
-.ajx-abt:not(#ajx-n) .ajx-title .elementor-heading-title {
-  text-wrap: balance;
-  font-size: clamp(30px,3.6vw,44px);
-}
-
-/* ==========================================================================
-   BANNER
-   Page banner — "About Us" heading + sub-line
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .banner,
-.ajx-abt:not(#ajx-n).banner {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  text-align: center;
-  color: #fff;
-  padding: clamp(46px, 6vw, 80px) 0;
-  background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 55%, var(--blue-d));
-}
-
-.ajx-abt:not(#ajx-n) .banner .bubbles {
-  z-index: -1;
-}
-
-.ajx-abt:not(#ajx-n) .banner h1 {
-  font: 700 clamp(30px, 4.4vw, 52px) var(--f-head);
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-
-.ajx-abt:not(#ajx-n) .banner h1::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 4px;
-  margin: 14px auto 0;
-  border-radius: 3px;
-  background: var(--lime);
-}
-
-.ajx-abt:not(#ajx-n) .banner p {
-  margin-top: 14px;
-  font-size: 18px;
-  color: #D6E4FF;
-}
-
-/* ==========================================================================
-   SECTION — "section--tight" padding variant
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .section--tight,
-.ajx-abt:not(#ajx-n).section--tight {
-  padding-block: clamp(40px, 5vw, 70px) clamp(64px, 8vw, 100px);
-}
-
-/* ==========================================================================
-   JOURNEY SPLIT
-   "Our Journey in the Production Industry" — copy column + round photo
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .ajx-split--even {
-  gap: clamp(30px, 5vw, 70px)!important;
-}
-
-.ajx-abt:not(#ajx-n) .split__media img {
-  width: 100%;
-  border-radius: var(--r-lg);
-  box-shadow: var(--sh-lg);
-}
-
-.ajx-abt:not(#ajx-n) .split__media--round img {
-  border-radius: 200px 200px var(--r-lg) var(--r-lg);
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: 60% 50%;
-}
-
-  /* --- Responsive: Tablets, 960px and below --- */
-  @media (max-width: 960px) {
-    .ajx-abt:not(#ajx-n) .ajx-split--even {
-      flex-direction: column!important;
-      align-items: stretch!important;
-    }
-
-    .ajx-abt:not(#ajx-n) .ajx-split--even>.ajx-col {
-      flex: none!important;
-      width: 100%!important;
-    }
-  }
-
-/* ==========================================================================
-   MISSION & VISION
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .mv {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.ajx-abt:not(#ajx-n) .mvcard {
-  padding: 32px 30px;
-  border-radius: var(--r-lg);
-  background: #fff;
-  box-shadow: var(--sh), 0 0 0 1px var(--line);
-}
-
-.ajx-abt:not(#ajx-n) .mvcard__icon {
-  display: grid;
-  place-items: center;
-  width: 60px;
-  height: 60px;
-  margin-bottom: 14px;
-  border-radius: 50%;
-  background: var(--leaf);
-  color: #fff;
-}
-
-.ajx-abt:not(#ajx-n) .mvcard__icon svg {
-  width: 28px;
-  height: 28px;
-  fill: currentColor;
-}
-
-.ajx-abt:not(#ajx-n) .mvcard h3 {
-  font: 700 26px var(--f-head);
-  color: var(--blue);
-  margin-bottom: 8px;
-}
-
-  /* --- Responsive: Tablets, 960px and below --- */
-  @media (max-width: 960px) {
-    .ajx-abt:not(#ajx-n) .mv {
-      grid-template-columns: 1fr;
-    }
-  }
-
-/* ==========================================================================
-   CORE VALUES
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .cvals {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.ajx-abt:not(#ajx-n) .cval {
-  padding: 24px 24px 24px 26px;
-  border-radius: var(--r);
-  background: #fff;
-  border-left: 5px solid var(--green);
-  box-shadow: var(--sh), 0 0 0 1px var(--line);
-  transition: transform .4s var(--ease);
-}
-
-.ajx-abt:not(#ajx-n) .cval:hover {
-  transform: translateY(-6px);
-}
-
-.ajx-abt:not(#ajx-n) .cval h3 {
-  font: 600 20px var(--f-head);
-  color: var(--blue);
-  margin-bottom: 6px;
-}
-
-.ajx-abt:not(#ajx-n) .cval p {
-  font-size: 15.5px;
-  color: var(--muted);
-}
-
-  /* --- Responsive: Tablets/small desktops, 1100px and below --- */
-  @media (max-width: 1100px) {
-    .ajx-abt:not(#ajx-n) .cvals,
-    .ajx-abt:not(#ajx-n) .team {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  /* --- Responsive: Phones, 640px and below --- */
-  @media (max-width: 640px) {
-    .ajx-abt:not(#ajx-n) .cvals,
-    .ajx-abt:not(#ajx-n) .team {
-      grid-template-columns: 1fr;
-    }
-  }
-
-/* ==========================================================================
-   TEAM
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .team {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.ajx-abt:not(#ajx-n) .member {
-  display: flex;
-  flex-direction: column;
-  border-radius: var(--r-lg);
-  background: #fff;
-  overflow: hidden;
-  box-shadow: var(--sh), 0 0 0 1px var(--line);
-  transition: transform .4s var(--ease);
-}
-
-.ajx-abt:not(#ajx-n) .member:hover {
-  transform: translateY(-8px);
-}
-
-.ajx-abt:not(#ajx-n) .member__img {
-  aspect-ratio: 1.1;
-  overflow: hidden;
-  background: var(--sky);
-}
-
-.ajx-abt:not(#ajx-n) .member__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 20%;
-  transition: transform .6s var(--ease);
-}
-
-.ajx-abt:not(#ajx-n) .member:hover .member__img img {
-  transform: scale(1.05);
-}
-
-.ajx-abt:not(#ajx-n) .member__body {
-  padding: 22px 24px 26px;
-}
-
-.ajx-abt:not(#ajx-n) .member h3 {
-  font: 700 22px var(--f-head);
-  color: var(--blue);
-}
-
-.ajx-abt:not(#ajx-n) .role {
-  margin-bottom: 10px;
-  font: 600 14px var(--f-head);
-  color: var(--leaf);
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-
-.ajx-abt:not(#ajx-n) .member__body p:last-child {
-  font-size: 15px;
-  color: var(--muted);
-}
-
-/* ==========================================================================
-   CERTIFICATIONS
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .certs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 24px;
-}
-
-.ajx-abt:not(#ajx-n) .cert {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  padding: 20px;
-  width: min(320px, 100%);
-  border-radius: var(--r-lg);
-  background: #fff;
-  box-shadow: var(--sh), 0 0 0 1px var(--line);
-  text-align: center;
-}
-
-.ajx-abt:not(#ajx-n) .cert img {
-  width: 100%;
-  max-height: 380px;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-.ajx-abt:not(#ajx-n) .cert--nafdac {
-  justify-content: center;
-}
-
-.ajx-abt:not(#ajx-n) .cert--nafdac img {
-  width: 150px;
-}
-
-.ajx-abt:not(#ajx-n) .cert figcaption {
-  font: 600 18px var(--f-head);
-  color: var(--blue);
-  line-height: 1.3;
-}
-
-.ajx-abt:not(#ajx-n) .cert small {
-  display: block;
-  font: 500 14.5px var(--f-body);
-  color: var(--muted);
-}
-
-/* ==========================================================================
-   CTA
-   "Become a Distributor" call-to-action banner
-   ========================================================================== */
-
-.ajx-abt:not(#ajx-n) .cta-wrap,
-.ajx-abt:not(#ajx-n).cta-wrap {
-  padding-bottom: clamp(56px, 7vw, 96px);
-}
-
-.ajx-abt:not(#ajx-n) .cta {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  text-align: center;
-  padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 60px);
-  border-radius: 26px;
-  color: #DCE8FF;
-  background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%), linear-gradient(160deg, #0A64F0, var(--blue) 50%, var(--blue-d));
-  box-shadow: var(--sh-lg);
-}
-
-.ajx-abt:not(#ajx-n) .cta .bubbles {
-  z-index: -1;
-}
-
-.ajx-abt:not(#ajx-n) .cta h2 {
-  font: 700 clamp(28px, 4vw, 46px)/1.15 var(--f-head);
-  color: #fff;
-  letter-spacing: -.02em;
-  text-wrap: balance;
-}
-
-.ajx-abt:not(#ajx-n) .cta h2 span {
-  color: var(--lime);
-}
-
-.ajx-abt:not(#ajx-n) .cta p {
-  margin: 14px auto 0;
-  max-width: 52ch;
-  font-size: 17px;
-}
-
-
-
-/* ==========================================================================
-   REDUCED MOTION
-   Accessibility — disables all of the above animations for visitors who have
-   "reduce motion" turned on at the OS level
-   ========================================================================== */
-
-  /* --- Accessibility: Visitors with "reduce motion" enabled --- */
-  @media (prefers-reduced-motion: reduce) {
-    .ajx-abt *,
-    .ajx-abt *::before,
-    .ajx-abt *::after {
-      animation: none !important;
-      transition: none !important;
-      scroll-behavior: auto !important;
-    }
-
-    html.ajx-js body:not(.elementor-editor-active) .ajx-abt:not(#ajx-n) .rv {
-      opacity: 1;
-      transform: none;
-    }
-  }

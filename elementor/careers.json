@@ -1,0 +1,539 @@
+{
+  "content": [
+    {
+      "id": "a00002",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "css_classes": "ajx-global",
+        "_title": "Ajalisco styles (keep)",
+        "content_width": "full"
+      },
+      "elements": [
+        {
+          "id": "a00001",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<style>\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n\n/* Decorative rising bubbles (Banner, CTA) — no native Elementor equivalent for randomized per-bubble rise timing. Touches position/background/animation only, never typography. */\n.ajx-crs:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }\n.ajx-crs:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxCrsRise var(--d) linear infinite; animation-delay: var(--dl); }\n.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }\n.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }\n.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }\n.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }\n.ajx-crs:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }\n@keyframes ajxCrsRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }\n\n/* Decorative radial highlight glow layered under the Banner/CTA native gradient background — one extra light pool Elementor's single-layer gradient control can't add on its own. Position/background only. */\n.ajx-crs:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }\n.ajx-crs:not(#ajx-n) .ajx-glow-cta { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%); }\n\n@media (prefers-reduced-motion: reduce) {\n  .ajx-crs:not(#ajx-n) .ajx-bubbles i { animation: none !important; }\n}\n</style>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a00008",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "right": "36",
+          "bottom": "64",
+          "left": "36",
+          "isLinked": false
+        },
+        "css_classes": "ajx-crs ajx-banner",
+        "_title": "Banner",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "50",
+          "right": "30",
+          "bottom": "50",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "38",
+          "right": "16",
+          "bottom": "38",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#0A64F0",
+        "gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "background_color_b": "#0243A8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160,
+          "sizes": []
+        },
+        "position": "relative"
+      },
+      "elements": [
+        {
+          "id": "a00003",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-glow-banner\" aria-hidden=\"true\"></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a00004",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-bubbles\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a00005",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Careers",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 52,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 34,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            },
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 1.8,
+              "sizes": []
+            },
+            "typography_text_transform": "uppercase"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a00006",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "solid",
+            "color": "#6FC324",
+            "weight": {
+              "unit": "px",
+              "size": 4,
+              "sizes": []
+            },
+            "width": {
+              "unit": "px",
+              "size": 64,
+              "sizes": []
+            },
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a00007",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Join the team bringing clean water and fresh bread to more homes in Nigeria",
+            "text_color": "#D6E4FF",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a0000c",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "36",
+          "bottom": "90",
+          "left": "36",
+          "isLinked": false
+        },
+        "css_classes": "ajx-crs",
+        "_title": "Open Roles",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "60",
+          "right": "30",
+          "bottom": "60",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "48",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "a00009",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Open Roles",
+            "header_size": "p",
+            "align": "center",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 14,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 14,
+              "sizes": []
+            },
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 0.5,
+              "sizes": []
+            },
+            "_element_width": "initial",
+            "background_background": "classic",
+            "background_color": "#DFEBFC"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a0000a",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Build something good with us",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a0000b",
+          "elType": "widget",
+          "widgetType": "shortcode",
+          "settings": {
+            "shortcode": "[ajalisco_jobs]"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a00012",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "72",
+          "right": "60",
+          "bottom": "72",
+          "left": "60",
+          "isLinked": false
+        },
+        "css_classes": "ajx-crs ajx-cta",
+        "_title": "CTA",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "56",
+          "right": "40",
+          "bottom": "56",
+          "left": "40",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#0A64F0",
+        "background_color_b": "#0243A8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160,
+          "sizes": []
+        },
+        "position": "relative",
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "a0000d",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-glow-cta\" aria-hidden=\"true\"></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a0000e",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-bubbles\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a0000f",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
+            "text_color": "#ffffff",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 34,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.15,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a00010",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Let's bring clean water and fresh bread to more homes in Nigeria.",
+            "text_color": "#DCE8FF",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a00011",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Become a Distributor",
+            "link": {
+              "url": "/partnership/",
+              "is_external": "",
+              "nofollow": ""
+            },
+            "align": "center",
+            "size": "lg",
+            "background_color": "#28A745",
+            "button_text_color": "#ffffff",
+            "border_radius": {
+              "unit": "px",
+              "top": "10",
+              "right": "10",
+              "bottom": "10",
+              "left": "10",
+              "isLinked": false
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 16.5,
+              "sizes": []
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 12,
+              "blur": 24,
+              "spread": -12,
+              "color": "rgba(40,167,69,.9)"
+            }
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_header_footer",
+    "hide_title": "yes"
+  },
+  "version": "0.4",
+  "title": "Careers",
+  "type": "page"
+}

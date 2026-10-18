@@ -20,6 +20,7 @@ import" at the end.
 | `shop.json` | `page` | Banner, breadcrumb, category links, product grid |
 | `partnership.json` | `page` | Banner, why-partner list, form, CTA — rebuilt on Elementor Containers to match the live site, same as `home.json`; **read the `partnership.json` section below before importing** |
 | `about.json` | `page` | Journey, mission/vision, 6 core values, team (3), certifications, CTA — rebuilt on Elementor Containers to match the live site, same as `home.json`/`partnership.json`; **read the `about.json` section below before importing** |
+| `careers.json` | `page` | Banner, Open Roles (a single Shortcode widget, `[ajalisco_jobs]`), CTA — almost entirely native widgets; **requires the Ajalisco Careers plugin active first, read the `careers.json` section below before importing** |
 | `contact.json` | `page` | Banner, contact info, WhatsApp button, form — rebuilt on Elementor Containers to match the live site, same as `home.json`/`partnership.json`/`about.json`; **read the `contact.json` section below before importing** |
 | `products-import.csv` | WooCommerce CSV | The 6 bread sizes + sachet water, real prices/descriptions/images |
 | `preloader-snippet.html` | Custom Code snippet | The loading-screen animation (site-wide, not a page) — identical to the live site's loader |
@@ -148,100 +149,218 @@ needed — WooCommerce renders the products server-side.
 ## partnership.json — how it's built and what it needs
 
 ### What it is
-The Partnership Hub page, rebuilt the same way as `home.json`: Elementor
-**Containers** (flexbox), no Sections/Columns, with the live site's own
-markup carried into HTML widgets and styled by a scoped copy of the live
-site's own CSS (`partnership-styles.css` in this folder is that scoped
-stylesheet, kept as a readable reference — the same content is embedded in
-`partnership.json` itself inside the first "keep this block" container).
-Three root containers: **Banner** ("Partnership Hub" heading), **Why
-partner + form** (the two-column why-partner copy and the partnership
-request form card, same 1.05fr/.95fr ratio as the live site's `.two` grid,
-stacking to one column at 960px), and **Call to action** (the shared CTA
-banner, single-button variant — this page's CTA only shows "Explore Our
-Products", unlike the homepage's two-button version).
+The Partnership Hub page, **rebuilt from scratch on native Elementor
+widgets** (Heading, Text Editor, Divider, Icon List, Form, Button)
+instead of the HTML-widget-heavy approach used the first time around —
+see "Two bugs fixed here" below for why. Four root containers: **Banner**
+("Partnership Hub" heading), **Why partner + form** (a two-column
+container — copy on the left using `flex_grow: 105`, the form card on
+the right using `flex_grow: 95`, approximating the live site's
+`1.05fr .95fr` grid ratio, stacking to one column at Elementor's tablet
+breakpoint), and **CTA** (the shared banner, single-button variant —
+this page's live CTA only shows "Explore Our Products", confirmed by
+reading `index.html` directly rather than assumed).
 
-The form reproduces the live site's actual behaviour: it opens WhatsApp
-with a pre-filled message on submit (same validation, same message format
-as `app.js`'s `partnership` form handler) — **not** email. An earlier
-version of this file assumed the Partnership/Contact/Subscribe forms all
-emailed `support@ajaliscogroup.com`; checking against the live `app.js`
-showed only the footer Subscribe form does that, so this rebuild corrects
-the Partnership form to match what the live site actually does. (See the
-"Manual follow-ups" note below, which now applies only to Contact and the
-footer Subscribe form.)
+The "Why partner" column uses a native **Icon List** widget for the four
+ticks (Reliable Supply Chain, Attractive Margins, Marketing Support, Bulk
+Order Access), and the three numbered "how it works" steps are each a
+small native Heading widget (title "1"/"2"/"3") styled as a circle purely
+through that widget's own Advanced-tab Background/Border-Radius/Width/
+Padding controls — no custom CSS at all. The form card uses Elementor
+Pro's native **Form** widget for every field (Full Name, Email, Phone
+Number, Business Name, Location, Message, and an "I agree…" Acceptance
+field) — editable labels, placeholders and required-flags, unlike the
+previous hand-built HTML `<form>`.
+
+The live site's actual form behaviour (confirmed by reading `app.js`'s
+`partnership` handler directly) is opening WhatsApp with a pre-filled
+message, not emailing anyone. Elementor's native Form widget has no
+built-in action that builds a `wa.me` link from field values, so that one
+piece of behaviour is a deliberate, isolated JS exception: a small script
+in the "keep" HTML widget listens for Elementor Pro's own documented
+`submit_success` event on this specific form and opens WhatsApp with the
+exact same message format `app.js` uses. It only reads field values and
+sets no styling — see `partnership-styles.css`'s header comment for the
+full list of exceptions.
+
+### Two bugs fixed here that applied to the whole export
+The previous version of this page (like `home.json`/`about.json`/
+`contact.json`) had two real bugs, found while rebuilding `careers.json`
+and fixed here too — full writeup in `careers.json`'s README section
+above:
+
+1. **Native typography settings were silently overridden** by a
+   `.ajx-title`-style CSS class whose `:not(#ajx-n)` selector embeds an ID
+   and so always outranks Elementor's own generated rules — meaning the
+   JSON looked native but fonts rendered from the override, not the
+   widget's own Typography panel, and editing that panel did nothing
+   visible. This rebuild's "keep" stylesheet contains zero `font-size`/
+   `font-family`/`font-weight`/`color` rules for any heading, text,
+   button or form element.
+2. **`boxed_width` was set to 1148 instead of 1220**, double-subtracting
+   the live site's own 36px gutter padding and rendering content about
+   70px narrower than the live site at desktop widths. This rebuild uses
+   `boxed_width: 1220` on every content container, matching `.wrap`.
 
 ### How it was checked
-There's no real WordPress/Elementor install here either, so this is the
-same emulation approach as `home.json`, with one difference: it was
-checked with a real headless Chromium render (available in this
-environment), not just a structural CSS trace. A plain-HTML reconstruction
-using the exact scoped stylesheet and container/widget markup from this
-JSON — with Elementor's own per-element CSS and the `.e-con-boxed` boxed-
-width behaviour approximated as ordinary (non-inline) stylesheet rules, so
-the same specificity rules decide the outcome — was screenshotted at 1440,
-768 and 375px and compared side-by-side against the live site at the same
-widths. Typography, colours, the two-column ratio and its 960px stacking,
-button styles, form field styling, and the CTA's single-button variant all
-matched. This caught one real bug before it shipped: the `.banner` rule
-was initially missing its own `padding` declaration, which would have
-rendered the banner with no vertical padding — now fixed and re-verified.
-This is still not a real Elementor/WooCommerce render, so give it a look
-after import, but it's closer to measured than `home.json`'s own
-structural-only fallback would have been.
+There's no real WordPress/Elementor install available to import into, so
+this had to be verified two ways, and it's important to be honest about
+the difference between them: (1) **structurally** — the JSON is
+well-formed; a widget-type census shows real content living entirely in
+native widgets (old: `{container:7, html:7}` with all page content inside
+those 7 `html` widgets; new: `{container:11, html:5, heading:10,
+text-editor:7, icon-list:1, form:1, button:1, divider:1}` with the 5
+remaining `html` widgets carrying zero visible text — font-loading and
+decorative backgrounds only); a grep confirms zero CSS rules touching
+typography properties outside `@font-face` blocks. (2) **a values sanity
+check** — a script read the JSON's own typography/color/background/field
+settings directly and rendered them as plain HTML to catch gross mistakes
+(wrong colour, wrong copy, a badly-shaped field list), screenshotted at
+1300px wide. That script is not a model of Elementor's real CSS output —
+it cannot prove this looks pixel-right inside actual Elementor, only that
+the values themselves are sane and the two-column layout, icon list,
+numbered steps and form fields are all present and correctly ordered.
+
+**One specific area of lower confidence, flagged honestly rather than
+glossed over:** the native Form widget's exact settings key names (the
+`field_typography_*`/`label_typography_*`/`button_typography_*` prefix
+convention, and the shape of the "Acceptance" field type used for the "I
+agree…" checkbox) were reconstructed from well-documented Elementor Pro
+conventions, not verified against a real Elementor Pro install or any
+working Form-widget example elsewhere in this repo (none exists). Field
+labels, types, required-flags and order are simple content and should be
+right regardless; the typography key *names* specifically carry more
+uncertainty than every other widget on this page. If the field styling
+doesn't pick up after import, that's the first place to check — the
+field-level `css_classes` (`ajx-f-name`, `ajx-f-email`, etc., used by the
+WhatsApp script to find values) should still work even if a typography
+key name needs correcting.
 
 ### Requirements and editing
-Same as `home.json`'s **Requirements** and **Editing it** sections above
-(Elementor 3.6+ with Containers on, "Elementor Full Width" page layout,
-section titles would be native Heading widgets but this page has none of
-the homepage's centred `.title`-style headings so everything here —
-including "Partnership Hub", "Tell us about you and your business" and
-"Reach Out Lets Discuss" — stays as HTML widgets holding the live markup).
-No product data, picker, or filter tabs on this page, so none of
-`home.json`'s script logic beyond scroll-reveal applies here.
+Needs **Elementor Pro** (for the native Form widget — the free version of
+Elementor doesn't include it). Otherwise same as `home.json`'s
+**Requirements** section (Elementor 3.6+ with Containers on, "Elementor
+Full Width" page layout). No product data, picker, or filter tabs on this
+page, so none of `home.json`'s script logic beyond the WhatsApp hook
+above applies here.
 
 ## about.json — how it's built and what it needs
 
 ### What it is
-The About page, rebuilt the same way as `home.json` and `partnership.json`:
-Elementor **Containers** (flexbox), no Sections/Columns, with the live
-site's own markup carried into HTML widgets and styled by a scoped copy of
-the live site's own CSS (`about-styles.css` in this folder is that scoped
-stylesheet, kept as a readable reference — the same content is embedded in
-`about.json` itself inside the first "keep this block" container). Seven
-root containers: **Banner** ("About Us" heading), **Journey** (two-column
-copy + round photo, same even-split pattern as the live site's `.split`
-grid, stacking to one column at 960px), **Mission & Vision** (2 cards,
-gray background), **Core Values** (centred heading + 6 cards, 3 columns
-down to 2 at 1100px and 1 at 640px), **Team** (centred heading + 3 member
-cards, same column breakpoints as Core Values, gray background),
-**Certifications** (centred heading + 2 cert cards), and **Call to
-action** (the shared CTA banner, single-button variant — "Become a
-Distributor" only, same as `partnership.json`'s CTA pattern but linking to
-`/partnership/`). The three centred section headings (Core Values, Team,
-Certifications) are native Elementor **Heading** widgets, same convention
-as `home.json`'s "big blue centred headings"; the Journey section's
-left-aligned sub-heading stays inside its HTML widget, matching how
-`partnership.json` treated its own non-centred headings.
+The About page, **rebuilt from scratch on native Elementor widgets**
+(Heading, Text Editor, Divider, Image, Icon Box, Button) instead of the
+HTML-widget-heavy approach used the first time around — see "Two bugs
+fixed here" below for why. Seven root containers, matching the live page
+exactly: **Banner** ("About Us" heading), **Journey** (an even two-column
+split — copy on the left, a round photo on the right, each using
+`flex_grow: 100` so they split evenly like the live site's `.split`'s
+`1fr 1fr` grid, stacking to one column at Elementor's tablet breakpoint),
+**Mission & Vision** (2 native **Icon Box** widgets, gray background),
+**Core Values** (centred heading + 6 cards — each a native Container with
+its own left border set purely through that container's native
+Advanced-tab Border controls, no custom CSS), **Team** (centred heading +
+3 member cards, each a native **Image** widget plus Heading/Text-Editor
+for name, role and bio), **Certifications** (centred heading + 2 cards,
+each a native Image widget plus caption), and **CTA** (the shared single-
+button variant, "Become a Distributor" → `/partnership/`, confirmed from
+`index.html` rather than assumed).
+
+### Two bugs fixed here that applied to the whole export
+The previous version of this page (like `home.json`/`partnership.json`/
+`contact.json`) had two real bugs, found while rebuilding `careers.json`
+and fixed in `partnership.json` first — full writeup in those two
+sections above:
+
+1. **Native typography settings were silently overridden** by a
+   `.ajx-title`-style CSS class whose `:not(#ajx-n)` selector embeds an ID
+   and so always outranks Elementor's own generated rules. This rebuild's
+   "keep" stylesheet contains zero `font-size`/`font-family`/
+   `font-weight`/`color` rules for any heading, text, image caption or
+   button.
+2. **`boxed_width` was set to 1148 instead of 1220**, double-subtracting
+   the live site's own 36px gutter padding. This rebuild uses
+   `boxed_width: 1220` on all seven content containers, matching `.wrap`.
+
+### A new, honestly-flagged limitation: object-position and aspect-ratio
+Elementor's native **Image** widget has an Object Fit control (Cover/
+Contain/Fill) but no **object-position** control — there's no native way
+to choose *which part* of an image shows when it's cropped. The live
+site deliberately crops the Journey photo and all three team photos off-
+center (`object-position: 60% 50%` and `50% 20%` respectively, so faces
+aren't cut off). Rather than accept a worse crop or invent a settings key
+that might not exist, this rebuild handles `object-position` (and the
+Journey photo's `aspect-ratio: 1`, for the same reason — its exact native
+"Aspect Ratio" control key/shape could not be confirmed against a real
+install) as four small, scoped CSS rules in the "keep" stylesheet, the
+same honest-exception category as the Banner/CTA's second gradient layer.
+Neither touches typography. Check after import whether your Elementor
+version exposes a native Aspect Ratio control that could replace the
+second one.
 
 ### How it was checked
-Same emulation approach as `partnership.json`: a plain-HTML reconstruction
-built from the exact container/widget markup and the scoped stylesheet in
-this JSON — approximating Elementor's own per-element CSS (including each
-container's `flex-direction`/`align-items` settings) and the `.e-con-boxed`
-boxed-width behaviour as ordinary stylesheet rules, so real cascade and
-specificity decide the outcome — was screenshotted with a real headless
-Chromium render at 1440, 768 and 375px and compared side-by-side against
-the live About page at the same widths. Typography, colours, the Journey
-split and its 960px stacking, the Mission/Vision/Core Values/Team grids
-and their 1100px/640px column drops, the certification cards, and the
-CTA's single-button variant all matched. This round's reconstruction had
-a bug in the *verification tooling itself* (the centred section headings
-rendered sideways because the first draft of the plain-HTML reconstruction
-didn't carry over each container's own flex-direction/align-items
-settings) — once fixed, everything matched; no bug was found in
-`about.json`'s own content this time. This is still not a real
-Elementor/WooCommerce render, so give it a look after import.
+Same two-part method as `careers.json`/`partnership.json`, and it's worth
+repeating the distinction plainly: (1) **structurally** — the JSON is
+well-formed; a widget-type census shows real content living entirely in
+native widgets (old: `{container:14, html:13, heading:3}` with all page
+content inside those 13 `html` widgets; new: `{container:29, html:5,
+heading:23, text-editor:15, image:6, icon-box:2, button:1, divider:1}`
+with the 5 remaining `html` widgets carrying zero visible text —
+font-loading and decorative backgrounds only); a grep confirms zero CSS
+rules touching typography properties outside `@font-face` blocks; a
+`boxed_width` check confirms 1220 on all seven containers. (2) **a values
+sanity check** — a script read the JSON's own settings directly and
+rendered them as plain HTML to catch gross mistakes, screenshotted at
+1300px wide (Banner, Journey, Mission & Vision, Team and Certifications/
+CTA were all visually spot-checked this way; Core Values' card settings
+were checked directly in the JSON instead of by screenshot, after the
+local environment ran out of disk space mid-render — its border/width/
+radius values were confirmed structurally correct). This script is not a
+model of Elementor's real CSS output — it cannot prove this looks
+pixel-right inside actual Elementor, only that the values themselves are
+sane. Please check it for real after importing.
+
+**Two specific areas of lower confidence, flagged honestly:** the native
+**Icon Box** widget's exact settings key names (`view`/`shape`/
+`primary_color`/`secondary_color` for the circular icon background, and
+the `title_typography_*`/`description_typography_*` prefix convention)
+were reconstructed from standard Elementor Pro convention, not verified
+against a real install or working example elsewhere in this repo —
+content (which icon, which text) should be correct regardless. Also, the
+Mission/Vision icons are Font Awesome substitutes (`fa-bullseye`,
+`fa-eye`) for the live site's custom inline SVGs — a deliberate,
+documented substitution, not an oversight; swapping in a closer match or
+uploading the original SVGs as a custom icon is a two-minute edit in
+Elementor afterward if you want the exact original glyphs.
+
+### Two more bugs found and fixed on re-verification
+A later pass comparing this page's actual settings values against the
+live site (not just screenshotting an approximation, but checking the
+JSON's own flex/width fields directly) found two real responsive-layout
+bugs the first build missed:
+
+1. **Mission & Vision's two cards had no `flex_grow`.** The Journey
+   section correctly uses `flex_grow: 100` on each column so they split
+   evenly — Mission & Vision's two cards had neither `flex_grow` nor
+   `width` set at all, so in a `flex_direction: row` container with no
+   wrap, they'd have sized to their own content instead of splitting
+   50/50 like the live site's `.mv` grid. Fixed by adding `flex_grow: 100`
+   to both.
+2. **Core Values' 6 cards and Team's 3 cards had `width` but no
+   `width_tablet`/`width_mobile`.** Each card correctly sits at `31.5%`
+   width for the 3-column desktop layout, but with no responsive
+   override, that 31.5% would persist all the way down to mobile —
+   three cramped ~100px columns instead of the live site's 3 → 2 → 1
+   collapse (`.cvals`/`.team` in `styles.css`, breakpoints at 1100px/
+   640px). Fixed by adding `width_tablet: 48.5%` and `width_mobile: 100%`
+   to all 9 cards, using Elementor's own tablet/mobile breakpoint slots
+   as the nearest native equivalent (same approximation already used for
+   this export's typography breakpoints — Elementor's slots aren't
+   guaranteed to sit at exactly 1100px/640px).
+
+Both are now verified present in the JSON directly (not just visually).
+Partnership's and Contact's two-column splits were checked too and don't
+have this problem — both already set `flex_direction_tablet: "column"`
+on the parent row, so they were correct from the first build.
 
 ### A pre-existing risk, not caused by this rebuild
 The Journey photo (`kitchen.webp`) is loaded from
@@ -264,65 +383,192 @@ already there. `kitchen.webp` could not be added for the reason above —
 its source file no longer exists in this repo's working tree.
 
 ### Requirements and editing
-Same as `home.json`'s **Requirements** and **Editing it** sections above.
-No product data, picker, or filter tabs on this page either, so none of
-`home.json`'s script logic beyond scroll-reveal applies here — and unlike
-`partnership.json`, this page has no form, so its "keep this block" script
-is scroll-reveal only.
+Otherwise same as `home.json`'s **Requirements** and **Editing it**
+sections above, with one difference: this page's "keep" widget has no
+`<script>` tag at all, not even for scroll-reveal — unlike the still
+HTML-widget-heavy `home.json`/`contact.json`, nothing on this native
+rebuild depends on JS to appear correctly.
 
 ## contact.json — how it's built and what it needs
 
 ### What it is
-The Contact page, rebuilt the same way as `home.json`, `partnership.json`
-and `about.json`: Elementor **Containers** (flexbox), no Sections/Columns,
-with the live site's own markup carried into HTML widgets and styled by a
-scoped copy of the live site's own CSS (`contact-styles.css` in this folder
-is that scoped stylesheet, kept as a readable reference — the same content
-is embedded in `contact.json` itself inside the first "keep this block"
-container). Two root containers: **Banner** ("Contact Us" heading) and
-**Contact info + form** (the contact info card and the message form, same
-two-column pattern as the live site's `.two--contact` grid — `.9fr 1.1fr`,
-info narrower, form wider — gap and 960px stack identical to the generic
-`.two` grid). This page has no CTA banner, matching the live site.
+The Contact page, **rebuilt from scratch on native Elementor widgets**
+(Heading, Text Editor, Divider, Icon Box, Button, Form) instead of the
+HTML-widget-heavy approach used the first time around — see "Two bugs
+fixed here" below for why. Two root containers, matching the live page
+exactly (no CTA banner, confirmed from `index.html` rather than assumed):
+**Banner** ("Contact Us" heading) and **Contact info + form** — a
+two-column row (`flex_grow: 90` / `flex_grow: 110`, approximating the
+live site's `.9fr 1.1fr` `.two--contact` grid, stacking to one column at
+Elementor's tablet breakpoint) containing an info card (native **Icon
+Box** widgets for Address/Phone/Email/Office Hours, a native Text-Editor
+widget for the "Open in Google Maps →" link, a native **Button** widget
+for the WhatsApp CTA) and a form card using Elementor Pro's native
+**Form** widget for every field (Full Name, Email, Phone Number, Business
+Name, "Inquire About Our Products", Message, and an "I agree…" Acceptance
+field) — editable labels, placeholders and required-flags, unlike the
+previous hand-built HTML `<form>`.
 
-The form reproduces the live site's actual behaviour: it opens WhatsApp
-with a pre-filled message on submit (same validation, same message format
-as `app.js`'s default/`contact` form handler) — **not** email. The
-"Manual follow-ups" note below previously claimed Contact emailed
-`support@ajaliscogroup.com`; checking `app.js` directly shows this is
-wrong — only the footer Subscribe form emails. That note has been
-corrected (see below).
+The live site's actual form behaviour (confirmed by reading `app.js`'s
+default/`contact` handler directly, not assumed) is opening WhatsApp with
+a pre-filled message — **not** email. (An older note in this file once
+claimed Contact emailed `support@ajaliscogroup.com`; that was wrong even
+before this rebuild — only the footer Subscribe form emails — and no
+longer applies now that the real behaviour is reproduced directly.)
+Elementor's native Form widget has no built-in action that builds a
+`wa.me` link from field values, so that one piece of behaviour is a
+deliberate, isolated JS exception, built the same way `partnership.json`
+already established: a small script in the "keep" HTML widget listens for
+Elementor Pro's own documented `submit_success` event on this specific
+form and opens WhatsApp with the exact same message format `app.js` uses
+(including Contact's own field set — "Enquiry" instead of Partnership's
+"Location"). It only reads field values and sets no styling — see
+`contact-styles.css`'s header comment for the full list of exceptions.
+
+### Two bugs fixed here that applied to the whole export
+The previous version of this page (like the original `home.json`/
+`partnership.json`/`about.json`) had two real bugs, found while rebuilding
+`careers.json` and fixed in `partnership.json`/`about.json` first — full
+writeup in those sections above:
+
+1. **Native typography settings were silently overridden** by a
+   `.ajx-title`-style CSS class whose `:not(#ajx-n)` selector embeds an ID
+   and so always outranks Elementor's own generated rules — meaning the
+   JSON looked native but fonts rendered from the override, not the
+   widget's own Typography panel. This rebuild's "keep" stylesheet
+   contains zero `font-size`/`font-family`/`font-weight`/`color` rules for
+   any heading, text, icon-box, button or form element.
+2. **`boxed_width` was set to 1148 instead of 1220**, double-subtracting
+   the live site's own 36px gutter padding and rendering content about
+   70px narrower than the live site at desktop widths. This rebuild uses
+   `boxed_width: 1220` on both content containers, matching `.wrap`. (This
+   settles the question the previous version of this section left open —
+   the earlier text said real Elementor's boxed-width behaviour "wasn't
+   possible to settle without a real Elementor install." Re-reading how
+   Elementor's own `boxed_width` control works relative to `.wrap`'s own
+   box model settles it: 1220 is correct, not 1148, with padding kept on
+   top exactly as `.wrap` already does.)
 
 ### How it was checked
-Same emulation approach as `partnership.json`/`about.json`: a plain-HTML
-reconstruction built from the exact container/widget markup and the scoped
-stylesheet in this JSON — approximating Elementor's own per-element CSS and
-the `.e-con-boxed` boxed-width behaviour as ordinary stylesheet rules, so
-real cascade and specificity decide the outcome — was screenshotted with a
-real headless Chromium render at 1440, 768 and 375px and compared
-side-by-side against the live Contact page at the same widths. Typography,
-colours, the info/form column ratio and its 960px stack, the info card's
-icons/rows, the WhatsApp button, and the form's field styling all matched.
-No bug was found in this page's own content.
+Same two-part method as `careers.json`/`partnership.json`/`about.json`,
+and the same honesty about the limits of that method applies here: (1)
+**structurally** — the JSON is well-formed; a widget-type census shows
+real content living entirely in native widgets (old: `{container:6,
+html:6}` with all page content inside those 6 `html` widgets; new:
+`{container:5, html:3, heading:3, text-editor:3, divider:1, icon-box:4,
+button:1, form:1}`, with the 3 remaining `html` widgets being the
+font/script "keep" block plus 2 purely decorative elements carrying zero
+visible text); a grep confirms zero CSS rules touching typography
+properties outside `@font-face` blocks; a `boxed_width` check confirms
+1220 on both content containers. (2) **a values sanity check** — a script
+read the JSON's own settings directly (including every form field's
+type/label/required-flag/css_classes, in order) and rendered them as
+plain HTML to catch gross mistakes, screenshotted at 1300px wide. This
+script is not a model of Elementor's real CSS output — it cannot prove
+this looks pixel-right inside actual Elementor, only that the values
+themselves are sane and complete. Please check it for real after
+importing.
 
-One thing to flag honestly rather than paper over: this page's boxed
-content width (`boxed_width: 1148`, inherited unchanged from the same
-convention `partnership.json`/`about.json` already use) is modelled in
-this verification as the width *inside* the live site's `.wrap`'s own
-`clamp()` padding — i.e. `1220px − 2×36px = 1148px`. If real Elementor
-instead treats "boxed width" as the outer box (padding added on top, the
-way `.wrap` itself works), the true equivalent would be `1220`, not
-`1148`, and desktop content on this page — and equally on
-`partnership.json`/`about.json`, since they share the exact same number —
-would render about 70px narrower than the live site at wide viewports.
-This wasn't possible to settle without a real Elementor install; it's a
-shared, pre-existing modelling question across all three rebuilt pages,
-not something new to this page, but worth checking for real after import.
+**One specific area of lower confidence, flagged honestly:** the native
+Form widget's field-settings convention was matched directly against
+`partnership.json`'s (same `field_typography_*`/`label_typography_*`/
+`button_typography_*` prefix keys, same Acceptance-field shape) for
+consistency between the two pages, but — same as noted there — this
+convention itself was reconstructed from standard Elementor Pro
+documentation, not verified against a real install or a working example
+elsewhere in this repo. The Icon Box widget's exact settings key names
+(`view`/`shape`/`primary_color`/`secondary_color`, `position: "left"` for
+the icon-beside-text layout) carry the same category of uncertainty,
+matched against `about.json`'s Icon Box usage for consistency. Content —
+which fields, which icons, what order, what's required — should be
+correct regardless; it's specifically the settings key *names* that carry
+more risk than the structural content.
 
 ### Requirements and editing
-Same as `home.json`'s **Requirements** and **Editing it** sections above.
-No product data, picker, filter tabs, or CTA on this page, so its "keep
-this block" script handles only form submission and scroll-reveal.
+Needs **Elementor Pro** (for the native Form widget — the free version of
+Elementor doesn't include it), same as `partnership.json`. Otherwise same
+as `home.json`'s **Requirements** section. No product data, picker,
+filter tabs, or CTA on this page, so none of `home.json`'s script logic
+beyond the WhatsApp hook above applies here.
+
+## careers.json — how it's built and what it needs
+
+### What it is
+The Careers page. Unlike the other four pages, this one is built almost
+entirely from **native Elementor widgets** — Heading, Text Editor,
+Divider, Button, Shortcode — with no HTML widget carrying real content.
+Three root containers: **Banner** ("Careers" heading), **Open Roles**
+(a kicker, a heading, and a single native **Shortcode** widget containing
+`[ajalisco_jobs]`), and **CTA** ("Become a Distributor"). The role cards,
+the detail/apply modal, form validation, the optional résumé upload, and
+emailing the application are all handled by the **Ajalisco Careers**
+WordPress plugin (`wordpress-plugin/ajalisco-careers/` — see its own
+README for installing and configuring the receiving email) through that
+one shortcode. This page genuinely needs almost nothing hand-built in
+Elementor beyond placing that widget.
+
+The only non-native pieces, pasted into the "Ajalisco styles (keep)" HTML
+widget (mirrored readably in `careers-styles.css`), are: `@font-face`
+rules for Outfit/Nunito (loading only, never font-size/family/weight —
+nothing here competes with a widget's own Typography controls), the
+rising-bubbles decorative animation on the Banner/CTA, and a second
+radial-gradient layer under the Banner/CTA's native gradient background
+(Elementor's own background control only supports one gradient layer, so
+the live site's two-layer effect is approximated, not reproduced exactly
+— an honest limitation, not a bug).
+
+### Two bugs fixed here that applied to the whole export
+Building this page surfaced two real bugs shared by the original
+`home.json`/`partnership.json`/`about.json`/`contact.json` work, fixed
+here and corrected in the rebuilt `partnership.json`/`about.json`/
+`contact.json` too:
+
+1. **Native typography settings were silently overridden.** The earlier
+   pages added an extra CSS class (e.g. `.ajx-title`) styled by a rule
+   like `.ajx:not(#ajx-n) .ajx-title .elementor-heading-title { font-size:
+   clamp(...) }`. The `:not(#ajx-n)` trick embeds an ID selector, which
+   under CSS's specificity rules outranks anything Elementor itself
+   generates for that widget — so even though the JSON carried correct
+   `typography_font_size`/`_tablet`/`_mobile` values, they never actually
+   took effect, and editing them in the Elementor panel would have done
+   nothing visible. This page's "keep" stylesheet contains zero
+   `font-size`/`font-family`/`color` rules for any heading or text
+   element — typography is governed solely by each widget's own native
+   controls, with nothing left to out-rank them.
+2. **`boxed_width` was set to the wrong number.** The live site's `.wrap`
+   is `width: min(1220px, 100%)` with `padding-inline: clamp(…, 36px)`
+   applied *inside* that width (global `box-sizing: border-box`), giving
+   1220 − 2×36 = 1148px of actual content. The earlier pages set
+   Elementor's `boxed_width` to **1148** and *also* kept the 36px
+   padding, double-subtracting the gutter and rendering about 70px
+   narrower than the live site at desktop widths. This page (and the
+   rebuilt partnership/about/contact) set `boxed_width: 1220` instead,
+   matching `.wrap` itself, with padding applied on top exactly as the
+   live site does.
+
+### How it was checked
+There's no real WordPress/Elementor install available in this environment
+to import into, so this could only be verified two ways, and it's
+important to be honest about the difference: (1) **structurally** — the
+JSON is well-formed, a widget-type census confirms real content (headings,
+text, the button, the shortcode) lives entirely in native widgets and the
+only `html` widgets left contain zero visible text, and a grep confirms no
+CSS rule anywhere in the "keep" stylesheet touches typography properties;
+(2) **a values sanity check** — a small script read the JSON's own
+`typography_*`/color/background fields directly and rendered them as
+plain HTML to catch gross mistakes (wrong colour, wrong copy, a broken
+shortcode tag), screenshotted at 1300px wide. That script is not a model
+of Elementor's actual CSS output, so it cannot prove this will look
+pixel-right inside real Elementor — only that the values themselves are
+sane. Please check it for real after importing, the same way you'd check
+any new import.
+
+### Requirements and editing
+Needs the **Ajalisco Careers** plugin installed and activated (see
+`wordpress-plugin/ajalisco-careers/README.md`) with a receiving email set
+under Job Postings → Settings — the shortcode renders nothing useful
+without it. No product data, cart, or scroll-reveal JS is needed on this
+page at all.
 
 ## Other page templates (shop, header, footer)
 These were **not** changed by the homepage rebuild, and `partnership.json`,
@@ -350,20 +596,26 @@ current settings.
    attached (pulled from the live GitHub Pages site, so no re-uploading).
    This creates the **Jalix Bread** and **Premium Water** categories too —
    the shop/home pages' product grids depend on these exact category names.
-2. **Templates → Saved Templates → Import Templates** → upload the `.json`
+2. **Plugins → Add New → Upload Plugin** → upload
+   `wordpress-plugin/ajalisco-careers.zip` and **Activate**. This seeds five
+   starter job postings and must be active before you import `careers.json`
+   — its "Open Roles" section is a single Shortcode widget
+   (`[ajalisco_jobs]`) that renders nothing without this plugin. Set a
+   receiving email under **Job Postings → Settings** while you're there.
+3. **Templates → Saved Templates → Import Templates** → upload the `.json`
    files one at a time to be safe (Elementor's multi-file import exists in
    recent versions but behaviour has varied by version — if yours offers it
-   and it works, use it; otherwise seven one-at-a-time imports is quick).
-3. For `header.json` / `footer.json`: **Templates → Theme Builder** → import
+   and it works, use it; otherwise eight one-at-a-time imports is quick).
+4. For `header.json` / `footer.json`: **Templates → Theme Builder** → import
    each as its template type, then set its display condition to
    **Entire Site**.
-4. For the 5 page templates: create a WordPress Page for each, **using these
+5. For the 6 page templates: create a WordPress Page for each, **using these
    exact slugs** (Permalink, not just the title) so every internal link in
    the export resolves: `home` → `shop` → `partnership` → `about` →
-   `contact` (note: **not** `contact-us` — every link in these files points
-   to `/contact/`). Edit each page with Elementor → **Insert Template** →
-   pick the matching imported template.
-5. Set **Settings → Reading → Homepage** to your new Home page.
+   `careers` → `contact` (note: **not** `contact-us` — every link in these
+   files points to `/contact/`). Edit each page with Elementor → **Insert
+   Template** → pick the matching imported template.
+6. Set **Settings → Reading → Homepage** to your new Home page.
 6. **Don't** assign your new Shop page as WooCommerce's official Shop page
    (WooCommerce → Settings → Products → Shop page) — once a page holds that
    role, WordPress serves WooCommerce's own product-archive template there
