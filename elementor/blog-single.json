@@ -1,0 +1,695 @@
+{
+  "content": [
+    {
+      "id": "b00014",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "css_classes": "ajx-global",
+        "_title": "Ajalisco blog-single styles (keep)",
+        "content_width": "full"
+      },
+      "elements": [
+        {
+          "id": "b00013",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<style>\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/nunito-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }\n@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://joshuaetok.github.io/ajalisco-site/assets/fonts/outfit-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }\n\n/* Decorative rising bubbles (Banner, CTA) */\n.ajx-bls:not(#ajx-n) .ajx-bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }\n.ajx-bls:not(#ajx-n) .ajx-bubbles i { position: absolute; bottom: -70px; width: var(--s); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.95) 0 7%, rgba(255,255,255,.2) 22%, rgba(255,255,255,.05) 62%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4); animation: ajxBlgRise var(--d) linear infinite; animation-delay: var(--dl); }\n.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(1) { left: 5%; --s: 30px; --d: 17s; --dl: -3s; }\n.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(2) { left: 24%; --s: 46px; --d: 23s; --dl: -14s; }\n.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(3) { left: 49%; --s: 60px; --d: 27s; --dl: -18s; }\n.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(4) { left: 67%; --s: 34px; --d: 20s; --dl: -11s; }\n.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(5) { left: 87%; --s: 50px; --d: 25s; --dl: -9s; }\n.ajx-bls:not(#ajx-n) .ajx-bubbles i:nth-child(6) { left: 95%; --s: 14px; --d: 13s; --dl: -5s; }\n@keyframes ajxBlgRise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(24px,-120vh); opacity: .2; } }\n\n/* Second gradient layer under the Banner/CTA native background */\n.ajx-bls:not(#ajx-n) .ajx-glow-banner { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 300px at 85% 0%, rgba(90,160,255,.5), transparent 60%); }\n.ajx-bls:not(#ajx-n) .ajx-glow-cta { position: absolute; inset: 0; z-index: 0; pointer-events: none; background: radial-gradient(700px 400px at 100% 0%, rgba(90,160,255,.5), transparent 60%); }\n\n@media (prefers-reduced-motion: reduce) {\n  .ajx-bls:not(#ajx-n) .ajx-bubbles i { animation: none !important; }\n}\n\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content { max-width: 740px; margin-inline: auto; font-size: 17px; line-height: 1.8; color: #54595F; font-family: 'Nunito', sans-serif; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content > :first-child { margin-top: 0; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content p { margin: 0 0 20px; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content h2 { font: 700 28px/1.3 'Outfit', sans-serif; color: #0256DB; margin: 40px 0 16px; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content h3 { font: 700 22px/1.3 'Outfit', sans-serif; color: #0256DB; margin: 34px 0 14px; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content h4 { font: 600 18px 'Outfit', sans-serif; color: #16204A; margin: 26px 0 10px; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content strong { color: #16204A; font-weight: 700; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content ul, .ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content ol { margin: 0 0 20px; padding-left: 1.4em; display: grid; gap: 8px; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content li { padding-left: 4px; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content blockquote { margin: 28px 0; padding: 20px 24px; border-left: 4px solid #28A745; background: #F5F5F5; border-radius: 0 14px 14px 0; font-style: italic; color: #16204A; }\n.ajx-bls:not(#ajx-n) .elementor-widget-theme-post-content blockquote p { margin: 0; }\n</style>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b00019",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "css_classes": "ajx-bls ajx-post-hero",
+        "_title": "Hero",
+        "content_width": "full",
+        "min_height": {
+          "unit": "px",
+          "size": 360,
+          "sizes": []
+        },
+        "min_height_mobile": {
+          "unit": "px",
+          "size": 260,
+          "sizes": []
+        },
+        "justify_content": "flex-end",
+        "background_background": "classic",
+        "background_image": {
+          "url": "",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "rgba(10,20,50,.15)",
+        "background_overlay_color_b": "rgba(10,20,50,.88)",
+        "background_overlay_gradient_angle": {
+          "unit": "deg",
+          "size": 180,
+          "sizes": []
+        },
+        "position": "relative",
+        "__dynamic__": {
+          "background_image": "[elementor-tag id=\"hero-bg\" name=\"post-featured-image\" settings=\"%7B%7D\"]"
+        }
+      },
+      "elements": [
+        {
+          "id": "b00018",
+          "elType": "container",
+          "settings": {
+            "container_type": "flex",
+            "flex_direction": "column",
+            "flex_wrap": "nowrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 0,
+              "sizes": [],
+              "column": "0",
+              "row": "0",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "36",
+              "bottom": "54",
+              "left": "36",
+              "isLinked": false
+            },
+            "css_classes": "ajx-bls",
+            "_title": "Hero content",
+            "align_items": "flex-start",
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1220,
+              "sizes": []
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "32",
+              "right": "30",
+              "bottom": "44",
+              "left": "30",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "24",
+              "right": "16",
+              "bottom": "32",
+              "left": "16",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "b00015",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "← Back to Blog",
+                "link": {
+                  "url": "/blog/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "align": "left",
+                "size": "sm",
+                "button_text_color": "#ffffff",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14.5,
+                  "sizes": []
+                },
+                "background_color": "transparent",
+                "border_border": "none"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b00016",
+              "elType": "widget",
+              "widgetType": "theme-post-title",
+              "settings": {
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#ffffff",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 31,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 28,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.3,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "__dynamic__": {
+                  "title": "[elementor-tag id=\"posttitle01\" name=\"post-title\" settings=\"%7B%7D\"]"
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b00017",
+              "elType": "widget",
+              "widgetType": "post-info",
+              "settings": {
+                "icon_list": [
+                  {
+                    "type": "date"
+                  }
+                ],
+                "align": "left",
+                "text_color": "#DCE8FF",
+                "typography_typography": "custom",
+                "typography_font_family": "Nunito",
+                "typography_font_weight": "400",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b0001b",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "36",
+          "bottom": "50",
+          "left": "36",
+          "isLinked": false
+        },
+        "css_classes": "ajx-bls",
+        "_title": "Article body",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "44",
+          "right": "30",
+          "bottom": "36",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "34",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "b0001a",
+          "elType": "widget",
+          "widgetType": "theme-post-content",
+          "settings": {},
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b0001f",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "36",
+          "bottom": "90",
+          "left": "36",
+          "isLinked": false
+        },
+        "css_classes": "ajx-bls",
+        "_title": "Related posts",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "60",
+          "right": "30",
+          "bottom": "60",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "48",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F5F5F5"
+      },
+      "elements": [
+        {
+          "id": "b0001d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Keep Reading",
+            "header_size": "p",
+            "align": "center",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 14,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 14,
+              "sizes": []
+            },
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 0.5,
+              "sizes": []
+            },
+            "background_background": "classic",
+            "background_color": "#DFEBFC",
+            "padding": {
+              "unit": "px",
+              "top": "6",
+              "right": "16",
+              "bottom": "6",
+              "left": "16",
+              "isLinked": false
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "999",
+              "right": "999",
+              "bottom": "999",
+              "left": "999",
+              "isLinked": false
+            },
+            "_element_width": "initial"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b0001e",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "You might also like",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#0256DB",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b0001c",
+          "elType": "widget",
+          "widgetType": "posts",
+          "settings": {
+            "posts_per_page": 2,
+            "pagination_type": "none",
+            "classic_columns": "2",
+            "classic_columns_tablet": "2",
+            "classic_columns_mobile": "1",
+            "classic_row_gap": {
+              "unit": "px",
+              "size": 24,
+              "sizes": []
+            },
+            "classic_column_gap": {
+              "unit": "px",
+              "size": 24,
+              "sizes": []
+            },
+            "classic_thumbnail_size": "medium_large",
+            "classic_image_position": "top",
+            "classic_show_excerpt": "yes",
+            "classic_excerpt_length": 20,
+            "classic_show_read_more": "yes",
+            "classic_read_more_text": "Read More",
+            "classic_meta_data": [
+              "date"
+            ],
+            "classic_title_typography_typography": "custom",
+            "classic_title_typography_font_family": "Outfit",
+            "classic_title_typography_font_weight": "600",
+            "classic_title_typography_font_size": {
+              "unit": "px",
+              "size": 19,
+              "sizes": []
+            },
+            "classic_title_color": "#0256DB",
+            "classic_excerpt_typography_typography": "custom",
+            "classic_excerpt_typography_font_family": "Nunito",
+            "classic_excerpt_typography_font_size": {
+              "unit": "px",
+              "size": 15,
+              "sizes": []
+            },
+            "classic_excerpt_color": "#7A7A7A"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b00025",
+      "elType": "container",
+      "settings": {
+        "container_type": "flex",
+        "flex_direction": "column",
+        "flex_wrap": "nowrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 0,
+          "sizes": [],
+          "column": "0",
+          "row": "0",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "72",
+          "right": "60",
+          "bottom": "72",
+          "left": "60",
+          "isLinked": false
+        },
+        "css_classes": "ajx-bls ajx-cta",
+        "_title": "CTA",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1220,
+          "sizes": []
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "56",
+          "right": "40",
+          "bottom": "56",
+          "left": "40",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#0A64F0",
+        "background_color_b": "#0243A8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160,
+          "sizes": []
+        },
+        "position": "relative",
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "b00020",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-glow-cta\" aria-hidden=\"true\"></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00021",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<div class=\"ajx-bubbles\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i><i></i></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00022",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Proudly Made in Nigeria, Trusted by <span style=\"color:#6FC324\">Thousands</span>",
+            "text_color": "#ffffff",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 34,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30,
+              "sizes": []
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.15,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00023",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "Let's bring clean water and fresh bread to more homes in Nigeria.",
+            "text_color": "#DCE8FF",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Nunito",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b00024",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Become a Distributor",
+            "link": {
+              "url": "/partnership/",
+              "is_external": "",
+              "nofollow": ""
+            },
+            "align": "center",
+            "size": "lg",
+            "button_text_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 16.5,
+              "sizes": []
+            },
+            "background_color": "#28A745",
+            "border_radius": {
+              "unit": "px",
+              "top": "10",
+              "right": "10",
+              "bottom": "10",
+              "left": "10",
+              "isLinked": false
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 12,
+              "blur": 24,
+              "spread": -12,
+              "color": "rgba(40,167,69,.9)"
+            }
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": {},
+  "version": "0.4",
+  "title": "Blog Single Post",
+  "type": "single"
+}

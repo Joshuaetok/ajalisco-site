@@ -22,6 +22,8 @@ import" at the end.
 | `about.json` | `page` | Journey, mission/vision, 6 core values, team (3), certifications, CTA — rebuilt on Elementor Containers to match the live site, same as `home.json`/`partnership.json`; **read the `about.json` section below before importing** |
 | `careers.json` | `page` | Banner, Open Roles (a single Shortcode widget, `[ajalisco_jobs]`), CTA — almost entirely native widgets; **requires the Ajalisco Careers plugin active first, read the `careers.json` section below before importing** |
 | `contact.json` | `page` | Banner, contact info, WhatsApp button, form — rebuilt on Elementor Containers to match the live site, same as `home.json`/`partnership.json`/`about.json`; **read the `contact.json` section below before importing** |
+| `blog-archive.json` | `archive` (Theme Builder) | Banner, a native **Posts** widget (queries real posts automatically), CTA; **read the `blog-archive.json`/`blog-single.json` section below before importing** |
+| `blog-single.json` | `single` (Theme Builder) | Photo hero (Featured Image via Dynamic Tag), Post Title, Post Date, full article body (native Post Content), related posts, CTA; **read the `blog-archive.json`/`blog-single.json` section below before importing** |
 | `products-import.csv` | WooCommerce CSV | The 6 bread sizes + sachet water, real prices/descriptions/images |
 | `preloader-snippet.html` | Custom Code snippet | The loading-screen animation (site-wide, not a page) — identical to the live site's loader |
 | `assets/images/` | Real image files | Every image the homepage and preloader use (15 files), copied byte-for-byte from this repo's `/assets` |
@@ -570,6 +572,212 @@ under Job Postings → Settings — the shortcode renders nothing useful
 without it. No product data, cart, or scroll-reveal JS is needed on this
 page at all.
 
+## blog-archive.json and blog-single.json — how they're built and what they need
+
+### What they are, and why they're different from every other file here
+Every page built so far is either static content or backed by a custom
+CPT (Ajalisco Careers' Job Postings). **Blog posts are different: they're
+WordPress's own native "Post" content type**, already real on the live
+site — ajaliscogroup.com has 3 real published posts (confirmed via its
+REST API), which is also exactly what the GitHub Pages preview's
+`#/blog` and `#/post/<slug>` pages now show (commit `f674719`). So these
+two files are not page templates at all — they're **Theme Builder**
+templates (`"type": "archive"` and `"type": "single"`, the same
+mechanism `header.json`/`footer.json` already use), imported under
+**Templates → Theme Builder**, not **Saved Templates**.
+
+**No post data is hardcoded anywhere in either file.** Both lean on
+Elementor Pro's native dynamic widgets, which query the real `wp_posts`
+table automatically:
+- `blog-archive.json`: **Banner** ("Blog" heading, matching `.banner`
+  exactly) → a **Posts** widget (the actual grid — works correctly
+  whether there are 3 posts or 300, nothing to update when new posts get
+  added) → the shared **CTA**.
+- `blog-single.json`: a **Hero** container whose background image is a
+  **Dynamic Tag set to the post's Featured Image** (not a hardcoded URL
+  — this is what makes one template correctly handle every post) with a
+  native gradient **background overlay** reproducing the live site's
+  dark gradient with zero custom CSS, holding a "← Back to Blog" button,
+  a native **Post Title** widget, and a native **Post Info** widget
+  (date) → a **Post Content** widget (the real article body, rendered
+  automatically) → a "You might also like" section (a second Posts
+  widget) → the shared **CTA**.
+
+### The two already-confirmed bugs — same fixes applied
+Full writeup in the `careers.json`/`partnership.json`/`about.json`
+sections above; in short, both files here have: (1) **zero**
+`font-size`/`font-family`/`font-weight`/`color` CSS rules on any Heading/
+Text-Editor/Button/Post-Title/Post-Info widget, outside `@font-face`
+blocks — verified by grep (see "How it was checked" below); (2)
+`boxed_width: 1220` (not 1148) on every boxed content container.
+
+**One deliberate, clearly-scoped exception in `blog-single.json` only:**
+the native **Post Content** widget has no per-tag style controls at all
+— no setting for "h2 color," "blockquote border," etc. (unlike Heading/
+Button, which do have native Typography controls that the original bug
+silently defeated). Since there's no native control to compete with,
+seven CSS rules scoped strictly to
+`.elementor-widget-theme-post-content h2/h3/h4/strong/blockquote` supply
+that per-tag styling, matching `.post-body` in `styles.css` exactly.
+This is a different situation from the confirmed bug (filling a genuine
+gap, not silently overriding a setting that does exist) but it's still
+flagged here plainly rather than left for you to discover.
+
+### Honest uncertainty — new ground this round
+Every prior page validated its native widgets (container, heading,
+text-editor, button, divider, image, icon-box, icon-list, form) against
+at least one other working example in this repo. **The widgets specific
+to these two files — `posts`, `theme-post-title`, `post-info`,
+`theme-post-content`, and a Container background using a Dynamic
+Tag — have no prior working example anywhere in this export to check
+against.** Their settings keys (e.g. `meta_data`, `title_typography_*`,
+`icon_list` on Post Info, the `__dynamic__` JSON shape for the hero
+background) are reconstructed from standard Elementor Pro convention,
+the same way Partnership's Form widget and About's Icon Box had to be —
+flagged the same way here. Specific gaps:
+- **The dynamic-tag background image** (`__dynamic__` key on the Hero
+  container) is the single least-certain piece in this entire export. If
+  your Elementor version encodes this differently, the background may
+  import blank — just re-select "Featured Image" as the background
+  source manually in the editor; it's a 30-second fix, not a rebuild.
+- **"N min read"** next to the date on every card (live site) is
+  computed client-side from word count in `app.js` — there is no
+  WordPress-native "read time" field. Omitted rather than faked; only
+  the date shows natively.
+- **The "You might also like" Posts widget doesn't exclude the post
+  being viewed.** I could not confirm a native Elementor setting that
+  reliably excludes "whichever post this template is currently
+  rendering" (as opposed to a fixed list of post IDs, which doesn't help
+  a template reused across every post). Left as a known gap — the
+  current post may appear in its own related list — rather than
+  inventing a setting name that might not exist.
+- **The "← Back to Blog" button links to `/blog/`**, a placeholder.
+  Your live site's WordPress "Posts page" isn't assigned yet (`/blog/`
+  currently 404s on ajaliscogroup.com) — once you decide the real URL
+  for the blog archive, update this link to match.
+
+### Three real bugs found and fixed by checking the actual live import
+Unlike every other page in this README, these two files have now actually
+been imported into a real WordPress/Elementor Pro install
+(ajaliscogroup.com) rather than just emulated — so for once this section
+reports confirmed facts, not a values sanity-check. Comparing
+`ajaliscogroup.com/blog/` and a real post against the GitHub Pages design
+turned up three real bugs, all now fixed in both JSON files:
+
+1. **The Posts widget's "Classic" skin controls need a `classic_` prefix
+   this export didn't use.** The live page's own rendered HTML
+   (`data-settings="{...}"` on the Posts widget element) showed
+   `classic_columns`, `classic_row_gap: 35px` — proving the control IDs
+   actually used by Elementor Pro's Classic skin are prefixed, while this
+   export had used plain `columns`, `row_gap`, `meta_data`,
+   `read_more_text`, `title_color`, etc. Because every one of those was
+   silently ignored (Elementor fell back to the skin's own defaults for
+   each), the cards showed **"No Comments"** (default `meta_data` includes
+   comments; our override to date-only never applied), **"Read More »"**
+   (Elementor's own default button text, not this export's "Read More"),
+   default spacing (35px measured, not the 24px this export set), and no
+   custom title/excerpt/meta colors or fonts at all — the generated CSS
+   file had zero color/typography rules for this widget, confirming none
+   of it took effect. Fixed by renaming every Classic-skin-specific
+   setting on both Posts-widget instances (the archive's main grid and the
+   single post's "You might also like" grid) to its `classic_`-prefixed
+   form: `classic_columns(_tablet/_mobile)`, `classic_row_gap`,
+   `classic_column_gap`, `classic_thumbnail_size`,
+   `classic_image_position`, `classic_show_excerpt`,
+   `classic_excerpt_length`, `classic_show_read_more`,
+   `classic_read_more_text`, `classic_meta_data`, and the
+   `classic_title_*`/`classic_excerpt_*`/`classic_meta_*`/
+   `classic_read_more_*` colour/typography groups. `posts_per_page` and
+   `pagination_type` were already correct unprefixed — confirmed by the
+   same rendered `data-settings` attribute, which echoed
+   `pagination_type` back untouched. **Residual uncertainty:** the
+   `classic_columns`/`classic_row_gap` prefix is directly confirmed from
+   the live DOM; the rest (`classic_meta_data`, `classic_read_more_text`,
+   the typography/colour groups) follow the same confirmed pattern but
+   weren't individually re-verified the same way, since the frontend only
+   echoes back layout-affecting settings, not display/colour ones. If any
+   single field still doesn't stick after re-importing, open that Posts
+   widget in the Elementor editor and set that one field by hand in the
+   panel — faster than re-guessing a key name.
+2. **The Hero container's `__dynamic__` dynamic-tag binding was at the
+   wrong nesting level**, as a sibling of `elements`/`isInner` on the
+   container itself instead of nested inside that container's own
+   `settings` object (where Elementor actually looks for it). Confirmed
+   directly: the live post's Hero container rendered with
+   `data-settings="{"background_background":"classic","position":"relative"}"`
+   — no `background_image` at all — and visually the hero had no photo,
+   confirming the binding was dead on arrival. Fixed by moving
+   `__dynamic__` inside `settings`.
+3. **The Post Title widget (`theme-post-title`) had no dynamic-tag
+   binding for its `title` setting at all**, so it rendered Elementor's
+   own literal placeholder, **"Add Your Heading Text Here"** — confirmed
+   verbatim in the live HTML
+   (`<h1 class="elementor-heading-title...">Add Your Heading Text
+   Here</h1>`) on every single post checked. This widget (`theme-builder/
+   widgets/post-title.php` in Elementor Pro) only auto-fills its `title`
+   with a dynamic tag named `post-title` when you drag it onto the canvas
+   in the visual editor — hand-written JSON has to set that binding
+   itself, the same way the Hero background needed one. Fixed by adding
+   `"__dynamic__": {"title": "[elementor-tag id=\"posttitle01\"
+   name=\"post-title\" settings=\"%7B%7D\"]"}` to that widget's own
+   `settings`. (`post-info` and `theme-post-content` needed no such fix —
+   both correctly showed the real date and real article body on the live
+   site without any dynamic-tag binding, confirming they query the
+   current post automatically and this gap was specific to Post Title.)
+
+**Confirmed NOT a bug, while investigating this:** the live `/blog/` page
+and every single post are genuinely pulling real `wp_posts` rows (3 real
+published posts, confirmed via the REST API and matched title-for-title
+against the rendered HTML) — not placeholder/dummy content. If posts ever
+show as empty or generic after a future import, that's a WordPress-side
+data issue, not a template problem.
+
+**Confirmed out of scope for this template** (seen while checking the
+live pages, not caused by or fixable in these two JSON files): the footer
+social icons render as raw text ("Facebook-f Instagram X-twitter
+Linkedin-in" — a Font Awesome loading issue in `footer.json`/the theme,
+unrelated to the blog templates), and the header logo on at least one
+checked page was loading from the GitHub Pages staging domain rather than
+the site's own media library — both pre-existing footer/header issues,
+not blog-archive/blog-single issues.
+
+### How it was checked
+Same two-part method as every other page, and the same honesty about its
+limits: (1) **structurally** — both files are valid JSON; a widget-type
+census (`blog-archive.json`: `{container:4, html:5, heading:1, divider:1,
+text-editor:3, posts:1, button:1}`; `blog-single.json`: `{container:6,
+html:3, button:2, "theme-post-title":1, "post-info":1,
+"theme-post-content":1, heading:2, posts:1, text-editor:2}`); a grep
+confirms the only typography-touching CSS outside `@font-face` is the
+seven explicitly-flagged Post-Content lines above, nowhere else; a
+`boxed_width` check confirms 1220 on every boxed container (the Hero's
+outer container is deliberately full-width, not boxed — it's the
+full-bleed photo background; its inner content container is boxed at
+1220). (2) **a values-sanity render** — a script read each JSON's own
+settings and rendered plain placeholder boxes for the dynamic widgets
+(Posts, Post Title, Post Info, Post Content have no static content to
+render — same approach `careers.json`'s script used for the
+`[ajalisco_jobs]` shortcode widget), screenshotted at 1300px. This
+proves the static settings (colors, typography, boxed widths, section
+order) are sane; it proves nothing about how the dynamic widgets will
+actually render inside real Elementor, and it cannot prove the
+Theme-Builder-specific pieces above (dynamic tag, exclude-current-post,
+Post Info's field set) work as intended. Check all of this for real
+after importing — more so than any other page in this export, since
+this is the first use of Theme Builder's dynamic widgets.
+
+### Requirements and editing
+After importing, you'll be prompted (or need to go to **Templates →
+Theme Builder**) to set each template's **display condition** —
+`blog-archive.json` to "Include → Archives → All Archives" (or just
+"Posts Archive" if your version distinguishes), `blog-single.json` to
+"Include → Singular → Post → All Posts." This condition assignment is
+managed by WordPress separately from the template's own JSON (confirmed
+by checking `header.json`/`footer.json`, which also carry no condition
+data in the file itself — same manual step the Import Order section
+already documents for those two) and can't be set from the JSON import
+alone.
+
 ## Other page templates (shop, header, footer)
 These were **not** changed by the homepage rebuild, and `partnership.json`,
 `about.json` and `contact.json` no longer belong to this group — see their
@@ -605,11 +813,18 @@ current settings.
 3. **Templates → Saved Templates → Import Templates** → upload the `.json`
    files one at a time to be safe (Elementor's multi-file import exists in
    recent versions but behaviour has varied by version — if yours offers it
-   and it works, use it; otherwise eight one-at-a-time imports is quick).
+   and it works, use it; otherwise ten one-at-a-time imports is quick).
 4. For `header.json` / `footer.json`: **Templates → Theme Builder** → import
    each as its template type, then set its display condition to
    **Entire Site**.
-5. For the 6 page templates: create a WordPress Page for each, **using these
+5. For `blog-archive.json` / `blog-single.json`: also via **Templates →
+   Theme Builder**, importing as type `archive` and `single` respectively.
+   Set `blog-archive.json`'s condition to all archives (or "Posts
+   Archive") and `blog-single.json`'s to all singular posts — see the
+   "Requirements and editing" note in that section above. `blog-single.json`
+   needs at least one real published Post to show anything meaningful; the
+   three already on ajaliscogroup.com already qualify.
+6. For the 6 page templates: create a WordPress Page for each, **using these
    exact slugs** (Permalink, not just the title) so every internal link in
    the export resolves: `home` → `shop` → `partnership` → `about` →
    `careers` → `contact` (note: **not** `contact-us` — every link in these
