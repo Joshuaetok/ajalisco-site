@@ -10,9 +10,12 @@ role-detail + application modal. No other plugin is required.
   a "Job Details" box per post: Employment Type, Location, Short Summary,
   Responsibilities (one per line), and "What We're Looking For" (one per
   line). There is deliberately no salary field.
-- **Job Postings → Settings** — one field, **Receiving Email**. Every
-  application submitted on the front end is emailed here. Leave it blank
-  to fall back to the site's admin email.
+- **Job Postings → Settings** — two fields: **Careers Page** (a dropdown
+  of every WordPress Page, so the plugin knows which one has the
+  shortcode on it — purely a convenience link, explained below) and
+  **Receiving Email**. Every application submitted on the front end is
+  emailed to that address; leave it blank to fall back to the site's
+  admin email.
 - **`[ajalisco_jobs]` shortcode** — renders the role grid and the
   detail/apply modal. Drop it into any page; in Elementor Pro, add a
   **Shortcode** widget and paste `[ajalisco_jobs]` into it.
@@ -25,8 +28,23 @@ role-detail + application modal. No other plugin is required.
    Activating seeds five starter roles (Franchise Partner, Baker, Bakery
    Assistant, Mixer Operator, Loader) matching the GitHub Pages preview —
    edit or delete them freely afterwards; this only happens once.
-3. Go to **Job Postings → Settings** and set the Receiving Email.
-4. Add the `[ajalisco_jobs]` shortcode to your Careers page.
+3. Add the `[ajalisco_jobs]` shortcode to your Careers page (if you're
+   importing `elementor/careers.json`, it's already there as a native
+   Shortcode widget — you just need the page itself to exist first).
+4. Go to **Job Postings → Settings**, pick that page under **Careers
+   Page**, and set the **Receiving Email**.
+
+## Is a job's visibility actually linked to the Careers page?
+
+Yes, automatically, with nothing extra to configure: the shortcode never
+stores or caches a copy of the job list — every time the page is viewed,
+it runs a fresh query for published Job Postings. Delete a job (or set it
+to Draft) in **Job Postings**, and it disappears from every page showing
+`[ajalisco_jobs]` immediately, with no separate "remove from the careers
+page" step. The **Careers Page** setting doesn't change this behaviour —
+it's just a pointer so wp-admin can show you a "View your Careers page"
+link; the shortcode itself works the same with or without it set, and
+would still work correctly even if you added it to more than one page.
 
 ## How an application reaches you
 

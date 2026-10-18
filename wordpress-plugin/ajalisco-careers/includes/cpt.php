@@ -144,3 +144,25 @@ function ajx_careers_seed_jobs() {
 
     update_option('ajx_careers_seeded', 1);
 }
+
+/* ---------------------------------------------------------------------
+   A notice on the Job Postings list screen linking straight to the
+   Careers page (set under Job Postings → Settings), or prompting for
+   one if it hasn't been set yet.
+------------------------------------------------------------------------ */
+function ajx_careers_page_link_notice() {
+    $screen = get_current_screen();
+    if (!$screen || $screen->id !== 'edit-ajx_job') return;
+
+    $url = function_exists('ajx_careers_page_url') ? ajx_careers_page_url() : '';
+    echo '<div class="notice notice-info" style="padding:10px 12px;">';
+    if ($url) {
+        printf('Careers page: <a href="%s" target="_blank" rel="noopener">%s →</a> — change this under <a href="%s">Settings</a>.',
+            esc_url($url), esc_html($url), esc_url(admin_url('edit.php?post_type=ajx_job&page=ajx-careers-settings')));
+    } else {
+        printf('No Careers page selected yet — jobs below won\'t show anywhere until a page has the <code>[ajalisco_jobs]</code> shortcode on it. <a href="%s">Select it under Settings</a>.',
+            esc_url(admin_url('edit.php?post_type=ajx_job&page=ajx-careers-settings')));
+    }
+    echo '</div>';
+}
+add_action('admin_notices', 'ajx_careers_page_link_notice');

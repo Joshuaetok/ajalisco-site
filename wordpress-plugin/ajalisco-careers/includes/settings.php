@@ -22,9 +22,21 @@ function ajx_careers_register_settings() {
         'sanitize_callback' => 'ajx_careers_sanitize_email_setting',
         'default' => '',
     ]);
+    register_setting('ajx_careers_settings', 'ajx_careers_page_id', [
+        'type' => 'integer',
+        'sanitize_callback' => 'absint',
+        'default' => 0,
+    ]);
 
     add_settings_section('ajx_careers_main', '', null, 'ajx-careers-settings');
 
+    add_settings_field(
+        'ajx_careers_page_id',
+        'Careers Page',
+        'ajx_careers_render_page_field',
+        'ajx-careers-settings',
+        'ajx_careers_main'
+    );
     add_settings_field(
         'ajx_careers_receiving_email',
         'Receiving Email',
@@ -34,6 +46,30 @@ function ajx_careers_register_settings() {
     );
 }
 add_action('admin_init', 'ajx_careers_register_settings');
+
+function ajx_careers_render_page_field() {
+    $selected = (int) get_option('ajx_careers_page_id', 0);
+    wp_dropdown_pages([
+        'name' => 'ajx_careers_page_id',
+        'show_option_none' => '— Select the page showing [ajalisco_jobs] —',
+        'option_none_value' => 0,
+        'selected' => $selected,
+    ]);
+    echo '<p class="description">Which page has the <code>[ajalisco_jobs]</code> shortcode on it (usually your "Careers" page). '
+        . 'This doesn\'t change what the shortcode shows — every page with the shortcode already renders the same live job list — '
+        . 'it just lets this settings screen (and anywhere else in wp-admin) link straight to it.</p>';
+    if ($selected && get_post_status($selected)) {
+        printf(
+            '<p><a href="%s" target="_blank" rel="noopener">View your Careers page →</a></p>',
+            esc_url(get_permalink($selected))
+        );
+    }
+}
+
+function ajx_careers_page_url() {
+    $id = (int) get_option('ajx_careers_page_id', 0);
+    return $id ? get_permalink($id) : '';
+}
 
 function ajx_careers_sanitize_email_setting($value) {
     $value = sanitize_text_field($value);
