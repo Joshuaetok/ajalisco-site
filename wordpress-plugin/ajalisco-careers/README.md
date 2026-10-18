@@ -28,6 +28,11 @@ role-detail + application modal. No other plugin is required.
     most 4 jobs in a horizontally-slidable row (swipe, trackpad-scroll, or
     the prev/next arrows), followed by a "View All Roles" tile that links
     to the URL you gave it.
+  - **Optional `hide_scrollbar`** — add `hide_scrollbar="true"` to either
+    mode to hide the thin horizontal scrollbar under the slider (a purely
+    cosmetic browser UI element; swipe and the arrows still work exactly
+    the same either way). Off by default. Example:
+    `[ajalisco_jobs view_all_url="/careers/" hide_scrollbar="true"]`.
 
 ## Installing
 

@@ -48,10 +48,11 @@ function ajx_careers_get_jobs_for_js() {
 }
 
 function ajx_careers_render_shortcode($atts) {
-    $atts = shortcode_atts(['view_all_url' => ''], $atts, 'ajalisco_jobs');
+    $atts = shortcode_atts(['view_all_url' => '', 'hide_scrollbar' => 'false'], $atts, 'ajalisco_jobs');
+    $classes = 'ajx-careers' . (filter_var($atts['hide_scrollbar'], FILTER_VALIDATE_BOOLEAN) ? ' ajx-careers--no-scrollbar' : '');
     ob_start();
     ?>
-    <div class="ajx-careers" data-view-all-url="<?php echo esc_attr($atts['view_all_url']); ?>">
+    <div class="<?php echo esc_attr($classes); ?>" data-view-all-url="<?php echo esc_attr($atts['view_all_url']); ?>">
       <div class="ajx-jobs-wrap">
         <div class="ajx-jobs" data-ajx-jobs aria-live="polite"></div>
         <button class="ajx-jobs__nav ajx-jobs__nav--prev" type="button" data-jobs-nav="-1" aria-label="Previous roles">‹</button>
